@@ -1,6 +1,7 @@
 .cart {
   position: relative;
   display: block;
+  text-transform: uppercase;
 }
 
 .cart__empty-text,
