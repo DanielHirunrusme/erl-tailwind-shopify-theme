@@ -154,6 +154,8 @@
 html,
 body {
   overscroll-behavior: none;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .no-js:not(html) {
@@ -2449,7 +2451,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__heading {
   position: fixed;
-  bottom: 1.5rem;
+  bottom: 2rem;
   left: 2rem;
 }
 

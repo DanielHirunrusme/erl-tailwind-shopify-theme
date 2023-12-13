@@ -430,7 +430,7 @@ quick-order-list-remove-button:hover .icon-remove {
     grid-template-columns: 4.5rem 1fr;
     grid-template-rows: repeat(2, auto);
     gap: 1.5rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 2rem;
   }
 
   .variant-item--no-media {
