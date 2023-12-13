@@ -58,7 +58,6 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
-  overscroll-behavior: none;
 }
 
 /*
@@ -511,5 +510,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .twcss-block {
-  display: block !important;
+  display: block;
+}
+
+.twcss-text-right {
+  text-align: right;
 }
