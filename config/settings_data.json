@@ -1,6 +1,7 @@
 {
   "current": {
-    "logo_width": 90,
+    "logo": "shopify:\/\/shop_images\/erl.svg",
+    "logo_width": 140,
     "type_header_font": "archivo_narrow_n7",
     "heading_scale": 100,
     "type_body_font": "archivo_narrow_n4",
