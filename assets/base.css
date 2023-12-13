@@ -3209,6 +3209,14 @@ details-disclosure > details {
   margin-top: 0;
 }
 
+.rte h2 {
+  text-transform: uppercase;
+}
+
+.rte > * {
+  margin-top: 1em;
+}
+
 .rte > *:last-child {
   margin-bottom: 0;
 }

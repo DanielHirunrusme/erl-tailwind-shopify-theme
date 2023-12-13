@@ -365,7 +365,8 @@ a.product__text {
 }
 
 .product__accordion .accordion__content {
-  padding: 0 1rem;
+  padding: 1rem 0 2rem 0;
+  text-align: justify;
 }
 
 .product .price__container {
