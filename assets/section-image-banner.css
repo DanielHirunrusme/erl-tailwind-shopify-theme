@@ -82,7 +82,7 @@
 
   .banner--large:not(.banner--mobile-bottom):not(.banner--adapt)
     .banner__content {
-    min-height: 90dvh;
+    min-height: 100dvh;
   }
 }
 
@@ -100,7 +100,7 @@
   }
 
   .banner--large:not(.banner--adapt) {
-    min-height: 90dvh;
+    min-height: 100dvh;
   }
 
   .banner__content.banner__content--top-left {
