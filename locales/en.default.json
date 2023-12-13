@@ -276,7 +276,7 @@
       }
     },
     "cart": {
-      "title": "Your cart",
+      "title": "Cart",
       "caption": "Cart items",
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Subtotal",
@@ -506,6 +506,13 @@
       "max_characters": "{{ max_chars }} characters max",
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "throttle": {
+        "cart_summary_heading": "Cart"
+      }
     }
   }
 }
