@@ -334,8 +334,8 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .text-body {
-  font-size: 1.5rem;
-  letter-spacing: 0.06rem;
+  font-size: 1rem;
+  /* letter-spacing: 0.06rem; */
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   font-family: var(--font-body-family);
   font-style: var(--font-body-style);
@@ -402,7 +402,7 @@ h2,
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 2.4rem);
+    font-size: calc(var(--font-heading-scale) * 1rem);
   }
 }
 
@@ -432,7 +432,8 @@ h5,
 @media only screen and (min-width: 750px) {
   h5,
   .h5 {
-    font-size: calc(var(--font-heading-scale) * 1.3rem);
+    font-size: calc(var(--font-heading-scale) * 1rem);
+    text-transform: uppercase;
   }
 }
 
@@ -575,7 +576,6 @@ h6:empty {
   border: none;
   box-shadow: none;
   background-color: transparent;
-  font-size: 1.4rem;
   font-family: inherit;
 }
 
@@ -2327,7 +2327,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .utility-bar .localization-wrapper .disclosure .localization-form__select,
 .utility-bar .localization-wrapper .disclosure__link {
-  font-size: calc(var(--font-heading-scale) * 1.3rem);
+  font-size: calc(var(--font-heading-scale) * 1rem);
 }
 
 @media screen and (min-width: 990px) {
