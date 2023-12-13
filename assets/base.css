@@ -73,6 +73,11 @@
 
 /* base */
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
@@ -1208,9 +1213,8 @@ button.shopify-payment-button__button--unbranded,
   --shadow-blur-radius: var(--buttons-shadow-blur-radius);
   --shadow-opacity: var(--buttons-shadow-opacity);
   --shadow-visible: var(--buttons-shadow-visible);
-  --border-offset: var(
-    --buttons-border-offset
-  ); /* reduce radius edge artifacts */
+  --border-offset: var(--buttons-border-offset);
+  /* reduce radius edge artifacts */
   --border-opacity: calc(1 - var(--buttons-border-opacity));
   border-radius: var(--buttons-radius-outset);
   position: relative;
@@ -2337,6 +2341,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
     opacity: 0;
     transform: translateX(var(--announcement-translate-from));
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -2348,6 +2353,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
     opacity: 1;
     transform: translateX(0);
   }
+
   100% {
     opacity: 0;
     transform: translateX(var(--announcement-translate-to));
@@ -3035,6 +3041,7 @@ details-disclosure > details {
     border-right: none;
     border-radius: 0;
   }
+
   .content-container--full-width-mobile:after {
     display: none;
   }
@@ -3315,6 +3322,7 @@ details-disclosure > details {
     0% {
       transform: rotate(0deg) translateX(1em) rotate(0deg) scale(1.2);
     }
+
     100% {
       transform: rotate(360deg) translateX(1em) rotate(-360deg) scale(1.2);
     }
@@ -3357,6 +3365,7 @@ details-disclosure > details {
       transform: translateY(2rem);
       opacity: 0.01;
     }
+
     to {
       transform: translateY(0);
       opacity: 1;
@@ -3367,6 +3376,7 @@ details-disclosure > details {
     from {
       opacity: 0.01;
     }
+
     to {
       opacity: 1;
     }
@@ -3396,7 +3406,8 @@ details-disclosure > details {
   .animate--hover-3d-lift .shopify-payment-button__button:hover,
   .animate--hover-3d-lift .deferred-media:hover .deferred-media__poster-button {
     transition: transform var(--duration-extended) ease,
-      box-shadow var(--duration-long) ease; /* Slow the card transition speed while hover is active. */
+      box-shadow var(--duration-long) ease;
+    /* Slow the card transition speed while hover is active. */
     transform: rotate(1deg);
     box-shadow: -1rem -1rem 1rem -1rem rgba(0, 0, 0, 0.05),
       1rem 1rem 1rem -1rem rgba(0, 0, 0, 0.05),
@@ -3405,7 +3416,8 @@ details-disclosure > details {
   }
 
   .animate--hover-3d-lift .deferred-media:hover .deferred-media__poster-button {
-    transform: translate(-50%, -50%) scale(1.05); /* Apply a specialized transform to the video play button. */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Apply a specialized transform to the video play button. */
   }
 
   .animate--hover-3d-lift .collage__item .card-wrapper:hover .card--card,
@@ -3414,7 +3426,8 @@ details-disclosure > details {
     .card-wrapper:hover
     .card--standard
     .card__inner {
-    transform: rotate(0.5deg); /* Less intense rotation for collage items. */
+    transform: rotate(0.5deg);
+    /* Less intense rotation for collage items. */
   }
 
   .animate--hover-3d-lift .product-grid .grid__item:hover,
@@ -3422,11 +3435,13 @@ details-disclosure > details {
   .animate--hover-3d-lift .collage__item:hover,
   .animate--hover-3d-lift .blog-articles .article:hover,
   .animate--hover-3d-lift .complementary-slide li:hover {
-    z-index: 2; /* Make sure the hovered card is the topmost card. */
+    z-index: 2;
+    /* Make sure the hovered card is the topmost card. */
   }
 
   .animate--hover-3d-lift .product-grid {
-    isolation: isolate; /* Ensure z-index changes here don't negatively effect other UI stacking. */
+    isolation: isolate;
+    /* Ensure z-index changes here don't negatively effect other UI stacking. */
   }
 
   .animate--hover-3d-lift
@@ -3443,7 +3458,8 @@ details-disclosure > details {
     .card--shape.card--standard:not(.card--text)
     .card__inner {
     transition: transform calc(2 * var(--duration-extended)) ease,
-      filter var(--duration-long) ease; /* Slow the card transition speed while hover is active. */
+      filter var(--duration-long) ease;
+    /* Slow the card transition speed while hover is active. */
     filter: drop-shadow(0rem 2rem 2rem rgba(0, 0, 0, 0.15))
       drop-shadow(0rem 1rem 1rem rgba(0, 0, 0, 0.15));
   }
@@ -3568,7 +3584,8 @@ details-disclosure > details {
   .animate--hover-vertical-lift .customer button:not([disabled]):hover:after,
   .animate--hover-vertical-lift
     .shopify-payment-button__button:not([disabled]):hover:after {
-    --border-offset: 0.3px; /* Default is 1.3px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
+    --border-offset: 0.3px;
+    /* Default is 1.3px as defined above in this file. This removes 1px to prevent the border from growing on buttons when this effect is on.  */
     box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset))
         rgba(var(--color-button-text), var(--border-opacity)),
       0 0 0 var(--buttons-border-width)
@@ -3577,6 +3594,7 @@ details-disclosure > details {
 
   .animate--hover-vertical-lift
     .button:not([disabled]).button--secondary:hover:after {
-    --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
+    --border-offset: 0px;
+    /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
