@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -54,7 +47,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Materials",
-            "icon": "leather",
+            "icon": "none",
             "content": "",
             "page": ""
           }
@@ -63,7 +56,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Shipping & Returns",
-            "icon": "truck",
+            "icon": "none",
             "content": "",
             "page": ""
           }
@@ -72,7 +65,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Dimensions",
-            "icon": "ruler",
+            "icon": "none",
             "content": "",
             "page": ""
           }
@@ -81,7 +74,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Care Instructions",
-            "icon": "heart",
+            "icon": "none",
             "content": "",
             "page": ""
           }
@@ -94,7 +87,6 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "caption",
         "price",
