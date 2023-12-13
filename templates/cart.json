@@ -3,7 +3,7 @@
     "cart-items": {
       "type": "main-cart-items",
       "settings": {
-        "padding_top": 40,
+        "padding_top": 100,
         "padding_bottom": 0
       }
     },
