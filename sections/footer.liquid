@@ -82,7 +82,7 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <h2 class='footer-block__heading inline-richtext'>{{- block.settings.heading -}}</h2>
+                  <b class='footer-block__heading inline-richtext'>{{- block.settings.heading -}}</b>
                 {%- endif -%}
 
                 {%- case block.type -%}
@@ -335,9 +335,9 @@
           <localization-form>
             {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
               <div class='no-js-hidden'>
-                <h2 class='caption-large text-body' id='FooterLanguageLabel'>
+                <b class='caption-large text-body' id='FooterLanguageLabel'>
                   {{ 'localization.language_label' | t }}
-                </h2>
+                </b>
                 {%- render 'language-localization', localPosition: 'FooterLanguage' -%}
               </div>
             {%- endform -%}

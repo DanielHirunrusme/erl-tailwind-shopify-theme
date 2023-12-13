@@ -117,7 +117,7 @@
 }
 
 @font-face {
-  font-family: 'Bureau Grot UltraBlack';
+  font-family: 'UB';
   src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideUltraBlack.woff2?v=1700253777')
       format('woff2'),
     url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideUltraBlack.woff?v=1700253777')
@@ -355,13 +355,15 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: 'Bureau Grot Wide', var(--font-heading-family);
+  font-family: 'UB', var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
-  /* letter-spacing: calc(var(--font-heading-scale) * 0.06rem); */
+  text-transform: uppercase;
+  letter-spacing: calc(var(--font-heading-scale) * 0.05rem);
   color: rgb(var(--color-foreground));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   word-break: break-word;
+  opacity: 0.9;
 }
 
 .hxl {
@@ -386,7 +388,7 @@ h5,
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 3rem);
+  font-size: calc(var(--font-heading-scale) * 2rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -428,7 +430,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 1rem);
+  font-size: calc(var(--font-heading-scale) * 0.75rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -1262,7 +1264,7 @@ button.shopify-payment-button__button--unbranded,
   position: relative;
   padding: 0;
   width: auto;
-  font-family: 'Bureau Grot UltraBlack';
+  font-family: 'UB';
 }
 
 .shopify-payment-button__button--branded {
@@ -1373,7 +1375,7 @@ button.shopify-payment-button__button--unbranded,
   font-size: calc(var(--font-heading-scale) * 2rem);
   line-height: calc(1 + 0.2 / var(--font-body-scale));
   text-transform: uppercase;
-  font-family: 'Bureau Grot UltraBlack';
+  font-family: 'UB';
 }
 
 .button--tertiary {
@@ -2434,10 +2436,11 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .header {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
   grid-template-areas: 'left-icons heading icons';
   grid-template-columns: 1fr 2fr 1fr;
-  align-items: center;
+  /* align-items: center; */
   margin: 2rem;
 }
 
@@ -2839,9 +2842,9 @@ details[open] > .header__submenu {
 }
 
 /* Header menu */
-.header__inline-menu {
+/* .header__inline-menu {
   display: none;
-}
+} */
 
 .header--top-center .header__inline-menu,
 .header--top-center .header__heading-link {
@@ -2874,6 +2877,7 @@ details[open] > .header__submenu {
 }
 
 .header__menu-item {
+  font-family: 'UB';
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;

@@ -509,10 +509,96 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.twcss-mt-24 {
+  margin-top: 6rem;
+}
+
+.twcss-mt-32 {
+  margin-top: 8rem;
+}
+
+.twcss-mt-40 {
+  margin-top: 10rem;
+}
+
+.twcss-mt-48 {
+  margin-top: 12rem;
+}
+
 .twcss-block {
   display: block;
 }
 
+.twcss-grid {
+  display: grid;
+}
+
+.twcss-min-h-screen {
+  min-height: 100vh;
+}
+
+.twcss-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.twcss-p-4 {
+  padding: 1rem;
+}
+
+.twcss-p-8 {
+  padding: 2rem;
+}
+
 .twcss-text-right {
   text-align: right;
+}
+
+.twcss-text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.twcss-text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.twcss-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.twcss-font-bold {
+  font-weight: 700;
+}
+
+.twcss-uppercase {
+  text-transform: uppercase;
+}
+
+@media (min-width: 750px) {
+  .md\:twcss-text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .md\:twcss-text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:twcss-text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:twcss-text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:twcss-text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }

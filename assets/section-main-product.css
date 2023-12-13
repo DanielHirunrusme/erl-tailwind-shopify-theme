@@ -192,6 +192,7 @@ fieldset.product-form__input .form__label {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   line-height: 1;
+  font-family: 'UB';
   text-align: center;
   /* transition: border var(--duration-short) ease; */
   cursor: pointer;
@@ -312,6 +313,10 @@ fieldset.product-form__input .form__label {
 }
 
 /* Product info */
+.product__info-container {
+  padding: 0 2rem;
+  display: block;
+}
 
 .product__info-container > * + * {
   margin: 0;
@@ -324,7 +329,13 @@ fieldset.product-form__input .form__label {
 .product__info-container .product-form,
 .product__info-container .product__description,
 .product__info-container .icon-with-text {
-  margin: 2.5rem 0;
+  margin: 2rem 0;
+}
+
+.product__description {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: bold;
 }
 
 .product__text {
@@ -342,7 +353,7 @@ a.product__text {
 }
 
 .product__title h1 {
-  font-family: 'Bureau Grot UltraBlack';
+  font-family: 'UB';
   word-break: break-word;
   text-transform: uppercase;
   font-weight: bolder;
@@ -385,7 +396,6 @@ a.product__text {
 @media screen and (min-width: 750px) {
   .product__info-container {
     max-width: 60rem;
-    margin: 2rem;
     flex: 1;
   }
 

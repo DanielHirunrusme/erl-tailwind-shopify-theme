@@ -35,7 +35,7 @@
   .banner--content-align-left.banner--desktop-transparent .banner__box,
   .banner--content-align-right.banner--desktop-transparent .banner__box,
   .banner--medium.banner--desktop-transparent .banner__box {
-    max-width: 68rem;
+    max-width: 100rem;
   }
 }
 
@@ -82,7 +82,7 @@
 
   .banner--large:not(.banner--mobile-bottom):not(.banner--adapt)
     .banner__content {
-    min-height: 39rem;
+    min-height: 90dvh;
   }
 }
 
@@ -284,10 +284,6 @@
 }
 
 @media screen and (min-width: 750px) {
-  .banner__content {
-    padding: 5rem;
-  }
-
   .banner__content--top-left {
     align-items: flex-start;
     justify-content: flex-start;
@@ -346,7 +342,7 @@
 }
 
 .banner__box {
-  padding: 0rem 1.5rem;
+  padding: 0rem 2rem;
   position: relative;
   height: fit-content;
   align-items: center;
