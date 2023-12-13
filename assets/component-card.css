@@ -350,10 +350,6 @@
 
 /* Card Shapes */
 
-.card--shape .card__content {
-  padding-top: 0;
-}
-
 .card--shape.card--standard:not(.card--text) .card__inner {
   border: 0;
   /* Border is not currently compatible with image shapes for standard cards. */
