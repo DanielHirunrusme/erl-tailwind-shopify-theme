@@ -131,6 +131,7 @@
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
+  text-transform: uppercase;
 }
 
 .card__content--auto-margins {
@@ -338,7 +339,6 @@
 }
 
 .card-information > * {
-  line-height: calc(1 + 0.4 / var(--font-body-scale));
   color: rgb(var(--color-foreground));
 }
 
