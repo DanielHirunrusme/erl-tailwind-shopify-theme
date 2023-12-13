@@ -795,10 +795,6 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
-  .product-media-modal__content {
-    padding-bottom: 2rem;
-  }
-
   .product-media-modal__content > *:not(.active) {
     display: block;
   }
@@ -865,10 +861,6 @@ a.product__text {
 }
 
 @media screen and (min-width: 750px) {
-  .product-media-modal__content {
-    padding: 2rem 11rem;
-  }
-
   .product-media-modal__content > * {
     width: 100%;
   }
@@ -884,16 +876,8 @@ a.product__text {
 }
 
 @media screen and (min-width: 990px) {
-  .product-media-modal__content {
-    padding: 2rem 11rem;
-  }
-
   .product-media-modal__content > * + * {
     margin-top: 1.5rem;
-  }
-
-  .product-media-modal__content {
-    padding-bottom: 1.5rem;
   }
 
   .product-media-modal__toggle {
