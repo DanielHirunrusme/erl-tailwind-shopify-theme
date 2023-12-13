@@ -71,6 +71,84 @@
   --shadow-visible: var(--media-shadow-visible);
 }
 
+/* fonts */
+@font-face {
+  font-family: 'Bureau Grot Wide';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideMedium.woff2?v=1700253777')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideMedium.woff?v=1700253777')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bureau Grot Wide';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideBook.woff2?v=1700253777')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideBook.woff?v=1700253778')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bureau Grot Wide';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideBlack.woff2?v=1700253777')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideBlack.woff?v=1700253777')
+      format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bureau Grot Wide';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideBold.woff2?v=1700253777')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideBold.woff?v=1700253778')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bureau Grot UltraBlack';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideUltraBlack.woff2?v=1700253777')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-WideUltraBlack.woff?v=1700253777')
+      format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bureau Grot';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-Medium.woff2?v=1700253778')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-Medium.woff?v=1700253777')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bureau Grot Wide UltraBlack';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-UltraBlack.woff2?v=1700253778')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/BureauGrot-UltraBlack.woff?v=1700253777')
+      format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* base */
 
 html,
@@ -275,7 +353,7 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: var(--font-heading-family);
+  font-family: 'Bureau Grot Wide', var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
   letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
@@ -342,7 +420,6 @@ h3,
 
 h4,
 .h4 {
-  font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-size: calc(var(--font-heading-scale) * 1.5rem);
 }

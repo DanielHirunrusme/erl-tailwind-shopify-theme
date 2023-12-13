@@ -1,6 +1,7 @@
 .footer {
   border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
   text-align: right;
+  text-transform: uppercase;
 }
 
 .footer:not(.color-background-1) {
@@ -333,8 +334,6 @@
   .footer-block__details-content .list-menu__item--link:hover,
   .copyright__content a:hover {
     color: rgb(var(--color-foreground));
-    text-decoration: underline;
-    text-underline-offset: 0.3rem;
   }
 
   .footer-block__details-content .list-menu__item--active:hover {
