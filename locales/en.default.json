@@ -41,8 +41,8 @@
     },
     "cart": {
       "view": "View cart ({{ count }})",
-      "view_empty_cart": "View cart",
-      "item_added": "Item added to your cart"
+      "view_empty_cart": "View bag",
+      "item_added": "Item added to your bag"
     },
     "share": {
       "close": "Close share",
@@ -106,7 +106,7 @@
   },
   "products": {
     "product": {
-      "add_to_cart": "Add to cart",
+      "add_to_cart": "Add to bag",
       "choose_options": "Choose options",
       "choose_product_options": "Choose options for {{ product_name }}",
       "description": "Description",
@@ -240,7 +240,7 @@
       "pages": "Pages"
     },
     "cart": {
-      "cart": "Cart"
+      "cart": "Bag"
     },
     "contact": {
       "form": {
@@ -340,7 +340,7 @@
     },
     "quick_order_list": {
       "product_total": "Product subtotal",
-      "view_cart": "View cart",
+      "view_cart": "View bag",
       "each": "{{ money }}\/ea",
       "product": "Product",
       "variant": "Variant",
@@ -512,6 +512,19 @@
     "checkout": {
       "throttle": {
         "cart_summary_heading": "Cart"
+      },
+      "general": {
+        "cart": "Bag",
+        "back_to_cart": "Return to bag"
+      },
+      "stock": {
+        "removed_from_cart_notice": "Removed from bag",
+        "remove_from_cart_button_label": "Remove from bag",
+        "go_back_to_cart_button_label": "Go back to my bag",
+        "empty_cart_label": "Your bag is empty"
+      },
+      "notice_banner": {
+        "return_to_cart_link_text": "Return to bag"
       }
     }
   }
