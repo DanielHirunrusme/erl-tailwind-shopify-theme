@@ -226,7 +226,8 @@
         line-height: calc(1 + 0.8 / var(--font-body-scale));
         font-family: "Bureau Grot Wide", var(--font-body-family);
         font-style: var(--font-body-style);
-        font-weight: var(--font-body-weight);
+        font-weight: 900;
+        /* font-weight: var(--font-body-weight); */
       }
 
       @media screen and (min-width: 750px) {
@@ -279,7 +280,7 @@
 
     {% sections 'header-group' %}
 
-    <main id='MainContent' class='content-for-layout focus-none' role='main' tabindex='-1'>
+    <main id='MainContent' class='content-for-layout twcss-min-h-screen focus-none' role='main' tabindex='-1'>
       {{ content_for_layout }}
     </main>
 

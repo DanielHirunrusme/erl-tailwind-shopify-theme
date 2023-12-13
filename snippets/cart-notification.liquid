@@ -19,7 +19,7 @@
       role='dialog'
       tabindex='-1'
     >
-      <div class='cart-notification__header'>
+      <div class='cart-notification__header twcss-font-bold twcss-uppercase'>
         <h2 class='cart-notification__heading caption-large text-body'>
           {%- render 'icon-checkmark' -%}
           {{ 'general.cart.item_added' | t }}
@@ -39,16 +39,18 @@
         <a
           href='{{ routes.cart_url }}'
           id='cart-notification-button'
-          class='button button--secondary button--full-width'
+          class=' twcss-font-bold twcss-uppercase'
         >
           {{- 'general.cart.view_empty_cart' | t -}}
         </a>
         <form action='{{ routes.cart_url }}' method='post' id='cart-notification-form'>
-          <button class='button button--primary button--full-width' name='checkout'>
+          <button class=' twcss-uppercase twcss-font-bold' name='checkout'>
             {{ 'sections.cart.checkout' | t }}
           </button>
         </form>
-        <button type='button' class='link button-label'>{{ 'general.continue_shopping' | t }}</button>
+        <button type='button' class='link  twcss-uppercase twcss-font-bold'>
+          {{ 'general.continue_shopping' | t }}
+        </button>
       </div>
     </div>
   </div>

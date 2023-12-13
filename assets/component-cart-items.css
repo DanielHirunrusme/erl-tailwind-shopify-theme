@@ -107,6 +107,7 @@
 .product-option {
   font-size: 1rem;
   word-break: break-word;
+  text-transform: uppercase;
 }
 
 .cart-item cart-remove-button {

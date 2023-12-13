@@ -341,6 +341,7 @@
 
 .card-information > .price {
   color: rgb(var(--color-foreground));
+  font-family: 'UB';
 }
 
 .card--horizontal .card-information > .price {
