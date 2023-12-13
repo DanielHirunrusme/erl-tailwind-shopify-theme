@@ -2,12 +2,16 @@
   display: flex;
   position: relative;
   line-height: 1;
-  padding: 1.5rem 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: right;
 }
 
 .accordion .summary__title {
   display: flex;
   flex: 1;
+  justify-content: flex-end;
+  padding: 0 2rem;
 }
 
 .accordion .summary__title + .icon-caret {
