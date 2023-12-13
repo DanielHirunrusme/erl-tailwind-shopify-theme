@@ -48,7 +48,7 @@
           "settings": {
             "heading": "Materials",
             "icon": "none",
-            "content": "",
+            "content": "<p>Made with 100% in Venice Beach California<\/p>",
             "page": ""
           }
         },
@@ -64,10 +64,10 @@
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Dimensions",
+            "heading": "Size Guide",
             "icon": "none",
             "content": "",
-            "page": ""
+            "page": "size-guide"
           }
         },
         "collapsible-row-3": {
@@ -76,7 +76,7 @@
             "heading": "Care Instructions",
             "icon": "none",
             "content": "",
-            "page": ""
+            "page": "care-instructions"
           }
         },
         "share": {
