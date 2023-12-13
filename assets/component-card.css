@@ -144,6 +144,7 @@
 
 .card:not(.ratio) > .card__content {
   grid-template-rows: max-content minmax(0, 1fr) max-content auto;
+  text-align: var(--text-alignment);
 }
 
 .card-information .card__information-volume-pricing-note {
@@ -202,13 +203,6 @@
 .card--horizontal .price__container .price-item,
 .card--horizontal__quick-add {
   font-size: calc(var(--font-heading-scale) * 1.2rem);
-}
-
-.card--horizontal
-  .card-information
-  > *:not(.visually-hidden:first-child)
-  + *:not(.rating):not(.card__information-volume-pricing-note) {
-  margin-top: 0;
 }
 
 .card--horizontal__quick-add:before {
@@ -357,10 +351,6 @@
   overflow: hidden;
 }
 
-.card-information > * + * {
-  margin-top: 0.5rem;
-}
-
 .card-information {
   width: 100%;
 }
@@ -376,24 +366,6 @@
 
 .card--horizontal .card-information > .price {
   color: rgba(var(--color-foreground), 0.75);
-}
-
-.card-information > .rating {
-  margin-top: 0.4rem;
-}
-
-.card-information
-  > *:not(.visually-hidden:first-child)
-  + *:not(.rating):not(.card__information-volume-pricing-note) {
-  margin-top: 0.7rem;
-}
-
-.card-information .caption {
-  letter-spacing: 0.07rem;
-}
-
-.card-article-info {
-  margin-top: 1rem;
 }
 
 /* Card Shapes */
