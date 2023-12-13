@@ -23,7 +23,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Follow",
-            "menu": "footer"
+            "menu": "social"
           }
         }
       },
