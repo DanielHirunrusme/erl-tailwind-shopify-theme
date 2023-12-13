@@ -38,6 +38,10 @@
   word-break: break-word;
 }
 
+.accordion__title:hover {
+  opacity: 1;
+}
+
 .accordion .icon-accordion {
   align-self: center;
   fill: rgb(var(--color-foreground));
