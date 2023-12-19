@@ -521,16 +521,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.twcss-mt-24 {
-  margin-top: 6rem;
+.twcss-top-1\/2 {
+  top: 50%;
 }
 
-.twcss-mt-32 {
-  margin-top: 8rem;
-}
-
-.twcss-mt-40 {
-  margin-top: 10rem;
+.twcss-z-10 {
+  z-index: 10;
 }
 
 .twcss-mt-48 {
@@ -553,6 +549,54 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
+.twcss-max-w-lg {
+  max-width: 32rem;
+}
+
+.twcss-max-w-xl {
+  max-width: 36rem;
+}
+
+.twcss-max-w-4xl {
+  max-width: 56rem;
+}
+
+.twcss-max-w-3xl {
+  max-width: 48rem;
+}
+
+.twcss-max-w-5xl {
+  max-width: 64rem;
+}
+
+.twcss-max-w-2xl {
+  max-width: 42rem;
+}
+
+.-twcss-translate-y-1\/2 {
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-translate-y-1\/2 {
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-grid-flow-row {
+  grid-auto-flow: row;
+}
+
 .twcss-grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -565,40 +609,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
-.twcss-gap-4 {
-  gap: 1rem;
+.twcss-gap-8 {
+  gap: 2rem;
 }
 
-.twcss-p-4 {
-  padding: 1rem;
+.twcss-gap-4 {
+  gap: 1rem;
 }
 
 .twcss-p-8 {
   padding: 2rem;
 }
 
-.twcss-text-right {
-  text-align: right;
-}
-
-.twcss-text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.twcss-text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.twcss-text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.twcss-p-4 {
+  padding: 1rem;
 }
 
 .twcss-text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.twcss-text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .twcss-font-bold {
@@ -617,37 +651,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.5;
 }
 
-.twcss-opacity-30 {
-  opacity: 0.3;
-}
-
 @media (min-width: 750px) {
-  .md\:twcss-text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:twcss-absolute {
+    position: absolute;
   }
 
-  .md\:twcss-text-5xl {
-    font-size: 3rem;
-    line-height: 1;
+  .md\:twcss-p-4 {
+    padding: 1rem;
   }
 
-  .md\:twcss-text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:twcss-text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:twcss-text-\[4vw\] {
+    font-size: 4vw;
   }
 
   .md\:twcss-text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-
-  .md\:twcss-text-\[4vw\] {
-    font-size: 4vw;
   }
 }

@@ -1,6 +1,6 @@
 <section
   id='MainProduct-{{ section.id }}'
-  class='page-width section-{{ section.id }}-padding'
+  class=' section-{{ section.id }}-padding'
   data-section='{{ section.id }}'
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
@@ -63,7 +63,7 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <div class='product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}'>
+  <div class='product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col'>
     <div class='grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}'>
       {% render 'product-media-gallery', variant_images: variant_images %}
     </div>
@@ -97,7 +97,7 @@
                 </a>
               </div>
             {%- when 'price' -%}
-              <div class='no-js-hidden' id='price-{{ section.id }}' role='status' {{ block.shopify_attributes }}>
+              <div class='no-js-hidden h3' id='price-{{ section.id }}' role='status' {{ block.shopify_attributes }}>
                 {%- render 'price',
                   product: product,
                   use_variant: true,
@@ -127,7 +127,7 @@
               </div>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
-                <div class='product__description rte quick-add-hidden' {{ block.shopify_attributes }}>
+                <div class='product__description rte quick-add-hidden twcss-max-w-2xl' {{ block.shopify_attributes }}>
                   {{ product.description }}
                 </div>
               {%- endif -%}
@@ -648,12 +648,12 @@
       {% comment %} Back to shop {% endcomment %}
       <a
         href='/collections/all'
-        class='twcss-absolute twcss-bottom-0 twcss-right-0 twcss-p-4 h4 twcss-flex twcss-items-center twcss-gap-2'
+        class='md:twcss-absolute twcss-p-8 twcss-bottom-0 twcss-right-0 md:twcss-p-4 h2 twcss-flex twcss-items-center twcss-gap-2'
       >
         Back to shop
         <span>
-          <svg width='25' height='16' viewBox='0 0 25 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.3431 0.928942L24.7071 7.2929C25.0976 7.68343 25.0976 8.31659 24.7071 8.70712L18.3431 15.0711C17.9526 15.4616 17.3195 15.4616 16.9289 15.0711C16.5384 14.6806 16.5384 14.0474 16.9289 13.6569L21.5858 9.00001L-7.31201e-07 9.00001L-5.56355e-07 7.00001L21.5858 7.00001L16.9289 2.34316C16.5384 1.95263 16.5384 1.31947 16.9289 0.928942C17.3195 0.538418 17.9526 0.538418 18.3431 0.928942Z" fill="#F4F4F4" fill-opacity="0.6"/>
+          <svg width='25' viewBox='0 0 800 524' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d="M538.398 0.390869L517.607 21.168L743.696 247.293H0V276.708H743.735L517.607 502.793L538.398 523.609L800 262.007L538.398 0.390869Z" fill="white"/>
           </svg>
         </span>
       </a>

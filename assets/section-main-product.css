@@ -10,6 +10,7 @@
 .product__media-wrapper {
   padding-left: 0;
   position: relative;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 750px) {
@@ -57,8 +58,11 @@
     display: flex;
     flex: 1;
     align-items: center;
-    position: relative;
+    position: sticky;
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
+    min-height: 100dvh;
+    align-self: flex-start;
+    top: 0;
   }
 
   .product--large:not(.product--no-media).product--right
@@ -144,7 +148,7 @@
 .product-form__input {
   flex: 0 0 100%;
   padding: 0;
-  margin: 0 0 1.2rem 0;
+  /* margin: 0 0 1.2rem 0; */
   max-width: 44rem;
   min-width: fit-content;
   border: none;
@@ -274,10 +278,6 @@ fieldset.product-form__input .form__label {
   max-width: 25rem;
 }
 
-.product-form__submit {
-  margin-bottom: 2rem;
-}
-
 .no-js .product-form__submit.button--secondary {
   --color-button: inherit;
   --color-button-text: inherit;
@@ -356,6 +356,7 @@ a.product__text {
   text-transform: uppercase;
   font-weight: bolder;
   margin-bottom: 0.2em;
+  line-height: 1.1;
 }
 
 .product__title > * {
@@ -377,10 +378,6 @@ a.product__text {
 .product__accordion .accordion__content {
   padding: 1rem 0 2rem 0;
   text-align: justify;
-}
-
-.product .price__container {
-  margin-bottom: 0.5rem;
 }
 
 .product .price dl {
@@ -551,7 +548,7 @@ a.product__text {
 
   .product--thumbnail .product__media-item:not(.is-active),
   .product--thumbnail_slider .product__media-item:not(.is-active) {
-    display: none;
+    /* display: none; */
   }
 
   .product-media-modal__content
