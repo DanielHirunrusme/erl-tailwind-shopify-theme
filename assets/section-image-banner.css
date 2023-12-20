@@ -484,3 +484,22 @@
     color: currentColor;
   }
 }
+
+.banner__arrow {
+  position: relative;
+  top: -0.2em;
+}
+
+.banner__arrow svg {
+  width: 0.5em;
+}
+
+@media screen and (min-width: 750px) {
+  .banner__arrow {
+    position: relative;
+    top: -0.1em;
+  }
+  .banner__arrow svg {
+    width: 0.75em;
+  }
+}

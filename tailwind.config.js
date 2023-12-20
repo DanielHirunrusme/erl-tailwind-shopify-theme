@@ -20,6 +20,15 @@ module.exports = {
       fontFamily: {
         heading: 'var(--font-heading-family)',
       },
+      fontSize: {
+        '7xl': [
+          '4vw',
+          {
+            lineHeight: 1,
+            letterSpacing: '-0.025em',
+          },
+        ],
+      },
     },
     color: {
       black: '#000000',

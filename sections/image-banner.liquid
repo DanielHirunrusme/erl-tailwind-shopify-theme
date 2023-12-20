@@ -124,12 +124,15 @@
                 {{ block.settings.heading }}
               </h2>
             {% endcomment %}
-            <h2
-              class=' twcss-text-4xl twcss-leading-[1.2] md:twcss-text-[4vw]'
-              {{ block.shopify_attributes }}
-            >
-              {{ block.settings.heading }}
-            </h2>
+            <a href='/collections/all' title='Shop'>
+              <h2
+                class=' twcss-text-5xl twcss-leading-[1.2] md:twcss-text-7xl'
+                {{ block.shopify_attributes }}
+              >
+                {{ block.settings.heading }}
+                <span class='twcss-inline-block banner__arrow'>{% render 'icon-arrow' %}</span>
+              </h2>
+            </a>
           {%- when 'text' -%}
             <div class='banner__text rte {{ block.settings.text_style }}' {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>

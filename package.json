@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "dev": "shopify theme dev --store=eli-russell-linnetz.myshopify.com",
-    "pull": "shopify theme pull -t \"163597254975\" --only \"config/*,locales/*\""
+    "pull": "shopify theme pull -t \"163597254975\" --only \"config/*,locales/*\"",
+    "watch": "npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch"
   },
   "repository": {
     "type": "git",
