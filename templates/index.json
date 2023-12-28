@@ -6,13 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "MADE IN CALIFORNIA  COLLECTION",
+            "heading": "MADE IN CALIFORNIA",
             "heading_size": "h0"
+          }
+        },
+        "8ced79c8-2d67-486a-a291-eb6a2cf8ec05": {
+          "type": "text",
+          "settings": {
+            "text": "Collection",
+            "text_style": "subtitle"
           }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "8ced79c8-2d67-486a-a291-eb6a2cf8ec05"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/table.jpg",
