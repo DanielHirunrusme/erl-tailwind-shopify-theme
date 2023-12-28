@@ -351,7 +351,7 @@ h5,
 .h5 {
   font-family: 'UB', var(--font-heading-family);
   font-style: var(--font-heading-style);
-  font-weight: var(--font-heading-weight);
+  font-weight: 900;
   text-transform: uppercase;
   letter-spacing: calc(var(--font-heading-scale) * 0.05rem);
   color: rgb(var(--color-foreground));
@@ -388,19 +388,24 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 3rem);
+    font-size: calc(var(--font-heading-scale) * 2.5vw);
+    line-height: 0.95;
   }
 }
 
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-scale) * 1rem);
+  font-size: 2.25rem;
+  font-weight: 900;
+  line-height: 1;
 }
 
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: calc(var(--font-heading-scale) * 1rem);
+    font-size: 6vw;
+    line-height: 0.9;
+    letter-spacing: -0.035em;
   }
 }
 

@@ -356,7 +356,6 @@ a.product__text {
   text-transform: uppercase;
   font-weight: bolder;
   margin-bottom: 0.2em;
-  line-height: 1.1;
 }
 
 .product__title > * {

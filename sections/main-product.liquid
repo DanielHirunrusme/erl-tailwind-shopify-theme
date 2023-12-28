@@ -206,9 +206,9 @@
                   <summary>
                     <div class='summary__title'>
                       {% render 'icon-accordion', icon: block.settings.icon %}
-                      <h2 class='h4 accordion__title inline-richtext'>
+                      <div class='accordion__title'>
                         {{ block.settings.heading | default: block.settings.page.title }}
-                      </h2>
+                      </div>
                     </div>
                     {% comment %} {% render 'icon-caret' %} {% endcomment %}
                   </summary>
@@ -522,9 +522,9 @@
                       <div class='summary__title'>
                         {%- if block.settings.make_collapsible_row -%}
                           {% render 'icon-accordion', icon: block.settings.icon %}
-                          <h2 class='h4 accordion__title'>{{ block.settings.block_heading }}</h2>
+                          <div class='accordion__title'>{{ block.settings.block_heading }}</div>
                         {%- else -%}
-                          <h2 class='h3 accordion__title'>{{ block.settings.block_heading }}</h2>
+                          <div class='accordion__title'>{{ block.settings.block_heading }}</div>
                         {%- endif -%}
                       </div>
                       {%- if block.settings.make_collapsible_row -%}
@@ -648,7 +648,7 @@
       {% comment %} Back to shop {% endcomment %}
       <a
         href='/collections/all'
-        class='md:twcss-absolute twcss-p-8 twcss-bottom-0 twcss-right-0 md:twcss-p-4 h2 twcss-flex twcss-items-center twcss-gap-2'
+        class='md:twcss-absolute twcss-p-8 twcss-bottom-0 twcss-right-0 md:twcss-p-4 h3 twcss-flex twcss-items-center twcss-gap-2'
       >
         Back to shop
         <span>

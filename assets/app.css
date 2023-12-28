@@ -521,16 +521,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 12rem;
 }
 
+.twcss-ml-\[\.4em\] {
+  margin-left: 0.4em;
+}
+
+.twcss-ml-\[\.2em\] {
+  margin-left: 0.2em;
+}
+
 .twcss-block {
   display: block;
 }
 
 .twcss-inline-block {
   display: inline-block;
-}
-
-.twcss-inline {
-  display: inline;
 }
 
 .twcss-flex {
@@ -543,6 +547,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-min-h-screen {
   min-height: 100vh;
+}
+
+.twcss-w-\[4vw\] {
+  width: 4vw;
+}
+
+.twcss-w-\[10vw\] {
+  width: 10vw;
+}
+
+.twcss-w-\[12vw\] {
+  width: 12vw;
+}
+
+.twcss-w-\[16vw\] {
+  width: 16vw;
+}
+
+.twcss-w-\[14vw\] {
+  width: 14vw;
+}
+
+.twcss-w-\[20vw\] {
+  width: 20vw;
+}
+
+.twcss-w-\[40vw\] {
+  width: 40vw;
+}
+
+.twcss-w-\[35vw\] {
+  width: 35vw;
 }
 
 .twcss-max-w-2xl {
@@ -577,9 +613,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
-.twcss-text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.twcss-text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .twcss-text-lg {
@@ -587,9 +623,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.twcss-text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.twcss-font-black {
+  font-weight: 900;
 }
 
 .twcss-font-bold {
@@ -615,6 +650,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 750px) {
   .md\:twcss-absolute {
     position: absolute;
+  }
+
+  .md\:twcss-w-\[12vw\] {
+    width: 12vw;
   }
 
   .md\:twcss-grid-cols-2 {
