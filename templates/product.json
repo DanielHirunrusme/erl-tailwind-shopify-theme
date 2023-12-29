@@ -8,11 +8,6 @@
           "settings": {
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "caption": {
           "type": "text",
           "settings": {
@@ -22,6 +17,11 @@
         },
         "price": {
           "type": "price",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
           "settings": {
           }
         },
@@ -90,9 +90,9 @@
       },
       "block_order": [
         "title",
-        "description",
         "caption",
         "price",
+        "description",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
