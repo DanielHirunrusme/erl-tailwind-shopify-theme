@@ -49,7 +49,7 @@
           "settings": {
             "heading": "Shipping & Returns",
             "icon": "none",
-            "content": "",
+            "content": "<p>This is information about shipping and returns<\/p>",
             "page": ""
           }
         },
@@ -58,8 +58,8 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "none",
-            "content": "",
-            "page": "care-instructions"
+            "content": "<p>How to take care of the garment<\/p>",
+            "page": ""
           }
         },
         "collapsible-row-0": {
@@ -76,8 +76,8 @@
           "settings": {
             "heading": "Sizing",
             "icon": "none",
-            "content": "",
-            "page": "size-guide"
+            "content": "<p>This is information about sizing<\/p>",
+            "page": ""
           }
         },
         "share": {
