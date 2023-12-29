@@ -65,7 +65,7 @@ a.pagination__item:hover::after {
 }
 
 .pagination__item--next:hover .icon {
-  transform: rotate(90deg) scale(1.07);
+  transform: rotate(90deg);
 }
 
 .pagination__item--prev .icon {
@@ -74,7 +74,7 @@ a.pagination__item:hover::after {
 }
 
 .pagination__item--prev:hover .icon {
-  transform: rotate(-90deg) scale(1.07);
+  transform: rotate(-90deg);
 }
 
 .pagination__item-arrow:hover::after {

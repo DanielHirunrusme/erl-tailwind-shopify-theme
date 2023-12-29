@@ -300,6 +300,9 @@ variant-selects {
 
 .product__info-container {
   padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .product__info-container iframe {
@@ -337,7 +340,7 @@ a.product__text {
 }
 
 .product__accordion .accordion__content {
-  padding: 1rem 0 2rem 0;
+  padding: 0 0 0em 0;
   text-align: justify;
 }
 

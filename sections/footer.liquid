@@ -74,7 +74,7 @@
           >
             {%- for block in section.blocks -%}
               <div
-                class='footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+                class='h4 footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
                 {{ block.shopify_attributes }}
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
@@ -82,7 +82,9 @@
                 {% endif %}
               >
                 {%- if block.settings.heading != blank -%}
-                  <b class='footer-block__heading inline-richtext twcss-opacity-50'>{{- block.settings.heading -}}</b>
+                  <span class='footer-block__heading inline-richtext twcss-opacity-50'>
+                    {{- block.settings.heading -}}
+                  </span>
                 {%- endif -%}
 
                 {%- case block.type -%}

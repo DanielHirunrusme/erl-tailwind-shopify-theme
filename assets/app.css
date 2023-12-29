@@ -525,12 +525,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 12rem;
 }
 
-.twcss-mt-\[1em\] {
-  margin-top: 1em;
-}
-
 .twcss-mt-\[\.75em\] {
   margin-top: 0.75em;
+}
+
+.twcss-ml-\[2em\] {
+  margin-left: 2em;
+}
+
+.twcss-ml-\[1em\] {
+  margin-left: 1em;
 }
 
 .twcss-block {
@@ -573,6 +577,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.twcss-gap-4 {
+  gap: 1rem;
+}
+
 .twcss-gap-8 {
   gap: 2rem;
 }
@@ -581,8 +589,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
-.twcss-gap-4 {
-  gap: 1rem;
+.twcss-gap-1 {
+  gap: 0.25rem;
+}
+
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
+.twcss-gap-\[\.25em\] {
+  gap: 0.25em;
+}
+
+.twcss-gap-\[\.375em\] {
+  gap: 0.375em;
 }
 
 .twcss-p-8 {

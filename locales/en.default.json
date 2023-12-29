@@ -276,8 +276,8 @@
       }
     },
     "cart": {
-      "title": "Cart",
-      "caption": "Cart items",
+      "title": "Bag",
+      "caption": "Bag items",
       "remove_title": "Remove {{ title }}",
       "estimated_total": "Subtotal",
       "new_estimated_total": "New subtotal",

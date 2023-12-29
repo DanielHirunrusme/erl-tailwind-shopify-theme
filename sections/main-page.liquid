@@ -17,10 +17,10 @@
 <div class='twcss-p-8 twcss-mt-48 twcss-grid twcss-grid-flow-row md:twcss-grid-cols-2 twcss-gap-8'>
   {% comment %} Content {% endcomment %}
   <div>
-    <h1 class='main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}'>
+    <h1 class='main-page-title page-title h1{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}'>
       {{ page.title | escape }}
     </h1>
-    <div class='twcss-text-lg md:twcss-text-2xl twcss-max-w-2xl'>
+    <div class='twcss-max-w-2xl'>
       {{ page.content }}
     </div>
   </div>

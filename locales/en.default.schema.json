@@ -310,17 +310,17 @@
       "name": "Currency format",
       "settings": {
         "content": "Currency codes",
-        "paragraph": "Cart and checkout prices always show currency codes. Example: $1.00 USD.",
+        "paragraph": "Bag and checkout prices always show currency codes. Example: $1.00 USD.",
         "currency_code_enabled": {
           "label": "Show currency codes"
         }
       }
     },
     "cart": {
-      "name": "Cart",
+      "name": "Bag",
       "settings": {
         "cart_type": {
-          "label": "Cart type",
+          "label": "Bag type",
           "drawer": {
             "label": "Drawer"
           },
@@ -338,7 +338,7 @@
           "label": "Enable cart note"
         },
         "cart_drawer": {
-          "header": "Cart drawer",
+          "header": "Bag drawer",
           "collection": {
             "label": "Collection",
             "info": "Visible when cart drawer is empty."
