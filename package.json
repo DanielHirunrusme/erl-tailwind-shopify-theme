@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
-    "dev": "shopify theme dev --store=eli-russell-linnetz.myshopify.com",
+    "dev": "concurrently \"npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch\" \"shopify theme dev --store=eli-russell-linnetz.myshopify.com\"",
     "pull": "shopify theme pull -t \"163597254975\" --only \"config/*,locales/*\"",
     "watch": "npx tailwindcss -i ./assets/app-tailwind.css -o ./assets/app.css --watch"
   },
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/TrellisCommerce/shopify-dawn-tailwind-starter-base#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.4",
+    "concurrently": "^8.2.2",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.3",
     "postcss": "^8.4.12",

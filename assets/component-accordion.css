@@ -33,13 +33,13 @@
 .accordion__title {
   display: inline-block;
   max-width: calc(100% - 6rem);
-  min-height: 1.6rem;
+
   margin: 0;
   word-break: break-word;
-  font-size: 1rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
+
+  line-height: 1;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .accordion__title:hover {

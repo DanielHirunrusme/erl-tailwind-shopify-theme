@@ -77,14 +77,14 @@
       {% endfor %}
 
       {{ scheme_classes | prepend: 'body' }} {
-        color: rgba(var(--color-foreground), 0.75);
+        color: rgba(var(--color-foreground), 0.8);
         background-color: rgb(var(--color-background));
       }
 
       :root {
         --font-body-family: "UB", {{ settings.type_body_font.fallback_families }};
         --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: 900;
+        --font-body-weight: 400;
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
         --font-heading-family: "UB", {{ settings.type_header_font.fallback_families }};
@@ -224,10 +224,9 @@
         margin: 0;
         font-size: 1rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
-        font-family: "Bureau Grot Wide", var(--font-body-family);
+        font-family: "UB", var(--font-body-family);
         font-style: var(--font-body-style);
-        font-weight: 900;
-        /* font-weight: var(--font-body-weight); */
+        font-weight: var(--font-body-weight);
       }
 
       @media screen and (min-width: 750px) {

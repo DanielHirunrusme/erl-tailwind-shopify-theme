@@ -156,7 +156,8 @@
 
 variant-radios,
 variant-selects {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 2rem 0;
 }
 
@@ -166,10 +167,7 @@ variant-selects {
 
 .product-form__input .form__label {
   padding-left: 0;
-}
-
-fieldset.product-form__input .form__label {
-  margin-bottom: 0.2rem;
+  float: left;
 }
 
 .product-form__input input[type='radio'] {
@@ -181,22 +179,13 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio'] + label {
-  /* border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity)); */
-  /* background-color: rgb(var(--color-background)); */
   color: rgba(var(--color-foreground));
-  /* border-radius: var(--variant-pills-radius); */
-  /* color: rgb(var(--color-foreground)); */
   display: inline-block;
-  /* margin: 0.7rem 0.5rem 0.2rem 0; */
   padding: 0rem 0rem;
-  font-size: 1.4rem;
-  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
   line-height: 1;
   font-family: 'UB';
   text-align: center;
-  /* transition: border var(--duration-short) ease; */
   cursor: pointer;
   position: relative;
 }
@@ -324,18 +313,6 @@ fieldset.product-form__input .form__label {
   max-width: 100%;
 }
 
-.product__info-container .product-form,
-.product__info-container .product__description,
-.product__info-container .icon-with-text {
-  margin: 2rem 0;
-}
-
-.product__description {
-  font-size: 1.4rem;
-  line-height: 1.2;
-  font-weight: bold;
-}
-
 .product__text {
   margin-bottom: 0;
 }
@@ -343,19 +320,11 @@ fieldset.product-form__input .form__label {
 a.product__text {
   display: block;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .product__text.caption-with-letter-spacing {
   text-transform: uppercase;
-}
-
-.product__title h1 {
-  font-family: 'UB';
-  word-break: break-word;
-  text-transform: uppercase;
-  font-weight: bolder;
-  margin-bottom: 0.2em;
 }
 
 .product__title > * {
@@ -858,7 +827,7 @@ a.product__text {
 }
 
 .product-media-modal__toggle:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .product-media-modal__toggle .icon {
@@ -1016,7 +985,7 @@ a.product__text {
 }
 
 .product-popup-modal__toggle:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .product-popup-modal__toggle .icon {

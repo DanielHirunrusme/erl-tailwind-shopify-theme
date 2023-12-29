@@ -150,7 +150,7 @@
 .card-information .card__information-volume-pricing-note {
   margin-top: 0.6rem;
   line-height: calc(0.5 + 0.4 / var(--font-body-scale));
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .card__badge {
@@ -332,7 +332,6 @@
 
 .card-information {
   width: 100%;
-  font-weight: bold;
 }
 
 .card-information > * {
@@ -346,7 +345,7 @@
 }
 
 .card--horizontal .card-information > .price {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 /* Card Shapes */

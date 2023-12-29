@@ -118,6 +118,17 @@
 
 @font-face {
   font-family: 'UB';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/black.woff2?v=1703867792')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/black.woff?v=1703867792')
+      format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UB';
   src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/font.woff2?v=1703791997')
       format('woff2'),
     url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/font.woff?v=1703791997')
@@ -353,7 +364,7 @@ h5,
   font-style: var(--font-heading-style);
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: calc(var(--font-heading-scale) * 0.05rem);
+  /* letter-spacing: calc(var(--font-heading-scale) * 0.05rem); */
   color: rgb(var(--color-foreground));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   word-break: break-word;
@@ -417,7 +428,7 @@ h3,
 @media only screen and (min-width: 750px) {
   h3,
   .h3 {
-    font-size: calc(var(--font-heading-scale) * 1.4rem);
+    font-size: calc(var(--font-heading-scale) * 1.25vw);
   }
 }
 
@@ -426,6 +437,7 @@ h4,
   font-style: var(--font-heading-style);
   font-size: calc(var(--font-heading-scale) * 1rem);
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 h5,
@@ -443,14 +455,14 @@ h5,
 
 h6,
 .h6 {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
 }
 
 blockquote {
   font-style: italic;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
   border-left: 0.2rem solid rgba(var(--color-foreground), 0.2);
   padding-left: 1rem;
 }
@@ -496,10 +508,10 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-size: 1rem;
-  line-height: calc(1 + 0.5 / var(--font-body-scale));
+  font-family: 'UB';
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: normal;
+  line-height: 1;
 }
 
 .color-foreground {
@@ -589,7 +601,7 @@ h6:empty {
 }
 
 .link--text:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .link-with-icon {
@@ -1547,7 +1559,7 @@ details[open] > .share-button__fallback {
 }
 
 .share-button__fallback button:hover {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .share-button__fallback button:hover svg {
@@ -1701,7 +1713,7 @@ details[open] > .share-button__fallback {
   font-style: var(--font-body-style);
   font-weight: var(--font-body-weight);
   font-size: 1.2rem;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .field:hover.field:after,
@@ -1806,7 +1818,7 @@ details[open] > .share-button__fallback {
   position: absolute;
   transition: top var(--duration-short) ease,
     font-size var(--duration-short) ease;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
   letter-spacing: 0.1rem;
   line-height: 1.5;
 }
@@ -1891,7 +1903,7 @@ input[type='checkbox'] {
 
 .form__label {
   display: block;
-  margin-bottom: 0.6rem;
+  /* margin-bottom: 0.6rem; */
 }
 
 .form__message {
@@ -2548,7 +2560,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
 .header__heading-link .h2 {
   line-height: 1;
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .header__heading-logo {
@@ -2888,8 +2900,9 @@ details[open] > .header__submenu {
   font-family: 'UB';
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
-  color: rgba(var(--color-foreground), 0.75);
+  display: block;
+  line-height: 1.2;
+  color: rgba(var(--color-foreground), 0.8);
 }
 
 .header__menu-item:hover {
@@ -3209,6 +3222,11 @@ details-disclosure > details {
   .localization-form__select:focus {
     outline: transparent solid 1px;
   }
+}
+
+.rte {
+  font-family: 'UB';
+  font-weight: normal;
 }
 
 .rte:after {

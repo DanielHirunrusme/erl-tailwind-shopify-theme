@@ -97,13 +97,8 @@
                 </a>
               </div>
             {%- when 'price' -%}
-              <div class='no-js-hidden h3' id='price-{{ section.id }}' role='status' {{ block.shopify_attributes }}>
-                {%- render 'price',
-                  product: product,
-                  use_variant: true,
-                  show_badges: true,
-                  price_class: 'price--large'
-                -%}
+              <div class='no-js-hidden' id='price-{{ section.id }}' role='status' {{ block.shopify_attributes }}>
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'h3' -%}
               </div>
               {%- if product.quantity_price_breaks_configured? -%}
                 <div class='volume-pricing-note' id='Volume-Note-{{ section.id }}'>
@@ -127,7 +122,10 @@
               </div>
             {%- when 'description' -%}
               {%- if product.description != blank -%}
-                <div class='product__description rte quick-add-hidden twcss-max-w-2xl' {{ block.shopify_attributes }}>
+                <div
+                  class='product__description rte quick-add-hidden twcss-max-w-2xl h4'
+                  {{ block.shopify_attributes }}
+                >
                   {{ product.description }}
                 </div>
               {%- endif -%}
