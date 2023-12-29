@@ -2,9 +2,8 @@
 .cart-items th {
   padding: 0;
   border: none;
-  font-size: 1rem;
+
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .cart-items th {
@@ -47,8 +46,6 @@
 }
 
 .cart-item__details {
-  font-size: 1.6rem;
-  line-height: calc(1 + 0.4 / var(--font-body-scale));
 }
 
 .cart-item__details > * {
@@ -105,7 +102,6 @@
 }
 
 .product-option {
-  font-size: 1rem;
   word-break: break-word;
   text-transform: uppercase;
 }

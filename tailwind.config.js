@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         heading: 'var(--font-heading-family)',
       },
+      maxWidth: {
+        '2xl': '36em',
+      },
       fontSize: {
         '7xl': [
           '4vw',
