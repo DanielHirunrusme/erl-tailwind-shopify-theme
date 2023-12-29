@@ -23,7 +23,7 @@
     >
       {%- for option in product.options_with_values -%}
         <fieldset class='js product-form__input twcss-flex twcss-gap-4'>
-          <legend class='form__label'>{{ option.name }}</legend>
+          <legend class='form__label h3'>{{ option.name }}</legend>
 
           {% render 'product-variant-options', product: product, option: option, block: block %}
         </fieldset>
