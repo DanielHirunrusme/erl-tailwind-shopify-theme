@@ -233,13 +233,8 @@ variant-selects {
 .product-form__input input[type='radio']:disabled + label,
 .product-form__input input[type='radio'].disabled + label {
   border-color: rgba(var(--color-foreground), 0.1);
-  color: rgba(var(--color-foreground), 0.6);
+  color: rgba(var(--color-foreground), 0.4);
   text-decoration: line-through;
-}
-
-.product-form__input input[type='radio'].disabled:checked + label,
-.product-form__input input[type='radio']:disabled:checked + label {
-  /* color: rgba(var(--color-background), 0.6); */
 }
 
 .product-form__input input[type='radio']:focus-visible + label {
@@ -1222,7 +1217,7 @@ a.product__text {
 }
 
 .thumbnail__badge {
-  color: rgb(var(--color-foreground), 0.6);
+  color: rgb(var(--color-foreground), 0.4);
   height: 2rem;
   width: 2rem;
   left: auto;
