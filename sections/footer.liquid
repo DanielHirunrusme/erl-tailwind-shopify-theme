@@ -76,6 +76,11 @@
                   value='newsletter'
                 >
                 <div class='newsletter-form__field-wrapper'>
+                  {% comment %}
+                    <label class='field__label' for='NewsletterForm--{{ section.id }}'>
+                      {{ 'newsletter.label' | t }}
+                    </label>
+                  {% endcomment %}
                   <div class='field'>
                     <input
                       id='NewsletterForm--{{ section.id }}'
@@ -97,9 +102,7 @@
                       placeholder='{{ 'newsletter.label' | t }}'
                       required
                     >
-                    <label class='field__label' for='NewsletterForm--{{ section.id }}'>
-                      {{ 'newsletter.label' | t }}
-                    </label>
+
                     <button
                       type='submit'
                       class='newsletter-form__button field__button'
