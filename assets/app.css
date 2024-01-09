@@ -589,6 +589,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
 .twcss-p-8 {
   padding: 2rem;
 }
