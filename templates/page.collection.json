@@ -175,11 +175,13 @@
         "template--21891412787519__744cdf20-4408-4c4b-b71d-554779f7355b-image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-19.jpg"
           }
         },
         "template--21891412787519__744cdf20-4408-4c4b-b71d-554779f7355b-image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-20.jpg"
           }
         }
       },
