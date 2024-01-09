@@ -29,10 +29,34 @@
       ],
       "settings": {
       }
+    },
+    "a5fb548b-5e0f-441e-b875-a617788cb00a": {
+      "type": "spread",
+      "blocks": {
+        "template--21891412787519__a5fb548b-5e0f-441e-b875-a617788cb00a-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-7.jpg"
+          }
+        },
+        "template--21891412787519__a5fb548b-5e0f-441e-b875-a617788cb00a-image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--21891412787519__a5fb548b-5e0f-441e-b875-a617788cb00a-image-1",
+        "template--21891412787519__a5fb548b-5e0f-441e-b875-a617788cb00a-image-2"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "267bdcb9-b7be-48e3-adf8-4eb74dbf58c8"
+    "267bdcb9-b7be-48e3-adf8-4eb74dbf58c8",
+    "a5fb548b-5e0f-441e-b875-a617788cb00a"
   ]
 }
