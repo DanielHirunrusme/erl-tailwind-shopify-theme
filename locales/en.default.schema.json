@@ -3099,6 +3099,18 @@
         "name": "Slideshow"
       }
     },
+    "spread": {
+      "name": "Spread",
+      "settings": {
+
+      },
+      "blocks": {
+
+      },
+      "presets": {
+        "name": "Spread"
+      }
+    },
     "collapsible_content": {
       "name": "Collapsible content",
       "settings": {
