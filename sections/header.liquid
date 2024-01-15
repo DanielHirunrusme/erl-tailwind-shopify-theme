@@ -141,28 +141,27 @@
       assign localization_forms = true
     endif
   -%}
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} {% if section.settings.menu_type_desktop == 'drawer' %} drawer-menu{% endif %}{% if section.settings.menu != blank %} header--has-menu{% endif %}{% if has_app_block %} header--has-app{% endif %}{% if social_links %} header--has-social{% endif %}{% if shop.customer_accounts_enabled %} header--has-account{% endif %}{% if localization_forms %} header--has-localizations{% endif %}">
+  <header class="twcss-flex  twcss-justify-between twcss-p-4 md:twcss-p-[1vw]">
     {% comment %}Cart Link{% endcomment %}
-    <div class="twcss-flex twcss-gap-[.5em] h4 header__cart-container">
-    <a href="{{ routes.cart_url }}" title="Cart" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-        {%- liquid
-          if cart == empty
-            render 'icon-cart-empty'
-          else
-            render 'icon-cart'
-          endif
-        -%}
-        {% comment %} {%- if cart != empty -%}
-          <div class="cart-count-bubble h4">
-            {%- if cart.item_count < 100 -%}
-              <span aria-hidden="true">{{ cart.item_count }}</span>
-            {%- endif -%}
-            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-          </div>
-        {%- endif -%} {% endcomment %}
+    <a href="{{ routes.cart_url }}" title="Cart" class="link focus-inset" id="cart-icon-bubble">
+      {%- render 'text-bag' -%} 
+     
       </a>
-      <a  title="Cart" href="{{ routes.cart_url }}"><span class="twcss-uppercase" >{{ 'templates.cart.cart' | t }}&nbsp;&nbsp;{{ cart.item_count }}</span></a>
-      </div>
+      <div class="twcss-flex twcss-flex-col twcss-items-end twcss-gap-[.5em]">
+    <a href="/" class="link focus-inset">
+    {%- render 'text-erl' -%}
+    </a>
+
+     
+    <a href="/pages/2024-collection-levis-erl">
+    {%- render 'text-collections' -%}
+    </a>
+    <a href="/collections/all" title="Shop">
+    {%- render 'text-shop' -%}
+    </a>
+    </div>
+ {% comment %} <a  title="Cart" href="{{ routes.cart_url }}"><span class="twcss-uppercase" >{{ 'templates.cart.cart' | t }}&nbsp;&nbsp;{{ cart.item_count }}</span></a> {% endcomment %}
+ 
   
   {% comment %} {%- liquid
       if section.settings.menu != blank
@@ -173,10 +172,7 @@
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%} {% endcomment %}
-
-   
-
-    {%- liquid
+    {% comment %} {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
@@ -184,37 +180,9 @@
           render 'header-mega-menu'
         endif
       endif
-    %}
+    %} {% endcomment %}
 
-    {%- if section.settings.logo_position == 'middle-center' -%}
-      {%- if request.page_type == 'index' -%}
-        <h1 class="header__heading">
-      {%- endif -%}
-          <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-            {%- if settings.logo != blank -%}
-              <div class="header__heading-logo-wrapper">
-                {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-                {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-                {% capture sizes %}(min-width: 750px) {{ settings.logo_width }}px, 50vw{% endcapture %}
-                {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-                {{ settings.logo | image_url: width: 600 | image_tag:
-                  class: 'header__heading-logo',
-                  widths: widths,
-                  height: logo_height,
-                  width: settings.logo_width,
-                  alt: logo_alt,
-                  sizes: sizes,
-                  preload: true
-                }}
-              </div>
-            {%- else -%}
-              <span class="h2">{{ shop.name }}</span>
-            {%- endif -%}
-          </a>
-      {%- if request.page_type == 'index' -%}
-        </h1>
-      {%- endif -%}
-    {%- endif -%}
+    
 
     {% comment %} <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
@@ -307,36 +275,7 @@
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
 {%- endif -%}
 
-
-{%- if section.settings.logo_position != 'middle-center' -%}
-{%- if request.page_type == 'index' -%}
-  <h1 class="header__heading">
-{%- endif -%}
-    <a href="{{ routes.root_url }}" class="header__heading">
-      {%- if settings.logo != blank -%}
-        <div class="header__heading-logo-wrapper">
-          {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-          {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
-          {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
-          {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
-          {{ settings.logo | image_url: width: 600 | image_tag:
-            class: 'header__heading-logo motion-reduce twcss-w-[35vw] md:twcss-w-[12vw]',
-            widths: widths,
-            
-            alt: logo_alt,
-            sizes: sizes,
-            preload: true
-          }}
-        </div>
-      {%- else -%}
-        <span class="h2">{{ shop.name }}</span>
-      {%- endif -%}
-    </a>
-{%- if request.page_type == 'index' -%}
-  </h1>
-{%- endif -%}
-{%- endif -%}
-
+ 
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
