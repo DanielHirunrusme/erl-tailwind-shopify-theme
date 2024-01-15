@@ -112,11 +112,11 @@
     </div>
   {%- endif -%}
   <div class='banner__content banner__content--{{ section.settings.desktop_content_position }} page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
-    <a class='twcss-flex-1' href='/collections/all' title='Shop'>
+    <a class='twcss-flex-1 twcss-mt-auto' href='/collections/all' title='Shop'>
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'html' -%}
-            <div class='svg-text'>
+            <div class='svg-text twcss-px-4 md:twcss-px-[4vw] md:twcss-max-w-[85vw] md:twcss-mb-[8vw]'>
               {{ block.settings.html }}
             </div>
 
