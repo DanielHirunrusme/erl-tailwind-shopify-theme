@@ -636,7 +636,7 @@ h6:empty {
 }
 
 a:not([href]) {
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 }
 
 .circle-divider::after {
@@ -3679,12 +3679,24 @@ body .cc-window {
   width: 100%;
   right: 0;
   left: 50%;
+  display: flex;
+  flex-wrap: wrap;
   transform: translateY(0%) translateX(-50%);
+  flex-direction: column !important;
+  max-width: 100% !important;
+  gap: 1em;
+  padding: 1em !important;
+}
+
+.cc-floating .cc-message {
+  margin-bottom: 0 !important;
 }
 
 @media screen and (min-width: 768px) {
   body .cc-window {
     width: 35vw;
     bottom: 1vw;
+    align-items: center;
+    flex-direction: row !important;
   }
 }
