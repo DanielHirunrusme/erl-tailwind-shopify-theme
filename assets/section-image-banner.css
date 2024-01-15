@@ -500,7 +500,7 @@
   width: 100%;
 }
 
-.svg-text svg path {
+.svg-text svg g {
   opacity: 0;
 }
 
