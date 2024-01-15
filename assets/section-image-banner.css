@@ -485,7 +485,25 @@
     position: relative;
     top: -0.1em;
   }
+
   .banner__arrow svg {
     width: 0.75em;
   }
+}
+
+/* SVG Text */
+.svg-text {
+  width: 100%;
+}
+
+.svg-text svg {
+  width: 100%;
+}
+
+.svg-text svg path {
+  opacity: 0;
+}
+
+.svg-text svg path:nth-child(1) {
+  animation: appear 0.5s forwards;
 }

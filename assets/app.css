@@ -561,6 +561,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 36em;
 }
 
+.twcss-flex-1 {
+  flex: 1 1 0%;
+}
+
 .twcss-grid-flow-row {
   grid-auto-flow: row;
 }

@@ -3386,6 +3386,16 @@ details-disclosure > details {
     }
   }
 
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
   .scroll-trigger.animate--fade-in,
   .scroll-trigger.animate--slide-in {
     opacity: 0.01;
