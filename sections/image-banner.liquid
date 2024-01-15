@@ -116,6 +116,11 @@
       <a href='/collections/all' title='Shop'>
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+            {%- when 'html' -%}
+              <div>
+                {{ block.settings.html }}
+              </div>
+
             {%- when 'heading' -%}
               {% comment %}
                 <h2
@@ -444,7 +449,7 @@
       "settings": [
         {
           "type": "html",
-          "id": "text",
+          "id": "html",
           "label": "SVG Html"
         }
       ]
