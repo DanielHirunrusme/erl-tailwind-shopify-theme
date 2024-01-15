@@ -509,7 +509,7 @@
   animation-delay: 0.5s;
 }
 
-.svg-text:hover svg g:nth-child(5) {
+.svg-text:hover svg g:nth-child(6) {
   transform: translateX(1%);
 }
 
