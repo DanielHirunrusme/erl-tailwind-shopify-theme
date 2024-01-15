@@ -689,6 +689,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2rem;
 }
 
+.twcss-pb-20 {
+  padding-bottom: 5rem;
+}
+
+.twcss-pb-24 {
+  padding-bottom: 6rem;
+}
+
+.twcss-pb-32 {
+  padding-bottom: 8rem;
+}
+
+.twcss-pb-\[20vw\] {
+  padding-bottom: 20vw;
+}
+
 .twcss-font-bold {
   font-weight: 700;
 }
@@ -832,11 +848,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-right: 1vw;
   }
 
+  .md\:twcss-px-\[3vw\] {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+
   .md\:twcss-pb-\[1vw\] {
     padding-bottom: 1vw;
   }
 
   .md\:twcss-pb-\[2vw\] {
     padding-bottom: 2vw;
+  }
+
+  .md\:twcss-pb-\[4vw\] {
+    padding-bottom: 4vw;
+  }
+
+  .md\:twcss-pb-\[5vw\] {
+    padding-bottom: 5vw;
   }
 }

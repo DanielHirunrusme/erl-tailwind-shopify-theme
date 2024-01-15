@@ -363,7 +363,8 @@ h5,
 .h2,
 .h3,
 .h4,
-.h5 {
+.h5,
+body .cc-window.cc-banner {
   font-family: 'UB', var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: 900;
@@ -446,7 +447,8 @@ h3,
 h4,
 .h4,
 .field__label,
-.field__input {
+.field__input,
+body .cc-window.cc-banner {
   font-style: var(--font-heading-style);
   font-size: 1rem;
   text-transform: uppercase;
@@ -457,7 +459,8 @@ h4,
   h4,
   .h4,
   .field__label,
-  .field__input {
+  .field__input,
+  body .cc-window.cc-banner {
     font-style: var(--font-heading-style);
     font-size: 0.6944vw;
     text-transform: uppercase;
@@ -3664,5 +3667,24 @@ details-disclosure > details {
     .button:not([disabled]).button--secondary:hover:after {
     --border-offset: 0px;
     /* Prevent the border from growing on buttons when this effect is on. */
+  }
+}
+
+body .cc-window {
+  transition: opacity 0s linear;
+  /* transition-delay: 2s; */
+}
+
+body .cc-window.cc-banner {
+  width: 100%;
+  right: 0;
+  left: 50%;
+  transform: translateY(0%) translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  body .cc-window.cc-banner {
+    width: 35vw;
+    bottom: 1vw;
   }
 }
