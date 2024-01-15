@@ -3,20 +3,6 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "MADE IN CALIFORNIA",
-            "heading_size": "h0"
-          }
-        },
-        "8ced79c8-2d67-486a-a291-eb6a2cf8ec05": {
-          "type": "text",
-          "settings": {
-            "text": "COLLECTION",
-            "text_style": "subtitle"
-          }
-        },
         "html_VKJLyp": {
           "type": "html",
           "settings": {
@@ -25,8 +11,6 @@
         }
       },
       "block_order": [
-        "heading",
-        "8ced79c8-2d67-486a-a291-eb6a2cf8ec05",
         "html_VKJLyp"
       ],
       "settings": {
