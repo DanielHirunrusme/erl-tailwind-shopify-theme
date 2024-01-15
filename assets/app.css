@@ -573,8 +573,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.twcss-gap-\[\.375em\] {
-  gap: 0.375em;
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
 }
 
 .twcss-gap-8 {
@@ -587,10 +587,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-4 {
   gap: 1rem;
-}
-
-.twcss-gap-\[\.5em\] {
-  gap: 0.5em;
 }
 
 .twcss-p-8 {
