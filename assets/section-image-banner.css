@@ -504,12 +504,32 @@
   opacity: 0;
 }
 
-.svg-text svg path:nth-child(1) {
+.svg-text svg g:nth-child(1) {
   animation: appear 0s forwards;
   animation-delay: 0.5s;
 }
 
-.svg-text svg path:nth-child(2) {
+.svg-text svg g:nth-child(2) {
   animation: appear 0s forwards;
-  animation-delay: 0.5s;
+  animation-delay: 1.5s;
+}
+
+.svg-text svg g:nth-child(3) {
+  animation: appear 0s forwards;
+  animation-delay: 2s;
+}
+
+.svg-text svg g:nth-child(4) {
+  animation: appear 0s forwards;
+  animation-delay: 2.5s;
+}
+
+.svg-text svg g:nth-child(5) {
+  animation: appear 0s forwards;
+  animation-delay: 3s;
+}
+
+.svg-text svg g:nth-child(6) {
+  animation: appear 0s forwards;
+  animation-delay: 3.5s;
 }
