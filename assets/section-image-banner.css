@@ -505,5 +505,11 @@
 }
 
 .svg-text svg path:nth-child(1) {
-  animation: appear 0.5s forwards;
+  animation: appear 0s forwards;
+  animation-delay: 0.5s;
+}
+
+.svg-text svg path:nth-child(2) {
+  animation: appear 0s forwards;
+  animation-delay: 0.5s;
 }
