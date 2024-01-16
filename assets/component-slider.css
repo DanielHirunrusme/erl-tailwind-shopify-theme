@@ -404,8 +404,8 @@ slider-component.slider-component-full-width {
 
 @media screen and (min-width: 768px) {
   .slider-button {
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
   }
 }
 

@@ -658,6 +658,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 20vw;
 }
 
+.twcss-pb-\[4vw\] {
+  padding-bottom: 4vw;
+}
+
 .twcss-font-bold {
   font-weight: 700;
 }
@@ -672,6 +676,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-opacity-80 {
   opacity: 0.8;
+}
+
+.hover\:twcss-rotate-1:hover {
+  --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-twcss-rotate-1:hover {
+  --tw-rotate: -1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:twcss-rotate-\[-1\]:hover {
+  --tw-rotate: -1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:twcss-rotate-2:hover {
+  --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .twcss-group:hover .group-hover\:twcss-block {
@@ -734,5 +766,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-pb-\[5vw\] {
     padding-bottom: 5vw;
+  }
+
+  .md\:twcss-pb-\[2vw\] {
+    padding-bottom: 2vw;
   }
 }
