@@ -573,6 +573,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
+.twcss-w-full {
+  width: 100%;
+}
+
 .twcss-max-w-2xl {
   max-width: 36em;
 }
