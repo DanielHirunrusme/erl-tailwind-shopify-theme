@@ -64,7 +64,10 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
   <div class='product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col'>
-    <div class='grid__item product__media-wrapper{% if section.settings.media_position == 'right' %} medium-hide large-up-hide{% endif %}'>
+    <div class='grid__item md:twcss-hidden'>
+      {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
+    </div>
+    <div class='grid__item product__media-wrapper twcss-hidden md:twcss-block {% if section.settings.media_position == 'right' %} twcss-md:hidden{% endif %}'>
       {% render 'product-media-feature-image', variant_images: variant_images %}
     </div>
     <div class='product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
@@ -660,12 +663,15 @@
       </a>
     </div>
 
-    {%- if section.settings.media_position == 'right' -%}
-      {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
-      <div class='grid__item product__media-wrapper small-hide'>
-        {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
-      </div>
-    {%- endif -%}
+    {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
+    {% comment %}
+      {%- if section.settings.media_position == 'right' -%}
+
+        <div class='grid__item product__media-wrapper small-hide'>
+          {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
+        </div>
+      {%- endif -%}
+    {% endcomment %}
   </div>
 
   {% render 'product-media-grid', variant_images: variant_images %}

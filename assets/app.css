@@ -553,6 +553,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: grid;
 }
 
+.twcss-hidden {
+  display: none;
+}
+
 .twcss-min-h-screen {
   min-height: 100vh;
 }
@@ -661,6 +665,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 750px) {
   .md\:twcss-absolute {
     position: absolute;
+  }
+
+  .md\:twcss-block {
+    display: block;
+  }
+
+  .md\:twcss-hidden {
+    display: none;
   }
 
   .md\:twcss-w-\[3\.5vw\] {
