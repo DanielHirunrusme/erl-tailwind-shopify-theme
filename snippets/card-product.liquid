@@ -46,11 +46,11 @@
         {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
         {% if horizontal_class %} card--horizontal{% endif %}
       '
-      style='--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;'
+      style='aspect-ratio: 4/5'
     >
       <div
-        class='card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}'
-        {% comment %} style='--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;' {% endcomment %}
+        class='card__inner twcss-relative {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}'
+        style='aspect-ratio: 4/5'
       >
         {%- render 'card-product-slideshow', product: card_product, is_duplicate: true -%}
         <div class='card__content'>

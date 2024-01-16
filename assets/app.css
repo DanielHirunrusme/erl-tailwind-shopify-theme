@@ -509,6 +509,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.twcss-relative {
+  position: relative;
+}
+
 .twcss-bottom-0 {
   bottom: 0px;
 }
@@ -555,6 +559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-hidden {
   display: none;
+}
+
+.twcss-h-full {
+  height: 100%;
 }
 
 .twcss-min-h-screen {
@@ -629,6 +637,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.twcss-overflow-hidden {
+  overflow: hidden;
+}
+
 .twcss-p-4 {
   padding: 1rem;
 }
@@ -662,6 +674,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.8;
 }
 
+.twcss-group:hover .group-hover\:twcss-block {
+  display: block;
+}
+
 @media (min-width: 750px) {
   .md\:twcss-absolute {
     position: absolute;
@@ -669,6 +685,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-block {
     display: block;
+  }
+
+  .md\:twcss-grid {
+    display: grid;
   }
 
   .md\:twcss-hidden {

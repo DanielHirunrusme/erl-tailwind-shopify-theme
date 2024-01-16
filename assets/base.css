@@ -3692,6 +3692,10 @@ body .cc-window {
   margin-bottom: 0 !important;
 }
 
+.cc-window.cc-invisible {
+  pointer-events: none !important;
+  display: none !important;
+}
 @media screen and (min-width: 768px) {
   body .cc-window {
     width: 35vw !important;
