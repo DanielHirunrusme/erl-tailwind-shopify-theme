@@ -517,6 +517,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.twcss-mt-auto {
+  margin-top: auto;
+}
+
 .twcss-ml-\[4\.5em\] {
   margin-left: 4.5em;
 }
@@ -531,10 +535,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mt-\[\.75em\] {
   margin-top: 0.75em;
-}
-
-.twcss-mt-auto {
-  margin-top: auto;
 }
 
 .twcss-block {
@@ -557,79 +557,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 100vh;
 }
 
-.twcss-w-\[35vw\] {
-  width: 35vw;
-}
-
-.twcss-w-\[1vw\] {
-  width: 1vw;
-}
-
-.twcss-w-\[2vw\] {
-  width: 2vw;
-}
-
-.twcss-w-\[4vw\] {
-  width: 4vw;
-}
-
-.twcss-w-\[10vw\] {
-  width: 10vw;
-}
-
-.twcss-w-20 {
-  width: 5rem;
-}
-
-.twcss-w-32 {
-  width: 8rem;
-}
-
-.twcss-w-40 {
-  width: 10rem;
-}
-
-.twcss-w-\[40vw\] {
-  width: 40vw;
+.twcss-w-\[8vw\] {
+  width: 8vw;
 }
 
 .twcss-w-\[20vw\] {
   width: 20vw;
 }
 
-.twcss-w-\[8vw\] {
-  width: 8vw;
-}
-
-.twcss-w-\[6vw\] {
-  width: 6vw;
+.twcss-w-\[50vw\] {
+  width: 50vw;
 }
 
 .twcss-w-\[7vw\] {
   width: 7vw;
 }
 
-.twcss-w-\[50vw\] {
-  width: 50vw;
-}
-
 .twcss-max-w-2xl {
   max-width: 36em;
 }
 
-.twcss-max-w-\[75vw\] {
-  max-width: 75vw;
-}
-
 .twcss-flex-1 {
   flex: 1 1 0%;
-}
-
-.twcss-rotate-1 {
-  --tw-rotate: 1deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .twcss-grid-flow-row {
@@ -672,37 +621,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
-.twcss-gap-\[1em\] {
-  gap: 1em;
+.twcss-p-4 {
+  padding: 1rem;
 }
 
 .twcss-p-8 {
   padding: 2rem;
 }
 
-.twcss-p-4 {
-  padding: 1rem;
-}
-
 .twcss-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.twcss-pb-8 {
-  padding-bottom: 2rem;
-}
-
-.twcss-pb-20 {
-  padding-bottom: 5rem;
-}
-
-.twcss-pb-24 {
-  padding-bottom: 6rem;
-}
-
-.twcss-pb-32 {
-  padding-bottom: 8rem;
 }
 
 .twcss-pb-\[20vw\] {
@@ -725,96 +654,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.8;
 }
 
-.hover\:twcss-rotate-1:hover {
-  --tw-rotate: 1deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 @media (min-width: 750px) {
   .md\:twcss-absolute {
     position: absolute;
-  }
-
-  .md\:twcss-mb-\[4vw\] {
-    margin-bottom: 4vw;
-  }
-
-  .md\:twcss-mb-\[8vw\] {
-    margin-bottom: 8vw;
-  }
-
-  .md\:twcss-mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .md\:twcss-mb-\[2vw\] {
-    margin-bottom: 2vw;
-  }
-
-  .md\:twcss-mb-\[3vw\] {
-    margin-bottom: 3vw;
-  }
-
-  .md\:twcss-mb-\[1vw\] {
-    margin-bottom: 1vw;
-  }
-
-  .md\:twcss-mb-\[\.5vw\] {
-    margin-bottom: 0.5vw;
-  }
-
-  .md\:twcss-mb-\[0vw\] {
-    margin-bottom: 0vw;
-  }
-
-  .md\:twcss-w-\[12vw\] {
-    width: 12vw;
-  }
-
-  .md\:twcss-w-\[10vw\] {
-    width: 10vw;
-  }
-
-  .md\:twcss-w-\[40vw\] {
-    width: 40vw;
-  }
-
-  .md\:twcss-w-\[20vw\] {
-    width: 20vw;
-  }
-
-  .md\:twcss-w-\[6vw\] {
-    width: 6vw;
-  }
-
-  .md\:twcss-w-\[7vw\] {
-    width: 7vw;
-  }
-
-  .md\:twcss-w-\[2vw\] {
-    width: 2vw;
-  }
-
-  .md\:twcss-w-\[3vw\] {
-    width: 3vw;
   }
 
   .md\:twcss-w-\[3\.5vw\] {
     width: 3.5vw;
   }
 
-  .md\:twcss-w-\[4vw\] {
-    width: 4vw;
+  .md\:twcss-w-\[7vw\] {
+    width: 7vw;
   }
 
-  .md\:twcss-max-w-\[75vw\] {
-    max-width: 75vw;
+  .md\:twcss-w-\[20vw\] {
+    width: 20vw;
   }
 
-  .md\:twcss-max-w-\[80vw\] {
-    max-width: 80vw;
+  .md\:twcss-w-\[3vw\] {
+    width: 3vw;
   }
 
   .md\:twcss-max-w-\[85vw\] {
@@ -825,48 +683,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:twcss-p-4 {
-    padding: 1rem;
-  }
-
-  .md\:twcss-p-\[2vw\] {
-    padding: 2vw;
-  }
-
   .md\:twcss-p-\[1vw\] {
     padding: 1vw;
+  }
+
+  .md\:twcss-p-4 {
+    padding: 1rem;
   }
 
   .md\:twcss-px-\[4vw\] {
     padding-left: 4vw;
     padding-right: 4vw;
-  }
-
-  .md\:twcss-px-\[2vw\] {
-    padding-left: 2vw;
-    padding-right: 2vw;
-  }
-
-  .md\:twcss-px-\[1vw\] {
-    padding-left: 1vw;
-    padding-right: 1vw;
-  }
-
-  .md\:twcss-px-\[3vw\] {
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-
-  .md\:twcss-pb-\[1vw\] {
-    padding-bottom: 1vw;
-  }
-
-  .md\:twcss-pb-\[2vw\] {
-    padding-bottom: 2vw;
-  }
-
-  .md\:twcss-pb-\[4vw\] {
-    padding-bottom: 4vw;
   }
 
   .md\:twcss-pb-\[5vw\] {

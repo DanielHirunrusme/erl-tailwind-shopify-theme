@@ -3676,15 +3676,15 @@ body .cc-window {
 }
 
 body .cc-window {
-  width: 100%;
-  right: 0;
-  left: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  transform: translateY(0%) translateX(-50%);
+  width: 100% !important;
+  right: 0 !important;
+  left: 50% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  transform: translateY(0%) translateX(-50%) !important;
   flex-direction: column !important;
   max-width: 100% !important;
-  gap: 1em;
+  gap: 1em !important;
   padding: 1em !important;
 }
 
@@ -3694,9 +3694,9 @@ body .cc-window {
 
 @media screen and (min-width: 768px) {
   body .cc-window {
-    width: 35vw;
-    bottom: 1vw;
-    align-items: center;
+    width: 35vw !important;
+    bottom: 1vw !important;
+    align-items: center !important;
     flex-direction: row !important;
   }
 }
