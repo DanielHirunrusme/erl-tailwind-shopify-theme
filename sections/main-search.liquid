@@ -105,17 +105,7 @@
 
               {%- if settings.predictive_search_enabled -%}
                 <div class='predictive-search predictive-search--search-template' tabindex='-1' data-predictive-search>
-                  <div class='predictive-search__loading-state'>
-                    <svg
-                      aria-hidden='true'
-                      focusable='false'
-                      class='spinner'
-                      viewBox='0 0 66 66'
-                      xmlns='http://www.w3.org/2000/svg'
-                    >
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
+                  {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
                 </div>
 
                 <span class='predictive-search-status visually-hidden' role='status' aria-hidden='true'></span>
@@ -211,17 +201,7 @@
                   {%- endif -%}
                 </span>
               </h2>
-              <div class='loading-overlay__spinner'>
-                <svg
-                  aria-hidden='true'
-                  focusable='false'
-                  class='spinner'
-                  viewBox='0 0 66 66'
-                  xmlns='http://www.w3.org/2000/svg'
-                >
-                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                </svg>
-              </div>
+              {%- render 'loading-spinner' -%}
             </div>
           </form>
         </facet-filters-form>
@@ -252,7 +232,7 @@
         <div class='product-grid-container' id='ProductGridContainer'>
           {%- if search.results.size == 0 and search.filters != empty -%}
             <div
-              class='template-search__results collection collection--empty'
+              class='template-search__results collection collection--empty{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}'
               id='product-grid'
               data-id='{{ section.id }}'
             >

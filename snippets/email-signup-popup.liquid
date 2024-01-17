@@ -1,0 +1,27 @@
+<div class='klaviyo-form-T3kKP2'></div>
+
+<script type='text/javascript'>
+  window.onload = function() {
+    var height = 0;
+    console.log('loaded')
+    const sizeForm = () => {
+      console.log('sizing')
+      const form = document.querySelector('.klaviyo-form-VXujC8');
+      if (form) {
+        const formHeight = form.childNodes[0]?.offsetHeight;
+        console.log('formHeight', formHeight)
+        form.childNodes[0].style.minHeight = formHeight + 'px';
+        {% comment %} if (formHeight !== height) {
+          height = formHeight;
+          window.parent.postMessage({ height }, '*');
+        } {% endcomment %}
+      }
+    };
+    klaviyo.identify({}).then(() => {
+      sizeForm();
+      setTimeout(() => {
+        sizeForm();
+      }, 2000);
+    });
+  };
+</script>
