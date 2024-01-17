@@ -45,15 +45,17 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <fieldset class='js product-form__input product-form__input--pill'>
-          <legend class='form__label'>{{ option.name }}</legend>
-          {% render 'product-variant-options',
-            product: product,
-            option: option,
-            block: block,
-            picker_type: picker_type
-          %}
-        </fieldset>
+        <div class='twcss-flex twcss-gap-[1em]'>
+          <legend class='form__label h3'>{{ option.name }}</legend>
+          <fieldset class='js twcss-flex twcss-gap-[1em] product-form__input product-form__input--pill'>
+            {% render 'product-variant-options',
+              product: product,
+              option: option,
+              block: block,
+              picker_type: picker_type
+            %}
+          </fieldset>
+        </div>
       {%- else -%}
         <div class='product-form__input product-form__input--dropdown'>
           <label class='form__label' for='Option-{{ section.id }}-{{ forloop.index0 }}'>
