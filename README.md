@@ -1,7 +1,3 @@
-Brought to you and maintained by [Trellis Commerce](https://trellis.co/) - A full-service eCommerce agency based in Boston, MA
-
-Lastest merged code from [Dawn v11.0.0](https://github.com/Shopify/dawn/releases/tag/v11.0.0)
-
 # Dawn + TailWindCSS + Prettier Shopify Starter Theme
 
 Shopify Dawn theme with TailWindCSS &amp; Prettier integrations
