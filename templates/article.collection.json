@@ -1,12 +1,19 @@
 {
-  "sections": {
-    "main": {
-      "type": "main-article",
-      "settings": {
+    "sections": {
+      "main": {
+        "type": "main-article",
+        "blocks": {
+          "spread": {
+            "type": "spread"
+          }
+        },
+        "block_order": [
+         "spread"
+        ]
       }
-    }
-  },
-  "order": [
-    "main"
-  ]
-}
+    },
+    "order": [
+      "main"
+    ]
+  }
+  
