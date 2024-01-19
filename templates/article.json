@@ -2,39 +2,60 @@
   "sections": {
     "main": {
       "type": "main-article",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "spread_nNG8qP": {
+      "type": "spread",
       "blocks": {
-        "featured_image": {
-          "type": "featured_image",
+        "image_7Q767w": {
+          "type": "image",
           "settings": {
-            "image_height": "adapt"
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-5.jpg"
           }
         },
-        "title": {
-          "type": "title",
+        "image_zbwFpa": {
+          "type": "image",
           "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-6.jpg"
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "content": {
-          "type": "content"
         }
       },
       "block_order": [
-        "featured_image",
-        "title",
-        "share",
-        "content"
-      ]
+        "image_7Q767w",
+        "image_zbwFpa"
+      ],
+      "settings": {
+      }
+    },
+    "spread_k9aL7N": {
+      "type": "spread",
+      "blocks": {
+        "image_NTU3h3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-7.jpg"
+          }
+        },
+        "image_YVficr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_NTU3h3",
+        "image_YVficr"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "spread_nNG8qP",
+    "spread_k9aL7N"
   ]
 }
