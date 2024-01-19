@@ -2,35 +2,36 @@
   "sections": {
     "main": {
       "type": "main-article",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "spread_6Pk9MJ": {
+      "type": "spread",
       "blocks": {
-        "featured_image": {
-          "type": "featured_image",
+        "image_789BPN": {
+          "type": "image",
           "settings": {
-            "image_height": "adapt"
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-5.jpg"
           }
         },
-        "title": {
-          "type": "title",
+        "image_X496er": {
+          "type": "image",
           "settings": {
-            "blog_show_date": true,
-            "blog_show_author": false
+            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-6.jpg"
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        },
-        "content": {
-          "type": "content"
-        },
-        "spread": {
-          "type": "spread"
         }
       },
-      "block_order": ["featured_image", "title", "share", "content", "spread"]
+      "block_order": [
+        "image_789BPN",
+        "image_X496er"
+      ],
+      "settings": {
+      }
     }
   },
-  "order": ["main"]
+  "order": [
+    "main",
+    "spread_6Pk9MJ"
+  ]
 }

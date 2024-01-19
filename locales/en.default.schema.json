@@ -864,7 +864,7 @@
             },
             "options_with_swatches": {
               "header": "Variants with swatches",
-              "info": "Learn how to display [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches)",
+              "info": "Learn how to display [swatches](https:\/\/help.shopify.com\/en\/manual\/online-store\/themes\/theme-structure\/theme-settings#options-with-swatches)",
               "picker_type": {
                 "label": "Style",
                 "options__1": {
@@ -2020,7 +2020,7 @@
             },
             "options_with_swatches": {
               "header": "Variants with swatches",
-              "info": "Learn how to display [swatches](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches)",
+              "info": "Learn how to display [swatches](https:\/\/help.shopify.com\/en\/manual\/online-store\/themes\/theme-structure\/theme-settings#options-with-swatches)",
               "picker_type": {
                 "label": "Style",
                 "options__1": {
