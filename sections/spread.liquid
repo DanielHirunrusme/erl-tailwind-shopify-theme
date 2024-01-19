@@ -33,7 +33,7 @@
           {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
           {%- case block.type -%}
             {%- when 'image' -%}
-              <div class='spread-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}card-wrapper {{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}'>
+              <div class='spread-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}  color-{{ settings.card_color_scheme }} gradient{% endif %}'>
                 <div
                   class='media media--transparent ratio'
                   {% if block.settings.image != blank %}
@@ -107,7 +107,7 @@
                 placeholder_image: placeholder_image
               %}
             {%- when 'video' -%}
-              <div class='spread-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}{{ section.settings.card_styles }} color-{{ settings.card_color_scheme }} gradient{% endif %}'>
+              <div class='spread-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %} color-{{ settings.card_color_scheme }} gradient{% endif %}'>
                 <noscript>
                   <a
                     href='{{ block.settings.video_url }}'
@@ -283,14 +283,11 @@
       ]
     }
   ],
-  "max_blocks": 2,
+  "max_blocks": 1,
   "presets": [
     {
       "name": "Spread",
       "blocks": [
-        {
-          "type": "image"
-        },
         {
           "type": "image"
         }
