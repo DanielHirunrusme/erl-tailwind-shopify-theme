@@ -243,7 +243,7 @@
 
 {% schema %}
 {
-  "name": "t:sections.spread.name",
+  "name": "spread",
   "tag": "section",
   "class": "section",
   "disabled_on": {
@@ -258,18 +258,18 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "t:sections.spread.blocks.image.settings.image.label"
+          "label": "image"
         }
       ]
     },
     {
       "type": "video",
-      "name": "t:sections.spread.blocks.video.name",
+      "name": "video",
       "settings": [
         {
           "type": "image_picker",
           "id": "cover_image",
-          "label": "t:sections.spread.blocks.video.settings.cover_image.label"
+          "label": "video cover image"
         },
         {
           "type": "video_url",
@@ -277,8 +277,8 @@
           "accept": ["youtube", "vimeo"],
           "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
           "label": "t:sections.spread.blocks.video.settings.video_url.label",
-          "placeholder": "t:sections.spread.blocks.video.settings.video_url.placeholder",
-          "info": "t:sections.spread.blocks.video.settings.video_url.info"
+          "placeholder": "video url placeholder",
+          "info": "video url"
         }
       ]
     }
