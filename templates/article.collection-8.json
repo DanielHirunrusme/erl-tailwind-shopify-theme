@@ -6,25 +6,18 @@
       "settings": {
       }
     },
-    "spread_FtxHrW": {
+    "spread_7MJMWi": {
       "type": "spread",
       "blocks": {
-        "image_hEfK3i": {
+        "image_BxtqAC": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-5.jpg"
-          }
-        },
-        "image_7jPDji": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-6.jpg"
+            "image": "shopify:\/\/shop_images\/collection-8-1.jpg"
           }
         }
       },
       "block_order": [
-        "image_hEfK3i",
-        "image_7jPDji"
+        "image_BxtqAC"
       ],
       "settings": {
       }
@@ -32,6 +25,6 @@
   },
   "order": [
     "main",
-    "spread_FtxHrW"
+    "spread_7MJMWi"
   ]
 }
