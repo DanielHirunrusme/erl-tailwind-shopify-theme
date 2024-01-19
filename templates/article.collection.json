@@ -30,7 +30,8 @@
           "featured_image",
           "title",
           "share",
-          "content"
+          "content",
+          "spread"
         ]
       }
     },
