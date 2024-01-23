@@ -17,7 +17,11 @@
   }
 {%- endstyle -%}
 
-<div class='page-width{% if cart == empty %} is-empty{% endif %}' id='main-cart-footer' data-id='{{ section.id }}'>
+<div
+  class='twcss-max-w-7xl twcss-mx-auto {% if cart == empty %} is-empty{% endif %}'
+  id='main-cart-footer'
+  data-id='{{ section.id }}'
+>
   <div>
     <div class='cart__footer section-{{ section.id }}-padding'>
       {%- if settings.show_cart_note -%}
@@ -72,7 +76,10 @@
                 </small>
               </div>
             {%- else -%}
-              <div class='cart__ctas' {{ block.shopify_attributes }}>
+              <div
+                class='twcss-flex twcss-flex-col twcss-gap-4  twcss-items-end twcss-text-right'
+                {{ block.shopify_attributes }}
+              >
                 <noscript>
                   <button type='submit' class='cart__update-button button button--secondary' form='cart'>
                     {{ 'sections.cart.update' | t }}
@@ -91,6 +98,11 @@
                 >
                   {{ 'sections.cart.checkout' | t }}
                 </button>
+
+                <div class='twcss-max-w-xl'>
+                  BY CLICKING ON 'PAY AND ORDER' I CONFIRM THAT I HAVE READ AND UNDERSTOOD THE TERMS AND CONDITIONS AND
+                  PRIVACY POLICY.
+                </div>
               </div>
 
               {%- if additional_checkout_buttons -%}

@@ -521,6 +521,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.twcss-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .twcss-mt-auto {
   margin-top: auto;
 }
@@ -593,6 +598,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 36em;
 }
 
+.twcss-max-w-sm {
+  max-width: 24rem;
+}
+
+.twcss-max-w-7xl {
+  max-width: 80rem;
+}
+
+.twcss-max-w-xl {
+  max-width: 36rem;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -617,6 +634,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.twcss-justify-end {
+  justify-content: flex-end;
+}
+
 .twcss-justify-between {
   justify-content: space-between;
 }
@@ -635,6 +656,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-\[1em\] {
   gap: 1em;
+}
+
+.twcss-gap-4 {
+  gap: 1rem;
 }
 
 .twcss-overflow-hidden {
@@ -656,6 +681,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[4vw\] {
   padding-bottom: 4vw;
+}
+
+.twcss-text-right {
+  text-align: right;
 }
 
 .twcss-font-bold {
