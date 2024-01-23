@@ -509,6 +509,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.twcss-absolute {
+  position: absolute;
+}
+
 .twcss-relative {
   position: relative;
 }
@@ -683,6 +687,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 4vw;
 }
 
+.twcss-text-center {
+  text-align: center;
+}
+
 .twcss-text-right {
   text-align: right;
 }
@@ -748,6 +756,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:twcss-items-end {
+    align-items: flex-end;
+  }
+
   .md\:twcss-p-\[1vw\] {
     padding: 1vw;
   }
@@ -763,5 +775,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-pb-\[5vw\] {
     padding-bottom: 5vw;
+  }
+
+  .md\:twcss-text-right {
+    text-align: right;
   }
 }

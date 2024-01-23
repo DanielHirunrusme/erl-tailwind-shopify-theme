@@ -49,9 +49,6 @@ cart-items .title-wrapper-with-link {
   }
 }
 
-.cart-item__details {
-}
-
 .cart-item__details > * {
   margin: 0;
   max-width: 30rem;
@@ -282,9 +279,9 @@ cart-remove-button .icon-remove {
     padding-left: 2rem;
   }
 
-  .cart-item__details {
+  /* .cart-item__details {
     width: 35rem;
-  }
+  } */
 
   .cart-item__media {
     width: 10rem;
@@ -309,9 +306,9 @@ cart-remove-button .icon-remove {
     padding-left: 6rem;
   }
 
-  .cart-item__details {
+  /* .cart-item__details {
     width: 50rem;
-  }
+  } */
 
   .cart-items thead th:first-child {
     width: 60%;
