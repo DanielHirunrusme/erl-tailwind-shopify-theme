@@ -19,6 +19,10 @@ module.exports = {
     extend: {
       fontFamily: {
         heading: 'var(--font-heading-family)',
+        panton: '"Panton Rust Heavy Base", sans-serif',
+        knocky: '"Knocky", sans-serif',
+        haymer: '"Haymer Small Capitals Condensed", sans-serif',
+        cookie: '"Smart Cookie", sans-serif',
       },
       maxWidth: {
         '2xl': '36em',

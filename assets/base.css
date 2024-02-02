@@ -160,6 +160,50 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Knocky';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/KnockyExtrabold.woff2?v=1706852535')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/KnockyExtrabold.woff?v=1706852535')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Panton Rust Heavy Base';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/PantonRustHeavy-Base.woff2?v=1706852535')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/PantonRustHeavy-Base.woff?v=1706852535')
+      format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Haymer Small Capitals Condensed';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/HaymerSmallCapitalsCondensed-CondensedBold.woff2?v=1706852535')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/HaymerSmallCapitalsCondensed-CondensedBold.woff?v=1706852535')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Smart Cookie';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/SmartCookie-Regular.woff2?v=1706852535')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/SmartCookie-Regular.woff?v=1706852535')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* base */
 
 html,
@@ -609,15 +653,14 @@ h6:empty {
   border: none;
   box-shadow: none;
   background-color: transparent;
-  font-family: inherit;
 }
 
 .link--text {
-  color: rgb(var(--color-foreground), 0.8);
+  color: white;
 }
 
 .link--text:hover {
-  color: rgba(var(--color-foreground), 1);
+  transform: scale(1.0125) rotate(-0.5deg);
 }
 
 .link-with-icon {
