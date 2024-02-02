@@ -509,6 +509,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.twcss-pointer-events-none {
+  pointer-events: none;
+}
+
 .twcss-absolute {
   position: absolute;
 }
@@ -535,6 +539,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-bottom-\[1vw\] {
   bottom: 1vw;
+}
+
+.twcss-right-\[4vw\] {
+  right: 4vw;
+}
+
+.twcss-right-\[6vw\] {
+  right: 6vw;
+}
+
+.twcss-right-\[7vw\] {
+  right: 7vw;
+}
+
+.twcss-right-\[8vw\] {
+  right: 8vw;
+}
+
+.twcss-bottom-\[4vw\] {
+  bottom: 4vw;
+}
+
+.twcss-bottom-\[10vw\] {
+  bottom: 10vw;
+}
+
+.twcss-bottom-\[30vw\] {
+  bottom: 30vw;
+}
+
+.twcss-bottom-\[0vw\] {
+  bottom: 0vw;
 }
 
 .twcss-z-10 {
@@ -590,6 +626,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
+.twcss-aspect-\[537\/942\] {
+  aspect-ratio: 537 / 942;
+}
+
 .twcss-h-full {
   height: 100%;
 }
@@ -616,6 +656,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-w-\[7vw\] {
   width: 7vw;
+}
+
+.twcss-w-\[4vw\] {
+  width: 4vw;
+}
+
+.twcss-w-\[30vw\] {
+  width: 30vw;
 }
 
 .twcss-max-w-7xl {
@@ -775,6 +823,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5vw;
 }
 
+.twcss-text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.twcss-text-\[3vw\] {
+  font-size: 3vw;
+}
+
+.twcss-text-\[6vw\] {
+  font-size: 6vw;
+}
+
+.twcss-text-\[5vw\] {
+  font-size: 5vw;
+}
+
 .twcss-font-bold {
   font-weight: 700;
 }
@@ -814,6 +878,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     position: absolute;
   }
 
+  .md\:twcss-bottom-\[1vw\] {
+    bottom: 1vw;
+  }
+
+  .md\:twcss-bottom-0 {
+    bottom: 0px;
+  }
+
+  .md\:twcss-bottom-\[0vw\] {
+    bottom: 0vw;
+  }
+
   .md\:twcss-block {
     display: block;
   }
@@ -844,6 +920,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
+  }
+
+  .md\:twcss-w-\[8vw\] {
+    width: 8vw;
+  }
+
+  .md\:twcss-w-\[25vw\] {
+    width: 25vw;
+  }
+
+  .md\:twcss-w-\[40vw\] {
+    width: 40vw;
   }
 
   .md\:twcss-max-w-\[85vw\] {
@@ -877,5 +965,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-text-right {
     text-align: right;
+  }
+
+  .md\:twcss-text-\[1\.375vw\] {
+    font-size: 1.375vw;
+  }
+
+  .md\:twcss-text-\[1\.75vw\] {
+    font-size: 1.75vw;
+  }
+
+  .md\:twcss-text-\[1\.5vw\] {
+    font-size: 1.5vw;
   }
 }
