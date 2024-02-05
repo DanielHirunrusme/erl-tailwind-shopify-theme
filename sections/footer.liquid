@@ -400,7 +400,7 @@
       </div>
     </div>
   {% endcomment %}
-  <main data-barba='wrapper' data-barba-namespace=''>
+  <main data-barba='wrapper'>
     <div
       data-barba='container'
     >
@@ -414,14 +414,46 @@
 </footer>
 
 <script src='https://unpkg.com/@barba/core' defer></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js' defer></script>
+<!-- load gsap animation library (minified version) -->
+<script src='https://unpkg.com/gsap@latest/dist/gsap.min.js' defer></script>
+
 {% comment %} <script src='https://unpkg.com/@unseenco/e@2.2.2/dist/e.umd.js' crossorigin defer></script> {% endcomment %}
 {% comment %} <script src='https://unpkg.com/@unseenco/taxi@1.0.3/dist/taxi.umd.js' crossorigin defer></script> {% endcomment %}
 
 <script type='text/javascript'>
   window.addEventListener('load', function (event) {
     console.log('window load', 'init Pjax');
-    barba.init();
+    var links = document.querySelectorAll('a[href]');
+    var cbk = function (e) {
+      if (e.currentTarget.href === window.location.href) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    };
+
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', cbk);
+    }
+
+    barba.init({
+      debug: true,
+      sync: true,
+      transitions: [
+        {
+          name: 'opacity-transition',
+          leave(data) {
+            return gsap.to(data.current.container, {
+              opacity: 0,
+            });
+          },
+          enter(data) {
+            return gsap.from(data.next.container, {
+              opacity: 0,
+            });
+          },
+        },
+      ],
+    });
   });
 </script>
 
