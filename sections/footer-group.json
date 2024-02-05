@@ -8,29 +8,13 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Legal",
-            "menu": "legal"
-          }
-        },
-        "footer-1": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Shop",
-            "menu": "footer"
-          }
-        },
-        "19f5f385-038f-4da8-a1d8-be0a7dafd720": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Follow",
-            "menu": "social"
+            "heading": "",
+            "menu": "footer-menu"
           }
         }
       },
       "block_order": [
-        "footer-0",
-        "footer-1",
-        "19f5f385-038f-4da8-a1d8-be0a7dafd720"
+        "footer-0"
       ],
       "settings": {
         "color_scheme": "scheme-1",
