@@ -14,7 +14,10 @@
   }
 {%- endstyle -%}
 
-<div data-taxi-view class='color-{{ section.settings.color_scheme }} gradient header-offset'>
+<div
+  data-barba-namespace='policy'
+  class='color-{{ section.settings.color_scheme }} gradient header-offset barba-container'
+>
   <article class='twcss-grid twcss-grid-cols-2 section-{{ section.id }}-padding'>
     {% comment %} Content {% endcomment %}
     <div>

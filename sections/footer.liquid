@@ -400,32 +400,28 @@
       </div>
     </div>
   {% endcomment %}
-  <main data-taxi>
-    <article data-taxi-view>footer</article>
+  <main data-barba='wrapper' data-barba-namespace=''>
+    <div
+      data-barba='container'
+    >
+      <h1>Test</h1>
+    </div>
+    <!--
+      put here the content you wish to change
+      between your pages, like your main content <h1> or <p>
+    -->
   </main>
 </footer>
 
-<script src='https://unpkg.com/@unseenco/e@2.2.2/dist/e.umd.js' crossorigin defer></script>
-<script src='https://unpkg.com/@unseenco/taxi@1.0.3/dist/taxi.umd.js' crossorigin defer></script>
+<script src='https://unpkg.com/@barba/core' defer></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js' defer></script>
+{% comment %} <script src='https://unpkg.com/@unseenco/e@2.2.2/dist/e.umd.js' crossorigin defer></script> {% endcomment %}
+{% comment %} <script src='https://unpkg.com/@unseenco/taxi@1.0.3/dist/taxi.umd.js' crossorigin defer></script> {% endcomment %}
 
 <script type='text/javascript'>
-  console.log('init taxi');
-
   window.addEventListener('load', function (event) {
-    console.log('window load');
-    const t = new taxi.Core({
-      debug: true,
-      views: {
-        'data-taxi-view': {
-          onEnter: function (el) {
-            console.log('enter', el);
-          },
-          onExit: function (el) {
-            console.log('exit', el);
-          },
-        },
-      },
-    });
+    console.log('window load', 'init Pjax');
+    barba.init();
   });
 </script>
 
