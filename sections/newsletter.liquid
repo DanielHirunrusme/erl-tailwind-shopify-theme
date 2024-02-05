@@ -15,8 +15,8 @@
   }
 {%- endstyle -%}
 
-<div class='newsletter center twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
-  <div class='twcss-relative twcss-z-10 newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding'>
+<div class='newsletter twcss-relative center twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
+  <div class='twcss-relative twcss-p-[1em]  twcss-z-10   color-{{ section.settings.color_scheme }} gradient content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -113,7 +113,6 @@
     {%- endfor -%}
   </div>
 
-  image: {{ section.settings.image }}
   {%- if section.settings.image != blank -%}
     <img
       srcset='
