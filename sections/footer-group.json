@@ -20,6 +20,7 @@
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
         "newsletter_heading": "Stay up to date",
+        "newsletter_image": "shopify:\/\/shop_images\/table.jpg",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
