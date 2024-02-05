@@ -352,37 +352,8 @@
       <script src='{{ 'predictive-search.js' | asset_url }}' defer='defer'></script>
     {%- endif -%}
 
-    <script
-      crossorigin='anonymous'
-      defer='defer'
-      src='https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver'
-    ></script>
-
-    <!-- load barba (UMD version) -->
-    <script src='https://unpkg.com/@barba/core'></script>
-
-    <!-- load gsap animation library (minified version) -->
-    <script src='https://unpkg.com/gsap@latest/dist/gsap.min.js'></script>
-
-    <!-- init barba with a simple opacity transition -->
-    <script type='text/javascript'>
-      barba.init({
-        transitions: [
-          {
-            name: 'opacity-transition',
-            leave(data) {
-              return gsap.to(data.current.container, {
-                opacity: 0,
-              });
-            },
-            enter(data) {
-              return gsap.from(data.next.container, {
-                opacity: 0,
-              });
-            },
-          },
-        ],
-      });
+    <script>
+      fetch(window.Shopify.routes.root + 'pages/information').then((res) => console.log(res));
     </script>
   </body>
 </html>
