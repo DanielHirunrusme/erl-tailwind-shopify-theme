@@ -212,13 +212,11 @@ body {
   width: 100vw;
 }
 
-/* Define a transition duration during page visits */
-html.is-changing .transition-fade {
-  transition: opacity 0.25s;
-  opacity: 1;
+html.is-changing .transition-main {
+  transition: opacity 250ms ease-in-out;
 }
-/* Define the styles for the unloaded pages */
-html.is-animating .transition-fade {
+
+html.is-animating .transition-main {
   opacity: 0;
 }
 
