@@ -353,7 +353,7 @@
     {%- endif -%}
 
     <script>
-      fetch(window.Shopify.routes.root + 'pages/information').then((res) => console.log(res));
+      fetch(window.Shopify.routes.root + 'pages/information.json').then((res) => console.log(res.json()));
     </script>
   </body>
 </html>
