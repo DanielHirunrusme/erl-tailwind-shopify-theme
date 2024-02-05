@@ -351,13 +351,5 @@
     {%- if settings.predictive_search_enabled -%}
       <script src='{{ 'predictive-search.js' | asset_url }}' defer='defer'></script>
     {%- endif -%}
-
-    <script>
-      console.log('test fetch');
-      const page = fetch(window.Shopify.routes.root + 'pages/information.json').then((res) => {
-        res.json();
-      });
-      console.log(page);
-    </script>
   </body>
 </html>
