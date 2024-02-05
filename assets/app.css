@@ -537,6 +537,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
+.twcss-col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.twcss-col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .twcss-mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -659,6 +667,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.twcss-grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .twcss-flex-col {
   flex-direction: column;
 }
@@ -701,6 +713,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-\[1em\] {
   gap: 1em;
+}
+
+.twcss-gap-\[4vw\] {
+  gap: 4vw;
+}
+
+.twcss-gap-\[8vw\] {
+  gap: 8vw;
+}
+
+.twcss-gap-\[4em\] {
+  gap: 4em;
+}
+
+.twcss-gap-\[2em\] {
+  gap: 2em;
 }
 
 .twcss-overflow-hidden {
@@ -825,6 +853,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
+  }
+
+  .md\:twcss-w-\[80\%\] {
+    width: 80%;
   }
 
   .md\:twcss-max-w-\[85vw\] {
