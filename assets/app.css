@@ -735,6 +735,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.5rem;
 }
 
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
+.twcss-gap-\[\.1em\] {
+  gap: 0.1em;
+}
+
 .twcss-overflow-hidden {
   overflow: hidden;
 }
@@ -843,6 +851,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-block {
     display: block;
+  }
+
+  .md\:twcss-flex {
+    display: flex;
   }
 
   .md\:twcss-grid {

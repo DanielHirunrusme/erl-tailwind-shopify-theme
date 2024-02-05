@@ -141,9 +141,9 @@
   -%}
   <header class="twcss-flex  twcss-justify-between twcss-p-4 md:twcss-p-[1vw]">
     {% comment %}Cart Link{% endcomment %}
-    <a href="{{ routes.cart_url }}" title="Cart" class="twcss-gap-[.2em] twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw]" id="cart-icon-bubble">
+    <a href="{{ routes.cart_url }}" title="Cart" class="twcss-gap-[.2em] twcss-relative twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw]" id="cart-icon-bubble">
       
-    {%- render 'icon-cart' -%}<span class="hidden md:block -twcss-mt-[.25em]">BAG</span>
+  {%- render 'icon-cart' -%}<span class="twcss-hidden md:twcss-flex -twcss-mt-[.25em]">BAG{%- if cart.item_count > 0 -%}<span>:{{ cart.item_count   }}</span>{%- endif -%}</span>
      
       </a>
       <div class="twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1">
