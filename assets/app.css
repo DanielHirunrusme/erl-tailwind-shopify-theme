@@ -509,6 +509,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.twcss-pointer-events-none {
+  pointer-events: none;
+}
+
 .twcss-absolute {
   position: absolute;
 }
@@ -533,8 +537,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
+.twcss-top-0 {
+  top: 0px;
+}
+
+.twcss-left-0 {
+  left: 0px;
+}
+
 .twcss-z-10 {
   z-index: 10;
+}
+
+.twcss-z-0 {
+  z-index: 0;
 }
 
 .twcss-col-span-1 {
@@ -733,6 +749,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-overflow-hidden {
   overflow: hidden;
+}
+
+.twcss-object-cover {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.twcss-object-center {
+  -o-object-position: center;
+  object-position: center;
 }
 
 .twcss-p-4 {

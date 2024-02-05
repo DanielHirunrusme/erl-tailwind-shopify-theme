@@ -15,8 +15,8 @@
   }
 {%- endstyle -%}
 
-<div class='newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}'>
-  <div class='newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding'>
+<div class='newsletter center twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
+  <div class='twcss-relative twcss-z-10 newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding'>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -113,6 +113,7 @@
     {%- endfor -%}
   </div>
 
+  image: {{ section.settings.image }}
   {%- if section.settings.image != blank -%}
     <img
       srcset='
@@ -131,11 +132,9 @@
       loading='lazy'
       alt='{{ section.settings.image.alt | escape }}'
       width='{{ section.settings.image.width }}'
+      class='twcss-absolute twcss-top-0 twcss-left-0 twcss-w-full twcss-h-full twcss-object-cover twcss-object-center twcss-z-0  twcss-pointer-events-none'
       height='{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}'
     >
-  {%- else -%}
-    {%- render 'email-signup-banner-background' -%}
-    {%- render 'email-signup-banner-background-mobile' -%}
   {%- endif -%}
 </div>
 
@@ -153,6 +152,11 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Background Image"
     },
     {
       "type": "checkbox",
@@ -233,17 +237,6 @@
           "id": "text",
           "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
           "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
-        }
-      ]
-    },
-    {
-      "type": "image",
-      "name": "Newsletter Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Background Image"
         }
       ]
     },
