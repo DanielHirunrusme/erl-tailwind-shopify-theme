@@ -399,22 +399,26 @@
       </div>
     </div>
   {% endcomment %}
-
-  <div id='swup' class='transition-main'>
-    <h1>Home</h1>
-    <p>
-      A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy
-      with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of
-      souls like mine. I am so happy, my dear friend.
-    </p>
-    <p class='buttons'>
-      <a href='/pages/information' class='button'>Next page →</a>
-    </p>
-  </div>
 </footer>
 
-{% comment %} <script src='https://unpkg.com/@unseenco/e@2.2.2/dist/e.umd.js' crossorigin defer></script> {% endcomment %}
-{% comment %} <script src='https://unpkg.com/@unseenco/taxi@1.0.3/dist/taxi.umd.js' crossorigin defer></script> {% endcomment %}
+<main data-barba='wrapper'>
+  <!--
+    put here content that will not change
+    between your pages, like <header> or <nav>
+  -->
+
+  <div data-barba='container' data-barba-namespace='home'>
+    <!--
+      put here the content you wish to change
+      between your pages, like your main content <h1> or <p>
+    -->
+  </div>
+
+  <!--
+    put here content that will not change
+    between your pages, like <footer>
+  -->
+</main>
 
 {% schema %}
 {
