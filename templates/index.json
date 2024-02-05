@@ -75,12 +75,19 @@
           "type": "email_form",
           "settings": {
           }
+        },
+        "image_7JzL46": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collection-7-1.jpg"
+          }
         }
       },
       "block_order": [
         "heading_LPwqBj",
         "paragraph_GRE4gq",
-        "email_form_gdaL9B"
+        "email_form_gdaL9B",
+        "image_7JzL46"
       ],
       "settings": {
         "color_scheme": "",
