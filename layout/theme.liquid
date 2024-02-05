@@ -9,6 +9,8 @@
 
     {%- if settings.favicon != blank -%}
       <link rel='icon' type='image/png' href='{{ settings.favicon | image_url: width: 32, height: 32 }}'>
+    {%- else -%}
+      <link rel='icon' type='image/x-icon' href='{{ 'favicon.ico' |  asset_url  }}'>
     {%- endif -%}
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
@@ -351,5 +353,32 @@
     {%- if settings.predictive_search_enabled -%}
       <script src='{{ 'predictive-search.js' | asset_url }}' defer='defer'></script>
     {%- endif -%}
+
+    {% comment %}
+      <div id='swup' class='transition-fade'>
+        <h1>Welcome</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    {% endcomment %}
+
+    <script src='https://unpkg.com/@swup/scroll-plugin@3'></script>
+    <script src='https://unpkg.com/swup@4' defer='defer'></script>
+    <script>
+      window.addEventListener('load', () => {
+        const swup = new Swup({
+          cache: true,
+          linkSelector: 'a.swup',
+          containers: ['#swup'],
+          plugins: [
+            new SwupScrollPlugin({
+              doScrollingRightAway: false,
+              animateScroll: true,
+              shouldResetScrollPosition: (link) => false,
+            }),
+          ],
+        });
+        console.log('swup', swup);
+      });
+    </script>
   </body>
 </html>

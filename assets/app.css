@@ -590,10 +590,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75em;
 }
 
-.twcss-block {
-  display: block;
-}
-
 .twcss-inline-block {
   display: inline-block;
 }
@@ -679,12 +675,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-auto-flow: row;
 }
 
-.twcss-grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .twcss-grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.twcss-grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .twcss-flex-col {
@@ -707,6 +703,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.twcss-gap-\[8vw\] {
+  gap: 8vw;
+}
+
+.twcss-gap-\[1em\] {
+  gap: 1em;
+}
+
+.twcss-gap-\[2em\] {
+  gap: 2em;
+}
+
 .twcss-gap-\[\.2em\] {
   gap: 0.2em;
 }
@@ -725,26 +733,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-2 {
   gap: 0.5rem;
-}
-
-.twcss-gap-\[1em\] {
-  gap: 1em;
-}
-
-.twcss-gap-\[4vw\] {
-  gap: 4vw;
-}
-
-.twcss-gap-\[8vw\] {
-  gap: 8vw;
-}
-
-.twcss-gap-\[4em\] {
-  gap: 4em;
-}
-
-.twcss-gap-\[2em\] {
-  gap: 2em;
 }
 
 .twcss-overflow-hidden {
@@ -786,12 +774,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.twcss-font-haymer {
-  font-family: 'Haymer Small Capitals Condensed', sans-serif;
-}
-
 .twcss-font-panton {
   font-family: 'Panton Rust Heavy Base', sans-serif;
+}
+
+.twcss-font-haymer {
+  font-family: 'Haymer Small Capitals Condensed', sans-serif;
 }
 
 .twcss-font-knocky {
@@ -869,8 +857,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 20vw;
   }
 
-  .md\:twcss-w-\[35vw\] {
-    width: 35vw;
+  .md\:twcss-w-\[80\%\] {
+    width: 80%;
   }
 
   .md\:twcss-w-\[3\.5vw\] {
@@ -883,10 +871,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
-  }
-
-  .md\:twcss-w-\[80\%\] {
-    width: 80%;
   }
 
   .md\:twcss-max-w-\[85vw\] {
