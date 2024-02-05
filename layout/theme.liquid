@@ -354,7 +354,9 @@
 
     <script>
       console.log('test fetch');
-      fetch(window.Shopify.routes.root + 'pages/information.json').then((res) => console.log(res.json()));
+      fetch(window.Shopify.routes.root + 'pages/information.json').then((res) => {
+        console.log(res.json());
+      });
     </script>
   </body>
 </html>
