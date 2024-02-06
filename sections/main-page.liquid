@@ -14,11 +14,11 @@
   }
 {%- endstyle -%}
 {% unless section.settings.hide_text == true %}
-  <div class='twcss-p-8 twcss-mt-48 twcss-grid twcss-grid-flow-row md:twcss-grid-cols-2 twcss-gap-8'>
+  <div class='twcss-min-h-[50vh]'>
     {% comment %} Content {% endcomment %}
 
-    <div>
-      <h1 class='main-page-title page-title h1{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}'>
+    <div class='rte-footer h4'>
+      <h1 class=''>
         {{ page.title | escape }}
       </h1>
       <div class='twcss-max-w-2xl'>
@@ -27,7 +27,6 @@
     </div>
 
     {% comment %} Image {% endcomment %}
-    <div><img src='https://cdn.shopify.com/s/files/1/0757/2095/0079/files/table.jpg?v=1700527628' alt='Kitchen'></div>
   </div>
 {% endunless %}
 

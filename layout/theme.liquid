@@ -285,7 +285,7 @@
   </head>
 
   <body
-    class='gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}'
+    class='swup-preserve-scroll gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}'
   >
     <a class='skip-to-content-link button visually-hidden' href='#MainContent'>
       {{ 'accessibility.skip_to_text' | t }}
@@ -302,6 +302,19 @@
     </main>
 
     {% sections 'footer-group' %}
+
+    <div class='twcss-grid twcss-grid-cols-3 twcss-gap-[8vw]'>
+      <div
+        id='swup'
+        class='twcss-col-span-2 twcss-col-start-2 twcss-flex twcss-gap-[8vw]'
+        data-swup-scroll-target
+        class='transition-fade'
+      >
+        {% if template.name != 'index' and template.name != 'product' %}
+          {{ content_for_layout }}
+        {% endif %}
+      </div>
+    </div>
 
     <ul hidden>
       <li id='a11y-refresh-page-message'>{{ 'accessibility.refresh_page' | t }}</li>
@@ -354,30 +367,54 @@
       <script src='{{ 'predictive-search.js' | asset_url }}' defer='defer'></script>
     {%- endif -%}
 
-    {% comment %}
-      <div id='swup' class='transition-fade'>
-        <h1>Welcome</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    {% endcomment %}
-
+    <script src='{{ "SwupPreserveScrollPlugin.min.js" |  asset_url   }}'></script>
+    <script src='https://unpkg.com/@swup/fragment-plugin@1'></script>
+    <script src='https://unpkg.com/@swup/debug-plugin@4'></script>
     <script src='https://unpkg.com/@swup/scroll-plugin@3'></script>
     <script src='https://unpkg.com/swup@4' defer='defer'></script>
     <script>
       window.addEventListener('load', () => {
         const swup = new Swup({
-          cache: true,
+          cache: false,
           linkSelector: 'a.swup',
           containers: ['#swup'],
+          animateHistoryBrowsing: true,
+          animation: {
+            animate: true,
+          },
           plugins: [
             new SwupScrollPlugin({
-              doScrollingRightAway: false,
+              doScrollingRightAway: true,
               animateScroll: true,
-              shouldResetScrollPosition: (link) => false,
+              betweenPages: true,
+              offset: () => document.querySelector('#swup').offsetHeight,
+              shouldResetScrollPosition: () => true,
             }),
+            new SwupDebugPlugin(),
           ],
         });
         console.log('swup', swup);
+        // setTimeout(() => {
+        //   console.log('navigate');
+        //   swup.navigate('/pages/information', { animate: false });
+        // }, 4000);
+
+        swup.scrollTo = (offsetY, animate = true) => {
+          return true;
+        };
+
+        // Execute before other handlers
+
+        swup.hooks.on(
+          'content:scroll',
+          (e) => {
+            // e.stopPropagation();
+            console.log('page:load');
+            const $targ = document.getElementsByTagName('footer')[0];
+            $targ.scrollIntoView({ behavior: 'smooth' });
+          },
+          { priority: 100 },
+        );
       });
     </script>
   </body>

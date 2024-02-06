@@ -226,6 +226,16 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+/*
+* The animation when filtering users
+*/
+#swup.is-changing {
+  transition: opacity 250ms;
+}
+#swup.is-animating {
+  opacity: 0;
+}
+
 .no-js:not(html) {
   display: none !important;
 }
@@ -3762,4 +3772,25 @@ body .cc-window {
     align-items: center !important;
     flex-direction: row !important;
   }
+}
+
+/* Footer RTE */
+.rte-footer,
+.rte-footer * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.rte-footer h1,
+.rte-footer h2,
+.rte-footer h3,
+.rte-footer h4,
+.rte-footer h5,
+.rte-footer h6,
+.rte-footer p,
+.rte-footer ul,
+.rte-footer ol,
+.rte-footer table {
+  font-size: inherit;
+  margin-bottom: 1em;
 }
