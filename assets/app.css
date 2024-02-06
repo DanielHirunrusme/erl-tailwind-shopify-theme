@@ -42,9 +42,7 @@ html {
   -o-tab-size: 4;
   tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: Arial, Helvetica, sans-serif;
   /* 4 */
 }
 
@@ -669,6 +667,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.twcss-rotate-1 {
+  --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .twcss-transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
@@ -757,6 +762,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
+.twcss-px-\[1em\] {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .twcss-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -764,6 +774,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[4vw\] {
   padding-bottom: 4vw;
+}
+
+.twcss-pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.twcss-pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .twcss-text-center {
@@ -782,6 +800,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Knocky', sans-serif;
 }
 
+.twcss-font-sans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.\!twcss-font-panton {
+  font-family: 'Panton Rust Heavy Base', sans-serif !important;
+}
+
 .twcss-text-\[2vw\] {
   font-size: 2vw;
 }
@@ -796,6 +822,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-font-bold {
   font-weight: 700;
+}
+
+.\!twcss-font-bold {
+  font-weight: 700 !important;
 }
 
 .twcss-uppercase {
