@@ -4,6 +4,23 @@
   text-transform: uppercase;
 }
 
+footer ul li:nth-child(1) {
+  transform: rotate(-2deg);
+  padding-left: 2em;
+}
+
+footer ul li:nth-child(4) {
+  transform: rotate(-3deg);
+}
+
+footer ul li:nth-child(6) {
+  transform: rotate(2deg);
+}
+
+footer ul li:last-child {
+  padding-right: 2em;
+}
+
 .footer:not(.color-scheme-1) {
   border-top: none;
 }

@@ -572,6 +572,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.-twcss-mx-\[2em\] {
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+.twcss-mx-\[2em\] {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .-twcss-mt-\[\.25em\] {
   margin-top: -0.25em;
 }
@@ -814,6 +824,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.twcss-grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.twcss-grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .twcss-grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -878,12 +896,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.25em;
 }
 
+.twcss-gap-\[4vw\] {
+  gap: 4vw;
+}
+
 .twcss-self-start {
   align-self: flex-start;
 }
 
 .twcss-overflow-hidden {
   overflow: hidden;
+}
+
+.twcss-overflow-x-scroll {
+  overflow-x: scroll;
+}
+
+.twcss-whitespace-nowrap {
+  white-space: nowrap;
 }
 
 .twcss-object-cover {
@@ -908,6 +938,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2rem;
 }
 
+.twcss-p-\[2em\] {
+  padding: 2em;
+}
+
 .twcss-px-\[1em\] {
   padding-left: 1em;
   padding-right: 1em;
@@ -916,6 +950,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.twcss-px-\[2em\] {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .twcss-pb-\[4vw\] {
@@ -932,6 +971,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[\.2em\] {
   padding-bottom: 0.2em;
+}
+
+.twcss-pb-\[2em\] {
+  padding-bottom: 2em;
 }
 
 .twcss-text-center {
@@ -978,6 +1021,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 6vw;
 }
 
+.twcss-text-\[4vw\] {
+  font-size: 4vw;
+}
+
+.twcss-text-\[1vw\] {
+  font-size: 1vw;
+}
+
+.twcss-text-\[1\.5vw\] {
+  font-size: 1.5vw;
+}
+
+.twcss-text-\[1\.25vw\] {
+  font-size: 1.25vw;
+}
+
+.twcss-text-\[1\.2vw\] {
+  font-size: 1.2vw;
+}
+
+.twcss-text-\[1\.4vw\] {
+  font-size: 1.4vw;
+}
+
 .twcss-font-bold {
   font-weight: 700;
 }
@@ -1021,6 +1088,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     bottom: 0vw;
   }
 
+  .md\:twcss-col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:twcss-col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .md\:twcss-block {
     display: block;
   }
@@ -1061,12 +1136,28 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 1.5vw;
   }
 
+  .md\:twcss-w-\[90\%\] {
+    width: 90%;
+  }
+
+  .md\:twcss-w-full {
+    width: 100%;
+  }
+
   .md\:twcss-max-w-\[85vw\] {
     max-width: 85vw;
   }
 
+  .md\:twcss-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:twcss-items-end {
     align-items: flex-end;
+  }
+
+  .md\:twcss-gap-\[4vw\] {
+    gap: 4vw;
   }
 
   .md\:twcss-p-\[1vw\] {
@@ -1084,6 +1175,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-pb-\[5vw\] {
     padding-bottom: 5vw;
+  }
+
+  .md\:twcss-pb-0 {
+    padding-bottom: 0px;
   }
 
   .md\:twcss-text-right {
@@ -1104,5 +1199,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-text-\[2vw\] {
     font-size: 2vw;
+  }
+
+  .md\:twcss-text-\[1\.2vw\] {
+    font-size: 1.2vw;
   }
 }

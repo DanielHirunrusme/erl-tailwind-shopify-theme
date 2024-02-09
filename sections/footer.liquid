@@ -33,7 +33,7 @@
   }
 {%- endstyle -%}
 
-<footer data-swup-scroll-container class='twcss-p-[1em]'>
+<footer data-swup-scroll-container class='twcss-text-[4vw] md:twcss-text-[1.2vw] twcss-overflow-hidden'>
   {% comment %} Newsletter {% endcomment %}
   {%- if section.settings.newsletter_enable -%}
     <div class='twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
@@ -164,20 +164,20 @@
             endif
           -%}
           <div
-            class='md:twcss-grid twcss-grid-cols-3 twcss-items-center twcss-gap-[8vw]'
+            class='twcss-grid twcss-grid-flow-row md:twcss-grid-cols-3 twcss-items-center md:twcss-gap-[4vw]'
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
             {% endif %}
           >
-            <div class='twcss-col-span-1'>
+            <div class='md:twcss-col-span-1 twcss-p-[2em]'>
               <a href='{{ shop.url }}' title='Home'>
                 {%- render 'logo-text' -%}
               </a>
             </div>
-            <div class='twcss-col-span-2 twcss-flex twcss-gap-[1em]'>
+            <div class='md:twcss-col-span-2 twcss-flex twcss-gap-[1em]  twcss-pb-[2em] md:twcss-pb-0 twcss-overflow-x-scroll'>
               {%- for block in section.blocks -%}
                 <div
-                  class='h4'
+                  class='twcss-whitespace-nowrap'
                   {{ block.shopify_attributes }}
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade

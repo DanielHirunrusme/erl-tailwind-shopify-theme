@@ -14,14 +14,16 @@
   }
 {%- endstyle -%}
 {% unless section.settings.hide_text == true %}
-  <div class='twcss-min-h-[50vh]'>
+  <div class='twcss-min-h-[50vh]  twcss-px-[2em] twcss-pb-[2em]'>
     {% comment %} Content {% endcomment %}
 
-    <div class='rte-footer h4'>
-      <h1 class=''>
-        {{ page.title | escape }}
-      </h1>
-      <div class='twcss-max-w-2xl'>
+    <div class='rte-footer'>
+      {% comment %}
+        <h1 class=''>
+          {{ page.title | escape }}
+        </h1>
+      {% endcomment %}
+      <div>
         {{ page.content }}
       </div>
     </div>
