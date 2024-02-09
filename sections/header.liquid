@@ -141,13 +141,13 @@
   -%}
   <header class="twcss-flex  twcss-justify-between twcss-p-4 md:twcss-p-[1vw]">
     {% comment %}Cart Link{% endcomment %}
-    <a href="{{ routes.cart_url }}" title="Cart" class="twcss-gap-[.2em] twcss-relative twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw]" id="cart-icon-bubble">
+    <a href="{{ routes.cart_url }}" title="Cart" class="twcss-gap-[.25em] twcss-relative twcss-self-start twcss-items-center -twcss-mt-[.65vw] twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw]" id="cart-icon-bubble">
       
-  {%- render 'icon-cart' -%}<span class="twcss-hidden md:twcss-flex -twcss-mt-[.25em]">BAG{%- if cart.item_count > 0 -%}<span>:{{ cart.item_count   }}</span>{%- endif -%}</span>
+  <span class="twcss-w-[4.75vw] md:twcss-w-[1.5vw]">{%- render 'icon-cart' -%}</span><span class="twcss-hidden md:twcss-flex twcss-mt-[.15em]">BAG{%- if cart.item_count > 0 -%}<span>:{{ cart.item_count   }}</span>{%- endif -%}</span>
      
       </a>
       <div class="twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1">
-        <a href="/" class="link link--text focus-inset twcss-font-panton twcss-text-[5vw] md:twcss-text-[1.375vw] twcss-transform -twcss-rotate-1">
+        <a href="/" class="link link--text focus-inset twcss-font-panton twcss-text-[5vw] md:twcss-text-[1.375vw]">
           ERL VENICE BEACH CALIFORNIA 
         </a>
 
@@ -156,7 +156,7 @@
 
     COLLECTIONS
     </a>
-    <a href="/collections/all" title="Shop" class="link link--text twcss-font-shop twcss-text-[5vw] md:twcss-text-[1.5vw]">
+    <a href="/collections/all" title="Shop" class="link link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw]  twcss-transform twcss-rotate-[3deg] -twcss-mt-[.075em]">
     SHOP
     </a>
     </div>

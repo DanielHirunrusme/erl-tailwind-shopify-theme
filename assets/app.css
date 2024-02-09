@@ -592,6 +592,62 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.75em;
 }
 
+.twcss-mt-\[\.15em\] {
+  margin-top: 0.15em;
+}
+
+.-twcss-mt-\[-\.025rem\] {
+  margin-top: 0.025rem;
+}
+
+.-twcss-mt-\[-\.25rem\] {
+  margin-top: 0.25rem;
+}
+
+.-twcss-mt-\[\.25rem\] {
+  margin-top: -0.25rem;
+}
+
+.-twcss-mt-\[\.02em\] {
+  margin-top: -0.02em;
+}
+
+.-twcss-mt-\[\.025em\] {
+  margin-top: -0.025em;
+}
+
+.-twcss-mt-\[\.05em\] {
+  margin-top: -0.05em;
+}
+
+.-twcss-mt-\[\.075em\] {
+  margin-top: -0.075em;
+}
+
+.-twcss-mt-\[-\.75vw\] {
+  margin-top: 0.75vw;
+}
+
+.-twcss-mt-\[\.75vw\] {
+  margin-top: -0.75vw;
+}
+
+.-twcss-mt-\[\.675vw\] {
+  margin-top: -0.675vw;
+}
+
+.-twcss-mt-\[\.5vw\] {
+  margin-top: -0.5vw;
+}
+
+.-twcss-mt-\[\.55vw\] {
+  margin-top: -0.55vw;
+}
+
+.-twcss-mt-\[\.65vw\] {
+  margin-top: -0.65vw;
+}
+
 .twcss-inline-block {
   display: inline-block;
 }
@@ -648,6 +704,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
+.twcss-w-\[2vw\] {
+  width: 2vw;
+}
+
+.twcss-w-\[1\.5vw\] {
+  width: 1.5vw;
+}
+
+.twcss-w-\[4vw\] {
+  width: 4vw;
+}
+
+.twcss-w-\[4\.5vw\] {
+  width: 4.5vw;
+}
+
+.twcss-w-\[5vw\] {
+  width: 5vw;
+}
+
+.twcss-w-\[4\.75vw\] {
+  width: 4.75vw;
+}
+
 .twcss-max-w-7xl {
   max-width: 80rem;
 }
@@ -673,6 +753,48 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-rotate-1 {
   --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-\[1\.5\] {
+  --tw-rotate: 1.5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-2 {
+  --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-\[20deg\] {
+  --tw-rotate: 20deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-\[10deg\] {
+  --tw-rotate: 10deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-\[2deg\] {
+  --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-\[3deg\] {
+  --tw-rotate: 3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -738,6 +860,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-2 {
   gap: 0.5rem;
+}
+
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
+.twcss-gap-\[\.25em\] {
+  gap: 0.25em;
+}
+
+.twcss-self-start {
+  align-self: flex-start;
 }
 
 .twcss-overflow-hidden {
@@ -806,6 +940,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!twcss-font-panton {
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
+}
+
+.twcss-font-cookie {
+  font-family: 'Smart Cookie', sans-serif;
 }
 
 .twcss-text-\[2vw\] {
@@ -899,6 +1037,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 3vw;
   }
 
+  .md\:twcss-w-\[1\.5vw\] {
+    width: 1.5vw;
+  }
+
   .md\:twcss-max-w-\[85vw\] {
     max-width: 85vw;
   }
@@ -938,5 +1080,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-text-\[1\.5vw\] {
     font-size: 1.5vw;
+  }
+
+  .md\:twcss-text-\[2vw\] {
+    font-size: 2vw;
   }
 }
