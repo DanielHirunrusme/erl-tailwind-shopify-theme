@@ -23,6 +23,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider__slide {
+  overflow: hidden;
   --focus-outline-padding: 0.5rem;
   --shadow-padding-top: calc(
     (var(--shadow-vertical-offset) * -1 + var(--shadow-blur-radius)) *

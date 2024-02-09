@@ -123,7 +123,7 @@
 .card--media .card__inner .card__content {
   position: absolute;
   pointer-events: none;
-  padding: calc(var(--image-padding) + 1rem);
+  /* padding: calc(var(--image-padding) + 1rem); */
 }
 
 .card__content {
