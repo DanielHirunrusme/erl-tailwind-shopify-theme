@@ -582,6 +582,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 2em;
 }
 
+.twcss-my-\[1em\] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 .-twcss-mt-\[\.25em\] {
   margin-top: -0.25em;
 }
@@ -664,6 +669,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mb-\[\.5em\] {
   margin-bottom: 0.5em;
+}
+
+.twcss-ml-auto {
+  margin-left: auto;
+}
+
+.twcss-block {
+  display: block;
 }
 
 .twcss-inline-block {
@@ -766,6 +779,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 75%;
 }
 
+.twcss-max-w-\[50vw\] {
+  max-width: 50vw;
+}
+
+.twcss-max-w-\[40vw\] {
+  max-width: 40vw;
+}
+
+.twcss-max-w-\[45vw\] {
+  max-width: 45vw;
+}
+
+.twcss-max-w-\[42vw\] {
+  max-width: 42vw;
+}
+
+.twcss-max-w-\[44vw\] {
+  max-width: 44vw;
+}
+
+.twcss-max-w-\[4vw\] {
+  max-width: 4vw;
+}
+
+.twcss-max-w-\[10vw\] {
+  max-width: 10vw;
+}
+
+.twcss-max-w-\[30vw\] {
+  max-width: 30vw;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -821,6 +866,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-rotate-\[3deg\] {
   --tw-rotate: 3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-twcss-rotate-2 {
+  --tw-rotate: -2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -908,8 +960,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 4vw;
 }
 
+.twcss-gap-\[1\.5em\] {
+  gap: 1.5em;
+}
+
 .twcss-self-start {
   align-self: flex-start;
+}
+
+.twcss-self-end {
+  align-self: flex-end;
 }
 
 .twcss-overflow-hidden {
@@ -922,6 +982,32 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-whitespace-nowrap {
   white-space: nowrap;
+}
+
+.twcss-border-b {
+  border-bottom-width: 1px;
+}
+
+.twcss-border-b-white {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.twcss-bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.twcss-bg-transparent {
+  background-color: transparent;
+}
+
+.twcss-bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
+.twcss-bg-opacity-40 {
+  --tw-bg-opacity: 0.4;
 }
 
 .twcss-object-cover {
@@ -950,6 +1036,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 2em;
 }
 
+.twcss-p-\[4em\] {
+  padding: 4em;
+}
+
+.twcss-p-\[3em\] {
+  padding: 3em;
+}
+
 .twcss-px-\[1em\] {
   padding-left: 1em;
   padding-right: 1em;
@@ -963,6 +1057,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-px-\[2em\] {
   padding-left: 2em;
   padding-right: 2em;
+}
+
+.twcss-py-\[1em\] {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .twcss-pb-\[4vw\] {
@@ -1021,6 +1120,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Smart Cookie', sans-serif !important;
 }
 
+.\!twcss-font-knocky {
+  font-family: 'Knocky', sans-serif !important;
+}
+
+.\!twcss-font-sans {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 .twcss-text-\[2vw\] {
   font-size: 2vw;
 }
@@ -1061,12 +1168,47 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
+.\!twcss-font-bold {
+  font-weight: 700 !important;
+}
+
 .twcss-uppercase {
   text-transform: uppercase;
 }
 
 .twcss-leading-none {
   line-height: 1;
+}
+
+.\!twcss-leading-none {
+  line-height: 1 !important;
+}
+
+.twcss-placeholder-white::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.twcss-placeholder-white:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.twcss-placeholder-white::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.twcss-placeholder-opacity-50::-moz-placeholder {
+  --tw-placeholder-opacity: 0.5;
+}
+
+.twcss-placeholder-opacity-50:-ms-input-placeholder {
+  --tw-placeholder-opacity: 0.5;
+}
+
+.twcss-placeholder-opacity-50::placeholder {
+  --tw-placeholder-opacity: 0.5;
 }
 
 .twcss-opacity-50 {
