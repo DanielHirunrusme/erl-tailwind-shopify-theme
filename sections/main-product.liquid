@@ -96,9 +96,9 @@
               </p>
             {%- when 'title' -%}
               <div class='product__title' {{ block.shopify_attributes }}>
-                <h1 class="-twcss-rotate-1 twcss-transform twcss-pb-2">{{ product.title | escape }}</h1>
+                <h1 class="-twcss-rotate-1 twcss-transform twcss-pb-[.2em]">{{ product.title | escape }}</h1>
                 <a href='{{ product.url }}' class='product__title'>
-                  <h2 class='h1 '>
+                  <h2 class='h1'>
                     {{ product.title | escape }}
                   </h2>
                 </a>
@@ -124,7 +124,7 @@
                 {%- if shop.shipping_policy.body != blank -%}
                   {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                 {%- endif -%}
-              </div> {% endcomment %}
+              </div> 
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -132,10 +132,11 @@
                   {{ form | payment_terms }}
                 {%- endform -%}
               </div>
+              {% endcomment %}
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div
-                  class='product__description rte quick-add-hidden twcss-max-w-2xl h5 twcss-transform twcss-rotate-1'
+                  class='product__description rte quick-add-hidden twcss-max-w-2xl h5 twcss-transform -twcss-rotate-1 twcss-mb-[.5em]'
                   {{ block.shopify_attributes }}
                 >
                   {{ product.description }}
@@ -216,7 +217,7 @@
                   <summary>
                     <div class='summary__title'>
                       {% render 'icon-accordion', icon: block.settings.icon %}
-                      <div class='accordion__title twcss-font-sans '>
+                      <div class='accordion__title twcss-font-sans twcss-font-bold'>
                         {{ block.settings.heading | default: block.settings.page.title }}
                       </div>
                     </div>
@@ -642,7 +643,7 @@
       {% comment %} Back to shop {% endcomment %}
       <a
         href='/collections/all'
-        class='md:twcss-absolute twcss-p-8 twcss-bottom-0 twcss-right-0 md:twcss-p-4 h3 twcss-flex twcss-items-center twcss-gap-2'
+        class='md:twcss-absolute twcss-p-8 twcss-bottom-0 twcss-right-0 md:twcss-p-4 h3 twcss-flex twcss-items-center twcss-gap-2 !twcss-font-cookie'
       >
         Back to shop
         <span>

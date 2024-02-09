@@ -648,6 +648,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -0.65vw;
 }
 
+.twcss-mb-\[1em\] {
+  margin-bottom: 1em;
+}
+
+.twcss-mb-\[\.5em\] {
+  margin-bottom: 0.5em;
+}
+
 .twcss-inline-block {
   display: inline-block;
 }
@@ -918,6 +926,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
+.twcss-pb-\[1em\] {
+  padding-bottom: 1em;
+}
+
+.twcss-pb-\[\.2em\] {
+  padding-bottom: 0.2em;
+}
+
 .twcss-text-center {
   text-align: center;
 }
@@ -944,6 +960,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-font-cookie {
   font-family: 'Smart Cookie', sans-serif;
+}
+
+.\!twcss-font-cookie {
+  font-family: 'Smart Cookie', sans-serif !important;
 }
 
 .twcss-text-\[2vw\] {
