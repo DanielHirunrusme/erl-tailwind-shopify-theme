@@ -1261,6 +1261,7 @@ summary::-webkit-details-marker {
   background-color: rgba(var(--color-foreground), 0.1);
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .media--transparent {
