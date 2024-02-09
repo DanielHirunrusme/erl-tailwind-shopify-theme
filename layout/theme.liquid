@@ -316,7 +316,11 @@
         data-swup-scroll-target
         class='transition-fade'
       >
-        {% if template.name != 'index' and template.name != 'product' %}
+        {% if template.name != 'index'
+          and template.name != 'product'
+          and template.name != 'collection'
+          and template.name != 'cart'
+        %}
           {{ content_for_layout }}
         {% endif %}
       </div>
