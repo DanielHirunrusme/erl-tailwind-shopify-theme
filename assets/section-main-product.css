@@ -61,7 +61,8 @@
     position: sticky;
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
     top: 0;
-    max-height: 100dvh;
+    max-height: 100vh;
+    max-height: calc(var(--vh) * 100);
   }
 
   .product--large:not(.product--no-media).product--right
@@ -696,7 +697,8 @@ a.product__text {
 
 .product-media-modal {
   background-color: rgb(var(--color-background));
-  height: 100dvh;
+  height: 100vh;
+  height: calc(var(--vh) * 100);
   position: fixed;
   top: 0;
   left: 0;
@@ -716,10 +718,12 @@ a.product__text {
   display: flex;
   align-items: center;
   height: 100vh;
+  height: calc(var(--vh) * 100);
 }
 
 .product-media-modal__content {
-  max-height: 100dvh;
+  max-height: 100vh;
+  max-height: calc(var(--vh) * 100);
   width: 100vw;
   overflow: auto;
 }

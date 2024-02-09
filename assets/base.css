@@ -2834,6 +2834,7 @@ details[open] .modal-overlay::after {
   left: 0;
   right: 0;
   height: 100vh;
+  height: calc(var(--vh) * 100);
 }
 
 .no-js details[open] > .header__icon--search {
@@ -3433,6 +3434,7 @@ details-disclosure > details {
 .animate--fixed > svg:not(.zoom):not(.deferred-media__poster-button) {
   position: fixed;
   height: 100vh;
+  height: calc(var(--vh) * 100);
 }
 
 /* Zoom in image on scroll */

@@ -624,12 +624,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 50vh;
 }
 
-.twcss-w-\[30vw\] {
-  width: 30vw;
-}
-
 .twcss-w-full {
   width: 100%;
+}
+
+.twcss-w-\[30vw\] {
+  width: 30vw;
 }
 
 .twcss-w-\[8vw\] {
@@ -764,10 +764,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-p-8 {
   padding: 2rem;
-}
-
-.twcss-p-0 {
-  padding: 0px;
 }
 
 .twcss-px-\[1em\] {

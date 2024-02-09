@@ -281,6 +281,12 @@
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
+      function setViewHeight() {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+      setViewHeight();
+      window.addEventListener('resize', setViewHeight);
     </script>
   </head>
 
