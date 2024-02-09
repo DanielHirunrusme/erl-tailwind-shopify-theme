@@ -221,9 +221,11 @@ html.is-changing .transition-fade {
   transition: opacity 0s;
   opacity: 1;
 }
+
 html.is-changing * {
   cursor: wait;
 }
+
 /* Define the styles for the unloaded pages */
 html.is-animating .transition-fade {
   opacity: 0;
@@ -235,6 +237,7 @@ html.is-animating .transition-fade {
 #swup.is-changing {
   transition: opacity 0ms;
 }
+
 #swup.is-animating {
   opacity: 0;
 }
@@ -1033,7 +1036,6 @@ summary::-webkit-details-marker {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
   padding: 0;
   list-style: none;
   column-gap: var(--grid-mobile-horizontal-spacing);
