@@ -758,6 +758,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 36em;
 }
 
+.twcss-max-w-\[50\%\] {
+  max-width: 50%;
+}
+
+.twcss-max-w-\[75\%\] {
+  max-width: 75%;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -975,6 +983,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[2em\] {
   padding-bottom: 2em;
+}
+
+.twcss-text-left {
+  text-align: left;
 }
 
 .twcss-text-center {
