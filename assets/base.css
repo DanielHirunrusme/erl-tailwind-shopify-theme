@@ -2524,7 +2524,8 @@ product-info .loading__spinner:not(.hidden) ~ *,
   /* background-color: rgb(var(--color-background)); */
 }
 
-.header-wrapper[data-template='blog'] {
+.header-wrapper[data-template='blog'],
+.header-wrapper[data-template='article'] {
   position: fixed;
 }
 
