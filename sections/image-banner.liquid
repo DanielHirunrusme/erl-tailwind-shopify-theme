@@ -181,13 +181,15 @@
     </a>
   </div>
 
-  <div
-    style='transform: translateX(200%); cursor: grab;'
-    id='Collage'
-    class='twcss-absolute twcss-bottom-[30vw] md:twcss-bottom-[0vw] twcss-right-[8vw] twcss-aspect-[537/942] twcss-z-10 twcss-transition-transform twcss-duration-500 twcss-ease-linear twcss-w-[30vw] md:twcss-w-[20vw]'
-  >
-    {{ 'collage-1.png' | asset_img_url: 'large' | img_tag }}
-  </div>
+  {% if template.name == 'home' %}
+    <div
+      style='transform: translateX(200%); cursor: grab;'
+      id='Collage'
+      class='twcss-absolute twcss-bottom-[30vw] md:twcss-bottom-[0vw] twcss-right-[8vw] twcss-aspect-[537/942] twcss-z-10 twcss-transition-transform twcss-duration-500 twcss-ease-linear twcss-w-[30vw] md:twcss-w-[20vw]'
+    >
+      {{ 'collage-1.png' | asset_img_url: 'large' | img_tag }}
+    </div>
+  {% endif %}
 </div>
 
 <script type='text/javascript'>
