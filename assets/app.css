@@ -597,6 +597,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.twcss-mx-\[3em\] {
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+.\!twcss-mx-\[3em\] {
+  margin-left: 3em !important;
+  margin-right: 3em !important;
+}
+
 .-twcss-mt-\[\.25em\] {
   margin-top: -0.25em;
 }
@@ -769,6 +779,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 4.75vw;
 }
 
+.twcss-w-\[12vw\] {
+  width: 12vw;
+}
+
 .twcss-max-w-7xl {
   max-width: 80rem;
 }
@@ -922,6 +936,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
+.twcss-justify-end {
+  justify-content: flex-end;
+}
+
 .twcss-justify-center {
   justify-content: center;
 }
@@ -1058,6 +1076,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5em;
 }
 
+.twcss-p-\[1\.4em\] {
+  padding: 1.4em;
+}
+
 .twcss-px-\[1em\] {
   padding-left: 1em;
   padding-right: 1em;
@@ -1076,6 +1098,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-py-\[1em\] {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.\!twcss-px-\[3em\] {
+  padding-left: 3em !important;
+  padding-right: 3em !important;
+}
+
+.\!twcss-px-\[2em\] {
+  padding-left: 2em !important;
+  padding-right: 2em !important;
 }
 
 .twcss-pb-\[4vw\] {
@@ -1098,12 +1130,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 2em;
 }
 
+.twcss-pt-\[10vw\] {
+  padding-top: 10vw;
+}
+
+.twcss-pt-\[20vw\] {
+  padding-top: 20vw;
+}
+
+.twcss-pt-\[40vw\] {
+  padding-top: 40vw;
+}
+
+.twcss-pt-\[30vw\] {
+  padding-top: 30vw;
+}
+
+.twcss-pb-\[1\,4em\] {
+  padding-bottom: 1, 4em;
+}
+
+.twcss-pb-\[1\.4em\] {
+  padding-bottom: 1.4em;
+}
+
 .twcss-text-left {
   text-align: left;
 }
 
 .twcss-text-center {
   text-align: center;
+}
+
+.twcss-text-right {
+  text-align: right;
 }
 
 .twcss-font-panton {
@@ -1352,6 +1412,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding: 4em;
   }
 
+  .md\:twcss-p-\[2em\] {
+    padding: 2em;
+  }
+
   .md\:twcss-px-\[4vw\] {
     padding-left: 4vw;
     padding-right: 4vw;
@@ -1363,6 +1427,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:twcss-pt-\[10vw\] {
+    padding-top: 10vw;
+  }
+
+  .md\:twcss-pt-\[15vw\] {
+    padding-top: 15vw;
   }
 
   .md\:twcss-text-right {

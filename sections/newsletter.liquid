@@ -16,7 +16,7 @@
 {%- endstyle -%}
 
 <div class='newsletter twcss-relative center twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
-  <div class='twcss-relative twcss-mx-4 twcss-p-[1.5em] md:twcss-p-[3em] twcss-flex twcss-gap-[1em] twcss-flex-col  twcss-z-10 twcss-bg-white twcss-bg-opacity-40  content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
+  <div class='twcss-relative twcss-mx-4 twcss-p-[1.5em] md:twcss-p-[2em] twcss-flex twcss-gap-[1em] twcss-flex-col  twcss-z-10 twcss-bg-white twcss-bg-opacity-40  content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
