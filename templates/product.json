@@ -138,6 +138,104 @@
         "padding_bottom": 0
       }
     },
+    "image_banner_cte3yC": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ndEEDL": {
+          "type": "heading",
+          "settings": {
+            "heading": "shop",
+            "heading_size": "h2"
+          }
+        },
+        "text_xQPxyy": {
+          "type": "text",
+          "settings": {
+            "text": "Shearling Bag",
+            "text_style": "body"
+          }
+        },
+        "buttons_dVWJTY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ndEEDL",
+        "text_xQPxyy",
+        "buttons_dVWJTY"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/erl-lookbook-compressed_Page_35.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_EmxCRh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bnmzcL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop",
+            "heading_size": "h1"
+          }
+        },
+        "text_RMLght": {
+          "type": "text",
+          "settings": {
+            "text": "Shoes",
+            "text_style": "body"
+          }
+        },
+        "buttons_UMQrLc": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bnmzcL",
+        "text_RMLght",
+        "buttons_UMQrLc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ERL_FW21_LOOKBOOK_WEB_Page_47_2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "newsletter_t4kCgY": {
       "type": "newsletter",
       "blocks": {
@@ -206,6 +304,8 @@
   "order": [
     "main",
     "related-products",
+    "image_banner_cte3yC",
+    "image_banner_EmxCRh",
     "newsletter_t4kCgY",
     "2c7c9de3-c968-4f32-9f80-45d3277762ef"
   ]
