@@ -522,7 +522,8 @@ h4,
 .h4,
 .field__label,
 .field__input,
-body .cc-window {
+body .cc-window,
+.shopify-payment-button__more-options {
   font-style: var(--font-heading-style);
   font-size: 1rem;
   text-transform: uppercase;
@@ -534,7 +535,8 @@ body .cc-window {
   .h4,
   .field__label,
   .field__input,
-  body .cc-window {
+  body .cc-window,
+  .shopify-payment-button__more-options {
     font-style: var(--font-heading-style);
     font-size: 0.75vw;
     text-transform: uppercase;

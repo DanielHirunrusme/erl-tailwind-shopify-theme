@@ -93,11 +93,12 @@
             </span>
             {%- render 'loading-spinner' -%}
           </button>
-          {% comment %}
+
+          <div class='md:twcss-max-w-[20vw] lg:twcss-max-w-[15vw] twcss-mt-[2em]'>
             {%- if show_dynamic_checkout -%}
               {{ form | payment_button }}
             {%- endif -%}
-          {% endcomment %}
+          </div>
         </div>
       {%- endform -%}
     </product-form>
