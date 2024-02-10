@@ -141,18 +141,18 @@
     "image_banner_cte3yC": {
       "type": "image-banner",
       "blocks": {
-        "heading_ndEEDL": {
-          "type": "heading",
-          "settings": {
-            "heading": "shop",
-            "heading_size": "h2"
-          }
-        },
         "text_xQPxyy": {
           "type": "text",
           "settings": {
-            "text": "Shearling Bag",
-            "text_style": "body"
+            "text": "Shop",
+            "text_style": "subtitle"
+          }
+        },
+        "heading_ndEEDL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shearling Bag",
+            "heading_size": "h2"
           }
         },
         "buttons_dVWJTY": {
@@ -169,8 +169,8 @@
         }
       },
       "block_order": [
-        "heading_ndEEDL",
         "text_xQPxyy",
+        "heading_ndEEDL",
         "buttons_dVWJTY"
       ],
       "settings": {
@@ -190,18 +190,18 @@
     "image_banner_EmxCRh": {
       "type": "image-banner",
       "blocks": {
-        "heading_bnmzcL": {
-          "type": "heading",
-          "settings": {
-            "heading": "Shop",
-            "heading_size": "h1"
-          }
-        },
         "text_RMLght": {
           "type": "text",
           "settings": {
-            "text": "Shoes",
-            "text_style": "body"
+            "text": "Shop",
+            "text_style": "subtitle"
+          }
+        },
+        "heading_bnmzcL": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shoes",
+            "heading_size": "h1"
           }
         },
         "buttons_UMQrLc": {
@@ -218,8 +218,8 @@
         }
       },
       "block_order": [
-        "heading_bnmzcL",
         "text_RMLght",
+        "heading_bnmzcL",
         "buttons_UMQrLc"
       ],
       "settings": {
