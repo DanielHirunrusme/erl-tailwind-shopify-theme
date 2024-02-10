@@ -16,14 +16,14 @@
 {%- endstyle -%}
 
 <div class='newsletter twcss-relative center twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
-  <div class='twcss-relative twcss-mx-4 twcss-p-[1.5em] md:twcss-p-[2em] twcss-flex twcss-gap-[1em] twcss-flex-col  twcss-z-10 twcss-bg-white twcss-bg-opacity-40  content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
+  <div class='twcss-relative twcss-mx-4 twcss-p-[1.5em] md:twcss-p-[2em] twcss-flex twcss-gap-[1em] twcss-flex-col  twcss-z-10 twcss-mt-auto twcss-mr-auto content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
           <h2
-            class='h1 twcss-transform -twcss-rotate-1'
+            class='h1 twcss-transform twcss-rotate-2'
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -34,7 +34,7 @@
           </h2>
         {%- when 'paragraph' -%}
           <div
-            class='h3 !twcss-font-panton rte twcss-text-left twcss-ml-auto !twcss-leading-none twcss-transform -twcss-rotate-2'
+            class='h3 !twcss-font-panton rte twcss-text-left twcss-ml-auto !twcss-leading-none twcss-transform twcss-rotate-2 twcss-mb-[2em]'
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -44,22 +44,22 @@
             {{ block.settings.text }}
           </div>
         {%- when 'email_form' -%}
-          <div {{ block.shopify_attributes }}>
-            {% form 'customer', class: 'newsletter-form' %}
+          <div {{ block.shopify_attributes }} class=' twcss-mr-[2em] md:twcss-mr-[8em]'>
+            {% form 'customer', class: 'newsletter-form ' %}
               <input type='hidden' name='contact[tags]' value='newsletter'>
               <div
-                class='newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+                class='newsletter-form__field-wrapper {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
                 {% if settings.animations_reveal_on_scroll %}
                   data-cascade
                   style='--animation-order: {{ forloop.index }};'
                 {% endif %}
               >
-                <div class='twcss-border-b-white twcss-border-b twcss-flex md:twcss-max-w-[30vw] twcss-ml-auto twcss-my-[1em]'>
+                <div class='twcss-border-b-white twcss-border-b twcss-flex twcss-max-w-[70vw] md:twcss-max-w-[25vw] twcss-ml-auto twcss-my-[1em] '>
                   <input
                     id='NewsletterForm--{{ section.id }}'
                     type='email'
                     name='contact[email]'
-                    class='twcss-bg-transparent twcss-text-left twcss-flex-1 twcss-placeholder-white twcss-placeholder-opacity-50 !twcss-font-sans h3 !twcss-font-bold'
+                    class='twcss-bg-transparent focus:twcss-border-none twcss-text-left twcss-flex-1 twcss-placeholder-white twcss-placeholder-opacity-50 !twcss-font-sans h3 !twcss-font-bold'
                     value='{{ form.email }}'
                     aria-required='true'
                     autocorrect='off'
@@ -72,7 +72,8 @@
                     {% elsif form.posted_successfully? %}
                       aria-describedby='Newsletter-success--{{ section.id }}'
                     {% endif %}
-                    placeholder='{{ 'newsletter.label' | t }}'
+                    placeholder='Email Address'
+                    {% comment %} placeholder='{{ 'newsletter.label' | t }}' {% endcomment %}
                     required
                   >
                   {% comment %}
@@ -113,8 +114,8 @@
           </div>
       {%- endcase -%}
     {%- endfor -%}
-    <p class='twcss-uppercase twcss-ml-auto md:twcss-max-w-[40vw] twcss-inline-block'>
-      <span class='twcss-text-left twcss-block'>
+    <p class='twcss-uppercase twcss-ml-auto md:twcss-max-w-[25vw] twcss-inline-block twcss-mr-[2em] md:twcss-mr-[8em]'>
+      <span class='  twcss-block twcss-text-right twcss-mb-[4em] '>
         By sharing your email and subscribing you agree to receive email notifications from ERL clothing.
       </span>
     </p>

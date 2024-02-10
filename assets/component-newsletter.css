@@ -20,6 +20,10 @@
   width: 100%;
 }
 
+.newsletter-form__field-wrapper input:focus-visible {
+  outline: none !important;
+}
+
 .newsletter-form__field-wrapper .field__input {
   padding-right: 5rem;
 }
