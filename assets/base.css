@@ -2524,6 +2524,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
   /* background-color: rgb(var(--color-background)); */
 }
 
+.header-wrapper[data-template='blog'] {
+  position: fixed;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
