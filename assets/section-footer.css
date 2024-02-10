@@ -6,7 +6,7 @@
 
 footer ul li:nth-child(1) {
   transform: rotate(-2deg);
-  padding-left: 2em;
+  padding-left: 1.4em;
 }
 
 footer ul li:nth-child(4) {
@@ -18,7 +18,7 @@ footer ul li:nth-child(6) {
 }
 
 footer ul li:last-child {
-  padding-right: 2em;
+  padding-right: 1.4em;
 }
 
 .footer:not(.color-scheme-1) {
