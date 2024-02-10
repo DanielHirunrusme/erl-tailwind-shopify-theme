@@ -7,11 +7,11 @@
     endif
   -%}
 </span>
-<span class='twcss-hidden md:twcss-flex twcss-mt-[.15em] twcss-uppercase'>{{ 'templates.cart.cart' | t }}</span>
 {%- if cart != empty -%}
-  <div>
+  <div class='twcss-hidden md:twcss-flex twcss-mt-[.15em] twcss-uppercase'>
+    {{ 'templates.cart.cart' | t }}
     {%- if cart.item_count < 100 -%}
-      <span aria-hidden='true'>:{{ cart.item_count }}</span>
+      <span>:{{ cart.item_count }}</span>
     {%- endif -%}
     {% comment %} <span>{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span> {% endcomment %}
   </div>
