@@ -649,12 +649,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2em;
 }
 
+.twcss-ml-\[2em\] {
+  margin-left: 2em;
+}
+
+.twcss-ml-\[1em\] {
+  margin-left: 1em;
+}
+
+.twcss-mb-\[1em\] {
+  margin-bottom: 1em;
+}
+
+.twcss-mb-\[\.75em\] {
+  margin-bottom: 0.75em;
+}
+
+.twcss-mb-0 {
+  margin-bottom: 0px;
+}
+
 .twcss-block {
   display: block;
 }
 
 .twcss-inline-block {
   display: inline-block;
+}
+
+.twcss-inline {
+  display: inline;
 }
 
 .twcss-flex {

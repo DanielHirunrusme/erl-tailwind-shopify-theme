@@ -135,16 +135,16 @@
             {% endcomment %}
 
             <h2
+              class='h1  twcss-ml-[1em] twcss-mb-[.75em] twcss-flex twcss-items-center'
               {{ block.shopify_attributes }}
             >
-              {{ block.settings.heading }}
+              {{ block.settings.heading -}}
+              <span class='twcss-inline-block banner__arrow twcss-ml-[.4em]'>{% render 'icon-arrow' %}</span>
             </h2>
 
           {%- when 'text' -%}
-            <div class='h2 twcss-ml-[4.5em]'>
+            <div class='h3 !twcss-font-knocky twcss-ml-[2em] twcss-transform twcss-rotate-4 twcss-mb-0 twcss-inline'>
               {{ block.settings.text -}}
-
-              <span class='twcss-inline-block banner__arrow twcss-ml-[.4em]'>{% render 'icon-arrow' %}</span>
             </div>
           {%- when 'buttons' -%}
             <div
