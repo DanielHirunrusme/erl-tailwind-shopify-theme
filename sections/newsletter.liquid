@@ -16,7 +16,7 @@
 {%- endstyle -%}
 
 <div class='newsletter twcss-relative center twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
-  <div class='twcss-relative twcss-p-[3em] twcss-flex twcss-gap-[1em] twcss-flex-col  twcss-z-10 twcss-bg-white twcss-bg-opacity-40  content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
+  <div class='twcss-relative twcss-mx-4 twcss-p-[1.5em] md:twcss-p-[3em] twcss-flex twcss-gap-[1em] twcss-flex-col  twcss-z-10 twcss-bg-white twcss-bg-opacity-40  content-container{% if section.settings.full_width %} content-container--full-width{% endif %}  '>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
@@ -54,7 +54,7 @@
                   style='--animation-order: {{ forloop.index }};'
                 {% endif %}
               >
-                <div class='twcss-border-b-white twcss-border-b twcss-flex twcss-max-w-[30vw] twcss-ml-auto twcss-my-[1em]'>
+                <div class='twcss-border-b-white twcss-border-b twcss-flex md:twcss-max-w-[30vw] twcss-ml-auto twcss-my-[1em]'>
                   <input
                     id='NewsletterForm--{{ section.id }}'
                     type='email'
@@ -113,7 +113,7 @@
           </div>
       {%- endcase -%}
     {%- endfor -%}
-    <p class='twcss-uppercase twcss-ml-auto twcss-max-w-[40vw] twcss-inline-block'>
+    <p class='twcss-uppercase twcss-ml-auto md:twcss-max-w-[40vw] twcss-inline-block'>
       <span class='twcss-text-left twcss-block'>
         By sharing your email and subscribing you agree to receive email notifications from ERL clothing.
       </span>

@@ -68,12 +68,12 @@
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
   <div class='product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col'>
-    <div class='grid__item md:twcss-hidden'>
+    <div class='grid__item product__media-wrapper '>
       {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
     </div>
-    <div class='grid__item product__media-wrapper twcss-hidden md:twcss-block {% if section.settings.media_position == 'right' %} twcss-md:hidden{% endif %}'>
+    {% comment %} <div class='grid__item product__media-wrapper twcss-hidden md:twcss-block {% if section.settings.media_position == 'right' %} twcss-md:hidden{% endif %}'>
       {% render 'product-media-feature-image', variant_images: variant_images %}
-    </div>
+    </div> {% endcomment %}
     <div class='product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
       <product-info
         id='ProductInfo-{{ section.id }}'
@@ -223,7 +223,7 @@
                     </div>
                     {% comment %} {% render 'icon-caret' %} {% endcomment %}
                   </summary>
-                  <div class='accordion__content rte-footer' id='ProductAccordion-{{ block.id }}-{{ section.id }}'>
+                  <div class='accordion__content  twcss-font-sans twcss-font-bold' id='ProductAccordion-{{ block.id }}-{{ section.id }}'>
                     {{ block.settings.content }}
                     {{ block.settings.page.content }}
                   </div>
@@ -643,7 +643,7 @@
       {% comment %} Back to shop {% endcomment %}
       <a
         href='/collections/all'
-        class='md:twcss-absolute twcss-p-8 twcss-bottom-0 twcss-right-0 md:twcss-p-4 h3 twcss-flex twcss-items-center twcss-gap-2 !twcss-font-cookie'
+        class='twcss-absolute twcss-p-[2em] twcss-bottom-0 twcss-right-0 md:twcss-p-4 h3 twcss-flex twcss-items-center twcss-gap-2 !twcss-font-cookie'
       >
         Back to shop
         <span>
@@ -663,7 +663,7 @@
     {% endcomment %}
   </div>
 
-  {% render 'product-media-grid', variant_images: variant_images %}
+  {% comment %} {% render 'product-media-grid', variant_images: variant_images %} {% endcomment %}
 
   {% render 'product-media-modal', variant_images: variant_images %}
 

@@ -471,7 +471,7 @@ body .cc-window {
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 7vw);
 }
 
 @media only screen and (min-width: 750px) {
@@ -504,7 +504,7 @@ h3,
 .button-label,
 .shopify-challenge__button,
 .customer button {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 3.5vw);
 }
 
 @media only screen and (min-width: 750px) {
@@ -544,7 +544,7 @@ body .cc-window {
 
 h5,
 .h5 {
-  font-size: calc(var(--font-heading-scale) * 0.75rem);
+  font-size: calc(var(--font-heading-scale) * 2vw);
 }
 
 @media only screen and (min-width: 750px) {
@@ -1054,6 +1054,7 @@ summary::-webkit-details-marker {
 }
 
 .grid__item {
+  position: relative;
   width: calc(25% - var(--grid-mobile-horizontal-spacing) * 3 / 4);
   max-width: calc(50% - var(--grid-mobile-horizontal-spacing) / 2);
   flex-grow: 1;
