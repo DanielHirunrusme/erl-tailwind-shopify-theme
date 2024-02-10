@@ -126,7 +126,7 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper ">
+<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper {% if template.name == 'blog' or template.name == 'article' %}!twcss-fixed{% endif %}">
   {%- liquid
     assign social_links = false
     assign localization_forms = false
