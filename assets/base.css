@@ -2526,7 +2526,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header-wrapper[data-template='blog'],
 .header-wrapper[data-template='article'] {
-  position: fixed;
+  position: fixed !important;
 }
 
 .header {
