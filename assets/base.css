@@ -1535,6 +1535,15 @@ button.shopify-payment-button__button--unbranded,
   stroke: rgb(var(--color-button-text));
 }
 
+.cart__checkout-button {
+  background-color: rgba(255, 255, 255, 0.95);
+  display: block;
+  width: 100%;
+  padding: 0.5em 0;
+  color: #aaadb1;
+  height: 48px !important;
+}
+
 /* Button - social share */
 
 .share-button {

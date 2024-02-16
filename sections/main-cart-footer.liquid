@@ -5,25 +5,25 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    /* padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px; */
+    /* padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px; */
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      /* padding-top: {{ section.settings.padding_top }}px; */
+      /* padding-bottom: {{ section.settings.padding_bottom }}px; */
     }
   }
 {%- endstyle -%}
 
 <div
-  class='twcss-max-w-7xl twcss-ml-auto {% if cart == empty %} is-empty{% endif %}'
+  class='twcss-max-w-3xl twcss-mr-auto {% if cart == empty %} is-empty{% endif %}'
   id='main-cart-footer'
   data-id='{{ section.id }}'
 >
   <div>
-    <div class='cart__footer twcss-flex twcss-justify-end twcss-items-end section-{{ section.id }}-padding'>
+    <div class='cart__footer twcss-flex section-{{ section.id }}-padding'>
       {%- if settings.show_cart_note -%}
         <cart-note class='cart__note field'>
           <label for='Cart-note'>{{ 'sections.cart.note' | t }}</label>
@@ -37,13 +37,13 @@
         </cart-note>
       {%- endif -%}
 
-      <div class='cart__blocks  !twcss-px-[1.4em]'>
+      <div class='cart__blocks twcss-flex twcss-flex-col twcss-gap-[1em] '>
         {% for block in section.blocks %}
           {%- case block.type -%}
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              <div class='js-contents' {{ block.shopify_attributes }}>
+              <div class='js-contents twcss-flex twcss-flex-col twcss-gap-[1em]' {{ block.shopify_attributes }}>
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class='discounts list-unstyled' role='list' aria-label='{{ 'customer.order.discount' | t }}'>
@@ -58,11 +58,13 @@
                   {%- endif -%}
                 </div>
 
-                <div class='totals'>
-                  <h2 class='totals__total h3 twcss-transform -twcss-rotate-2'>
-                    {{ 'sections.cart.estimated_total' | t }}
-                  </h2>
-                  <p class='h3'>{{ cart.total_price | money_with_currency }}</p>
+                <div class='totals twcss-flex'>
+                  <div class=' twcss-w-[30vw] md:twcss-w-[12vw]'>
+                    <h2 class='totals__total h3 twcss-transform -twcss-rotate-2'>
+                      {{ 'sections.cart.estimated_total' | t }}
+                    </h2>
+                  </div>
+                  <p class='h3 !twcss-font-sans twcss-ml-[1.5em]'>{{ cart.total_price | money_with_currency }}</p>
                 </div>
 
                 <small class='tax-note h4 !twcss-font-sans'>
@@ -75,11 +77,15 @@
                   {%- else -%}
                     {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                   {%- endif -%}
+                  <div>
+                    BY CLICKING ON 'PAY AND ORDER' I CONFIRM THAT I HAVE READ AND UNDERSTOOD THE TERMS AND CONDITIONS
+                    AND PRIVACY POLICY.
+                  </div>
                 </small>
               </div>
             {%- else -%}
               <div
-                class='twcss-flex twcss-flex-col twcss-gap-4 twcss-items-center md:twcss-items-end twcss-text-center md:twcss-text-right'
+                class='twcss-flex twcss-flex-col twcss-items-center md:twcss-items-end twcss-text-center md:twcss-text-right'
                 {{ block.shopify_attributes }}
               >
                 <noscript>
@@ -91,7 +97,7 @@
                 <button
                   type='submit'
                   id='checkout'
-                  class='cart__checkout-button button twcss-ml-auto'
+                  class='cart__checkout-button button '
                   name='checkout'
                   {% if cart == empty %}
                     disabled
@@ -100,11 +106,6 @@
                 >
                   {{ 'sections.cart.checkout' | t }}
                 </button>
-
-                <div class='twcss-max-w-xl twcss-text-right twcss-transform twcss-rotate-1  !twcss-font-sans'>
-                  BY CLICKING ON 'PAY AND ORDER' I CONFIRM THAT I HAVE READ AND UNDERSTOOD THE TERMS AND CONDITIONS AND
-                  PRIVACY POLICY.
-                </div>
               </div>
 
               {%- if additional_checkout_buttons -%}

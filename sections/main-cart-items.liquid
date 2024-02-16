@@ -25,7 +25,7 @@
 
 <script src='{{ 'quantity-popover.js' | asset_url }}' defer='defer'></script>
 
-<cart-items class='twcss-max-w-7xl twcss-ml-auto twcss-pt-[30vw] md:twcss-pt-[15vw]'>
+<cart-items class='twcss-max-w-4xl twcss-mr-auto twcss-pt-[30vw] md:twcss-pt-[8vw]'>
   {% comment %}
     <div data-title class='title-wrapper-with-link'>
       <h1 class='title title--primary'>{{ 'sections.cart.title' | t }}</h1>
@@ -154,12 +154,31 @@
                     </td>
                   {% endcomment %}
 
-                  <td class='cart-item__details twcss-text-right'>
+                  <td class='cart-item__media twcss-w-[30vw] md:twcss-w-[12vw]'>
+                    {% if item.image %}
+                      {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
+                      <a href='{{ item.url }}' class='cart-item__link' aria-hidden='true' tabindex='-1'> </a>
+                      <div class='cart-item__image-container gradient global-media-settings'>
+                        <img
+                          src='{{ item.image | image_url: width: 300 }}'
+                          class='cart-item__image'
+                          alt='{{ item.image.alt | escape }}'
+                          loading='lazy'
+                          width='100%'
+                          {% comment %} height='{{ 150 | divided_by: item.image.aspect_ratio | ceil }}' {% endcomment %}
+                        >
+                      </div>
+                    {% endif %}
+                  </td>
+
+                  <td class='cart-item__details'>
                     {%- if settings.show_vendor -%}
                       <p class='caption-with-letter-spacing'>{{ item.product.vendor }}</p>
                     {%- endif -%}
 
-                    <a href='{{ item.url }}' class='cart-item__name break h3'>{{ item.product.title | escape }}</a>
+                    <a href='{{ item.url }}' class='cart-item__name break h3 twcss-transform -twcss-rotate-1'>
+                      {{- item.product.title | escape -}}
+                    </a>
 
                     <div class='cart-item__totals right small-hide'>
                       <div class='loading-overlay hidden'>
@@ -286,8 +305,8 @@
                     </ul>
 
                     {% comment %} Quantity Selector + Delete {% endcomment %}
-                    <quantity-popover class='twcss-absolute twcss-bottom-0 twcss-right-0'>
-                      <div class='cart-item__quantity-wrapper quantity-popover-wrapper '>
+                    <quantity-popover class=''>
+                      <div class='cart-item__quantity-wrapper quantity-popover-wrapper twcss-mt-[1em]'>
                         <label class='visually-hidden' for='Quantity-{{ item.index | plus: 1 }}'>
                           {{ 'products.product.quantity.label' | t }}
                         </label>
@@ -445,23 +464,6 @@
                         </svg>
                       </div>
                     </quantity-popover>
-                  </td>
-
-                  <td class='cart-item__media twcss-w-[12vw]'>
-                    {% if item.image %}
-                      {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                      <a href='{{ item.url }}' class='cart-item__link' aria-hidden='true' tabindex='-1'> </a>
-                      <div class='cart-item__image-container gradient global-media-settings'>
-                        <img
-                          src='{{ item.image | image_url: width: 300 }}'
-                          class='cart-item__image'
-                          alt='{{ item.image.alt | escape }}'
-                          loading='lazy'
-                          width='100%'
-                          {% comment %} height='{{ 150 | divided_by: item.image.aspect_ratio | ceil }}' {% endcomment %}
-                        >
-                      </div>
-                    {% endif %}
                   </td>
                 </tr>
               {%- endfor -%}

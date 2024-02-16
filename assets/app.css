@@ -609,8 +609,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0px;
 }
 
-.twcss-ml-auto {
-  margin-left: auto;
+.twcss-mr-auto {
+  margin-right: auto;
 }
 
 .twcss-mt-\[\.75em\] {
@@ -621,8 +621,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5em;
 }
 
-.twcss-mr-auto {
-  margin-right: auto;
+.twcss-ml-auto {
+  margin-left: auto;
 }
 
 .twcss-mb-\[2em\] {
@@ -639,6 +639,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mt-\[2em\] {
   margin-top: 2em;
+}
+
+.twcss-mt-\[1em\] {
+  margin-top: 1em;
+}
+
+.twcss-ml-\[1\.5em\] {
+  margin-left: 1.5em;
 }
 
 .twcss-block {
@@ -697,8 +705,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 12vw;
 }
 
-.twcss-w-7\/12 {
-  width: 58.333333%;
+.twcss-w-8\/12 {
+  width: 66.666667%;
 }
 
 .twcss-w-\[8vw\] {
@@ -717,12 +725,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
-.twcss-w-8\/12 {
-  width: 66.666667%;
+.twcss-w-\[25vw\] {
+  width: 25vw;
 }
 
-.twcss-max-w-7xl {
-  max-width: 80rem;
+.twcss-max-w-4xl {
+  max-width: 56rem;
 }
 
 .twcss-max-w-xl {
@@ -735,6 +743,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-max-w-\[70vw\] {
   max-width: 70vw;
+}
+
+.twcss-max-w-3xl {
+  max-width: 48rem;
 }
 
 .twcss-flex-1 {
@@ -755,13 +767,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.twcss-rotate-1 {
-  --tw-rotate: 1deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .-twcss-rotate-1 {
   --tw-rotate: -1deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
@@ -771,6 +776,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-rotate-2 {
   --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-1 {
+  --tw-rotate: 1deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -806,10 +818,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-items: center;
 }
 
-.twcss-justify-end {
-  justify-content: flex-end;
-}
-
 .twcss-justify-center {
   justify-content: center;
 }
@@ -826,8 +834,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1em;
 }
 
-.twcss-gap-\[2em\] {
-  gap: 2em;
+.twcss-gap-\[1\.4em\] {
+  gap: 1.4em;
 }
 
 .twcss-gap-\[\.25em\] {
@@ -838,16 +846,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.25rem;
 }
 
-.twcss-gap-4 {
-  gap: 1rem;
-}
-
 .twcss-gap-2 {
   gap: 0.5rem;
-}
-
-.twcss-gap-\[1\.4em\] {
-  gap: 1.4em;
 }
 
 .twcss-self-start {
@@ -988,6 +988,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 4vw;
 }
 
+.twcss-text-\[3\.5vw\] {
+  font-size: 3.5vw;
+}
+
 .twcss-text-\[2vw\] {
   font-size: 2vw;
 }
@@ -1000,20 +1004,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 6vw;
 }
 
-.twcss-text-\[3vw\] {
-  font-size: 3vw;
-}
-
-.twcss-text-\[3\.5vw\] {
-  font-size: 3.5vw;
-}
-
 .twcss-font-bold {
   font-weight: 700;
 }
 
 .\!twcss-font-bold {
   font-weight: 700 !important;
+}
+
+.\!twcss-font-normal {
+  font-weight: 400 !important;
+}
+
+.\!twcss-font-light {
+  font-weight: 300 !important;
 }
 
 .twcss-uppercase {
@@ -1138,6 +1142,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 3vw;
   }
 
+  .md\:twcss-w-\[12vw\] {
+    width: 12vw;
+  }
+
   .md\:twcss-max-w-\[85vw\] {
     max-width: 85vw;
   }
@@ -1187,8 +1195,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 5vw;
   }
 
-  .md\:twcss-pt-\[15vw\] {
-    padding-top: 15vw;
+  .md\:twcss-pt-\[8vw\] {
+    padding-top: 8vw;
   }
 
   .md\:twcss-text-right {
