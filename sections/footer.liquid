@@ -33,7 +33,7 @@
   }
 {%- endstyle -%}
 
-<footer data-swup-scroll-container class='twcss-text-[4vw] md:twcss-text-[1.2vw] twcss-overflow-hidden'>
+<footer data-swup-scroll-container class='twcss-text-[3.5vw] md:twcss-text-[1.2vw] twcss-overflow-hidden'>
   {% comment %} Newsletter {% endcomment %}
   {%- if section.settings.newsletter_enable -%}
     <div class='twcss-min-h-screen twcss-flex twcss-items-center twcss-justify-center'>
@@ -194,7 +194,7 @@
                       </div>
                     {%- when 'link_list' -%}
                       {%- if block.settings.menu != blank -%}
-                        <ul class='twcss-flex twcss-gap-[2em] twcss-font-panton'>
+                        <ul class='twcss-flex twcss-gap-[1.4em] twcss-font-panton'>
                           {%- for link in block.settings.menu.links -%}
                             <li>
                               <a
