@@ -1106,6 +1106,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 8em;
   }
 
+  .md\:twcss-ml-\[1em\] {
+    margin-left: 1em;
+  }
+
   .md\:twcss-block {
     display: block;
   }
