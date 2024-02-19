@@ -697,6 +697,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 50vh;
 }
 
+.twcss-min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
 .twcss-w-\[4\.75vw\] {
   width: 4.75vw;
 }
@@ -921,6 +925,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-bg-transparent {
   background-color: transparent;
+}
+
+.twcss-object-contain {
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .twcss-object-cover {

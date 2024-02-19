@@ -1420,7 +1420,7 @@ button.shopify-payment-button__button--unbranded,
   opacity: 0.8;
   line-height: 1;
   font-weight: 900;
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  /* background-color: rgba(var(--color-button), var(--alpha-button-background)); */
 }
 
 .button:hover,
@@ -3367,7 +3367,7 @@ details-disclosure > details {
 }
 
 .rte > *:last-child {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .rte table {
