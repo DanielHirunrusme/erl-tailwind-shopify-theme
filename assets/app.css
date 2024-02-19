@@ -835,6 +835,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.twcss-flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.\!twcss-flex-nowrap {
+  flex-wrap: nowrap !important;
+}
+
 .twcss-items-start {
   align-items: flex-start;
 }
