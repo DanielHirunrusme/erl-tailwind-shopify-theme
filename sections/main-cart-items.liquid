@@ -32,8 +32,16 @@
     </div>
   {% endcomment %}
 
+  {% if cart == empty %}
+    <h1 class=' twcss-transform twcss-rotate-1'>{{ 'sections.cart.empty' | t }}</h1>
+    <br>
+    <a href='{{ routes.all_products_collection_url }}' class='button'>
+      {{ 'general.continue_shopping' | t }}
+    </a>
+  {% endif %}
+
   <div class='cart__warnings'>
-    <h1 class='cart__empty-text'>{{ 'sections.cart.empty' | t }}</h1>
+    <h1 class='cart__empty-text twcss-transform twcss-rotate-1'>{{ 'sections.cart.empty' | t }}</h1>
     <a href='{{ routes.all_products_collection_url }}' class='button'>
       {{ 'general.continue_shopping' | t }}
     </a>

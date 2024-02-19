@@ -813,6 +813,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.twcss-rotate-1 {
+  --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .twcss-transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
