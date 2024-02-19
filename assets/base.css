@@ -204,6 +204,28 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/AlteHaasGrotesk.woff2?v=1708363596')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/AlteHaasGrotesk.woff?v=1708363596')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Alte Haas Grotesk';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/AlteHaasGrotesk_Bold.woff2?v=1708363596')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/AlteHaasGrotesk_Bold.woff?v=1708363596')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* base */
 ::-webkit-scrollbar {
   display: none;
@@ -3319,8 +3341,8 @@ details-disclosure > details {
 }
 
 .rte {
-  font-family: 'UB';
-  font-weight: normal;
+  font-family: 'Alte Haas Grotesk', sans-serif;
+  font-weight: bold;
 }
 
 .rte:after {

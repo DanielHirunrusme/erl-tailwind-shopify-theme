@@ -23,6 +23,7 @@ module.exports = {
         knocky: '"Knocky", sans-serif',
         haymer: '"Haymer Small Capitals Condensed", sans-serif',
         cookie: '"Smart Cookie", sans-serif',
+        grotesk: '"Alte Haas Grotesk", sans-serif',
         sans: 'Arial, Helvetica, sans-serif',
       },
       maxWidth: {

@@ -268,19 +268,23 @@ variant-selects {
 .product-form__submit {
   position: relative;
   margin-bottom: 0.4em;
+  border: 0.2em solid rgba(255, 255, 255, 0.9);
+  padding: 0.25em;
 }
 
 .product-form__submit span:after {
-  content: '';
+  /* content: ''; */
   position: absolute;
   display: block;
-  bottom: -0.2em;
+  bottom: -0.5em;
   left: 0;
   width: 100%;
   transform: rotate(-1deg);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  height: 100%;
+  padding: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.8);
   /* color: rgba(255, 255, 255, .4); */
-  height: 0.2em;
+  /* height: 0.2em; */
 }
 
 .product-form__submit[aria-disabled='true']
