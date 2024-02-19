@@ -613,6 +613,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.twcss-ml-\[1\.5em\] {
+  margin-left: 1.5em;
+}
+
+.twcss-mt-\[1em\] {
+  margin-top: 1em;
+}
+
 .twcss-mt-\[\.75em\] {
   margin-top: 0.75em;
 }
@@ -639,14 +647,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mt-\[2em\] {
   margin-top: 2em;
-}
-
-.twcss-mt-\[1em\] {
-  margin-top: 1em;
-}
-
-.twcss-ml-\[1\.5em\] {
-  margin-left: 1.5em;
 }
 
 .twcss-block {
@@ -701,10 +701,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 30vw;
 }
 
-.twcss-w-\[12vw\] {
-  width: 12vw;
-}
-
 .twcss-w-8\/12 {
   width: 66.666667%;
 }
@@ -725,16 +721,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
-.twcss-w-\[25vw\] {
-  width: 25vw;
+.twcss-max-w-3xl {
+  max-width: 48rem;
 }
 
 .twcss-max-w-4xl {
   max-width: 56rem;
-}
-
-.twcss-max-w-xl {
-  max-width: 36rem;
 }
 
 .twcss-max-w-2xl {
@@ -743,10 +735,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-max-w-\[70vw\] {
   max-width: 70vw;
-}
-
-.twcss-max-w-3xl {
-  max-width: 48rem;
 }
 
 .twcss-flex-1 {
@@ -776,13 +764,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-rotate-2 {
   --tw-rotate: 2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.twcss-rotate-1 {
-  --tw-rotate: 1deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -906,11 +887,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.\!twcss-px-\[1\.4em\] {
-  padding-left: 1.4em !important;
-  padding-right: 1.4em !important;
-}
-
 .twcss-px-\[1\.4em\] {
   padding-left: 1.4em;
   padding-right: 1.4em;
@@ -1012,14 +988,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700 !important;
 }
 
-.\!twcss-font-normal {
-  font-weight: 400 !important;
-}
-
-.\!twcss-font-light {
-  font-weight: 300 !important;
-}
-
 .twcss-uppercase {
   text-transform: uppercase;
 }
@@ -1102,16 +1070,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 1 / span 1;
   }
 
-  .md\:twcss-mr-\[8em\] {
-    margin-right: 8em;
-  }
-
   .md\:twcss-ml-\[1em\] {
     margin-left: 1em;
   }
 
-  .md\:twcss-ml-0 {
-    margin-left: 0px;
+  .md\:twcss-mr-\[8em\] {
+    margin-right: 8em;
   }
 
   .md\:twcss-block {
@@ -1134,6 +1098,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 20vw;
   }
 
+  .md\:twcss-w-\[12vw\] {
+    width: 12vw;
+  }
+
   .md\:twcss-w-full {
     width: 100%;
   }
@@ -1148,10 +1116,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
-  }
-
-  .md\:twcss-w-\[12vw\] {
-    width: 12vw;
   }
 
   .md\:twcss-max-w-\[85vw\] {
