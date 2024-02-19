@@ -1604,3 +1604,25 @@ a.product__text {
     border: none;
   }
 }
+
+.shopify-payment-button {
+  flex: 0 !important;
+  width: auto !important;
+}
+
+.shopify-payment-button div[role='button'] {
+  padding: 0.5em !important;
+}
+
+.shopify-cleanslate svg {
+  width: 12vw !important;
+  height: 2em !important;
+}
+
+@media screen and (min-width: 749px) {
+  .shopify-cleanslate svg {
+    width: 4.875vw !important;
+    height: 2em !important;
+    margin-top: -0.15em !important;
+  }
+}

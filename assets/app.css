@@ -737,6 +737,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 70vw;
 }
 
+.twcss-max-w-\[20vw\] {
+  max-width: 20vw;
+}
+
+.twcss-max-w-\[45vw\] {
+  max-width: 45vw;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -789,6 +797,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-flex-col {
   flex-direction: column;
+}
+
+.twcss-items-start {
+  align-items: flex-start;
 }
 
 .twcss-items-end {
@@ -1130,6 +1142,34 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 20vw;
   }
 
+  .md\:twcss-max-w-\[14vw\] {
+    max-width: 14vw;
+  }
+
+  .md\:twcss-max-w-\[10vw\] {
+    max-width: 10vw;
+  }
+
+  .md\:twcss-max-w-\[12\.5vw\] {
+    max-width: 12.5vw;
+  }
+
+  .md\:twcss-max-w-\[4em\] {
+    max-width: 4em;
+  }
+
+  .md\:twcss-max-w-\[10em\] {
+    max-width: 10em;
+  }
+
+  .md\:twcss-max-w-\[20em\] {
+    max-width: 20em;
+  }
+
+  .md\:twcss-max-w-\[15em\] {
+    max-width: 15em;
+  }
+
   .md\:twcss-grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1195,5 +1235,25 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 990px) {
   .lg\:twcss-max-w-\[15vw\] {
     max-width: 15vw;
+  }
+
+  .lg\:twcss-max-w-\[10vw\] {
+    max-width: 10vw;
+  }
+
+  .lg\:twcss-max-w-\[14vw\] {
+    max-width: 14vw;
+  }
+
+  .lg\:twcss-max-w-\[20vw\] {
+    max-width: 20vw;
+  }
+
+  .lg\:twcss-max-w-\[12vw\] {
+    max-width: 12vw;
+  }
+
+  .lg\:twcss-max-w-\[12\.5vw\] {
+    max-width: 12.5vw;
   }
 }
