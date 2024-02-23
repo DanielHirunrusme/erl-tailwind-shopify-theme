@@ -519,6 +519,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.twcss-left-1\/2 {
+  left: 50%;
+}
+
+.twcss-top-1\/2 {
+  top: 50%;
+}
+
 .twcss-bottom-\[30vw\] {
   bottom: 30vw;
 }
@@ -531,10 +539,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.twcss-right-0 {
-  right: 0px;
-}
-
 .twcss-top-0 {
   top: 0px;
 }
@@ -543,12 +547,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
-.twcss-left-1\/2 {
-  left: 50%;
-}
-
-.twcss-top-1\/2 {
-  top: 50%;
+.twcss-right-0 {
+  right: 0px;
 }
 
 .twcss-z-10 {
@@ -697,16 +697,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 50vh;
 }
 
-.twcss-min-h-\[100vh\] {
-  min-height: 100vh;
-}
-
 .twcss-min-h-\[600px\] {
   min-height: 600px;
-}
-
-.twcss-min-h-\[800px\] {
-  min-height: 800px;
 }
 
 .twcss-w-\[4\.75vw\] {
@@ -757,10 +749,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 70vw;
 }
 
-.twcss-max-w-\[20vw\] {
-  max-width: 20vw;
-}
-
 .twcss-max-w-\[45vw\] {
   max-width: 45vw;
 }
@@ -771,20 +759,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-twcss-translate-x-1\/2 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-twcss-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-twcss-translate-y-1\/3 {
-  --tw-translate-y: -33.333333%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -811,6 +785,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.twcss-rotate-1 {
+  --tw-rotate: 1deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-twcss-rotate-1 {
   --tw-rotate: -1deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
@@ -820,13 +801,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-rotate-2 {
   --tw-rotate: 2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.twcss-rotate-1 {
-  --tw-rotate: 1deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -854,16 +828,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
-.twcss-flex-nowrap {
-  flex-wrap: nowrap;
-}
-
 .\!twcss-flex-nowrap {
   flex-wrap: nowrap !important;
 }
 
-.twcss-items-start {
-  align-items: flex-start;
+.twcss-flex-nowrap {
+  flex-wrap: nowrap;
 }
 
 .twcss-items-end {
@@ -935,11 +905,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
-.twcss-object-contain {
-  -o-object-fit: contain;
-  object-fit: contain;
-}
-
 .twcss-object-cover {
   -o-object-fit: cover;
   object-fit: cover;
@@ -1004,6 +969,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
+.\!twcss-font-sans {
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
 .twcss-font-panton {
   font-family: 'Panton Rust Heavy Base', sans-serif;
 }
@@ -1022,10 +991,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!twcss-font-knocky {
   font-family: 'Knocky', sans-serif !important;
-}
-
-.\!twcss-font-sans {
-  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .twcss-font-sans {
@@ -1072,12 +1037,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-transform: uppercase;
 }
 
-.twcss-leading-none {
-  line-height: 1;
-}
-
 .\!twcss-leading-none {
   line-height: 1 !important;
+}
+
+.twcss-leading-none {
+  line-height: 1;
 }
 
 .twcss-placeholder-white::-moz-placeholder {
@@ -1206,36 +1171,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 25vw;
   }
 
-  .md\:twcss-max-w-\[20vw\] {
-    max-width: 20vw;
-  }
-
-  .md\:twcss-max-w-\[14vw\] {
-    max-width: 14vw;
-  }
-
-  .md\:twcss-max-w-\[10vw\] {
-    max-width: 10vw;
-  }
-
   .md\:twcss-max-w-\[12\.5vw\] {
     max-width: 12.5vw;
-  }
-
-  .md\:twcss-max-w-\[4em\] {
-    max-width: 4em;
-  }
-
-  .md\:twcss-max-w-\[10em\] {
-    max-width: 10em;
-  }
-
-  .md\:twcss-max-w-\[20em\] {
-    max-width: 20em;
-  }
-
-  .md\:twcss-max-w-\[15em\] {
-    max-width: 15em;
   }
 
   .md\:twcss-grid-cols-3 {
@@ -1297,31 +1234,5 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-text-\[2vw\] {
     font-size: 2vw;
-  }
-}
-
-@media (min-width: 990px) {
-  .lg\:twcss-max-w-\[15vw\] {
-    max-width: 15vw;
-  }
-
-  .lg\:twcss-max-w-\[10vw\] {
-    max-width: 10vw;
-  }
-
-  .lg\:twcss-max-w-\[14vw\] {
-    max-width: 14vw;
-  }
-
-  .lg\:twcss-max-w-\[20vw\] {
-    max-width: 20vw;
-  }
-
-  .lg\:twcss-max-w-\[12vw\] {
-    max-width: 12vw;
-  }
-
-  .lg\:twcss-max-w-\[12\.5vw\] {
-    max-width: 12.5vw;
   }
 }
