@@ -25,6 +25,7 @@
 
 .accordion {
   display: flex;
+  margin-bottom: 0.25em;
 }
 
 *:not(.product__accordion) + .product__accordion {
@@ -59,10 +60,10 @@
 }
 
 .accordion__content {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0em;
+  margin-top: 0em;
   word-break: break-word;
   overflow-x: auto;
-  padding: 0 0.6rem;
 }
 
 .accordion__content img {

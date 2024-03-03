@@ -313,10 +313,12 @@
 
     {% sections 'footer-group' %}
 
-    <div class='md:twcss-grid twcss-grid-cols-3 twcss-gap-[4vw] twcss-text-[4vw] md:twcss-text-[1.2vw]'>
+    {% comment %} md:twcss-grid twcss-grid-cols-3 twcss-gap-[4vw] twcss-text-[4vw] md:twcss-text-[1.2vw] {% endcomment %}
+    <div class=''>
+      {% comment %} twcss-col-span-2 twcss-flex twcss-gap-[4vw] twcss-flex-col {% endcomment %}
       <div
         id='swup'
-        class='twcss-col-span-2 twcss-flex twcss-gap-[4vw] twcss-flex-col'
+        class=' twcss-pt-[2em]'
         data-swup-scroll-target
         class='transition-fade'
       >

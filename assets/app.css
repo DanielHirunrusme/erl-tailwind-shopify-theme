@@ -961,6 +961,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
+.twcss-px-\[1em\] {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .twcss-pb-\[1\.4em\] {
   padding-bottom: 1.4em;
 }
@@ -979,6 +984,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[\.2em\] {
   padding-bottom: 0.2em;
+}
+
+.twcss-pt-\[4em\] {
+  padding-top: 4em;
+}
+
+.twcss-pt-\[2em\] {
+  padding-top: 2em;
 }
 
 .twcss-text-left {
@@ -1059,6 +1072,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-uppercase {
   text-transform: uppercase;
+}
+
+.\!twcss-normal-case {
+  text-transform: none !important;
 }
 
 .\!twcss-leading-none {
