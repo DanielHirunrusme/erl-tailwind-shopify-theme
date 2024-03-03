@@ -536,6 +536,12 @@
         "label": "t:settings_schema.global.settings.text_alignment.label"
       },
       {
+        "type": "checkbox",
+        "id": "card_show_price",
+        "default": "true",
+        "label": "Show price?"
+      },
+      {
         "type": "color_scheme",
         "id": "card_color_scheme",
         "label": "t:sections.all.colors.label",
