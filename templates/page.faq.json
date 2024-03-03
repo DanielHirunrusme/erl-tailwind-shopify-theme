@@ -227,7 +227,7 @@
         "collapsible_row_gyJEXQ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I update my shipping address after placing an order?",
+            "heading": "Can I update my shipping address after ordering?",
             "icon": "none",
             "row_content": "<p>Unfortunately, once your order is placed, we are unable to modify the shipping address.<\/p>",
             "page": ""
@@ -353,7 +353,7 @@
         "collapsible_row_qnG9HE": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I received my order, but some items are missing. What should I do?",
+            "heading": "Did you receive an order with missing items?",
             "icon": "none",
             "row_content": "<p>Upon receiving a shipping confirmation email, it will list the items included in that specific shipment. In cases where all items couldn't be fulfilled from one warehouse, we might conduct a split shipment, sending the remaining items separately. Each shipping confirmation details the items in the parcel, so if some are missing, they will likely be shipped separately unless otherwise communicated. If you're unsure about the whereabouts of your items, please don't hesitate to contact us for assistance.<\/p>",
             "page": ""
@@ -417,7 +417,7 @@
         "collapsible_row_GCiJVz": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I'm experiencing issues with payment processing, what steps should I take?",
+            "heading": "I'm having trouble paying, what can I do?",
             "icon": "none",
             "row_content": "<p>If you encounter payment issues during checkout, we recommend reaching out to your bank or card issuer for assistance.<\/p>",
             "page": ""
