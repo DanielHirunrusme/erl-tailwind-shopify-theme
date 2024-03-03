@@ -14,18 +14,16 @@
   }
 {%- endstyle -%}
 {% unless section.settings.hide_text == true %}
-  <div class='twcss-min-h-[50vh]  twcss-px-[1.4em] twcss-pb-[2em] twcss-pt-[4em]'>
+  <div class='twcss-min-h-[50vh] rte-footer twcss-px-[1em] twcss-pb-[2em] twcss-pt-[6em]'>
     {% comment %} Content {% endcomment %}
 
-    <div class='rte-footer'>
-      {% comment %}
-        <h1 class=''>
-          {{ page.title | escape }}
-        </h1>
-      {% endcomment %}
-      <div>
-        {{ page.content }}
-      </div>
+    {% comment %}
+      <h1 class=''>
+        {{ page.title | escape }}
+      </h1>
+    {% endcomment %}
+    <div>
+      {{ page.content }}
     </div>
 
     {% comment %} Image {% endcomment %}
