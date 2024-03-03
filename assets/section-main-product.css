@@ -285,6 +285,10 @@ variant-selects {
   padding: 0.25em 0.5em;
 }
 
+.product-form__submit.loading span {
+  /* opacity: 0; */
+}
+
 .product-form__submit span:after {
   /* content: ''; */
   position: absolute;

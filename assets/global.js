@@ -715,6 +715,7 @@ class SliderComponent extends HTMLElement {
     this.pageTotalElement = this.querySelector('.slider-counter--total');
     this.prevButton = this.querySelector('button[name="previous"]');
     this.nextButton = this.querySelector('button[name="next"]');
+    this.sliderDots = this.querySelector('.slider-dots');
 
     if (!this.slider || !this.nextButton) return;
 
@@ -760,6 +761,17 @@ class SliderComponent extends HTMLElement {
     if (this.currentPageElement && this.pageTotalElement) {
       this.currentPageElement.textContent = this.currentPage;
       this.pageTotalElement.textContent = this.totalPages;
+    }
+
+    if (this.currentPage && this.sliderDots) {
+      console.log('sliderdot', this.sliderDots.children[this.currentPage]);
+      this.sliderDots.querySelectorAll('.slider-dot--active').forEach((dot) => {
+        dot.classList.remove('slider-dot--active');
+      });
+
+      this.sliderDots.children[this.currentPage - 1].classList.add(
+        'slider-dot--active',
+      );
     }
 
     if (this.currentPage != previousPage) {

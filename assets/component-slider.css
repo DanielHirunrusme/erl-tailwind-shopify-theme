@@ -271,6 +271,30 @@ slider-component.slider-component-full-width {
   min-width: 4.4rem;
 }
 
+.slider-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+  left: 0;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.slider-dot--active.slider-dot--active {
+  background-color: rgb(var(--color-foreground));
+}
+
+.slider-dot {
+  position: relative !important;
+  background-color: rgba(var(--color-foreground), 0.4);
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 2em;
+}
+
 @media screen and (min-width: 750px) {
   .slider-counter--dots {
     margin: 0 1.2rem;
