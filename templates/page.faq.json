@@ -23,7 +23,7 @@
         "collapsible_row_zFbtnL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I can't find a specific item on your webshop. Can I find it elsewhere?",
+            "heading": "Where can I find items not on the shop?",
             "icon": "none",
             "row_content": "<p>Certain items might be available through our resellers, or at the DSM store [here] (insert link). While our webshop doesn't feature the full line, items sold here are exclusively available for order through us.<\/p><p>I bought something from an ERL reseller. Who should I contact if I have questions? For items purchased through our partner stores, please contact the respective reseller directly.<\/p>",
             "page": ""
