@@ -137,12 +137,33 @@
       >
         {% render 'icon-arrow' %}
       </button>
+      {%- for media in product.media -%}
+        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+          {%- assign media_count = media_count | plus: 1 -%}
+        {%- endunless -%}
+        {% comment %} Carousel Dots {% endcomment %}
+        <div class='slider-counter caption h4 !twcss-font-sans'>
+          <button
+            type='button'
+            class='slider-dot{% if forloop.index == 1 %} is-active{% endif %}'
+            aria-label='{{  forloop.index }}'
+            aria-controls='Slide-{{ section.id }}-{{ media.id }}{{ id_append }}'
+            aria-selected='{% if forloop.index == 1 %}true{% else %}false{% endif %}'
+            role='tab'
+            tabindex='{% if forloop.index == 1 %}0{% else %}-1{% endif %}'
+          >
+            <span class='visually-hidden'>{{ forloop.index }}</span>
+          </button>
+        </div>
+      {%- endfor -%}
+
       <div class='slider-counter caption h4 !twcss-font-sans'>
         <span class='slider-counter--current'>1</span>
         <span aria-hidden='true'> / </span>
         <span class='visually-hidden'>{{ 'general.slider.of' | t }}</span>
         <span class='slider-counter--total'>{{ media_count }}</span>
       </div>
+
       <button
         type='button'
         class='slider-button slider-button--next'

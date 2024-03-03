@@ -45,8 +45,8 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <div class='twcss-flex twcss-gap-[1em]'>
-          <legend class='form__label h3 !twcss-font-panton'>{{ option.name }}</legend>
+        <div class='twcss-flex twcss-gap-[.125em] twcss-items-center'>
+          <legend class='form__label h3 !twcss-font-panton twcss-mr-[.5em]'>{{ option.name }}</legend>
           <fieldset class='js  twcss-flex twcss-gap-[1em] product-form__input product-form__input--pill'>
             {% render 'product-variant-options',
               product: product,

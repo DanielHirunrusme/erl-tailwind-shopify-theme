@@ -186,14 +186,20 @@ variant-selects {
 
 .product-form__input input[type='radio'] + label {
   color: rgba(var(--color-foreground));
+  padding: 0.125em 0.25em;
+  border-radius: 0.075em;
   display: inline-block;
-  padding: 0rem 0rem;
+  /* padding: 0rem 0rem; */
   text-transform: uppercase;
   line-height: 1;
   font-family: 'UB';
   text-align: center;
   cursor: pointer;
   position: relative;
+}
+
+.product-form__input input[type='radio']:not(.disabled) + label:hover {
+  background-color: rgba(var(--color-foreground), 0.2);
 }
 
 .product-form__input input[type='radio'] + label:before {
@@ -216,8 +222,12 @@ variant-selects {
 }
 
 .product-form__input input[type='radio']:checked + label {
-  /* background-color: rgb(var(--color-foreground)); */
-  color: rgb(var(--color-foreground));
+  background-color: rgba(var(--color-foreground), 0.8);
+  color: rgb(var(--color-background)) !important;
+}
+
+.product-form__input input[type='radio']:checked + label:hover {
+  background-color: rgba(var(--color-foreground), 1);
 }
 
 .product-form__input
@@ -268,8 +278,11 @@ variant-selects {
 .product-form__submit {
   position: relative;
   margin-bottom: 0.4em;
-  border: 0.2em solid rgba(255, 255, 255, 0.9);
-  padding: 0.25em;
+  background-color: rgba(var(--color-foreground), 1);
+  border-radius: 0.075em;
+  color: rgba(var(--color-background), 0.9);
+  /* border: 0.2em solid rgba(255, 255, 255, 0.9); */
+  padding: 0.25em 0.5em;
 }
 
 .product-form__submit span:after {

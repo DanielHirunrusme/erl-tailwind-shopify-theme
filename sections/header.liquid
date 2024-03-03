@@ -1,17 +1,22 @@
-<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel='stylesheet' href='{{ 'component-list-menu.css' | asset_url }}' media='print' onload="this.media='all'">
+<link rel='stylesheet' href='{{ 'component-search.css' | asset_url }}' media='print' onload="this.media='all'">
+<link rel='stylesheet' href='{{ 'component-menu-drawer.css' | asset_url }}' media='print' onload="this.media='all'">
+<link
+  rel='stylesheet'
+  href='{{ 'component-cart-notification.css' | asset_url }}'
+  media='print'
+  onload="this.media='all'"
+>
+<link rel='stylesheet' href='{{ 'component-cart-items.css' | asset_url }}' media='print' onload="this.media='all'">
 {%- if settings.predictive_search_enabled -%}
-  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel='stylesheet' href='{{ 'component-price.css' | asset_url }}' media='print' onload="this.media='all'">
 {%- endif -%}
 {%- if section.settings.menu_type_desktop == 'mega' -%}
-  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel='stylesheet' href='{{ 'component-mega-menu.css' | asset_url }}' media='print' onload="this.media='all'">
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
-{%- if settings.cart_type == "drawer" -%}
+{%- if settings.cart_type == 'drawer' -%}
   {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
   {{ 'component-cart.css' | asset_url | stylesheet_tag }}
   {{ 'component-totals.css' | asset_url | stylesheet_tag }}
@@ -25,7 +30,7 @@
 <noscript>{{ 'component-cart-notification.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-cart-items.css' | asset_url | stylesheet_tag }}</noscript>
 
- <style>
+<style>
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
@@ -66,57 +71,58 @@
   summary.list-menu__item {
     padding-right: 2.7rem;
   }
- 
-</style>  
-{% comment %} 
-    {%- style -%}
-      .header {
-        padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
-      }
+</style>
+{% comment %}
+  {%- style -%}
+    .header {
+      padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    }
 
+    .section-header {
+      position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
+      margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+    }
+
+    @media screen and (min-width: 750px) {
       .section-header {
-        position: sticky; /* This is for fixing a Safari z-index issue. PR #2147 */
-        margin-bottom: {{ section.settings.margin_bottom | times: 0.75 | round: 0 }}px;
+        margin-bottom: {{ section.settings.margin_bottom }}px;
       }
+    }
 
-      @media screen and (min-width: 750px) {
-        .section-header {
-          margin-bottom: {{ section.settings.margin_bottom }}px;
-        }
+    @media screen and (min-width: 990px) {
+      .header {
+        padding-top: {{ section.settings.padding_top }}px;
+        padding-bottom: {{ section.settings.padding_bottom }}px;
       }
-
-      @media screen and (min-width: 990px) {
-        .header {
-          padding-top: {{ section.settings.padding_top }}px;
-          padding-bottom: {{ section.settings.padding_bottom }}px;
-        }
-      }
-    {%- endstyle -%} 
+    }
+  {%- endstyle -%}
 {% endcomment %}
 
-<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
-{%- if settings.cart_type == "drawer" -%}
-  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+<script src='{{ 'details-disclosure.js' | asset_url }}' defer='defer'></script>
+<script src='{{ 'details-modal.js' | asset_url }}' defer='defer'></script>
+<script src='{{ 'cart-notification.js' | asset_url }}' defer='defer'></script>
+<script src='{{ 'search-form.js' | asset_url }}' defer='defer'></script>
+{%- if settings.cart_type == 'drawer' -%}
+  <script src='{{ 'cart-drawer.js' | asset_url }}' defer='defer'></script>
 {%- endif -%}
 
-{% comment %} <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
-  </symbol>
+{% comment %}
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
+    </symbol>
 
-  <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
-    <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
-    <path d="M6.82972 6.82915L1.17193 1.17097" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
-    <path d="M1.22896 6.88502L6.77288 1.11523" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
-  </symbol>
+    <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
+      <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
+      <path d="M6.82972 6.82915L1.17193 1.17097" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
+      <path d="M1.22896 6.88502L6.77288 1.11523" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
+    </symbol>
 
-  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
-    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
-  </symbol>
-</svg> {% endcomment %}
+    <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+      <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
+    </symbol>
+  </svg>
+{% endcomment %}
 
 {%- liquid
   for block in section.blocks
@@ -126,44 +132,56 @@
   endfor
 -%}
 
-<{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper" data-template="{{template.name}}">
-  {%- liquid
-    assign social_links = false
-    assign localization_forms = false
+{% comment %} <{% if section.settings.sticky_header_type != 'none' %}sticky-header data-sticky-type="{{ section.settings.sticky_header_type }}"{% else %}div{% endif %} class="header-wrapper" data-template="{{template.name}}"> {% endcomment %}
+{%- liquid
+  assign social_links = false
+  assign localization_forms = false
 
-    if settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_vimeo_link != blank or settings.social_tiktok_link != blank or settings.social_tumblr_link != blank or settings.social_snapchat_link != blank
-      assign social_links = true
-    endif
+  if settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_youtube_link != blank or settings.social_vimeo_link != blank or settings.social_tiktok_link != blank or settings.social_tumblr_link != blank or settings.social_snapchat_link != blank
+    assign social_links = true
+  endif
 
-    if localization.available_countries.size > 1 and section.settings.enable_country_selector or section.settings.enable_language_selector and localization.available_languages.size > 1
-      assign localization_forms = true
-    endif
-  -%}
-<header class="twcss-flex  twcss-justify-between twcss-p-[2em] md:twcss-p-[1vw]">
-    {% comment %}Cart Link{% endcomment %}
-    <a href="{{ routes.cart_url }}" title="Cart" class="twcss-gap-[.25em] twcss-relative twcss-self-start twcss-items-center -twcss-mt-[.65vw] twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw]" id="cart-icon-bubble">
-      
-  <span class="twcss-w-[4.75vw] md:twcss-w-[1.5vw] twcss-relative twcss-flex twcss-items-center twcss-justify-center">{%- if cart.item_count > 0 -%}<span class=" twcss-absolute h4 !twcss-font-sans twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/4 !twcss-flex-nowrap twcss-w-full twcss-text-center ">{{ cart.item_count   }}</span>{%- endif -%}{%- render 'icon-cart' -%}</span><span class="twcss-hidden md:twcss-flex twcss-mt-[.15em]">BAG</span>
-     
-      </a>
-      <div class="twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1">
-        <a href="/" class="link link--text focus-inset twcss-font-panton twcss-text-[4vw] md:twcss-text-[1.375vw]">
-          ERL VENICE BEACH CALIFORNIA 
-        </a>
+  if localization.available_countries.size > 1 and section.settings.enable_country_selector or section.settings.enable_language_selector and localization.available_languages.size > 1
+    assign localization_forms = true
+  endif
+-%}
+{% comment %} <header class='twcss-flex  twcss-justify-between twcss-p-[2em] md:twcss-p-[1vw]'> {% endcomment %}
  
-      
-    <a href="/blogs/collections" class="link link--text twcss-font-knocky twcss-text-[5vw] md:twcss-text-[1.75vw]">
+  <a
+    href='{{ routes.cart_url }}'
+    title='Cart' 
+    class='twcss-gap-[.25em] twcss-left-0 twcss-top-0 twcss-self-start twcss-items-center -twcss-mt-[.65vw] twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw] twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed'
+    id='cart-icon-bubble'
+  >
+    <span class='twcss-w-[4.75vw] md:twcss-w-[1.5vw] twcss-relative twcss-flex twcss-items-center twcss-justify-center'>
+      {%- if cart.item_count > 0 -%}
+        <span class=' twcss-absolute h4 !twcss-font-sans twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/4 !twcss-flex-nowrap twcss-w-full twcss-text-center '>
+          {{- cart.item_count -}}
+        </span>
+      {%- endif -%}
+      {%- render 'icon-cart' -%}</span
+    ><span class='twcss-hidden md:twcss-flex twcss-mt-[.15em]'>BAG</span>
+  </a>
+  <div class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
+    <a href='/' class='link link--text focus-inset twcss-font-panton twcss-text-[4vw] md:twcss-text-[1.375vw]'>
+      ERL VENICE BEACH CALIFORNIA
+    </a>
 
-    COLLECTIONS
+    <a href='/blogs/collections' class='link link--text twcss-font-knocky twcss-text-[5vw] md:twcss-text-[1.75vw]'>
+      COLLECTIONS
     </a>
-    <a href="/collections/all" title="Shop" class="link link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw]  twcss-transform twcss-rotate-[3deg] -twcss-mt-[.075em]">
-    SHOP
+    <a
+      href='/collections/all'
+      title='Shop'
+      class='link link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw]  twcss-transform twcss-rotate-[3deg] -twcss-mt-[.075em]'
+    >
+      SHOP
     </a>
-    </div>
- {% comment %} <a  title="Cart" href="{{ routes.cart_url }}"><span class="twcss-uppercase" >{{ 'templates.cart.cart' | t }}&nbsp;&nbsp;{{ cart.item_count }}</span></a> {% endcomment %}
- 
-  
-  {% comment %} {%- liquid
+  </div>
+  {% comment %} <a  title="Cart" href="{{ routes.cart_url }}"><span class="twcss-uppercase" >{{ 'templates.cart.cart' | t }}&nbsp;&nbsp;{{ cart.item_count }}</span></a> {% endcomment %}
+
+  {% comment %}
+    {%- liquid
       if section.settings.menu != blank
         render 'header-drawer'
       endif
@@ -171,8 +189,10 @@
       if section.settings.logo_position == 'top-center' or section.settings.menu == blank
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
-    -%} {% endcomment %}
-    {% comment %} {%- liquid
+    -%}
+  {% endcomment %}
+  {% comment %}
+    {%- liquid
       if section.settings.menu != blank
         if section.settings.menu_type_desktop == 'dropdown'
           render 'header-dropdown-menu'
@@ -180,11 +200,11 @@
           render 'header-mega-menu'
         endif
       endif
-    %} {% endcomment %}
+    %}
+  {% endcomment %}
 
-    
-
-    {% comment %} <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
+  {% comment %}
+    <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <noscript class="small-hide medium-hide">
@@ -266,16 +286,19 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      
-    </div> {% endcomment %}
-  </header>
-</{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}>
 
-{%- if settings.cart_type == "notification" -%}
-  {%- render 'cart-notification', color_scheme: section.settings.color_scheme, desktop_menu_type: section.settings.menu_type_desktop -%}
+    </div>
+  {% endcomment %}
+</header>
+{% comment %} </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}> {% endcomment %}
+
+{%- if settings.cart_type == 'notification' -%}
+  {%- render 'cart-notification',
+    color_scheme: section.settings.color_scheme,
+    desktop_menu_type: section.settings.menu_type_desktop
+  -%}
 {%- endif -%}
 
- 
 {% javascript %}
   class StickyHeader extends HTMLElement {
     constructor() {
@@ -284,7 +307,9 @@
 
     connectedCallback() {
       this.header = document.querySelector('.section-header');
-      this.headerIsAlwaysSticky = this.getAttribute('data-sticky-type') === 'always' || this.getAttribute('data-sticky-type') === 'reduce-logo-size';
+      this.headerIsAlwaysSticky =
+        this.getAttribute('data-sticky-type') === 'always' ||
+        this.getAttribute('data-sticky-type') === 'reduce-logo-size';
       this.headerBounds = {};
 
       this.setHeaderHeight();
@@ -293,14 +318,14 @@
 
       if (this.headerIsAlwaysSticky) {
         this.header.classList.add('shopify-section-header-sticky');
-      };
+      }
 
       this.currentScrollTop = 0;
       this.preventReveal = false;
       this.predictiveSearch = this.querySelector('predictive-search');
 
       this.onScrollHandler = this.onScroll.bind(this);
-      this.hideHeaderOnScrollUp = () => this.preventReveal = true;
+      this.hideHeaderOnScrollUp = () => (this.preventReveal = true);
 
       this.addEventListener('preventHeaderReveal', this.hideHeaderOnScrollUp);
       window.addEventListener('scroll', this.onScrollHandler, false);
@@ -376,7 +401,7 @@
 
     closeMenuDisclosure() {
       this.disclosures = this.disclosures || this.header.querySelectorAll('header-menu');
-      this.disclosures.forEach(disclosure => disclosure.close());
+      this.disclosures.forEach((disclosure) => disclosure.close());
     }
 
     closeSearchModal() {
@@ -388,7 +413,7 @@
   customElements.define('sticky-header', StickyHeader);
 {% endjavascript %}
 
-<script type="application/ld+json">
+<script type='application/ld+json'>
   {
     "@context": "http://schema.org",
     "@type": "Organization",
@@ -412,8 +437,8 @@
 </script>
 
 {%- if request.page_type == 'index' -%}
-  {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
-  <script type="application/ld+json">
+  {% assign potential_action_target = request.origin | append: routes.search_url | append: '?q={search_term_string}' %}
+  <script type='application/ld+json'>
     {
       "@context": "http://schema.org",
       "@type": "WebSite",
@@ -526,7 +551,7 @@
       "label": "t:sections.all.colors.label",
       "default": "scheme-1"
     },
-      {
+    {
       "type": "color_scheme",
       "id": "menu_color_scheme",
       "label": "t:sections.header.settings.menu_color_scheme.label",

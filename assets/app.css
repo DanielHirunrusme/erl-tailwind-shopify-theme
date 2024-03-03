@@ -511,6 +511,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   pointer-events: none;
 }
 
+.twcss-fixed {
+  position: fixed;
+}
+
 .twcss-absolute {
   position: absolute;
 }
@@ -655,6 +659,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mt-\[2em\] {
   margin-top: 2em;
+}
+
+.twcss-mr-\[1em\] {
+  margin-right: 1em;
+}
+
+.twcss-mr-\[\.5em\] {
+  margin-right: 0.5em;
+}
+
+.twcss-mr-\[\.25em\] {
+  margin-right: 0.25em;
 }
 
 .twcss-block {
@@ -881,6 +897,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-2 {
   gap: 0.5rem;
+}
+
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
+.twcss-gap-\[\.125em\] {
+  gap: 0.125em;
 }
 
 .twcss-self-start {
