@@ -249,49 +249,27 @@
   "disabled_on": {
     "groups": ["header", "footer"]
   },
-  "settings": [],
-  "blocks": [
+  "settings": [
     {
-      "type": "image",
-      "name": "Image",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "image"
-        }
-      ]
+      "type": "image_picker",
+      "id": "Image",
+      "label": "image"
     },
     {
-      "type": "video",
-      "name": "video",
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "cover_image",
-          "label": "video cover image"
-        },
-        {
-          "type": "video_url",
-          "id": "video_url",
-          "accept": ["youtube", "vimeo"],
-          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-          "label": "t:sections.spread.blocks.video.settings.video_url.label",
-          "placeholder": "video url placeholder",
-          "info": "video url"
-        }
-      ]
+      "type": "video_url",
+      "id": "video",
+      "accept": ["youtube", "vimeo"],
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+      "label": "t:sections.spread.blocks.video.settings.video_url.label",
+      "placeholder": "video url placeholder",
+      "info": "video url"
     }
   ],
+  "blocks": [],
   "max_blocks": 1,
   "presets": [
     {
-      "name": "Spread",
-      "blocks": [
-        {
-          "type": "image"
-        }
-      ]
+      "name": "Spread"
     }
   ]
 }
