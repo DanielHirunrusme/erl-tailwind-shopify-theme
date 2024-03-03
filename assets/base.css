@@ -256,6 +256,12 @@ html.is-animating .transition-fade {
 /*
 * The animation when filtering users
 */
+
+#swup > section > div,
+#swup > .shopify-section > div {
+  padding-top: 1em;
+}
+
 #swup.is-changing {
   transition: opacity 0ms;
 }
