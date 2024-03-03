@@ -5,9 +5,81 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "spread_kRhJMe": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S093.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_EtLB9h": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S094.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_BjYGKk": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S095.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_K8exE3": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S096.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_TWYGW6": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S097.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_yz4Qpk": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S098.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_kTW38K": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S099.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_GAkk7G": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S0910.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "spread_ULVcwh": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S0911.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "spread_kRhJMe",
+    "spread_EtLB9h",
+    "spread_BjYGKk",
+    "spread_K8exE3",
+    "spread_TWYGW6",
+    "spread_yz4Qpk",
+    "spread_kTW38K",
+    "spread_GAkk7G",
+    "spread_ULVcwh"
   ]
 }
