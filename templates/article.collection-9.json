@@ -5,9 +5,17 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "spread_NTtFMp": {
+      "type": "spread",
+      "settings": {
+        "Image": "shopify:\/\/shop_images\/ERL-S09.jpg",
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "spread_NTtFMp"
   ]
 }
