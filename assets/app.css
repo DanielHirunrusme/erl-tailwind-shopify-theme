@@ -812,6 +812,13 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.twcss-select-none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .twcss-grid-flow-row {
   grid-auto-flow: row;
 }
@@ -935,6 +942,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-px-\[1\.4em\] {
   padding-left: 1.4em;
   padding-right: 1.4em;
+}
+
+.twcss-py-\[1em\] {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .twcss-pb-\[1\.4em\] {
@@ -1123,6 +1135,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 8em;
   }
 
+  .md\:twcss-ml-auto {
+    margin-left: auto;
+  }
+
   .md\:twcss-block {
     display: block;
   }
@@ -1161,6 +1177,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
+  }
+
+  .md\:twcss-w-8\/12 {
+    width: 66.666667%;
   }
 
   .md\:twcss-max-w-\[85vw\] {

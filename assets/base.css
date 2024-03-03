@@ -495,6 +495,7 @@ h1,
 .h1 {
   font-size: calc(var(--font-heading-scale) * 8vw);
   letter-spacing: -0.035em;
+  line-height: 0.975;
 }
 
 @media only screen and (min-width: 750px) {
@@ -507,17 +508,17 @@ h1,
 
 h2,
 .h2 {
-  font-size: 2.25rem;
+  font-size: calc(var(--font-heading-scale) * 5vw);
   font-weight: 900;
-  line-height: 1;
+  line-height: 0.9;
+  letter-spacing: -0.035em;
 }
 
 @media only screen and (min-width: 750px) {
   h2,
   .h2 {
-    font-size: 6vw;
+    font-size: calc(var(--font-heading-scale) * 2.5vw);
     line-height: 0.9;
-    letter-spacing: -0.035em;
   }
 }
 
@@ -2555,7 +2556,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 /* Main Header Layout */
 .header-wrapper {
   display: block;
-  position: absolute;
+  position: fixed;
   width: 100%;
   /* background-color: rgb(var(--color-background)); */
 }
@@ -3830,7 +3831,7 @@ body .cc-window {
 .rte-footer * {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold !important;
-  font-size: 4vw;
+  /* font-size: 4vw; */
 }
 
 @media screen and (min-width: 768px) {
@@ -3838,7 +3839,7 @@ body .cc-window {
   .rte-footer * {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold !important;
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
   }
 }
 
@@ -3852,6 +3853,26 @@ body .cc-window {
 .rte-footer ul,
 .rte-footer ol,
 .rte-footer table {
-  font-size: inherit;
   margin-bottom: 1em;
+}
+
+.rte-footer h1:not(:first-child),
+.rte-footer h2:not(:first-child),
+.rte-footer h3:not(:first-child),
+.rte-footer h4:not(:first-child),
+.rte-footer h5:not(:first-child),
+.rte-footer h6:not(:first-child) {
+  margin-top: 1em;
+}
+
+.rte-footer ul {
+  padding-left: 1em;
+  position: relative;
+}
+
+.rte-footer ul li::before {
+  content: '•';
+  margin-right: 0.5em;
+  position: absolute;
+  left: 0;
 }
