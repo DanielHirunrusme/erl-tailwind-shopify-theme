@@ -29,7 +29,7 @@
 }
 
 *:not(.product__accordion) + .product__accordion {
-  margin-top: 1em;
+  margin-top: 3em;
 }
 
 .accordion__title {
