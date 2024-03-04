@@ -82,7 +82,7 @@
         id='ProductInfo-{{ section.id }}'
         data-section='{{ section.id }}'
         data-url='{{ product.url }}'
-        class='product__info-container  {% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}'
+        class='product__info-container  twcss-py-[2em] twcss-px-[1.5em] md:twcss-p-[3em] {% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}'
       >
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 

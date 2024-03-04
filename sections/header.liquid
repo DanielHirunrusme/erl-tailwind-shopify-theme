@@ -150,17 +150,19 @@
   <a
     href='{{ routes.cart_url }}'
     title='Cart' 
-    class='twcss-gap-[.25em] twcss-left-0 twcss-top-0 twcss-self-start twcss-items-center -twcss-mt-[.65vw] twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw] twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed'
+    class='twcss-gap-[.25em] twcss-left-0 twcss-top-0 twcss-self-start twcss-items-center  twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw] twcss-p-[2em] md:twcss-p-[.35em] twcss-fixed'
     id='cart-icon-bubble'
   >
-    <span class='twcss-w-[4.75vw] md:twcss-w-[1.5vw] twcss-relative twcss-flex twcss-items-center twcss-justify-center'>
+    <span class='twcss-w-[4.75vw] md:twcss-w-[1.675vw] twcss-relative twcss-flex twcss-items-center twcss-justify-center '>
       {%- if cart.item_count > 0 -%}
         <span class=' twcss-absolute h4 !twcss-font-sans twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/4 !twcss-flex-nowrap twcss-w-full twcss-text-center '>
           {{- cart.item_count -}}
         </span>
       {%- endif -%}
       {%- render 'icon-cart' -%}</span
-    ><span class='twcss-hidden md:twcss-flex twcss-mt-[.15em]'>BAG</span>
+    ><span class='twcss-hidden md:twcss-flex twcss-mt-[.1em] twcss-w-[2.5vw]'>
+      {% render 'icon-cart-text'   %}
+    </span>
   </a>
   <div class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
     <a href='/' class='link link--text focus-inset twcss-font-panton twcss-text-[4vw] md:twcss-text-[1.375vw]'>

@@ -669,6 +669,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5em;
 }
 
+.twcss-mt-\[\.05em\] {
+  margin-top: 0.05em;
+}
+
+.-twcss-mt-\[\.1em\] {
+  margin-top: -0.1em;
+}
+
+.twcss-mt-\[\.1em\] {
+  margin-top: 0.1em;
+}
+
 .twcss-block {
   display: block;
 }
@@ -743,6 +755,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-w-\[7vw\] {
   width: 7vw;
+}
+
+.twcss-w-\[2vw\] {
+  width: 2vw;
+}
+
+.twcss-w-\[2\.5vw\] {
+  width: 2.5vw;
 }
 
 .twcss-max-w-\[14vw\] {
@@ -970,6 +990,38 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.5em;
 }
 
+.twcss-p-\[1\.7em\] {
+  padding: 1.7em;
+}
+
+.twcss-p-\[1\.6em\] {
+  padding: 1.6em;
+}
+
+.twcss-p-\[1\.8em\] {
+  padding: 1.8em;
+}
+
+.twcss-p-\[1\.85em\] {
+  padding: 1.85em;
+}
+
+.twcss-p-\[1\.875em\] {
+  padding: 1.875em;
+}
+
+.twcss-p-\[3em\] {
+  padding: 3em;
+}
+
+.twcss-p-\[1\.75em\] {
+  padding: 1.75em;
+}
+
+.twcss-p-\[1\.9em\] {
+  padding: 1.9em;
+}
+
 .twcss-px-\[1em\] {
   padding-left: 1em;
   padding-right: 1em;
@@ -983,6 +1035,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.twcss-py-\[2em\] {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.twcss-px-\[1\.5em\] {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 .twcss-pb-\[2em\] {
@@ -1231,6 +1293,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 3vw;
   }
 
+  .md\:twcss-w-\[1\.675vw\] {
+    width: 1.675vw;
+  }
+
   .md\:twcss-max-w-\[85vw\] {
     max-width: 85vw;
   }
@@ -1289,6 +1355,38 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-p-\[\.75em\] {
     padding: 0.75em;
+  }
+
+  .md\:twcss-p-\[\.45em\] {
+    padding: 0.45em;
+  }
+
+  .md\:twcss-p-\[\.375em\] {
+    padding: 0.375em;
+  }
+
+  .md\:twcss-p-\[\.3875em\] {
+    padding: 0.3875em;
+  }
+
+  .md\:twcss-p-\[\.4em\] {
+    padding: 0.4em;
+  }
+
+  .md\:twcss-p-\[3em\] {
+    padding: 3em;
+  }
+
+  .md\:twcss-p-\[\.25em\] {
+    padding: 0.25em;
+  }
+
+  .md\:twcss-p-\[\.3em\] {
+    padding: 0.3em;
+  }
+
+  .md\:twcss-p-\[\.35em\] {
+    padding: 0.35em;
   }
 
   .md\:twcss-px-\[4vw\] {
