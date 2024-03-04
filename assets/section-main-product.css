@@ -327,7 +327,7 @@ variant-selects {
 }
 
 .shopify-payment-button__button {
-  font-size: calc(var(--font-heading-scale) * 1.4rem);
+  /* font-size: calc(var(--font-heading-scale) * 1.4rem); */
   text-transform: uppercase;
 }
 
