@@ -2395,12 +2395,12 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .announcement-bar .slider-button--next {
   margin-right: -1.5rem;
-  min-width: 44px;
+  min-width: 40px;
 }
 
 .announcement-bar .slider-button--prev {
   margin-left: -1.5rem;
-  min-width: 44px;
+  min-width: 40px;
 }
 
 .announcement-bar .slider-button--next:focus-visible,

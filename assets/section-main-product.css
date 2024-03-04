@@ -277,12 +277,13 @@ variant-selects {
 
 .product-form__submit {
   position: relative;
-  margin-bottom: 0.4em;
+  /* margin-bottom: 0.4em; */
   background-color: rgba(var(--color-foreground), 1);
   border-radius: 0.075em;
   color: rgba(var(--color-background), 0.9);
   /* border: 0.2em solid rgba(255, 255, 255, 0.9); */
   padding: 0.25em 0.5em;
+  min-height: 44px;
 }
 
 .product-form__submit.loading span {
