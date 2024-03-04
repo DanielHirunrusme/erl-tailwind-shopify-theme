@@ -307,9 +307,18 @@
 
     {% sections 'header-group' %}
 
-    <main id='MainContent' class='content-for-layout twcss-min-h-screen focus-none' role='main' tabindex='-1'>
-      {{ content_for_layout }}
-    </main>
+    <div class=''>
+      <main id='MainContent' class='content-for-layout twcss-min-h-screen focus-none' role='main' tabindex='-1'>
+        {{ content_for_layout }}
+      </main>
+      <a
+        href='{{shop.url}}'
+        title='ERL'
+        class=' twcss-sticky twcss-bottom-0 twcss-max-w-[14vw] twcss-p-[1.4em] md:twcss-block twcss-hidden'
+      >
+        {% include 'logo' %}
+      </a>
+    </div>
 
     {% sections 'footer-group' %}
 

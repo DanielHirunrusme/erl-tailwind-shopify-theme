@@ -523,6 +523,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.twcss-sticky {
+  position: sticky;
+}
+
 .twcss-left-1\/2 {
   left: 50%;
 }
@@ -761,6 +765,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 45vw;
 }
 
+.twcss-max-w-\[10vw\] {
+  max-width: 10vw;
+}
+
+.twcss-max-w-\[20vw\] {
+  max-width: 20vw;
+}
+
+.twcss-max-w-\[14vw\] {
+  max-width: 14vw;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -944,6 +960,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-p-\[1\.5em\] {
   padding: 1.5em;
+}
+
+.twcss-p-\[1em\] {
+  padding: 1em;
+}
+
+.twcss-p-\[1\.4em\] {
+  padding: 1.4em;
 }
 
 .twcss-px-\[1\.4em\] {
