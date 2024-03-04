@@ -1626,6 +1626,8 @@ a.product__text {
 .shopify-payment-button {
   flex: 0 !important;
   width: auto !important;
+  border-radius: 0.1em;
+  overflow: hidden;
 }
 
 .shopify-payment-button div[role='button'] {

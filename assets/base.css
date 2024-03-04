@@ -533,7 +533,8 @@ h3,
 .button,
 .button-label,
 .shopify-challenge__button,
-.customer button {
+.customer button,
+.shopify-payment-button__button {
   font-size: calc(var(--font-heading-scale) * 3.5vw);
 }
 
@@ -543,7 +544,8 @@ h3,
   .button,
   .button-label,
   .shopify-challenge__button,
-  .customer button {
+  .customer button,
+  .shopify-payment-button__button {
     font-size: calc(var(--font-heading-scale) * 1.5vw);
   }
 }
