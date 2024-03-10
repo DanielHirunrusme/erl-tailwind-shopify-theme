@@ -3838,7 +3838,7 @@ body .cc-window {
 
 @media screen and (min-width: 768px) {
   body .cc-window {
-    width: 38vw !important;
+    width: 37vw !important;
     bottom: 1vw !important;
     align-items: center !important;
     flex-direction: row !important;
