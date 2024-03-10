@@ -226,6 +226,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'ERL BBBouquet';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/Erl_bbbouquet_Regular.woff2?v=1710038416')
+      format('woff2'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/Erl_bbbouquet_Regular.woff?v=1710038416')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* base */
 ::-webkit-scrollbar {
   display: none;

@@ -24,6 +24,7 @@ module.exports = {
         haymer: '"Haymer Small Capitals Condensed", sans-serif',
         cookie: '"Smart Cookie", sans-serif',
         grotesk: '"Alte Haas Grotesk", sans-serif',
+        bouquet: '"ERL BBBouquet", sans-serif',
         sans: 'Arial, Helvetica, sans-serif',
       },
       maxWidth: {
