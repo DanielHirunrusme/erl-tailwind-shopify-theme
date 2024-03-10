@@ -139,7 +139,7 @@
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div
-                  class='product__description rte quick-add-hidden twcss-max-w-2xl h5 twcss-transform -twcss-rotate-1 twcss-mb-[.5em]'
+                  class='product__description rte  quick-add-hidden twcss-max-w-xl h3 !twcss-font-bouquet !twcss-leading-[.9] twcss-tracking-tighter twcss-transform -twcss-rotate-1 twcss-mb-[.5em]'
                   {{ block.shopify_attributes }}
                 >
                   {{ product.description }}
@@ -215,18 +215,18 @@
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {%- when 'collapsible_tab' -%}
-              <div class='product__accordion h4 accordion quick-add-hidden' {{ block.shopify_attributes }}>
+              <div class='product__accordion accordion quick-add-hidden' {{ block.shopify_attributes }}>
                 <details id='Details-{{ block.id }}-{{ section.id }}'>
                   <summary>
                     <div class='summary__title'>
                       {% render 'icon-accordion', icon: block.settings.icon %}
-                      <div class='accordion__title twcss-font-sans twcss-font-bold'>
+                      <div class='accordion__title h3 !twcss-font-bouquet !twcss-leading-[.9] twcss-tracking-tighter'>
                         {{ block.settings.heading | default: block.settings.page.title }}
                       </div>
                     </div>
                     {% comment %} {% render 'icon-caret' %} {% endcomment %}
                   </summary>
-                  <div class='accordion__content  twcss-font-sans twcss-font-bold' id='ProductAccordion-{{ block.id }}-{{ section.id }}'>
+                  <div class='accordion__content h3  !twcss-font-bouquet !twcss-leading-[.9] twcss-tracking-tighter' id='ProductAccordion-{{ block.id }}-{{ section.id }}'>
                     {{ block.settings.content }}
                     {{ block.settings.page.content }}
                   </div>
@@ -509,7 +509,7 @@
                     aria-label='{{ 'accessibility.complementary_products' | t }}'
                     {{ block.shopify_attributes -}}
                     {% if block.settings.make_collapsible_row %}
-                      class='product__accordion accordion'
+                      class='product__accordion accordion '
                     {% endif %}
                   >
                     <div class='complementary-products__container'>
@@ -517,7 +517,7 @@
                         <details id='Details-{{ block.id }}-{{ section.id }}' open>
                           <summary>
                       {%- endif %}
-                      <div class='summary__title'>
+                      <div class='summary__title '>
                         {%- if block.settings.make_collapsible_row -%}
                           {% render 'icon-accordion', icon: block.settings.icon %}
                           <div class='accordion__title'>{{ block.settings.block_heading }}</div>
