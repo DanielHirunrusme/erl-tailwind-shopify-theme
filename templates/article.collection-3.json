@@ -315,6 +315,13 @@
             "image": "shopify:\/\/shop_images\/88-89.jpg",
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
           }
+        },
+        "spread_EjK6rh": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/90-91.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
         }
       },
       "block_order": [
@@ -361,7 +368,8 @@
         "spread_8hGt9n",
         "spread_EgKQ7F",
         "spread_BDdkfi",
-        "spread_Kbci9E"
+        "spread_Kbci9E",
+        "spread_EjK6rh"
       ],
       "settings": {
       }
