@@ -21,6 +21,9 @@
 <div class='color-{{ section.settings.color_scheme }} gradient isolate'>
   <div class='page-width section-{{ section.id }}-padding'>
     <div class='spread{% if section.settings.mobile_layout == 'spread' %} spread--mobile{% endif %}'>
+      {%- for block in section.blocks -%}
+        <div>{{ block.type }}</div>
+      {%- endfor -%}
       <div
         class='spread__item spread__item--{{ block.type }} spread__item--{{ section.settings.desktop_layout }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
         {{ block.shopify_attributes }}
