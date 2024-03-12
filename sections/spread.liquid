@@ -41,6 +41,7 @@
               style='--ratio-percent: 100%'
             {% endif %}
           >
+            image:{{ section.settings.image }}
             {%- if section.settings.image != blank -%}
               {%- liquid
                 if section.settings.desktop_layout == 'left'
