@@ -8,35 +8,33 @@
     "spread_kh9cxT": {
       "type": "spread",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/4-5.jpg",
+        "image": "shopify:\/\/shop_images\/4-5.jpg",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     },
     "spread_faQwGY": {
       "type": "spread",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/6.jpg",
+        "image": "shopify:\/\/shop_images\/6.jpg",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     },
     "spread_AGgjNW": {
       "type": "spread",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/7.jpg",
+        "image": "shopify:\/\/shop_images\/7.jpg",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     },
     "spread_LfgCbV": {
       "type": "spread",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/8-9.jpg",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     },
     "spread_yE4UzU": {
       "type": "spread",
       "settings": {
-        "Image": "shopify:\/\/shop_images\/10-11.jpg",
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     }
