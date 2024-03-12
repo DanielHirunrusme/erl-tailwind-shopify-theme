@@ -701,6 +701,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 4 / 5;
 }
 
+.twcss-aspect-\[5\/4\] {
+  aspect-ratio: 5 / 4;
+}
+
 .twcss-h-full {
   height: 100%;
 }
