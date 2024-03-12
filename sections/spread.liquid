@@ -43,6 +43,7 @@
             {% endif %}
           >
             {%- if section.settings.image != blank -%}
+              show image
               {%- liquid
                 if section.settings.desktop_layout == 'left'
                   assign large_block = forloop.first
