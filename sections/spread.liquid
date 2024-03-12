@@ -34,7 +34,7 @@
         {% comment %} Image {% endcomment %}
         <div class='spread-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}  color-{{ settings.card_color_scheme }} gradient{% endif %}'>
           <div
-            class='media media--transparent ratio twcss-aspect-[4/5]'
+            class='media media--transparent ratio twcss-aspect-[4/5] twcss-relative'
             {% if section.settings.image != blank %}
               style='--ratio-percent: {{ 1 | divided_by: settings.image.aspect_ratio | times: 100 }}%'
             {% else %}
