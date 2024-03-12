@@ -5,46 +5,370 @@
       "settings": {
       }
     },
-    "spread_kh9cxT": {
-      "type": "spread",
+    "chapter_c7nVJ9": {
+      "type": "chapter",
+      "blocks": {
+        "spread_Cztkm4": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4-5.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_KqdnnB": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_bwfYHw": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_qJx4mJ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8-9.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_zpmeNg": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10-11.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_jtprrC": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12-13.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_xtFUk8": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/14-15.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_rz7HVM": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16-17.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_ExNRdm": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/18-19.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_xdQdwj": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20-21.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_XDPcnM": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/22-23.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_aTeqdE": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/24-25.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_894yYq": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/26-27.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_X8pmzK": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/28-29.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_yTKRdU": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/30-31.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_eegwQj": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/32-33.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_YkRHtR": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/34-35.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_A9CiQq": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/36-37.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_dzCwyG": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/38-39.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_WR4y8b": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/40-41.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_yAE6mL": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/42-43.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_efeTTT": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/44-45.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_DW7wM3": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/46-47.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Kg9kfR": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/48-49.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_PjAff8": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/50-51.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_X3HNmG": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/52-53.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_7f7cQc": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/54-55.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_z8rqN6": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/56-57.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_fr8dJc": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/58-59.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_KEWi9A": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/60-61.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_fkLgWA": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/62-63.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_wHceA8": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/64-65.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_yDa6Yd": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/66-67.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_MX9f3A": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/68-69.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_x4JXxQ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/70-71.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_bAmtzB": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/72-73.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Pie6Bx": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/74-75.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_R7P3FK": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/76-77.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_hwwxK3": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/78-79.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_AFKg4a": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/80-81.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_8hGt9n": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/82-83.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_EgKQ7F": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/84-85.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_BDdkfi": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/86-87.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Kbci9E": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/88-89.jpg",
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "spread_Cztkm4",
+        "spread_KqdnnB",
+        "spread_bwfYHw",
+        "spread_qJx4mJ",
+        "spread_zpmeNg",
+        "spread_jtprrC",
+        "spread_xtFUk8",
+        "spread_rz7HVM",
+        "spread_ExNRdm",
+        "spread_xdQdwj",
+        "spread_XDPcnM",
+        "spread_aTeqdE",
+        "spread_894yYq",
+        "spread_X8pmzK",
+        "spread_yTKRdU",
+        "spread_eegwQj",
+        "spread_YkRHtR",
+        "spread_A9CiQq",
+        "spread_dzCwyG",
+        "spread_WR4y8b",
+        "spread_yAE6mL",
+        "spread_efeTTT",
+        "spread_DW7wM3",
+        "spread_Kg9kfR",
+        "spread_PjAff8",
+        "spread_X3HNmG",
+        "spread_7f7cQc",
+        "spread_z8rqN6",
+        "spread_fr8dJc",
+        "spread_KEWi9A",
+        "spread_fkLgWA",
+        "spread_wHceA8",
+        "spread_yDa6Yd",
+        "spread_MX9f3A",
+        "spread_x4JXxQ",
+        "spread_bAmtzB",
+        "spread_Pie6Bx",
+        "spread_R7P3FK",
+        "spread_hwwxK3",
+        "spread_AFKg4a",
+        "spread_8hGt9n",
+        "spread_EgKQ7F",
+        "spread_BDdkfi",
+        "spread_Kbci9E"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/4-5.jpg",
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-      }
-    },
-    "spread_faQwGY": {
-      "type": "spread",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/6.jpg",
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-      }
-    },
-    "spread_AGgjNW": {
-      "type": "spread",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/7.jpg",
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-      }
-    },
-    "spread_LfgCbV": {
-      "type": "spread",
-      "settings": {
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
-      }
-    },
-    "spread_yE4UzU": {
-      "type": "spread",
-      "settings": {
-        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
       }
     }
   },
   "order": [
     "main",
-    "spread_kh9cxT",
-    "spread_faQwGY",
-    "spread_AGgjNW",
-    "spread_LfgCbV",
-    "spread_yE4UzU"
+    "chapter_c7nVJ9"
   ]
 }
