@@ -32,6 +32,7 @@
         {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
 
         {% comment %} Image {% endcomment %}
+        image:{{ section.settings.image }}
         <div class='spread-card {% if section.settings.card_styles == 'none' %}global-media-settings{% else %}  color-{{ settings.card_color_scheme }} gradient{% endif %}'>
           <div
             class='media media--transparent ratio'
@@ -41,7 +42,6 @@
               style='--ratio-percent: 100%'
             {% endif %}
           >
-            image:{{ section.settings.image }}
             {%- if section.settings.image != blank -%}
               {%- liquid
                 if section.settings.desktop_layout == 'left'
