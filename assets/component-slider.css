@@ -409,13 +409,27 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 2vw;
+  margin: 0 4vw;
+}
+.product-card-wrapper .slider-button {
+  width: 6vw;
+  height: 6vw;
+}
+
+.slider-button[disabled] {
+  opacity: 0.25;
 }
 
 @media screen and (min-width: 768px) {
   .slider-button {
     width: 3vw;
     height: 3vw;
+    margin: 0 1vw;
+  }
+  .product-card-wrapper .slider-button {
+    width: 2vw;
+    height: 2vw;
+    margin: 0 1vw;
   }
 }
 

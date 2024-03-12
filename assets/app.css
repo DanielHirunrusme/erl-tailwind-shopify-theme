@@ -761,8 +761,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 56rem;
 }
 
-.twcss-max-w-2xl {
-  max-width: 36em;
+.twcss-max-w-xl {
+  max-width: 36rem;
 }
 
 .twcss-max-w-\[40vw\] {
@@ -775,10 +775,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-max-w-\[45vw\] {
   max-width: 45vw;
-}
-
-.twcss-max-w-xl {
-  max-width: 36rem;
 }
 
 .twcss-flex-1 {
@@ -1055,16 +1051,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Knocky', sans-serif !important;
 }
 
-.twcss-font-sans {
-  font-family: Arial, Helvetica, sans-serif;
+.\!twcss-font-bouquet {
+  font-family: 'ERL BBBouquet', sans-serif !important;
 }
 
 .\!twcss-font-cookie {
   font-family: 'Smart Cookie', sans-serif !important;
-}
-
-.\!twcss-font-bouquet {
-  font-family: 'ERL BBBouquet', sans-serif !important;
 }
 
 .twcss-text-\[4vw\] {
@@ -1109,14 +1101,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-leading-none {
   line-height: 1;
-}
-
-.twcss-leading-tight {
-  line-height: 1.25;
-}
-
-.\!twcss-leading-tight {
-  line-height: 1.25 !important;
 }
 
 .\!twcss-leading-\[\.9\] {
