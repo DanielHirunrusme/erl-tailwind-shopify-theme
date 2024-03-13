@@ -693,24 +693,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.twcss-aspect-\[537\/942\] {
-  aspect-ratio: 537 / 942;
-}
-
-.twcss-aspect-\[4\/5\] {
-  aspect-ratio: 4 / 5;
-}
-
-.twcss-aspect-\[5\/4\] {
-  aspect-ratio: 5 / 4;
-}
-
-.twcss-aspect-\[1600\/2400\] {
-  aspect-ratio: 1600 / 2400;
-}
-
 .twcss-aspect-\[1\.5\] {
   aspect-ratio: 1.5;
+}
+
+.twcss-aspect-\[537\/942\] {
+  aspect-ratio: 537 / 942;
 }
 
 .twcss-h-full {

@@ -3898,3 +3898,7 @@ body .cc-window {
   position: absolute;
   left: 0;
 }
+
+.loading-preview {
+  display: none !important;
+}
