@@ -164,7 +164,45 @@
       {% render 'icon-cart-text'   %}
     </span>
   </a>
-  <div class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
+  {% if section.settings.menu != blank %}
+  <div  class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
+  {%- for link in section.settings.menu.links -%}
+    
+    {% assign url = link.url | escape %}
+
+    {%case url %}
+    {% when  '/' %}
+      <a href='{{ link.url }}'
+      title='{{ link.title }}' class='link link--text focus-inset twcss-font-panton twcss-text-[4vw] md:twcss-text-[1.375vw]'>
+      {{ link.title | escape }}
+    </a>
+    {% when '/blogs/collections' %}
+      <a href='{{ link.url }}'
+      title='{{ link.title }}'class='link link--text twcss-font-knocky twcss-text-[5vw] md:twcss-text-[1.75vw] twcss-uppercase'>
+      {{ link.title | escape }}
+    </a>
+    {% when '/collections/all' %}
+    <a
+    href='{{ link.url }}'
+    title='{{ link.title }}'
+      class='link link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw] twcss-uppercase  twcss-transform twcss-rotate-[3deg] -twcss-mt-[.075em]'
+    >
+    {{ link.title | escape }}
+    </a>
+    {% when '/collections/artistinal' %}
+      <a
+      href='{{ link.url }}'
+      title='{{ link.title }}'
+      class='link link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw] twcss-uppercase  twcss-transform twcss-rotate-[-2deg] -twcss-mt-[.075em]'
+    >
+    {{ link.title | escape }}
+    </a>
+
+    {%endcase%}
+  {% endfor %}
+  </div>
+    {% endif  %}
+  {% comment %} <div class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
     <a href='/' class='link link--text focus-inset twcss-font-panton twcss-text-[4vw] md:twcss-text-[1.375vw]'>
       ERL VENICE BEACH CALIFORNIA
     </a>
@@ -179,7 +217,8 @@
     >
       SHOP
     </a>
-  </div>
+    
+  </div> {% endcomment %}
   {% comment %} <a  title="Cart" href="{{ routes.cart_url }}"><span class="twcss-uppercase" >{{ 'templates.cart.cart' | t }}&nbsp;&nbsp;{{ cart.item_count }}</span></a> {% endcomment %}
 
   {% comment %}
