@@ -94,11 +94,36 @@
             {%- render 'loading-spinner' -%}
           </button>
 
-          <div class='twcss-max-w-[45vw] md:twcss-max-w-[12.5vw] twcss-mt-[2em]'>
-            {%- if show_dynamic_checkout -%}
-              {{ form | payment_button }}
-            {%- endif -%}
+          <div class=' twcss-mt-[1.5em] '>
+            <button type='button' class='btn product-form__cart-submit btn--secondary-accent h3' data-buy-now>
+              <span> Buy now </span>
+            </button>
+            <script>
+              document.querySelector('[data-buy-now]').addEventListener('click', () => {
+                let addToCartForm = document.querySelector('form[action$="/cart/add"]');
+                let formData = new FormData(addToCartForm);
+                fetch(window.Shopify.routes.root + 'cart/add.js', {
+                  method: 'POST',
+                  body: formData,
+                })
+                  .then((response) => {
+                    window.location.href = '/checkout';
+                    return response.json();
+                  })
+                  .catch((error) => {
+                    console.error('Error:', error);
+                  });
+              });
+            </script>
           </div>
+
+          {% comment %}
+            <div class='twcss-max-w-[45vw] md:twcss-max-w-[12.5vw] twcss-mt-[2em]'>
+              {%- if show_dynamic_checkout -%}
+                {{ form | payment_button }}
+              {%- endif -%}
+            </div>
+          {% endcomment %}
         </div>
       {%- endform -%}
     </product-form>
