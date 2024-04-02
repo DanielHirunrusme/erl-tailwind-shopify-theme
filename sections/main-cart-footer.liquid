@@ -80,8 +80,8 @@
                     {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
                   {%- endif -%}
                   <div>
-                    BY CLICKING ON 'PAY AND ORDER' I CONFIRM THAT I HAVE READ AND UNDERSTOOD THE TERMS AND CONDITIONS
-                    AND PRIVACY POLICY.
+                    BY CLICKING ON 'CHECKOUT' I CONFIRM THAT I HAVE READ AND UNDERSTOOD THE TERMS AND CONDITIONS AND
+                    PRIVACY POLICY.
                   </div>
                 </small>
               </div>
@@ -110,11 +110,13 @@
                 </button>
               </div>
 
-              {%- if additional_checkout_buttons -%}
-                <div class='cart__dynamic-checkout-buttons additional-checkout-buttons'>
-                  {{ content_for_additional_checkout_buttons }}
-                </div>
-              {%- endif -%}
+              {% comment %}
+                {%- if additional_checkout_buttons -%}
+                  <div class='cart__dynamic-checkout-buttons additional-checkout-buttons'>
+                    {{ content_for_additional_checkout_buttons }}
+                  </div>
+                {%- endif -%}
+              {% endcomment %}
           {%- endcase -%}
         {% endfor %}
 
