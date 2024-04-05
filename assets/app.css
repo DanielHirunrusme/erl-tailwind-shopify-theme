@@ -1031,6 +1031,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.2em;
 }
 
+.twcss-pt-\[40vw\] {
+  padding-top: 40vw;
+}
+
 .twcss-text-left {
   text-align: left;
 }

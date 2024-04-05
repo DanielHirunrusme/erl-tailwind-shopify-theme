@@ -609,6 +609,10 @@ h6,
   margin-block-end: 1.67em;
 }
 
+#MainContent[data-template='cart'] {
+  min-height: 100lvh;
+}
+
 blockquote {
   font-style: italic;
   color: rgba(var(--color-foreground), 0.8);
