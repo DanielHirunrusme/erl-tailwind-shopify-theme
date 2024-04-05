@@ -1075,16 +1075,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Knocky', sans-serif !important;
 }
 
-.\!twcss-font-bouquet {
-  font-family: 'ERL BBBouquet', sans-serif !important;
+.\!twcss-font-narrow {
+  font-family: Arial Narrow, Arial, sans-serif !important;
 }
 
 .\!twcss-font-cookie {
   font-family: 'Smart Cookie', sans-serif !important;
 }
 
-.\!twcss-font-narrow {
-  font-family: Arial Narrow, Arial, sans-serif !important;
+.\!twcss-font-bouquet {
+  font-family: 'ERL BBBouquet', sans-serif !important;
 }
 
 .twcss-text-\[4vw\] {
@@ -1129,14 +1129,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-leading-none {
   line-height: 1;
-}
-
-.\!twcss-leading-\[\.9\] {
-  line-height: 0.9 !important;
-}
-
-.twcss-tracking-tighter {
-  letter-spacing: -0.05em;
 }
 
 .twcss-placeholder-white::-moz-placeholder {
