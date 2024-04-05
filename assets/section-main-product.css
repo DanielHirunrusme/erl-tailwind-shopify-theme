@@ -476,6 +476,12 @@ a.product__text {
 
 .product-form__buttons {
   max-width: 44rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-form__buttons .product-form__submit {
+  flex: 1;
 }
 
 .product--no-media .product__info-container > modal-opener {
