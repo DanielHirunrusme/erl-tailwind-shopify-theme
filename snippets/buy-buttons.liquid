@@ -65,7 +65,7 @@
           {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
         {%- endif -%}
 
-        <div class='product-form__buttons'>
+        <div class='product-form__buttons twcss-flex'>
           {%- liquid
             assign check_against_inventory = true
             if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
@@ -95,7 +95,7 @@
           </button>
 
           {%- if product.selected_or_first_available_variant.available -%}
-            <div class='dynamic-buy-buttons twcss-mt-[2rem] '>
+            <div class='dynamic-buy-buttons twcss-mt-[2rem] md:twcss-mt-0'>
               <button type='button' class='btn product-form__cart-submit btn--secondary-accent h3' data-buy-now>
                 <span> Buy now </span>
               </button>

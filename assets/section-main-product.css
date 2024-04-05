@@ -288,6 +288,13 @@ variant-selects {
   min-height: 44px;
 }
 
+.product-form__cart-submit {
+  position: relative;
+  border: 2px solid rgba(var(--color-foreground), 0.8);
+  padding: 0.25em 0.5em;
+  min-height: 44px;
+}
+
 .product-form__submit.loading span {
   /* opacity: 0; */
 }
