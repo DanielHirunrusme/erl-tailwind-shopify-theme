@@ -475,8 +475,10 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 44rem;
+  max-width: 30vw;
+  width: 100%;
   display: flex;
+  gap: 1em;
   justify-content: space-between;
 }
 

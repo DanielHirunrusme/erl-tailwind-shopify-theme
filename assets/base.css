@@ -518,7 +518,7 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 3.75vw);
+    font-size: calc(var(--font-heading-scale) * 3.5vw);
     line-height: 0.95;
   }
 }
@@ -1411,7 +1411,7 @@ button.shopify-payment-button__button--unbranded,
   padding: 0;
   width: auto;
   font-family: 'UB';
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .shopify-payment-button__button--unbranded:hover {
@@ -1443,7 +1443,7 @@ button.shopify-payment-button__button--unbranded,
   transition: box-shadow var(--duration-short) ease;
   -webkit-appearance: none;
   appearance: none;
-  opacity: 0.8;
+  opacity: 0.9;
   line-height: 1;
   font-weight: 900;
   /* background-color: rgba(var(--color-button), var(--alpha-button-background)); */
