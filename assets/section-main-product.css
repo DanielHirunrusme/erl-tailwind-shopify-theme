@@ -475,11 +475,16 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 30vw;
   width: 100%;
   display: flex;
   gap: 1em;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 749px) {
+  .product-form__buttons {
+    max-width: 30vw;
+  }
 }
 
 .product-form__buttons .product-form__submit {
