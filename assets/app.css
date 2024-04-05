@@ -1051,8 +1051,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
 }
 
-.twcss-font-sans {
-  font-family: Arial, Helvetica, sans-serif;
+.twcss-font-narrow {
+  font-family: Arial Narrow, Arial, sans-serif;
 }
 
 .twcss-font-haymer {
@@ -1081,10 +1081,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!twcss-font-cookie {
   font-family: 'Smart Cookie', sans-serif !important;
-}
-
-.twcss-font-narrow {
-  font-family: Arial Narrow, Arial, sans-serif;
 }
 
 .twcss-text-\[4vw\] {
