@@ -1426,7 +1426,8 @@ button.shopify-payment-button__button--unbranded,
 .button,
 .shopify-challenge__button,
 .customer button,
-.restock-alerts-submit-button {
+.restock-alerts-submit-button,
+.product-form__cart-submit {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1446,7 +1447,8 @@ button.shopify-payment-button__button--unbranded,
 
 .button:hover,
 .shopify-challenge__button:hover,
-.customer button:hover {
+.customer button:hover,
+.product-form__cart-submit:hover {
   opacity: 1;
 }
 
@@ -3907,12 +3909,13 @@ body .cc-window {
 /* Restock */
 .modalBoxStyle {
   padding: 14px 10px !important;
+  transform: translate(50%, -50%) rotate(-3deg) !important;
 }
 .restock-alerts-notify-button {
   width: auto !important;
   margin: 0 !important;
   padding: 0 !important;
-  margin-top: 1em !important;
+  margin-top: 2rem !important;
 }
 
 .modalBoxStyle {
@@ -3931,11 +3934,13 @@ body .cc-window {
   margin-right: 2em;
 }
 
-.restock-alerts-modal-box .inputStyle {
+.restock-alerts-modal-box .inputStyle,
+.selectBoxStyle {
   border-radius: 0 !important;
   background: none !important;
   height: auto !important;
   padding: 0.5em 0.5em !important;
+  font-size: 16px !important;
   color: rgb(var(--color-foreground)) !important;
 }
 
@@ -4008,4 +4013,8 @@ select {
 
 .restock-alerts-email-label-span {
   display: none !important;
+}
+
+.product-form__buttons button:disabled + button + div + div {
+  display: none;
 }
