@@ -1083,6 +1083,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Smart Cookie', sans-serif !important;
 }
 
+.\!twcss-font-narrow {
+  font-family: Arial Narrow, Arial, sans-serif !important;
+}
+
 .twcss-text-\[4vw\] {
   font-size: 4vw;
 }
