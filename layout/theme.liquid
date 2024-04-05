@@ -309,7 +309,13 @@
     {% sections 'header-group' %}
 
     <div class=''>
-      <main id='MainContent' class='content-for-layout focus-none' role='main' tabindex='-1'>
+      <main
+        id='MainContent'
+        class='content-for-layout focus-none'
+        data-template='{{ template.name }}'
+        role='main'
+        tabindex='-1'
+      >
         {{ content_for_layout }}
       </main>
       <a
