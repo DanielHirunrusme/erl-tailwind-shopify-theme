@@ -4023,8 +4023,8 @@ select {
   display: none;
 }
 
-input,
-textarea {
+#CustomRequestForm input,
+#CustomRequestForm textarea {
   padding: 0.5em;
   border: 2px solid rgba(var(--color-foreground), 0.5);
   background-color: transparent;
@@ -4032,21 +4032,21 @@ textarea {
   font-family: Arial Narrow, Arial, sans-serif;
 }
 
-input::placeholder,
-textarea::placeholder {
+#CustomRequestForm input::placeholder,
+#CustomRequestForm textarea::placeholder {
   color: rgba(var(--color-foreground), 0.5);
 }
 
-input:hover,
-textarea:hover {
+#CustomRequestForm input:hover,
+#CustomRequestForm textarea:hover {
   border-color: rgba(var(--color-foreground), 0.8);
 }
 
-input:focus,
-textarea:focus {
+#CustomRequestForm input:focus,
+#CustomRequestForm textarea:focus {
   border-color: rgba(var(--color-foreground), 1);
 }
 
-label {
+#CustomRequestForm label {
   font-family: Arial Narrow, Arial, sans-serif;
 }
