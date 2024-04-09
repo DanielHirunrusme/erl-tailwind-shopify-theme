@@ -431,6 +431,7 @@
           ],
         });
         swup.hooks.on('form:submit', (visit, { el, event }) => {
+          alert('submitted');
           console.log('form:submit');
           event.preventDefault();
           event.stopPropagation();
