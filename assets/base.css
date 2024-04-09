@@ -4022,3 +4022,31 @@ select {
 .product-form__buttons button:disabled + button + div + div {
   display: none;
 }
+
+input,
+textarea {
+  padding: 0.5em;
+  border: 2px solid rgba(var(--color-foreground), 0.5);
+  background-color: transparent;
+  color: rgb(var(--color-foreground));
+  font-family: Arial Narrow, Arial, sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(var(--color-foreground), 0.5);
+}
+
+input:hover,
+textarea:hover {
+  border-color: rgba(var(--color-foreground), 0.8);
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgba(var(--color-foreground), 1);
+}
+
+label {
+  font-family: Arial Narrow, Arial, sans-serif;
+}
