@@ -4,7 +4,12 @@
     PLEASE ENTER YOUR CUSTOM REQUESTS USING THE FORM BELOW, ONCE WE’VE RECEIVED YOUR REQUEST WE WILL GET BACK TO YOU
     WITH A QUOTE. PLEASE NOTE CUSTOM REQUESTS ARE SUBJECT TO LONGER PRODUCTION AND DELIVERY TIME.
   </p>
-  <form method='POST' accept-charset='UTF-8' class='twcss-flex twcss-flex-col twcss-gap-[2em] md:twcss-max-w-[25vw]'>
+  <form
+    method='POST'
+    id='CustomRequestForm'
+    accept-charset='UTF-8'
+    class='twcss-flex twcss-flex-col twcss-gap-[2em] md:twcss-max-w-[25vw]'
+  >
     <div>
       <h3>Special requests</h3>
       <textarea rows='5' name='message' class='twcss-w-full' placeholder='Specify any special requests'></textarea>
@@ -109,7 +114,7 @@
 </div>
 
 <script>
-  const form = document.getElementById('form');
+  const form = document.getElementById('CustomRequestForm');
   form.addEventListener('submit', formSubmit);
 
   function formSubmit(e) {
