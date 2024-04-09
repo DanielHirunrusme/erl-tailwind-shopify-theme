@@ -432,6 +432,9 @@
         });
         swup.hooks.on('form:submit', (visit, { el, event }) => {
           console.log('form:submit');
+          event.preventDefault();
+          event.stopPropagation();
+          const formData = new FormData(el);
           console.log(el);
         });
 
