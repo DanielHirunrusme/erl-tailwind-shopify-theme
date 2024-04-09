@@ -1,35 +1,89 @@
 <div class='twcss-min-h-[50vh] rte-footer twcss-px-[1em]  twcss-pb-[2em] twcss-pt-[6em]'>
-  This is a test form (haven't styled)
-  {% form 'contact' %}
-    {{ form.errors | default_errors }}
+  <h1>CUSTOM REQUESTS</h1>
+  <p>
+    PLEASE ENTER YOUR CUSTOM REQUESTS USING THE FORM BELOW, ONCE WE’VE RECEIVED YOUR REQUEST WE WILL GET BACK TO YOU
+    WITH A QUOTE. PLEASE NOTE CUSTOM REQUESTS ARE SUBJECT TO LONGER PRODUCTION AND DELIVERY TIME.
+  </p>
+  <form method='POST' accept-charset='UTF-8'>
+    <textarea name='message' placeholder='Specify any special requests'></textarea>
+    <h3>Contact Details</h3>
+    <div class='twcss-flex twcss-gap-[1em]'>
+      <label for='first_name'>First name</label>
+      <input type='text' name='first_name' placeholder='First name'>
 
-    <div class='first-name'>
-      <label for='first-name'>First name</label>
-      <input type='text' name='contact[first_name]' id='first-name'>
+      <label for='last_name'>Last name</label>
+      <input type='text' name='last_name' placeholder='Last name'>
     </div>
-
-    <div class='last-name'>
-      <label for='last-name'>Last name</label>
-      <input type='text' name='contact[last_name]' id='last-name'>
-    </div>
-
-    <div class='phone'>
+    <div>
       <label for='phone'>Phone</label>
-      <input type='tel' name='contact[phone]' id='phone'>
+      <input type='text' name='phone' placeholder='Phone'>
+
+      <label for='email'>Email Address</label>
+      <input type='email' name='email' placeholder='Email Address'>
     </div>
 
-    <div class='email'>
-      <label for='email'>Email</label>
-      <input type='email' name='contact[email]' id='email'>
+    <h3>Measurements</h3>
+    <div class='twcss-flex twcss-gap-[1em]' v>
+      <label for='bust'>Bust (cm)</label>
+      <input type='text' name='bust' placeholder='Bust'>
+
+      <label for='waist'>Waist (cm)</label>
+      <input type='text' name='waist' placeholder='Waist'>
+    </div>
+    <div class='twcss-flex twcss-gap-[1em]' v>
+      <label for='hips'>Hips (cm)</label>
+      <input type='text' name='hips' placeholder='Hips'>
+
+      <label for='height'>Height (cm)</label>
+      <input type='text' name='height' placeholder='Height'>
     </div>
 
-    <div class='message'>
-      <label for='message'>Message</label>
-      <textarea name='contact[body]' id='message'></textarea>
+    <h3>Shipping Details</h3>
+    <div>
+      <label for='address_line_1'>Address</label>
+      <input type='text' name='address_line_1' placeholder='Address Line 1'>
+      <label for='address_line_2'>Apartment, Suite, Etc. (Optional)</label>
+      <input type='text' name='address_line_2' placeholder='Address Line 2'>
+    </div>
+    <div>
+      <label for='city'>City</label>
+      <input type='text' name='city' placeholder='City'>
+      <label for='postal'>Postal/Zip Code</label>
+      <input type='text' name='postal' placeholder='Postal/Zip Code'>
+    </div>
+    <div>
+      <label for='country'>Country</label>
+      <input type='text' name='country' placeholder='Country'>
     </div>
 
-    <div class='submit'>
-      <input type='submit' value='Create'>
+    <h3>Delivery Date</h3>
+    <div>
+      <label for='delivery_date'>Delivery Date</label>
+      <input type='date' name='delivery_date' placeholder='Delivery Date'>
     </div>
-  {% endform %}
+
+    <!-- add hidden Honeypot input to prevent spams -->
+    <input type='hidden' name='_gotcha' style='display:none !important'>
+    <button type='submit' class='button--primary'>Send</button>
+  </form>
 </div>
+
+<script>
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSubmit);
+
+  function formSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+
+    fetch('https://getform.io/f/zbzknjqa', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  }
+</script>
