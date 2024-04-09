@@ -113,9 +113,10 @@
   </form>
 </div>
 
-<script>
+<script type='text/javascript'>
   const form = document.getElementById('CustomRequestForm');
   form.addEventListener('submit', formSubmit);
+  console.log('form', form);
 
   function formSubmit(e) {
     e.preventDefault();
