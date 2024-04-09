@@ -409,6 +409,21 @@
     <script src='https://unpkg.com/swup@4' defer='defer'></script>
     <script>
       window.addEventListener('load', () => {
+        function init() {
+          alert('init');
+          if (document.getElementById('CustomRequestForm')) {
+            alert('form found');
+            swup.hooks.on('form:submit', (visit, { el, event }) => {
+              alert('submitted');
+              console.log('form:submit');
+              event.preventDefault();
+              event.stopPropagation();
+              const formData = new FormData(el);
+              console.log(el);
+            });
+          }
+        }
+
         const swup = new Swup({
           cache: false,
           linkSelector: 'a.swup',
@@ -430,14 +445,16 @@
             new SwupFormsPlugin(),
           ],
         });
-        swup.hooks.on('form:submit', (visit, { el, event }) => {
-          alert('submitted');
-          console.log('form:submit');
-          event.preventDefault();
-          event.stopPropagation();
-          const formData = new FormData(el);
-          console.log(el);
-        });
+
+        // Run once when page loads
+        if (document.readyState === 'complete') {
+          init();
+        } else {
+          document.addEventListener('DOMContentLoaded', () => init());
+        }
+
+        // Run after every additional navigation by swup
+        swup.hooks.on('page:view', () => init());
 
         // setTimeout(() => {
         //   console.log('navigate');
