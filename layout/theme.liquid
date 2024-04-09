@@ -414,7 +414,7 @@
             swup.hooks.on('form:submit', (visit, { el, event }) => {
               event.preventDefault();
               event.stopPropagation();
-              const formData = new FormData(e.target);
+              const formData = new FormData(el);
 
               fetch('https://getform.io/f/zbzknjqa', {
                 method: 'POST',
