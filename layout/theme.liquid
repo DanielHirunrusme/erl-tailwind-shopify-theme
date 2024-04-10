@@ -413,6 +413,7 @@
           if (document.getElementById('CustomRequestForm')) {
             const $form = document.getElementById('CustomRequestForm');
             const $button = document.getElementById('CustomRequestFormButton');
+            const $wrapper = document.getElementById('CustomRequestFormWrapper');
 
             function submitForm() {
               console.log('submitting form', $form);
@@ -426,16 +427,16 @@
                 },
               })
                 .then((response) => {
-                  $form.innerHTML = `
-                    <div class=''>
+                  $wrapper.innerHTML = `
+                    <div>
                       <h1>Thank you for your request!</h1>
                       <p>We will get back to you as soon as possible.</p>
                     </div>
                   `;
                 })
                 .catch((error) => {
-                  $form.innerHTML = `
-                    <div class=''>
+                  $wrapper.innerHTML = `
+                    <div>
                       <h1>Wups, there was an error.</h1>
                       <p>Please try again or contact us at venice@erl.store</p>
                     </div>

@@ -1,116 +1,118 @@
 <div class='twcss-min-h-[50vh] rte-footer twcss-px-[1em] twcss-pb-[2em] twcss-pt-[6em]'>
-  <h1>CUSTOM REQUESTS</h1>
-  <p>
-    PLEASE ENTER YOUR CUSTOM REQUESTS USING THE FORM BELOW, ONCE WE’VE RECEIVED YOUR REQUEST WE WILL GET BACK TO YOU
-    WITH A QUOTE. PLEASE NOTE CUSTOM REQUESTS ARE SUBJECT TO LONGER PRODUCTION AND DELIVERY TIME.
-  </p>
-  <form
-    method='POST'
-    id='CustomRequestForm'
-    accept-charset='UTF-8'
-    class='twcss-flex twcss-flex-col twcss-gap-[2em] md:twcss-max-w-[25vw]'
-    data-swup-form
-    data-swup-inline-form
-  >
-    <div>
-      <h3>Special requests</h3>
-      <textarea rows='5' name='message' class='twcss-w-full' placeholder='Specify any special requests'></textarea>
-    </div>
-
-    <div>
-      <h3>Contact Details</h3>
-      <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
-        <div class='twcss-flex twcss-gap-[1em]'>
-          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='first_name'>First name*</label>
-            <input type='text' name='first_name' placeholder='First name' required>
-          </div>
-
-          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='last_name'>Last name*</label>
-            <input type='text' name='last_name' placeholder='Last name' required>
-          </div>
-        </div>
-
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='phone'>Phone*</label>
-          <input type='text' name='phone' placeholder='Phone' required>
-        </div>
-
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='email'>Email Address*</label>
-          <input type='email' name='email' placeholder='Email Address' required>
-        </div>
+  <div id='CustomRequestFormWrapper'>
+    <h1>CUSTOM REQUESTS</h1>
+    <p>
+      PLEASE ENTER YOUR CUSTOM REQUESTS USING THE FORM BELOW, ONCE WE’VE RECEIVED YOUR REQUEST WE WILL GET BACK TO YOU
+      WITH A QUOTE. PLEASE NOTE CUSTOM REQUESTS ARE SUBJECT TO LONGER PRODUCTION AND DELIVERY TIME.
+    </p>
+    <form
+      method='POST'
+      id='CustomRequestForm'
+      accept-charset='UTF-8'
+      class='twcss-flex twcss-flex-col twcss-gap-[2em] md:twcss-max-w-[25vw]'
+      data-swup-form
+      data-swup-inline-form
+    >
+      <div>
+        <h3>Special requests</h3>
+        <textarea rows='5' name='message' class='twcss-w-full' placeholder='Specify any special requests'></textarea>
       </div>
-    </div>
 
-    <div>
-      <h3>Measurements</h3>
-      <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
-        <div class='twcss-flex twcss-gap-[1em]'>
-          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='bust'>Bust (cm)</label>
-            <input type='text' name='bust' placeholder='Bust'>
+      <div>
+        <h3>Contact Details</h3>
+        <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
+          <div class='twcss-flex twcss-gap-[1em]'>
+            <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+              <label for='first_name'>First name*</label>
+              <input type='text' name='first_name' placeholder='First name' required>
+            </div>
+
+            <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+              <label for='last_name'>Last name*</label>
+              <input type='text' name='last_name' placeholder='Last name' required>
+            </div>
           </div>
 
           <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='waist'>Waist (cm)</label>
-            <input type='text' name='waist' placeholder='Waist'>
-          </div>
-        </div>
-        <div class='twcss-flex twcss-gap-[1em]'>
-          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='hips'>Hips (cm)</label>
-            <input type='text' name='hips' placeholder='Hips'>
+            <label for='phone'>Phone*</label>
+            <input type='text' name='phone' placeholder='Phone' required>
           </div>
 
           <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='height'>Height (cm)</label>
-            <input type='text' name='height' placeholder='Height'>
+            <label for='email'>Email Address*</label>
+            <input type='email' name='email' placeholder='Email Address' required>
           </div>
         </div>
       </div>
-    </div>
 
-    <div>
-      <h3>Shipping Details</h3>
-      <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='address_line_1'>Address*</label>
-          <input type='text' name='address_line_1' placeholder='Address Line 1' required>
-        </div>
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='address_line_2'>Apartment, Suite, Etc. (Optional)</label>
-          <input type='text' name='address_line_2' placeholder='Address Line 2'>
-        </div>
+      <div>
+        <h3>Measurements</h3>
+        <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
+          <div class='twcss-flex twcss-gap-[1em]'>
+            <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+              <label for='bust'>Bust (cm)</label>
+              <input type='text' name='bust' placeholder='Bust'>
+            </div>
 
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='city'>City</label>
-          <input type='text' name='city' placeholder='City'>
-        </div>
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='postal'>Postal/Zip Code</label>
-          <input type='text' name='postal' placeholder='Postal/Zip Code'>
-        </div>
+            <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+              <label for='waist'>Waist (cm)</label>
+              <input type='text' name='waist' placeholder='Waist'>
+            </div>
+          </div>
+          <div class='twcss-flex twcss-gap-[1em]'>
+            <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+              <label for='hips'>Hips (cm)</label>
+              <input type='text' name='hips' placeholder='Hips'>
+            </div>
 
-        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='country'>Country</label>
-          <input type='text' name='country' placeholder='Country'>
+            <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+              <label for='height'>Height (cm)</label>
+              <input type='text' name='height' placeholder='Height'>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div>
-      <h3>Delivery Date</h3>
+      <div>
+        <h3>Shipping Details</h3>
+        <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
+          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+            <label for='address_line_1'>Address*</label>
+            <input type='text' name='address_line_1' placeholder='Address Line 1' required>
+          </div>
+          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+            <label for='address_line_2'>Apartment, Suite, Etc. (Optional)</label>
+            <input type='text' name='address_line_2' placeholder='Address Line 2'>
+          </div>
 
-      <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-        <label for='delivery_date'>Delivery Date</label>
-        <input type='date' name='delivery_date' placeholder='Delivery Date'>
+          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+            <label for='city'>City</label>
+            <input type='text' name='city' placeholder='City'>
+          </div>
+          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+            <label for='postal'>Postal/Zip Code</label>
+            <input type='text' name='postal' placeholder='Postal/Zip Code'>
+          </div>
+
+          <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+            <label for='country'>Country</label>
+            <input type='text' name='country' placeholder='Country'>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- add hidden Honeypot input to prevent spams -->
-    <input type='hidden' name='_gotcha' style='display:none !important'>
-    <button id='CustomRequestFormButton' type='submit' class='button'>Send</button>
-  </form>
+      <div>
+        <h3>Delivery Date</h3>
+
+        <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
+          <label for='delivery_date'>Delivery Date</label>
+          <input type='date' name='delivery_date' placeholder='Delivery Date'>
+        </div>
+      </div>
+
+      <!-- add hidden Honeypot input to prevent spams -->
+      <input type='hidden' name='_gotcha' style='display:none !important'>
+      <button id='CustomRequestFormButton' type='submit' class='button'>Send</button>
+    </form>
+  </div>
 </div>
