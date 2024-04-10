@@ -285,6 +285,10 @@ html.is-animating .transition-fade {
   display: none !important;
 }
 
+#swup > div {
+  display: block !important;
+}
+
 html.no-js .no-js:not(html) {
   display: block !important;
 }
