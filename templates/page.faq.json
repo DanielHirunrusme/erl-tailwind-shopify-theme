@@ -518,7 +518,7 @@
           "settings": {
             "heading": "Can I return an international order?",
             "icon": "none",
-            "row_content": "<p>Yes, international orders are eligible for returns. Refer to our return instructions [here] (insert link).<\/p>",
+            "row_content": "<p>Yes, international orders are eligible for returns. Refer to our return instructions https:\/\/erl.store\/pages\/refund-policy.<\/p>",
             "page": ""
           }
         },
@@ -527,7 +527,7 @@
           "settings": {
             "heading": "Do you cover the return shipping expenses?",
             "icon": "none",
-            "row_content": "<p>Unfortunately, we do not cover return shipping costs. Please review our policy [here] (insert link).<\/p>",
+            "row_content": "<p>Unfortunately, we do not cover return shipping costs. Please review our policy https:\/\/erl.store\/pages\/privacy-policy.<\/p>",
             "page": ""
           }
         },
@@ -582,7 +582,7 @@
           "settings": {
             "heading": "How can I stay informed?",
             "icon": "none",
-            "row_content": "<p>Enter your email address to subscribe to the ERL mailing list [here](subscription link). We prioritize the protection and respect of customer data privacy. If you wish to understand how we utilize your personal data, please click [here](privacy policy link).<\/p>",
+            "row_content": "<p>Enter your email address to subscribe to the ERL mailing list https:\/\/erl.store\/pages\/newsletter. We prioritize the protection and respect of customer data privacy. If you wish to understand how we utilize your personal data, please click https:\/\/erl.store\/pages\/privacy-policy.<\/p>",
             "page": ""
           }
         },
