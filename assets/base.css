@@ -3852,6 +3852,10 @@ body .cc-window {
   display: none !important;
 }
 
+body .cc-window {
+  background-color: #aaadb1 !important;
+}
+
 @media screen and (min-width: 768px) {
   body .cc-window {
     width: 37vw !important;
