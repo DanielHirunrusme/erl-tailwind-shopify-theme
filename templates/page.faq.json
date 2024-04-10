@@ -38,6 +38,15 @@
             "page": ""
           }
         },
+        "collapsible_row_f7GLRx": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I bought something from an ERL reseller. Who should I contact if I have questions?",
+            "icon": "none",
+            "row_content": "<p>For items purchased through our partner stores, please contact the respective reseller directly.<\/p>",
+            "page": ""
+          }
+        },
         "collapsible_row_RUdqfB": {
           "type": "collapsible_row",
           "settings": {
@@ -52,6 +61,7 @@
         "collapsible_row_cWCfmN",
         "collapsible_row_zFbtnL",
         "collapsible_row_QVYi96",
+        "collapsible_row_f7GLRx",
         "collapsible_row_RUdqfB"
       ],
       "settings": {
@@ -481,7 +491,16 @@
           "settings": {
             "heading": "How do I make a return or exchange?",
             "icon": "none",
-            "row_content": "<p>To start a return or request an exchange, please go to<a href=\"http:\/\/www.erl.store\/returns\"> www.erl.store\/returns<\/a>and sign in with your order number to start a return.<\/p>",
+            "row_content": "<p>To start a return or request an exchange, please go to<a href=\"http:\/\/www.erl.store\/returns\"> <\/a><a href=\"https:\/\/returns.erl.store\"><span style=\"text-decoration:underline\">https:\/\/returns.erl.store<\/span><\/a> and sign in with your order number to start a return. <\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_9nnab9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is an instant exchange?",
+            "icon": "none",
+            "row_content": "<p>By choosing the instant exchange option, you won’t need to wait for the original item to be returned and processed. We’ll ship the new item straight away and place a hold on your credit card while we wait for the return item to arrive.<\/p>",
             "page": ""
           }
         },
@@ -533,6 +552,7 @@
       },
       "block_order": [
         "collapsible_row_cBmeDn",
+        "collapsible_row_9nnab9",
         "collapsible_row_4WpaQh",
         "collapsible_row_yqE3RX",
         "collapsible_row_dF4XEX",
