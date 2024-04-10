@@ -415,6 +415,7 @@
             const $button = document.getElementById('CustomRequestFormButton');
 
             function submitForm() {
+              console.log('submitting form', $form);
               const formData = new FormData($form);
 
               fetch('https://getform.io/f/zbzknjqa', {
