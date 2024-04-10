@@ -277,7 +277,8 @@ variant-selects {
   --alpha-button-background: 1;
 }
 
-.product-form__submit {
+.product-form__submit,
+.button {
   position: relative;
   /* margin-bottom: 0.4em; */
   background-color: rgba(var(--color-foreground), 1);
