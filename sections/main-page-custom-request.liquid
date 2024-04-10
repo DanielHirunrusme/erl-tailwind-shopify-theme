@@ -22,24 +22,24 @@
       <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
         <div class='twcss-flex twcss-gap-[1em]'>
           <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='first_name'>First name</label>
-            <input type='text' name='first_name' placeholder='First name'>
+            <label for='first_name'>First name*</label>
+            <input type='text' name='first_name' placeholder='First name' required>
           </div>
 
           <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-            <label for='last_name'>Last name</label>
-            <input type='text' name='last_name' placeholder='Last name'>
+            <label for='last_name'>Last name*</label>
+            <input type='text' name='last_name' placeholder='Last name' required>
           </div>
         </div>
 
         <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='phone'>Phone</label>
-          <input type='text' name='phone' placeholder='Phone'>
+          <label for='phone'>Phone*</label>
+          <input type='text' name='phone' placeholder='Phone' required>
         </div>
 
         <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='email'>Email Address</label>
-          <input type='email' name='email' placeholder='Email Address'>
+          <label for='email'>Email Address*</label>
+          <input type='email' name='email' placeholder='Email Address' required>
         </div>
       </div>
     </div>
@@ -76,8 +76,8 @@
       <h3>Shipping Details</h3>
       <div class='twcss-flex twcss-flex-col twcss-gap-[1em]'>
         <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
-          <label for='address_line_1'>Address</label>
-          <input type='text' name='address_line_1' placeholder='Address Line 1'>
+          <label for='address_line_1'>Address*</label>
+          <input type='text' name='address_line_1' placeholder='Address Line 1' required>
         </div>
         <div class='twcss-flex twcss-flex-col twcss-gap-[.25em]'>
           <label for='address_line_2'>Apartment, Suite, Etc. (Optional)</label>
@@ -114,24 +114,3 @@
     <button type='submit' class='button'>Send</button>
   </form>
 </div>
-
-{% comment %}
-  const form = document.getElementById('CustomRequestForm');
-  form.addEventListener('submit', formSubmit);
-  console.log('form', form);
-
-  function formSubmit(e) {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-
-    fetch('https://getform.io/f/zbzknjqa', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        Accept: 'application/json',
-      },
-    })
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
-  }
-{% endcomment %}
