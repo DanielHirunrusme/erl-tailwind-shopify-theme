@@ -3927,8 +3927,8 @@ body .cc-window {
 .restock-alerts-notify-button {
   width: auto !important;
   margin: 0 !important;
-  padding: 0 !important;
-  margin-top: 2rem !important;
+  /* padding: 0 !important; */
+  margin-top: 0rem !important;
 }
 
 .modalBoxStyle {
