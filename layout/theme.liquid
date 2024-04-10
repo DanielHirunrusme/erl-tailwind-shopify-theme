@@ -432,7 +432,14 @@
                     </div>
                   `;
                 })
-                .catch((error) => console.log(error));
+                .catch((error) => {
+                  $form.innerHTML = `
+                    <div class=''>
+                      <h1>Wups, there was an error.</h1>
+                      <p>Please try again or contact us at venice@erl.store</p>
+                    </div>
+                  `;
+                });
             });
           }
         }
