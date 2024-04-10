@@ -156,7 +156,7 @@
     {%- render 'cart-icon-bubble' -%}
   </a>
   {% if section.settings.menu != blank %}
-  <div  class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
+  <div  class='twcss-flex twcss-z-50 twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
   {%- for link in section.settings.menu.links -%}
     
     {% assign url = link.url | escape %}
