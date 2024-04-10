@@ -248,6 +248,10 @@ body {
   width: 100vw;
 }
 
+body {
+  display: block !important;
+}
+
 /* Swup */
 /* Define a transition duration during page visits */
 html.is-changing .transition-fade {
@@ -285,7 +289,8 @@ html.is-animating .transition-fade {
   display: none !important;
 }
 
-#swup > div {
+#swup > div,
+#swup > div > div {
   display: block !important;
 }
 
