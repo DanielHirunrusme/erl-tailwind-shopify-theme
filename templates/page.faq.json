@@ -509,7 +509,7 @@
           "settings": {
             "heading": "What is the timeframe for returns?",
             "icon": "none",
-            "row_content": "<p>You have 14 days from the date of receiving your item to request a return. View our complete policy [here] (insert link).<\/p>",
+            "row_content": "<p>You have 14 days from the date of receiving your item to request a return. View our complete policy https:\/\/erl.store\/pages\/refund-policy.<\/p>",
             "page": ""
           }
         },
