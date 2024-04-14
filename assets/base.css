@@ -3843,6 +3843,10 @@ body .cc-window {
   padding: 1em !important;
 }
 
+body.password .cc-window {
+  display: none !important;
+}
+
 .cc-floating .cc-message {
   margin-bottom: 0 !important;
 }
