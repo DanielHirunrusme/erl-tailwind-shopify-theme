@@ -237,6 +237,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'AN';
+  src: url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/font_1c4ff15d-3ced-4c8c-b9d7-6eba2567d8e6.woff?v=1713115917')
+      format('woff'),
+    url('https://cdn.shopify.com/s/files/1/0757/2095/0079/files/font_47ad8ccc-a4e1-423a-8ad8-e3acd0897667.woff2?v=1713115917')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* base */
 ::-webkit-scrollbar {
   display: none;
@@ -4046,7 +4057,7 @@ select {
   border: 2px solid rgba(var(--color-foreground), 0.5);
   background-color: transparent;
   color: rgb(var(--color-foreground));
-  font-family: Arial Narrow, Arial, sans-serif;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif;
 }
 
 #CustomRequestForm input::placeholder,
@@ -4065,5 +4076,5 @@ select {
 }
 
 #CustomRequestForm label {
-  font-family: Arial Narrow, Arial, sans-serif;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif;
 }
