@@ -563,12 +563,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.twcss-z-0 {
-  z-index: 0;
-}
-
 .twcss-z-50 {
   z-index: 50;
+}
+
+.twcss-z-0 {
+  z-index: 0;
 }
 
 .twcss-order-first {
@@ -596,10 +596,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-my-\[1em\] {
   margin-top: 1em;
   margin-bottom: 1em;
-}
-
-.twcss-mt-\[\.15em\] {
-  margin-top: 0.15em;
 }
 
 .twcss-mt-\[\.1em\] {
@@ -790,10 +786,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 45vw;
 }
 
-.twcss-max-w-\[25vw\] {
-  max-width: 25vw;
-}
-
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -887,10 +879,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: nowrap !important;
 }
 
-.twcss-flex-nowrap {
-  flex-wrap: nowrap;
-}
-
 .twcss-items-end {
   align-items: flex-end;
 }
@@ -927,20 +915,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.25rem;
 }
 
+.twcss-gap-\[2em\] {
+  gap: 2em;
+}
+
 .twcss-gap-2 {
   gap: 0.5rem;
 }
 
 .twcss-gap-\[\.125em\] {
   gap: 0.125em;
-}
-
-.twcss-gap-\[3em\] {
-  gap: 3em;
-}
-
-.twcss-gap-\[2em\] {
-  gap: 2em;
 }
 
 .twcss-self-start {
@@ -1244,16 +1228,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
   }
 
-  .md\:twcss-w-\[1\.5vw\] {
-    width: 1.5vw;
+  .md\:twcss-w-\[1\.675vw\] {
+    width: 1.675vw;
   }
 
   .md\:twcss-w-8\/12 {
     width: 66.666667%;
-  }
-
-  .md\:twcss-w-\[1\.675vw\] {
-    width: 1.675vw;
   }
 
   .md\:twcss-w-\[20vw\] {
@@ -1288,12 +1268,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 85vw;
   }
 
-  .md\:twcss-max-w-\[12vw\] {
-    max-width: 12vw;
-  }
-
   .md\:twcss-max-w-\[25vw\] {
     max-width: 25vw;
+  }
+
+  .md\:twcss-max-w-\[12vw\] {
+    max-width: 12vw;
   }
 
   .md\:twcss-max-w-\[12\.5vw\] {
