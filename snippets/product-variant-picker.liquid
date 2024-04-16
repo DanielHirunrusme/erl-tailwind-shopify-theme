@@ -101,7 +101,6 @@
       {%- for color in product.metafields.product.additional_colors.value -%}
         {% for metaobject in product.metafields.product.additional_colors.value %}
           additional color: {{ metaobject.additional_color.color }}
-          {{ metaobject.additional_color.value }}
         {% endfor %}
 
         <a href='{{ color.additional_color.product.url }}' title='{{ color.additional_color.product.title }}'>
