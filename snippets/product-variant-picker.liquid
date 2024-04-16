@@ -94,15 +94,15 @@
   </variant-selects>
 {%- endunless -%}
 
-{%- if product.metafields.product.additional_colors.values != blank -%}
-  {% assign colors = product.metafields.product.additional_colors.values %}
+{%- if product.metafields.product.additional_colors.value != blank -%}
+  {% assign colors = product.metafields.product.additional_colors.value %}
   <div class='twcss-flex twcss-gap-[.125em] twcss-items-center twcss-mb-[1em]'>
     <legend class='form__label h3 !twcss-font-panton twcss-mr-[.5em]'>Color</legend>
     <fieldset class='js  twcss-flex twcss-gap-[.25em] product-form__input product-form__input--pill'>
       {%- for color in colors -%}
         <a href='{{ color.additional_colors.product.url }}' title='{{ color.additional_colors.product.title }}'>
           color:
-          {{- color.additional_colors -}}
+          {{- color.metaobject.additional_colors -}}
         </a>
       {%- endfor -%}
     </fieldset>
