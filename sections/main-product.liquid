@@ -673,27 +673,28 @@
     media:{{product.metafields.product.additional_media}}
     <div>
       {%- for media in product.metafields.product.additional_media -%}
-        {{media}}
-        {{media.src}}
+   
+        {%assign image = media | file_img_url %}
+        image.src: {{ image.src }}
         <img
                 srcset='
-                  {%- if media.src.width >= 165 -%}{{ media.src | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if media.src.width >= 360 -%}{{ media.src | image_url: width: 360 }} 360w,{%- endif -%}
-                  {%- if media.src.width >= 533 -%}{{ media.src | image_url: width: 533 }} 533w,{%- endif -%}
-                  {%- if media.src.width >= 720 -%}{{ media.src | image_url: width: 720 }} 720w,{%- endif -%}
-                  {%- if media.src.width >= 1000 -%}{{ media.src | image_url: width: 1000 }} 1000w,{%- endif -%}
-                  {%- if media.src.width >= 1500 -%}{{ media.src | image_url: width: 1500 }} 1500w,{%- endif -%}
-                  {{ media.src | image_url }} {{ media.src.width }}w
+                  {%- if image.src.width >= 165 -%}{{ image.src | image_url: width: 165 }} 165w,{%- endif -%}
+                  {%- if image.src.width >= 360 -%}{{ image.src | image_url: width: 360 }} 360w,{%- endif -%}
+                  {%- if image.src.width >= 533 -%}{{ image.src | image_url: width: 533 }} 533w,{%- endif -%}
+                  {%- if image.src.width >= 720 -%}{{ image.src | image_url: width: 720 }} 720w,{%- endif -%}
+                  {%- if image.src.width >= 1000 -%}{{ image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
+                  {%- if image.src.width >= 1500 -%}{{ image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
+                  {{ image.src | image_url }} {{ image.src.width }}w
                 '
-                src='{{ media.src | image_url: width: 533 }}'
+                src='{{ image.src | image_url: width: 533 }}'
                 sizes='(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)'
-                alt='{{ media.src.alt | escape }}'
+                alt='{{ image.src.alt | escape }}'
                 class='motion-reduce'
                 {% unless lazy_load == false %}
                   loading='lazy'
                 {% endunless %}
-                width='{{ media.width }}'
-                height='{{ media.height }}'
+                width='{{ image.width }}'
+                height='{{ image.height }}'
               >
       {%- endfor -%}
     </div>
