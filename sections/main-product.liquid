@@ -673,9 +673,9 @@
     media:{{product.metafields.product.additional_media}}
     <div>
       {%- for media in product.metafields.product.additional_media -%}
-   
-        {%assign image = media | file_img_url %}
         image.src: {{ image.src }}
+        {% assign image = media | file_url %}
+        
         <img
                 srcset='
                   {%- if image.src.width >= 165 -%}{{ image.src | image_url: width: 165 }} 165w,{%- endif -%}
