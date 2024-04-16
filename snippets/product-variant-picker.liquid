@@ -102,7 +102,7 @@
       {%- for color in colors -%}
         <a href='{{ color.additional_colors.product.url }}' title='{{ color.additional_colors.product.title }}'>
           color:
-          {{- color.additional_colors.color.value -}}
+          {{- color.additional_colors -}}
         </a>
       {%- endfor -%}
     </fieldset>
