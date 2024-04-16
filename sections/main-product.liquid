@@ -670,13 +670,13 @@
   </div>
 
   {%- if product.metafields.product.additional_media.value != blank -%}
-    media:{{product.metafields.product.additional_media}}
+ 
     <div>
       {%- for media in product.metafields.product.additional_media.value -%}
-        image.src: {{ media | file_url }}
-        {% comment %} {% assign image = media | file_url %} {% endcomment %}
+ 
+       {% assign image = media | file_url %}  
         
-        {% comment %} <img
+  <img
                 srcset='
                   {%- if image.src.width >= 165 -%}{{ image.src | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if image.src.width >= 360 -%}{{ image.src | image_url: width: 360 }} 360w,{%- endif -%}
@@ -695,7 +695,7 @@
                 {% endunless %}
                 width='{{ image.width }}'
                 height='{{ image.height }}'
-              > {% endcomment %}
+              >  
       {%- endfor -%}
     </div>
   {%- endif -%}
