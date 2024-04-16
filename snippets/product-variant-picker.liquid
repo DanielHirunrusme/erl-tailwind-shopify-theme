@@ -106,6 +106,8 @@
           title='{{ metaobject.additional_colors.product.title }}'
         >
           color:
+          {{- metaobject.additional_colors.color }}
+          {{- metaobject.values -}}
           {{- metaobject.additional_colors -}}
         </a>
       {%- endfor -%}
