@@ -670,7 +670,7 @@
   </div>
 
   {%- if product.metafields.product.additional_media != blank -%}
-{{product.metafields.product.additional_media}}
+    media:{{product.metafields.product.additional_media}}
     <div>
       {%- for media in product.metafields.product.additional_media -%}
         {{media}}
