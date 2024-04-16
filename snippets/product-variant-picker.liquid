@@ -100,13 +100,6 @@
     <legend class='form__label h3 !twcss-font-panton twcss-mr-[.5em]'>Color</legend>
     <fieldset class='js  twcss-flex twcss-gap-[.25em] product-form__input product-form__input--pill'>
       {%- for color in colors -%}
-        {% comment %}
-          {% for metaobject in colors %}
-            color: {{ metaobject.additional_colors.color }}
-            {{ metaobject.color }}
-          {% endfor %}
-        {% endcomment %}
-
         <a href='{{ color.additional_color.product.url }}' title='{{ color.additional_color.product.title }}'>
           {{- color.additional_color.color -}}
         </a>
@@ -114,6 +107,13 @@
     </fieldset>
   </div>
 {%- endif -%}
+
+{% comment %}
+  {% for metaobject in colors %}
+    color: {{ metaobject.additional_colors.color }}
+    {{ metaobject.color }}
+  {% endfor %}
+{% endcomment %}
 
 <noscript class='product-form__noscript-wrapper-{{ section.id }}'>
   <div class='product-form__input{% if product.has_only_default_variant %} hidden{% endif %}'>
