@@ -112,13 +112,6 @@
   </div>
 {%- endif -%}
 
-{% comment %}
-  {% for metaobject in colors %}
-    color: {{ metaobject.additional_colors.color }}
-    {{ metaobject.color }}
-  {% endfor %}
-{% endcomment %}
-
 <noscript class='product-form__noscript-wrapper-{{ section.id }}'>
   <div class='product-form__input{% if product.has_only_default_variant %} hidden{% endif %}'>
     <label class='form__label' for='Variants-{{ section.id }}'>
