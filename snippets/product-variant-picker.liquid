@@ -94,6 +94,8 @@
   </variant-selects>
 {%- endunless -%}
 
+additional colors{{ product.metafields.product.additional_colors }}
+
 <noscript class='product-form__noscript-wrapper-{{ section.id }}'>
   <div class='product-form__input{% if product.has_only_default_variant %} hidden{% endif %}'>
     <label class='form__label' for='Variants-{{ section.id }}'>
