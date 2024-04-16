@@ -669,10 +669,10 @@
     {% endcomment %}
   </div>
 
-  {%- if product.metafields.product.additional_images != blank -%}
+  {%- if product.metafields.product.additional_media != blank -%}
 
     <div class='grid__item product__media-wrapper small-hide'>
-      {% render 'product-media-gallery', variant_images: product.metafields.product.additional_images, is_duplicate: true %}
+      {% render 'product-media-gallery', variant_images: product.metafields.product.additional_media, is_duplicate: true %}
     </div>
   {%- endif -%}
 
