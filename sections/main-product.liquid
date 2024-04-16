@@ -669,10 +669,10 @@
     {% endcomment %}
   </div>
 
-  {%- if product.metafields.product.additional_media != blank -%}
+  {%- if product.metafields.product.additional_media.value != blank -%}
     media:{{product.metafields.product.additional_media}}
     <div>
-      {%- for media in product.metafields.product.additional_media -%}
+      {%- for media in product.metafields.product.additional_media.value -%}
         image.src: {{ media | file_url }}
         {% comment %} {% assign image = media | file_url %} {% endcomment %}
         
