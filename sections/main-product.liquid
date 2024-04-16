@@ -674,27 +674,27 @@
     <div>
       {%- for media in product.metafields.product.additional_media.value -%}
  
-       {% assign image = media | file_url %}  
+    
         
   <img
                 srcset='
-                  {%- if image.src.width >= 165 -%}{{ image.src | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if image.src.width >= 360 -%}{{ image.src | image_url: width: 360 }} 360w,{%- endif -%}
-                  {%- if image.src.width >= 533 -%}{{ image.src | image_url: width: 533 }} 533w,{%- endif -%}
-                  {%- if image.src.width >= 720 -%}{{ image.src | image_url: width: 720 }} 720w,{%- endif -%}
-                  {%- if image.src.width >= 1000 -%}{{ image.src | image_url: width: 1000 }} 1000w,{%- endif -%}
-                  {%- if image.src.width >= 1500 -%}{{ image.src | image_url: width: 1500 }} 1500w,{%- endif -%}
-                  {{ image.src | image_url }} {{ image.src.width }}w
+                  {{  media | image_url: width: 165 }} 165w, 
+                  {{ media | image_url: width: 360 }} 360w, 
+              {{ media | image_url: width: 533 }} 533w, 
+                  {{ media | image_url: width: 720 }} 720w, 
+                  {{ media | image_url: width: 1000 }} 1000w, 
+                 {{ media | image_url: width: 1500 }} 1500w, 
+                  {{ media | image_url }} {{ image.width }}w
                 '
-                src='{{ image.src | image_url: width: 533 }}'
+                src='{{ media | image_url: width: 533 }}'
                 sizes='(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)'
-                alt='{{ image.src.alt | escape }}'
+                alt='{{ image.alt | escape }}'
                 class='motion-reduce'
                 {% unless lazy_load == false %}
                   loading='lazy'
                 {% endunless %}
-                width='{{ image.width }}'
-                height='{{ image.height }}'
+                width='{{ media.width }}'
+                height='{{ media.height }}'
               >  
       {%- endfor -%}
     </div>
