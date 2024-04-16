@@ -78,7 +78,10 @@
       {% if product.metafields.custom.pdp_form_background_image != blank %}
       <img src="{{ product.metafields.custom.pdp_form_background_image | file_url }}" alt="{{ product.title }}" class=" twcss-absolute twcss-h-full twcss-w-full twcss-object-cover twcss-top-0 twcss-left-0 twcss-object-center " />
   {% endif %}  
-    <product-info
+  
+  <div>Product gallery</div> 
+  
+  <product-info
         id='ProductInfo-{{ section.id }}'
         data-section='{{ section.id }}'
         data-url='{{ product.url }}'
@@ -651,6 +654,7 @@
        {% include 'icon--back-to-shop' %}
       </a>
     </div>
+    
 
     {% comment %} Duplicate gallery to display after product content on tablet/desktop breakpoint {% endcomment %}
     {% comment %}
