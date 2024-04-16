@@ -676,7 +676,7 @@
         image.src: {{ image.src }}
         {% assign image = media | file_url %}
         
-        <img
+        {% comment %} <img
                 srcset='
                   {%- if image.src.width >= 165 -%}{{ image.src | image_url: width: 165 }} 165w,{%- endif -%}
                   {%- if image.src.width >= 360 -%}{{ image.src | image_url: width: 360 }} 360w,{%- endif -%}
@@ -695,7 +695,7 @@
                 {% endunless %}
                 width='{{ image.width }}'
                 height='{{ image.height }}'
-              >
+              > {% endcomment %}
       {%- endfor -%}
     </div>
   {%- endif -%}
