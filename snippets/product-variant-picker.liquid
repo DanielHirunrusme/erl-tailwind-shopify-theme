@@ -96,7 +96,7 @@
 
 {%- if product.metafields.product.additional_colors.value != blank -%}
   {% assign colors = product.metafields.product.additional_colors.value %}
-  {{ colors }}
+  {{ colors[0] }}
   <div class='twcss-flex twcss-gap-[.125em] twcss-items-center twcss-mb-[1em]'>
     <legend class='form__label h3 !twcss-font-panton twcss-mr-[.5em]'>Color</legend>
     <fieldset class='js  twcss-flex twcss-gap-[.25em] product-form__input product-form__input--pill'>
