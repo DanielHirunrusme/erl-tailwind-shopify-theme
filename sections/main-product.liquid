@@ -672,7 +672,7 @@
   {%- if product.metafields.product.additional_media != blank -%}
 
     <div>
-      {%- for media in product.metafields.prroduct.additional_media -%}
+      {%- for media in product.metafields.product.additional_media -%}
         <img
                 srcset='
                   {%- if media.src.width >= 165 -%}{{ media.src | image_url: width: 165 }} 165w,{%- endif -%}
