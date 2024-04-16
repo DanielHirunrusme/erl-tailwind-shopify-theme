@@ -102,10 +102,9 @@
     <fieldset class='js  twcss-flex twcss-gap-[.25em] product-form__input product-form__input--pill'>
       {%- for metaobject in colors -%}
         <a
-          href='{{ metaobject.additional_colors.product.url }}'
-          title='{{ metaobject.additional_colors.product.title }}'
+          href='{{ metaobject.product.url }}'
+          title='{{ metaobject.product.title }}'
         >
-          metaobject:
           {{- metaobject.color -}}
         </a>
       {%- endfor -%}
