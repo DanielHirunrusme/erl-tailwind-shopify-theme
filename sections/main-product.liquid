@@ -674,7 +674,7 @@
     <div>
       {%- for media in product.metafields.product.additional_media -%}
         image.src: {{ image.src }}
-        {% assign image = media | file_url %}
+        {% comment %} {% assign image = media | file_url %} {% endcomment %}
         
         {% comment %} <img
                 srcset='
