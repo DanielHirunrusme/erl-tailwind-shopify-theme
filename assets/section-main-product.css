@@ -166,7 +166,8 @@ variant-radios,
 variant-selects {
   display: flex;
   flex-direction: column;
-  padding: 1.25em 0;
+  padding: 0;
+  padding-top: 1.25em;
 }
 
 .product-form__input--dropdown {

@@ -927,6 +927,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.125em;
 }
 
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
 .twcss-self-start {
   align-self: flex-start;
 }
