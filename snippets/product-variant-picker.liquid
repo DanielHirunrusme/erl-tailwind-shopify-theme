@@ -99,8 +99,8 @@
     <legend class='form__label h3 !twcss-font-panton twcss-mr-[.5em]'>Color</legend>
     <fieldset class='js  twcss-flex twcss-gap-[.25em] product-form__input product-form__input--pill'>
       {%- for color in product.metafields.product.additional_colors.value -%}
-        {% for metaobject in product.metafields.product.additional_colors.values %}
-          additional color: {{ metaobject.additional_colors.color }}
+        {% for metaobject in product.metafields.product.additional_colors.value %}
+          additional color: {{ metaobject }}
         {% endfor %}
 
         <a href='{{ color.additional_color.product.url }}' title='{{ color.additional_color.product.title }}'>
