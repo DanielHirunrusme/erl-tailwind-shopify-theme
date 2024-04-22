@@ -1,0 +1,42 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text align="center" color="#555" />
+      <mj-section background-color="#fff" padding="0" />
+      <mj-image padding="0" />
+      <mj-column width="100%" padding="0" />
+      <mj-all font-family="Courier, Courier New, mono" />
+      <mj-preview>erl made in california, april 25th</mj-preview>
+    </mj-attributes>
+    <mj-style> * { width: 100% !important; margin: 0; padding: 0; } a { color: inherit !important; text-decoration: none !important; } .email-body { max-width: 100% !important; width:100% !important; } img { width: 100%; max-width: 100%; } a { color: "#000;" }</mj-style>
+  </mj-head>
+  <mj-body background-color="white" width="1024px">
+    <mj-wrapper padding="0" full-width="full-width">
+      <mj-section full-width="full-width" padding="0">
+        <mj-column width="100%">
+          <mj-image href="https://erl.store/" src="https://d3k81ch9hvuctc.cloudfront.net/company/RstUAb/images/2d8c76d6-6b6b-4936-80ca-2f3e8796284d.jpeg" alt="erl made in california april 25th" />
+        </mj-column>
+      </mj-section>
+      <mj-section text-align="left">
+        <mj-column width="350px">
+          <mj-spacer height="200px" />
+          <mj-text align="left" font-size="10px" padding="0 12px" line-height="1.25">Made in California: Chapter One<br /><br />Kai, a young surfer, has grown tired of his life in Venice Beach.
+Bummed out by predictable family and skater friends who’ve lost their sense of journey,
+he dreams of something new and mysterious somewhere up the coast. A new
+adventure. One early morning, he departs up PCH with nothing but a backpack.<br /><br />
+Making his way up the coast, he eventually finds his way to a beguiling farm in Big Sur
+country, where he encounters a beautiful girl, Dixie. She takes Kai to her father’s farm,
+where he takes up as a farmhand. Kai works to earn his keep alongside Dixie and her
+two sisters. They tend together to the land and the sheep. An outsider who disrupts the
+status quo of the small farming community, he stirs the passion and desire, attention,
+and ire of the locals - with the farmer’s daughters each fiercely fighting for his eye.<br /><br />Available April 24: the exclusive “Made in California” collection featuring ERL
+staples, one-of-a-kind artisanal pieces, the debut of footwear and eyewear categories,
+and a newly dedicated section for custom inquiries — made to order at ERL’s atelier in
+Venice Beach, California.<br /><br /><br /><br />&copy2024&nbsp;&nbsp;<a href="{% unsubscribe_link %}" style="color: black !important; text-decoration: none !important;">Unsubscribe</a></mj-text>
+          <mj-text></mj-text>
+        </mj-column>
+      </mj-section>
+       
+    </mj-wrapper>
+  </mj-body>
+</mjml>
