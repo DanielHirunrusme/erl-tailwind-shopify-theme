@@ -1111,6 +1111,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700 !important;
 }
 
+.twcss-font-normal {
+  font-weight: 400;
+}
+
 .twcss-uppercase {
   text-transform: uppercase;
 }
