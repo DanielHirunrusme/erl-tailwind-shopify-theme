@@ -498,11 +498,11 @@
 
 /* SVG Text */
 .svg-text {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .svg-text svg {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .svg-text svg g {
