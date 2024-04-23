@@ -420,7 +420,7 @@
           "settings": {
             "heading": "Which payment methods do you accept?",
             "icon": "none",
-            "row_content": "<p>We accept major credit cards (Visa, Mastercard, Amex, Discover), Apple Pay, and PayPal. We currently do not accept pay-over-time options like AfterPay or Klarna.<\/p>",
+            "row_content": "<p>We accept major credit cards (Visa, Mastercard, Amex, Discover), Apple Pay, Google Pay, Shop Pay and Klarna.<\/p>",
             "page": ""
           }
         },
