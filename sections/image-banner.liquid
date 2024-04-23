@@ -124,9 +124,22 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'html' -%}
+            {%- assign position_x = block.settings.placement_x -%}
+            {%- assign position_y = block.settings.placement_y -%}
+            {% comment %} margin-top: {{ block.settings.svg_pos_y }}%; margin-left: {{ block.settings.svg_pos_x }}%;  {% endcomment %}
             <div
-              class='svg-text twcss-relative'
-              style='margin-top: {{ block.settings.svg_pos_y }}%; margin-left: {{ block.settings.svg_pos_x }}%; width: {{ block.settings.svg_width }}%;'
+              class='svg-text twcss-absolute'
+              style='
+                {% if position_x == "left" %}left: 0;
+                {% elsif position_x == "center" %}left: 50%;
+                {% elsif position_x == "right" %}right: 0;
+                {% endif %}
+                {% if position_y == "top" %}top: 0;
+                {% elsif position_y == "center" %}top: 50%;
+                {% elsif position_y == "bottom" %}bottom: 0;
+                {% endif %}
+                width: {{ block.settings.svg_width }}%;
+              '
             >
               {{ block.settings.html }}
             </div>
