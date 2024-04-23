@@ -3882,7 +3882,7 @@ body .cc-window {
 
 /* Footer RTE */
 .rte-footer {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial Narrow, Arial, Helvetica, sans-serif;
   font-weight: bold !important;
 
   font-size: 4vw;
@@ -3890,7 +3890,6 @@ body .cc-window {
 
 @media screen and (min-width: 768px) {
   .rte-footer {
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold !important;
     font-size: 1.2vw;
     max-width: 50%;
