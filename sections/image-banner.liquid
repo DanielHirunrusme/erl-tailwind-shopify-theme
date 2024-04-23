@@ -139,13 +139,13 @@
                 {% elsif position_y == "bottom" %}margin-top: auto;
                 {% endif %}
 
-                {% if position_x == "left" %} padding-left: {{ block.settings.svg_pos_x  }}%
-                {% elsif position_x == "center" %} padding-left: {{ block.settings.svg_pos_x  }}%
-                {% elsif position_x == "right" %} padding-right: {{ block.settings.svg_pos_x  }}%
+                {% if position_x == "left" %} padding-left: {{ block.settings.svg_pos_x  }}%;
+                {% elsif position_x == "center" %} padding-left: {{ block.settings.svg_pos_x  }}%;
+                {% elsif position_x == "right" %} padding-right: {{ block.settings.svg_pos_x  }}%;
                 {% endif %}
-                {% if position_y == "top" %}padding-bottom: {{ block.settings.svg_pos_y }}%;
+                {% if position_y == "top" %}padding-top: {{ block.settings.svg_pos_y }}%;
                 {% elsif position_y == "center" %}padding-top: {{ block.settings.svg_pos_y }}%;
-                {% elsif position_y == "bottom" %}padding-top: {{ block.settings.svg_pos_y }}%;
+                {% elsif position_y == "bottom" %}padding-bottom: {{ block.settings.svg_pos_y }}%;
                 {% endif %}
 
 
