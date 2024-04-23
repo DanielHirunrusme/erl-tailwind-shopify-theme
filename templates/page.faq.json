@@ -25,7 +25,7 @@
           "settings": {
             "heading": "Where can I find items not on the shop?",
             "icon": "none",
-            "row_content": "<p>Certain items might be available through our resellers, or at the DSM store https:\/\/shop-us.doverstreetmarket.com\/collections\/erl. While our webshop doesn't feature the full line, items sold here are exclusively available for order through us.<\/p>",
+            "row_content": "<p>Certain items might be available through our resellers, or at the DSM store <a href=\"https:\/\/shop-us.doverstreetmarket.com\/collections\/erl\" target=\"_blank\" title=\"https:\/\/shop-us.doverstreetmarket.com\/collections\/erl\">https:\/\/shop-us.doverstreetmarket.com\/collections\/erl<\/a>. While our webshop doesn't feature the full line, items sold here are exclusively available for order through us.<\/p>",
             "page": ""
           }
         },
