@@ -128,7 +128,7 @@
             {%- assign position_y = block.settings.placement_y -%}
             {% comment %} margin-top: {{ block.settings.svg_pos_y }}%; margin-left: {{ block.settings.svg_pos_x }}%;  {% endcomment %}
             <div
-              class='svg-text twcss-absolute'
+              class='svg-text twcss-absolute twcss-transform'
               style='
                 {% if position_x == "left" %}left: 0;
                 {% elsif position_x == "center" %}left: 50%;
@@ -138,6 +138,7 @@
                 {% elsif position_y == "center" %}top: 50%;
                 {% elsif position_y == "bottom" %}bottom: 0;
                 {% endif %}
+                transform: translate({{ block.settings.svg_pos_x  }}%, {{block.settings.svg_pos_}}%);
                 width: {{ block.settings.svg_width }}%;
               '
             >
@@ -589,7 +590,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "X (%)",
+          "label": "Offset X (%)",
           "default": 25
         },
         {
@@ -599,7 +600,7 @@
           "max": 100,
           "step": 1,
           "unit": "%",
-          "label": "Y (%)",
+          "label": "Offset Y (%)",
           "default": 25
         }
       ]
