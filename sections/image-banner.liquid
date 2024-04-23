@@ -117,7 +117,7 @@
   {%- endif -%}
   <div class='banner__content banner__content--{{ section.settings.desktop_content_position }} {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
     <a
-      class='twcss-flex-1 twcss-h-full'
+      class='twcss-flex-1 twcss-h-full twcss-flex'
       href='{{ section.settings.image_url }}'
       title='{{ section.settings.image_url }}'
     >
@@ -128,17 +128,27 @@
             {%- assign position_y = block.settings.placement_y -%}
             {% comment %} margin-top: {{ block.settings.svg_pos_y }}%; margin-left: {{ block.settings.svg_pos_x }}%;  {% endcomment %}
             <div
-              class='svg-text twcss-absolute twcss-transform'
+              class='svg-text twcss-relative twcss-transform'
               style='
-                {% if position_x == "left" %}left: 0;
-                {% elsif position_x == "center" %}left: 50%;
-                {% elsif position_x == "right" %}right: 0;
+                {% if position_x == "left" %}margin-right: auto;
+                {% elsif position_x == "center" %}margin-left: 50%;
+                {% elsif position_x == "right" %}margin-left: auto;
                 {% endif %}
-                {% if position_y == "top" %}top: 0;
-                {% elsif position_y == "center" %}top: 50%;
-                {% elsif position_y == "bottom" %}bottom: 0;
+                {% if position_y == "top" %}margin-bottom: auto;
+                {% elsif position_y == "center" %}margin-top: 50%;
+                {% elsif position_y == "bottom" %}margin-top: auto;
                 {% endif %}
-                transform: translateX({{ block.settings.svg_pos_x  }}%) translateY({{ block.settings.svg_pos_y }}%);
+
+                {% if position_x == "left" %} padding-left: {{ block.settings.svg_pos_x  }}%
+                {% elsif position_x == "center" %} padding-left: {{ block.settings.svg_pos_x  }}%
+                {% elsif position_x == "right" %} padding-right: {{ block.settings.svg_pos_x  }}%
+                {% endif %}
+                {% if position_y == "top" %}padding-bottom: {{ block.settings.svg_pos_y }}%;
+                {% elsif position_y == "center" %}padding-top: {{ block.settings.svg_pos_y }}%;
+                {% elsif position_y == "bottom" %}padding-top: {{ block.settings.svg_pos_y }}%;
+                {% endif %}
+
+
                 width: {{ block.settings.svg_width }}%;
               '
             >
