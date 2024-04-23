@@ -109,6 +109,7 @@
                   </h2>
                 </a>
               </div>
+              
             {%- when 'price' -%}
               <div
                 class='no-js-hidden twcss-mt-[.75em]'
@@ -139,6 +140,16 @@
                 {%- endform -%}
               </div>
               {% endcomment %}
+              <!-- Placement v2 -->
+              <div class="klarna-banner">
+              <klarna-placement
+              data-key="credit-promotion-auto-size"
+              data-locale="en-US"
+              data-theme="dark"
+              data-purchase-amount="{{ product.price   }}"
+              ></klarna-placement>
+              </div>
+              <!-- end Placement -->
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div

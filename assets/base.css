@@ -4077,3 +4077,20 @@ select {
 #CustomRequestForm label {
   font-family: 'AN', Arial Narrow, Arial, sans-serif;
 }
+
+/* Klarna */
+klarna-placement::part(osm-container) {
+  font-family: Arial Narrow, Arial, sans-serif !important;
+  background: transparent;
+  border: none;
+  align-self: self-start;
+  color: rgba(var(--color-foreground), 1);
+  padding: 1em 0;
+  float: left;
+  text-transform: uppercase;
+}
+
+klarna-placement::part(osm-cta) {
+  font-family: Arial Narrow, Arial, sans-serif !important;
+  text-transform: uppercase;
+}

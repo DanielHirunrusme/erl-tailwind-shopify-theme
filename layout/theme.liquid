@@ -36,6 +36,12 @@
     <script src='{{ 'constants.js' | asset_url }}' defer='defer'></script>
     <script src='{{ 'pubsub.js' | asset_url }}' defer='defer'></script>
     <script src='{{ 'global.js' | asset_url }}' defer='defer'></script>
+    <script
+      async
+      data-environment='production'
+      src='https://js.klarna.com/web-sdk/v1/klarna.js'
+      data-client-id='c36bb695-f541-51f1-8673-5c753cea69b1'
+    ></script>
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src='{{ 'animations.js' | asset_url }}' defer='defer'></script>
