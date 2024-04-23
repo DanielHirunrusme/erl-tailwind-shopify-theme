@@ -5,26 +5,10 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "spread_Hdreab": {
-      "type": "spread",
-      "blocks": {
-        "image_t9yzXU": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/collection-7-1.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_t9yzXU"
-      ],
-      "settings": {
-      }
     }
+     
   },
   "order": [
-    "main",
-    "spread_Hdreab"
+    "main"
   ]
 }

@@ -5,33 +5,9 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "spread_6Pk9MJ": {
-      "type": "spread",
-      "blocks": {
-        "image_789BPN": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-5.jpg"
-          }
-        },
-        "image_X496er": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/erl-levis-lookbook-6.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_789BPN",
-        "image_X496er"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "spread_6Pk9MJ"
+    "main"
   ]
 }

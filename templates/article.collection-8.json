@@ -5,26 +5,9 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "spread_7MJMWi": {
-      "type": "spread",
-      "blocks": {
-        "image_BxtqAC": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/collection-8-1.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_BxtqAC"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "spread_7MJMWi"
+    "main"
   ]
 }

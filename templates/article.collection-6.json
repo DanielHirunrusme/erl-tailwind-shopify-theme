@@ -5,26 +5,9 @@
       "disabled": true,
       "settings": {
       }
-    },
-    "spread_UGqkiB": {
-      "type": "spread",
-      "blocks": {
-        "image_MrHA8k": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/collection-6-1.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "image_MrHA8k"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "spread_UGqkiB"
+    "main"
   ]
 }
