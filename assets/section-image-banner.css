@@ -502,7 +502,8 @@
 }
 
 .svg-text svg {
-  /* width: 100%; */
+  width: 100% !important;
+  height: auto !important;
 }
 
 .svg-text svg g {
