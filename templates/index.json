@@ -311,6 +311,7 @@
     },
     "image_banner_XK8tX7": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image_url": "",
         "image": "shopify:\/\/shop_images\/Vamps.jpg",
