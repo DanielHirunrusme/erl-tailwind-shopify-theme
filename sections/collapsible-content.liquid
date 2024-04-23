@@ -83,7 +83,7 @@
                 >
                   <summary id='Summary-{{ block.id }}-{{ section.id }}'>
                     {% render 'icon-accordion', icon: block.settings.icon %}
-                    <div class='accordion__title !twcss-font-narrow twcss-font-bold !twcss-normal-case '>
+                    <div class='accordion__title !twcss-font-narrow !twcss-normal-case '>
                       {{ block.settings.heading | default: block.settings.page.title }}
                     </div>
                     {% comment %} {% render 'icon-caret' %} {% endcomment %}
