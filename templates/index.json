@@ -293,8 +293,8 @@
             "placement_x": "center",
             "placement_y": "center",
             "svg_width": 25,
-            "svg_pos_x": 25,
-            "svg_pos_y": 25
+            "svg_pos_x": 1,
+            "svg_pos_y": 11
           }
         }
       },
