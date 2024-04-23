@@ -456,7 +456,7 @@
           "settings": {
             "heading": "Can I make payments in my local currency?",
             "icon": "none",
-            "row_content": "<p>Presently, all prices are displayed in USD. Payments will be processed in USD and converted to your local currency by your payment provider. We're working on introducing local currency options in the near future. <\/p>",
+            "row_content": "<p>Yes, for most markets products offered are converted from USD to your local currency.<\/p>",
             "page": ""
           }
         }
