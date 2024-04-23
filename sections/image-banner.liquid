@@ -138,7 +138,7 @@
                 {% elsif position_y == "center" %}top: 50%;
                 {% elsif position_y == "bottom" %}bottom: 0;
                 {% endif %}
-                transform: translate({{ block.settings.svg_pos_x  }}%, {{block.settings.svg_pos_}}%);
+                transform: translateX({{ block.settings.svg_pos_x  }}%) translateY({{ block.settings.svg_pos_y }}%);
                 width: {{ block.settings.svg_width }}%;
               '
             >
