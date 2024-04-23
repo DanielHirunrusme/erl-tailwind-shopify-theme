@@ -283,6 +283,17 @@
     },
     "image_banner_FFLNcx": {
       "type": "image-banner",
+      "blocks": {
+        "html_XzjCDp": {
+          "type": "html",
+          "settings": {
+            "html": ""
+          }
+        }
+      },
+      "block_order": [
+        "html_XzjCDp"
+      ],
       "settings": {
         "image_url": "",
         "image": "shopify:\/\/shop_images\/Jackets_sweaters.jpg",
