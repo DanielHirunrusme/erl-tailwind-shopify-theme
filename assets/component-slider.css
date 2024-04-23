@@ -367,14 +367,14 @@ slider-component.slider-component-full-width {
   width: 100%;
   bottom: 1em;
   left: 0;
-  z-index: 2;
+  z-index: 20;
 }
 
 .slider-buttons button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
+  z-index: 20;
 }
 
 .slider-button--next {
@@ -411,6 +411,7 @@ slider-component.slider-component-full-width {
   justify-content: center;
   margin: 0 4vw;
 }
+
 .product-card-wrapper .slider-button {
   width: 6vw;
   height: 6vw;
@@ -426,6 +427,7 @@ slider-component.slider-component-full-width {
     height: 3vw;
     margin: 0 1vw;
   }
+
   .product-card-wrapper .slider-button {
     width: 2vw;
     height: 2vw;
