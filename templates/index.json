@@ -136,7 +136,7 @@
       ],
       "settings": {
         "image_url": "",
-        "image": "shopify:\/\/shop_images\/erl-lookbook-compressed_Page_35.jpg",
+        "image": "shopify:\/\/shop_images\/Shearling.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -173,7 +173,7 @@
       ],
       "settings": {
         "image_url": "",
-        "image": "shopify:\/\/shop_images\/ERL_FW21_LOOKBOOK_WEB_Page_47_2.jpg",
+        "image": "shopify:\/\/shop_images\/1-of-1.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -210,7 +210,7 @@
       ],
       "settings": {
         "image_url": "",
-        "image": "shopify:\/\/shop_images\/sunscreen-9.jpg",
+        "image": "shopify:\/\/shop_images\/Eyewear.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -221,6 +221,91 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "image_banner_qPFjKK": {
+      "type": "image-banner",
+      "settings": {
+        "image_url": "",
+        "image": "shopify:\/\/shop_images\/Skate_chain.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_Mz37ty": {
+      "type": "image-banner",
+      "settings": {
+        "image_url": "",
+        "image": "shopify:\/\/shop_images\/Boxers.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_fMxJwT": {
+      "type": "image-banner",
+      "settings": {
+        "image_url": "",
+        "image": "shopify:\/\/shop_images\/Shirts.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_FFLNcx": {
+      "type": "image-banner",
+      "settings": {
+        "image_url": "",
+        "image": "shopify:\/\/shop_images\/Jackets_sweaters.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_XK8tX7": {
+      "type": "image-banner",
+      "settings": {
+        "image_url": "",
+        "image": "shopify:\/\/shop_images\/Vamps.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
     "newsletter_TweCB4": {
@@ -266,6 +351,11 @@
     "image_banner_6XjrDL",
     "image_banner_43Dnnp",
     "image_banner_W4FVMn",
+    "image_banner_qPFjKK",
+    "image_banner_Mz37ty",
+    "image_banner_fMxJwT",
+    "image_banner_FFLNcx",
+    "image_banner_XK8tX7",
     "newsletter_TweCB4"
   ]
 }
