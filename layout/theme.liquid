@@ -296,6 +296,7 @@
     data-template='{{ template.name }}'
     class='swup-preserve-scroll gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}'
   >
+    {% render 'gtm-head' %}
     {% render 'gtm-body' %}
 
     <a class='skip-to-content-link button visually-hidden' href='#MainContent'>

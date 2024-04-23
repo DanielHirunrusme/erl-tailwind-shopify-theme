@@ -187,7 +187,8 @@ variant-selects {
   width: 1px;
 }
 
-.product-form__input input[type='radio'] + label {
+.product-form__input input[type='radio'] + label,
+.metafield-product-color-link {
   color: rgba(var(--color-foreground));
   padding: 0.125em 0.25em;
   border-radius: 0.075em;
@@ -201,7 +202,8 @@ variant-selects {
   position: relative;
 }
 
-.product-form__input input[type='radio']:not(.disabled) + label:hover {
+.product-form__input input[type='radio']:not(.disabled) + label:hover,
+.metafield-product-color-link:hover {
   background-color: rgba(var(--color-foreground), 0.2);
 }
 
@@ -220,16 +222,19 @@ variant-selects {
     rgba(var(--color-shadow), var(--variant-pills-shadow-opacity));
 }
 
-.product-form__input input[type='radio'] + label:hover {
+.product-form__input input[type='radio'] + label:hover,
+.metafield-product-color-selected:hover {
   border-color: rgb(var(--color-foreground));
 }
 
-.product-form__input input[type='radio']:checked + label {
+.product-form__input input[type='radio']:checked + label,
+.metafield-product-color-selected {
   background-color: rgba(var(--color-foreground), 0.8);
   color: rgb(var(--color-background)) !important;
 }
 
-.product-form__input input[type='radio']:checked + label:hover {
+.product-form__input input[type='radio']:checked + label:hover,
+.metafield-product-color-selected:hover {
   background-color: rgba(var(--color-foreground), 1);
 }
 
