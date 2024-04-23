@@ -38,6 +38,7 @@
   word-break: break-word;
   text-transform: uppercase;
   text-align: left;
+  font-weight: normal;
   line-height: 1.2;
   /* white-space: nowrap; */
 }
