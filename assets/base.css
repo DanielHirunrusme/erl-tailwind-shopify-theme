@@ -4108,3 +4108,7 @@ klarna-placement::part(osm-cta) {
   left: 0;
   width: 100% !important;
 }
+
+video {
+  pointer-events: none !important;
+}
