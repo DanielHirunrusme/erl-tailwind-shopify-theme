@@ -178,7 +178,7 @@
             "placement_y": "bottom",
             "svg_width": 42,
             "svg_pos_x": 10,
-            "svg_pos_y": 25
+            "svg_pos_y": 10
           }
         }
       },
@@ -189,7 +189,7 @@
         "html_zcUV8t"
       ],
       "settings": {
-        "image_url": "shopify:\/\/products\/shearling-bag",
+        "image_url": "shopify:\/\/collections\/shearling",
         "image": "shopify:\/\/shop_images\/SHEERLINGCOAT6.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
