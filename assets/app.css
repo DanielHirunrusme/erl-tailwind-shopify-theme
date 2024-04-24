@@ -762,6 +762,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
+.twcss-w-\[25vw\] {
+  width: 25vw;
+}
+
+.twcss-w-\[33vw\] {
+  width: 33vw;
+}
+
+.twcss-w-\[80vw\] {
+  width: 80vw;
+}
+
 .twcss-max-w-\[14vw\] {
   max-width: 14vw;
 }
@@ -799,6 +811,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-twcss-translate-y-1\/4 {
   --tw-translate-y: -25%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-twcss-translate-y-1\/2 {
+  --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -927,6 +946,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.125em;
 }
 
+.twcss-gap-\[\.5em\] {
+  gap: 0.5em;
+}
+
 .twcss-self-start {
   align-self: flex-start;
 }
@@ -972,6 +995,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: transparent;
 }
 
+.twcss-bg-white\/10 {
+  background-color: rgb(255 255 255 / 0.1);
+}
+
+.twcss-bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
+.twcss-bg-white\/40 {
+  background-color: rgb(255 255 255 / 0.4);
+}
+
+.twcss-bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.\!twcss-bg-transparent {
+  background-color: transparent !important;
+}
+
 .twcss-object-cover {
   -o-object-fit: cover;
   object-fit: cover;
@@ -1008,6 +1051,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-p-4 {
   padding: 1rem;
+}
+
+.twcss-p-10 {
+  padding: 2.5rem;
 }
 
 .twcss-px-\[1em\] {
@@ -1052,6 +1099,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!twcss-pl-0 {
   padding-left: 0px !important;
+}
+
+.twcss-pb-\[1\.5rem\] {
+  padding-bottom: 1.5rem;
 }
 
 .twcss-text-left {
@@ -1289,6 +1340,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
+  }
+
+  .md\:twcss-w-\[25vw\] {
+    width: 25vw;
+  }
+
+  .md\:twcss-w-\[40vw\] {
+    width: 40vw;
+  }
+
+  .md\:twcss-w-\[30vw\] {
+    width: 30vw;
+  }
+
+  .md\:twcss-w-\[28vw\] {
+    width: 28vw;
   }
 
   .md\:twcss-max-w-\[25vw\] {
