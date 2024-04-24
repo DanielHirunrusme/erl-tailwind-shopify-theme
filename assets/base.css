@@ -588,7 +588,8 @@ h4,
 .field__label,
 .field__input,
 body .cc-window,
-.shopify-cleanslate span {
+.shopify-cleanslate span,
+klarna-placement::part(osm-container) {
   font-style: var(--font-heading-style);
   font-size: 1rem;
   text-transform: uppercase;
@@ -601,9 +602,10 @@ body .cc-window,
   .shopify-cleanslate span,
   .field__label,
   .field__input,
-  body .cc-window {
+  body .cc-window,
+  klarna-placement::part(osm-container) {
     font-style: var(--font-heading-style);
-    font-size: 0.75vw;
+    font-size: 0.875vw;
     text-transform: uppercase;
     font-weight: normal;
   }
