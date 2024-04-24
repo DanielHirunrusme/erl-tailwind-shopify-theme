@@ -69,7 +69,7 @@
           "settings": {
             "heading": "Materials",
             "icon": "none",
-            "content": "<p>Made with 100% in Venice Beach California<\/p>",
+            "content": "<p>{{ product.metafields.descriptors.materials | metafield_tag }}<\/p>",
             "page": ""
           }
         },
