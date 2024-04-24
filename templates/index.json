@@ -24,7 +24,7 @@
         "slide_xJyJQp": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/74-75.jpg",
+            "image": "shopify:\/\/shop_images\/ARTISINAL_BROWN_FLANNEL_2.jpg",
             "heading": "Image slide",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
@@ -38,11 +38,30 @@
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_kGE8RH": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ARTISINAL_BROWN_FLANNEL_2.jpg",
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_xgtnCg",
-        "slide_xJyJQp"
+        "slide_xJyJQp",
+        "slide_kGE8RH"
       ],
       "disabled": true,
       "settings": {
