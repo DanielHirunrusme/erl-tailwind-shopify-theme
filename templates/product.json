@@ -78,7 +78,7 @@
           "settings": {
             "heading": "Sizing",
             "icon": "none",
-            "content": "<p>This is information about sizing<\/p>",
+            "content": "<p>product.metafields.product.size_guide<\/p>",
             "page": ""
           }
         },
