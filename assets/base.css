@@ -4098,3 +4098,13 @@ klarna-placement::part(osm-cta) {
   font-family: Arial Narrow, Arial, sans-serif !important;
   text-transform: uppercase;
 }
+
+/* To do */
+.product-media-container video,
+.deferred-media img {
+  position: absolute;
+  object-fit: cover !important;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+}
