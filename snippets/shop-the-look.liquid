@@ -1,11 +1,17 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+
 {% if product.metafields.product.shop_the_look != blank %}
   <div class='md:twcss-grid twcss-grid-cols-3'>
     {% for metaproduct in product.metafields.product.shop_the_look.value %}
-      {% render 'card-product',
+      {%
+        render 'card-product',
         card_product: metaproduct,
-        media_aspect_ratio: 'adapt',
+        media_aspect_ratio: 2/3,
         show_secondary_image: false,
-        extend_height: true
+        show_vendor: false,
+        show_rating: false,
+        lazy_load: true,
+        show_quick_add: false
       %}
     {% endfor %}
   </div>
