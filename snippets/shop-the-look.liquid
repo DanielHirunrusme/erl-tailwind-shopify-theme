@@ -1,0 +1,12 @@
+{% if product.metafields.product.shop_the_look != blank %}
+  <div class='md:twcss-grid twcss-grid-cols-3'>
+    {% for metaproduct in product.metafields.product.shop_the_look.value %}
+      {% render 'card-product',
+        card_product: metaproduct,
+        media_aspect_ratio: 'adapt',
+        show_secondary_image: false,
+        extend_height: true
+      %}
+    {% endfor %}
+  </div>
+{% endif %}

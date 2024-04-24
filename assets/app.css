@@ -943,8 +943,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   white-space: nowrap;
 }
 
+.twcss-border-2 {
+  border-width: 2px;
+}
+
+.twcss-border-\[px\] {
+  border-width: px;
+}
+
+.twcss-border {
+  border-width: 1px;
+}
+
 .twcss-border-b {
   border-bottom-width: 1px;
+}
+
+.twcss-border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .twcss-border-b-white {
@@ -976,6 +992,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-p-\[1\.5em\] {
   padding: 1.5em;
+}
+
+.twcss-p-0 {
+  padding: 0px;
+}
+
+.\!twcss-p-0 {
+  padding: 0px !important;
+}
+
+.twcss-p-\[1em\] {
+  padding: 1em;
+}
+
+.twcss-p-4 {
+  padding: 1rem;
 }
 
 .twcss-px-\[1em\] {
@@ -1016,6 +1048,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[\.2em\] {
   padding-bottom: 0.2em;
+}
+
+.\!twcss-pl-0 {
+  padding-left: 0px !important;
 }
 
 .twcss-text-left {
