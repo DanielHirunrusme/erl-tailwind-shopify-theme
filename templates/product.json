@@ -319,6 +319,7 @@
       "blocks": {
         "heading_YJiyjE": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Stay up to date",
             "heading_size": "h1"
@@ -326,6 +327,7 @@
         },
         "paragraph_7R9whh": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "text": "<p>Subscribe for early access<br\/>to exclusive ERL products and collections<\/p>"
           }
@@ -343,7 +345,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/newsletter.jpg",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-24_at_12.06.52_PM.png",
         "full_width": true,
         "padding_top": 0,
         "padding_bottom": 0
