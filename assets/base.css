@@ -3904,8 +3904,10 @@ body .cc-window {
 .rte-footer p,
 .rte-footer ul,
 .rte-footer ol,
-.rte-footer table {
+.rte-footer table,
+.rte-footer span {
   margin-bottom: 1em;
+  font-family: Arial Narrow, Arial, Helvetica, sans-serif !important;
 }
 
 .rte-footer h2 {
