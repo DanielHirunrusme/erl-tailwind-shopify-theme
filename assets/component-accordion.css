@@ -67,6 +67,10 @@
   overflow-x: auto;
 }
 
+.accordion__content p {
+  max-width: 30em;
+}
+
 .accordion__content * {
   font-weight: normal;
 }
