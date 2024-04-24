@@ -229,7 +229,7 @@ variant-selects {
 
 .product-form__input input[type='radio']:checked + label,
 .metafield-product-color-selected {
-  background-color: rgba(var(--color-foreground), 0.8);
+  background-color: rgba(var(--color-foreground), 0.9);
   color: rgb(var(--color-background)) !important;
 }
 
