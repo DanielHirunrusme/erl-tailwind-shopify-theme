@@ -2,10 +2,43 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
         "color_scheme": "scheme-1"
+      }
+    },
+    "featured_products_J3p67V": {
+      "type": "featured-products",
+      "blocks": {
+        "product_eCx3Kw": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-mini-bag"
+          }
+        },
+        "product_fXxYxb": {
+          "type": "product",
+          "settings": {
+            "product": "california-shearling-coat"
+          }
+        },
+        "product_tqidfF": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-messenger-bag"
+          }
+        }
+      },
+      "block_order": [
+        "product_eCx3Kw",
+        "product_fXxYxb",
+        "product_tqidfF"
+      ],
+      "disabled": true,
+      "settings": {
+        "Title": ""
       }
     },
     "product-grid": {
@@ -31,6 +64,7 @@
   },
   "order": [
     "banner",
+    "featured_products_J3p67V",
     "product-grid"
   ]
 }
