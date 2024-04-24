@@ -78,7 +78,7 @@
           "settings": {
             "heading": "Sizing",
             "icon": "none",
-            "content": "<p>One size fits all.<\/p>",
+            "content": "<p>{{ product.metafields.product.sizing | metafield_tag }}<\/p>",
             "page": ""
           }
         },
