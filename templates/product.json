@@ -60,7 +60,7 @@
           "settings": {
             "heading": "Care Instructions",
             "icon": "none",
-            "content": "<p>How to take care of the garment<\/p>",
+            "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
             "page": ""
           }
         },
