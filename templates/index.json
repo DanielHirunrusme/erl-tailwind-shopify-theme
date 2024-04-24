@@ -397,14 +397,14 @@
         "heading_LPwqBj": {
           "type": "heading",
           "settings": {
-            "heading": "keep in touch",
+            "heading": "",
             "heading_size": "h1"
           }
         },
         "paragraph_GRE4gq": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Subscribe for early access<br\/>to exclusive ERL products and collections<\/p>"
+            "text": "<p> <\/p>"
           }
         },
         "email_form_gdaL9B": {
