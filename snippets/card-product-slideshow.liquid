@@ -108,6 +108,7 @@
                   product.metafields.product.hover_image
                   | image_url: width: 1946
                   | image_tag:
+                    alt: product.metafields.product.title,
                     class: image_class,
                     loading: lazy,
                     sizes: sizes,
@@ -124,6 +125,7 @@
               loop: section.settings.enable_video_looping,
               modal_id: product.id,
               xr_button: true,
+              alt: product.metafields.product.title,
               media_width: media_width,
               media_fit: section.settings.media_fit,
               constrain_to_viewport: section.settings.constrain_to_viewport,
