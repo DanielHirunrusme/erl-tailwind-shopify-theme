@@ -148,6 +148,28 @@
                 '
               >
                 {%- for product in collection.products -%}
+                  {% comment %} Billboards {% endcomment %}
+
+                  {% if forloop.index == 5 %}
+                    {% include 'billboard-chaps' %}
+                  {% endif %}
+
+                  {% if forloop.index == 8 %}
+                    {% include 'billboard-hoodie' %}
+                  {% endif %}
+
+                  {% if forloop.index == 11 %}
+                    {% include 'billboard-knit' %}
+                  {% endif %}
+
+                  {% if forloop.index == 14 %}
+                    {% include 'billboard-vest' %}
+                  {% endif %}
+
+                  {% if forloop.index == 17 %}
+                    {% include 'billboard-boxer' %}
+                  {% endif %}
+
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
                     {%- assign lazy_load = true -%}

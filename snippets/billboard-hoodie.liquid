@@ -1,0 +1,16 @@
+{% comment %} patchwork-heavyweight-zip-up {% endcomment %}
+{% assign billboard = all_products['patchwork-heavyweight-zip-up'] %}
+
+<div class=' twcss-w-full '>
+  <a href='{{ billboard.url }}' class=' twcss-relative' title='{{ billboard.title }}'>
+    {{
+      billboard.metafields.product.feature_image
+      | image_url: width: 3000
+      | image_tag: widths: '550, 720, 990, 1100, 1500, 2200, 3000'
+    }}
+
+    <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
+      {{ billboard.title | escape }}
+    </h3>
+  </a>
+</div>
