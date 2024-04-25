@@ -4112,3 +4112,43 @@ klarna-placement::part(osm-cta) {
 video {
   pointer-events: none !important;
 }
+
+/* Newsletter footer */
+.klaviyo-form-REpsnw [data-testid='form-row'] {
+  border-bottom: 2px solid rgb(var(--color-foreground), 0.8);
+  color: white !important;
+}
+
+.klaviyo-form-REpsnw p,
+.klaviyo-form-REpsnw span,
+.kl-private-reset-css-Xuajs1 {
+  color: white !important;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
+  text-align: left !important;
+}
+
+.kl-private-reset-css-Xuajs1 {
+  min-height: auto !important;
+}
+
+.klaviyo-form-REpsnw [data-testid='form-component'] {
+  padding: 0 !important;
+}
+
+.klaviyo-form-REpsnw input[type='email'] {
+  background-color: transparent !important;
+  border: none !important;
+  padding-left: 0 !important;
+  outline: none !important;
+  color: white !important;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
+}
+
+.klaviyo-form-REpsnw input[type='email']::placeholder {
+  color: white !important;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
+}
+
+#klaviyo_ariaid_2 {
+  color: red !important;
+}
