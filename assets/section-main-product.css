@@ -395,7 +395,16 @@ a.product__text {
 
 .product__accordion .accordion__content {
   padding: 0 0 0em 0;
-  text-align: justify;
+  /* text-align: justify; */
+}
+
+.accordion__content > table {
+  margin-top: 0.25em !important;
+}
+
+.product__accordion summary[aria-expanded='true'] .summary__title {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .product .price dl {

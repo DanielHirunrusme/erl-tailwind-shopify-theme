@@ -25,7 +25,7 @@ module.exports = {
         cookie: '"Smart Cookie", sans-serif',
         grotesk: '"Alte Haas Grotesk", sans-serif',
         bouquet: '"ERL BBBouquet", sans-serif',
-        narrow: 'Arial Narrow, Arial, sans-serif',
+        narrow: '"AN", Arial Narrow, Arial, sans-serif',
         sans: 'Arial, Helvetica, sans-serif',
       },
       maxWidth: {

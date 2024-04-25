@@ -1126,11 +1126,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .\!twcss-font-narrow {
-  font-family: Arial Narrow, Arial, sans-serif !important;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
 }
 
 .twcss-font-narrow {
-  font-family: Arial Narrow, Arial, sans-serif;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif;
 }
 
 .twcss-font-haymer {

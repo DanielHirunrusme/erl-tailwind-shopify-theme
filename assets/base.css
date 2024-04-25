@@ -3884,7 +3884,7 @@ body .cc-window {
 
 /* Footer RTE */
 .rte-footer {
-  font-family: Arial Narrow, Arial, Helvetica, sans-serif;
+  font-family: 'AN', Arial Narrow, Arial, Helvetica, sans-serif;
   font-weight: bold !important;
 
   font-size: 4vw;
@@ -3909,7 +3909,7 @@ body .cc-window {
 .rte-footer table,
 .rte-footer span {
   margin-bottom: 1em;
-  font-family: Arial Narrow, Arial, Helvetica, sans-serif !important;
+  font-family: 'AN', Arial Narrow, Arial, Helvetica, sans-serif !important;
 }
 
 .rte-footer h2 {
@@ -4084,7 +4084,7 @@ select {
 
 /* Klarna */
 klarna-placement::part(osm-container) {
-  font-family: Arial Narrow, Arial, sans-serif !important;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
   background: transparent;
   border: none;
   align-self: self-start;
@@ -4095,7 +4095,7 @@ klarna-placement::part(osm-container) {
 }
 
 klarna-placement::part(osm-cta) {
-  font-family: Arial Narrow, Arial, sans-serif !important;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
   text-transform: uppercase;
 }
 
