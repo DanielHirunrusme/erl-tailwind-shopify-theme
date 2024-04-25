@@ -60,11 +60,49 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "newsletter_CbXqjn": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_z6QFVN": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Subscribe to our emails",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_UwfhNT": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+          }
+        },
+        "email_form_PeYVyk": {
+          "type": "email_form",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "heading_z6QFVN",
+        "paragraph_UwfhNT",
+        "email_form_PeYVyk"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-24_at_12.06.52_PM.png",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "banner",
     "featured_products_J3p67V",
-    "product-grid"
+    "product-grid",
+    "newsletter_CbXqjn"
   ]
 }
