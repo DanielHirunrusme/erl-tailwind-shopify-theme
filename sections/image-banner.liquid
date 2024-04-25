@@ -152,7 +152,11 @@
                 width: {{ block.settings.svg_width }}%;
               '
             >
-              {{ block.settings.html }}
+              {% if block.settings.svg != blank %}
+                <img src='{{ block.settings.svg |  img_url }}' alt='banner' class=' twcss-w-full twcss-block '>
+              {% else %}
+                {{ block.settings.html }}
+              {% endif %}
             </div>
 
           {%- when 'heading' -%}
