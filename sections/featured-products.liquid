@@ -12,9 +12,10 @@
 {% endunless %}
 
 <section>
+  <div class=" twcss-grid twcss-grid-cols-2 md:twcss-grid-cols-4 ">
   {% for block in section.blocks %}
     {% assign product = block.settings.product %}
-    {% comment %} {% include 'product-card', product: product %} {% endcomment %}
+    {% render 'card-product', card_product: product %}
   {% endfor %}
 </section>
 
