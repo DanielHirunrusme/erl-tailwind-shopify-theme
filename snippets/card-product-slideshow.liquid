@@ -101,7 +101,11 @@
               assign lazy_load = true
             endif
           -%}
-          <a class='twcss-w-full twcss-h-full twcss-relative group' href='{{ product.url }}'>
+          <a
+            class='twcss-w-full twcss-h-full twcss-relative group'
+            href='{{ product.url }}'
+            title='{{ product.title }}'
+          >
             {% if forloop.index == 1 and product.metafields.product.hover_image != blank %}
               <div class='hover-image twcss-absolute twcss-top-0 twcss-left-0 twcss-h-full twcss-w-full twcss-z-10 twcss-hidden twcss-pointer-events-none group-hover:twcss-block '>
                 {{
