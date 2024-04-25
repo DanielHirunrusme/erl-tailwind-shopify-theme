@@ -50,17 +50,29 @@
           <fieldset class='js  twcss-flex twcss-gap-[1em] product-form__input product-form__input--pill'>
             {%- if option.name == 'Color' and product.metafields.product.product_colors != blank -%}
               {%- assign current_color = product.selected_or_first_available_variant.title | split: ' / ' | last -%}
+
+              {% comment %} To do Product Colors {% endcomment %}
               {%- for values in product.metafields.product.product_colors.value -%}
                 {% assign metaproduct = values %}
+
                 {%- for option in metaproduct.options_with_values -%}
                   {%- if option.name == 'Color' -%}
-                    <a
-                      href='{{ metaproduct.url }}'
-                      title='{{ metaproduct.title }}'
-                      class='metafield-product-color-link h3 !twcss-font-panton {% if current_color == option.selected_value %}metafield-product-color-selected{%- endif-%}'
-                    >
-                      {{- option.selected_value -}}
-                    </a>
+                    {% if current_color == option.selected_value %}
+                      {% render 'product-variant-options',
+                        product: product,
+                        option: option,
+                        block: block,
+                        picker_type: picker_type
+                      %}
+                    {% else %}
+                      <a
+                        href='{{ metaproduct.url }}'
+                        title='{{ metaproduct.title }}'
+                        class='metafield-product-color-link h3 !twcss-font-panton {% if current_color == option.selected_value %}metafield-product-color-selected{%- endif-%}'
+                      >
+                        {{- option.selected_value -}}
+                      </a>
+                    {% endif %}
                   {%- endif -%}
                 {%- endfor -%}
               {%- endfor -%}
