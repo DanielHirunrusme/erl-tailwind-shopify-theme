@@ -2,7 +2,7 @@
 {% assign billboard = all_products['plaid-boxer-short-set-brown-plaids'] %}
 
 <div class=' twcss-w-full '>
-  <a href='{{ billboard.url }}' class=' twcss-relative' title='{{ billboard.title }}'>
+  <a href='{{ billboard.url }}' class=' twcss-relative twcss-block' title='{{ billboard.title }}'>
     {{
       billboard.metafields.product.feature_image
       | image_url: width: 3000
