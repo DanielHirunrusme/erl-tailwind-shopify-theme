@@ -4131,6 +4131,10 @@ video {
   min-height: auto !important;
 }
 
+.kl-private-reset-css-Xuajs1 button {
+  padding: 0 !important;
+}
+
 .klaviyo-form-REpsnw [data-testid='form-component'] {
   padding: 0 !important;
 }
