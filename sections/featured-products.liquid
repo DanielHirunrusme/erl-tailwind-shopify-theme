@@ -14,8 +14,8 @@
 <section>
   <div class=" twcss-grid twcss-grid-cols-2 md:twcss-grid-cols-4 ">
   {% for block in section.blocks %}
-    {% assign product = block.settings.product %}
-    {% render 'card-product', card_product: product %}
+    {% assign featured_product = block.settings.product %}
+    {% render 'card-product', card_product: featured_product %}
   {% endfor %}
 </section>
 
