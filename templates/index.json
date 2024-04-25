@@ -175,6 +175,44 @@
         "show_text_below": false
       }
     },
+    "featured_products_cGDzpr": {
+      "type": "featured-products",
+      "blocks": {
+        "product_3p7JV9": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-mini-bag"
+          }
+        },
+        "product_eaWQFR": {
+          "type": "product",
+          "settings": {
+            "product": "california-shearling-coat"
+          }
+        },
+        "product_iifUGq": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-messenger-bag"
+          }
+        },
+        "product_dVjcpi": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-chaps"
+          }
+        }
+      },
+      "block_order": [
+        "product_3p7JV9",
+        "product_eaWQFR",
+        "product_iifUGq",
+        "product_dVjcpi"
+      ],
+      "settings": {
+        "Title": ""
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -431,6 +469,7 @@
     "image_banner",
     "image_banner_6XjrDL",
     "image_banner_W4FVMn",
+    "featured_products_cGDzpr",
     "featured_collection",
     "image_banner_qPFjKK",
     "image_banner_43Dnnp",
