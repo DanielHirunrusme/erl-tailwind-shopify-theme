@@ -288,6 +288,18 @@
     "image_banner_6zYY3G": {
       "type": "image-banner",
       "blocks": {
+        "html_FbMzdR": {
+          "type": "html",
+          "settings": {
+            "html": "",
+            "svg": "shopify:\/\/shop_images\/boxers.svg",
+            "placement_x": "right",
+            "placement_y": "top",
+            "svg_width": 70,
+            "svg_pos_x": 6,
+            "svg_pos_y": 8
+          }
+        },
         "heading_Y9CmeK": {
           "type": "heading",
           "disabled": true,
@@ -318,6 +330,7 @@
         }
       },
       "block_order": [
+        "html_FbMzdR",
         "heading_Y9CmeK",
         "text_YNk4Xm",
         "buttons_aHzXxH"
