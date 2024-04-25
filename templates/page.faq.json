@@ -52,7 +52,7 @@
           "settings": {
             "heading": "How can I get notified if an ERL item is out of stock?",
             "icon": "none",
-            "row_content": "<p>Currently, we don't offer out-of-stock notifications on all products. Stay updated on potential restocks by subscribing to our newsletter.<\/p>",
+            "row_content": "<p>Currently, we offer out-of-stock notifications on all products. Simply hit the ‘notify-me’ button. We also recommend subscribing to our newsletter to stay updated on potential restocks. <\/p>",
             "page": ""
           }
         }
