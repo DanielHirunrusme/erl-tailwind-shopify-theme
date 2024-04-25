@@ -9,8 +9,17 @@
       | image_tag: widths: '550, 720, 990, 1100, 1500, 2200, 3000'
     }}
 
-    <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
-      {{ billboard.title | escape }}
-    </h3>
+    <div class=' twcss-w-[40vw] twcss-absolute twcss-aspect-[2000/1248] twcss-z-10 twcss-left-[5%] twcss-top-[5%] twcss-rotate-3 hover:twcss-rotate-2 '>
+      <img
+        src='https://cdn.shopify.com/s/files/1/0757/2095/0079/files/heavyweight-zip.svg?v=1714008947'
+        alt='{{ billboard.title | escape }}'
+      >
+    </div>
+
+    {% comment %}
+      <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
+        {{ billboard.title | escape }}
+      </h3>
+    {% endcomment %}
   </a>
 </div>

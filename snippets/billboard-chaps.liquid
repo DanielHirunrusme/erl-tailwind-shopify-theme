@@ -8,8 +8,17 @@
       | image_tag: widths: '550, 720, 990, 1100, 1500, 2200, 3000'
     }}
 
-    <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
-      {{ billboard.title | escape }}
-    </h3>
+    <div class=' twcss-w-[50vw] twcss-absolute twcss-aspect-[2000/754.36] twcss-z-10 twcss-left-[10%] twcss-bottom-[20%] twcss-rotate-1 hover:-twcss-rotate-2 '>
+      <img
+        src='https://cdn.shopify.com/s/files/1/0757/2095/0079/files/chaps.svg?v=1714008042'
+        alt='{{ billboard.title | escape }}'
+      >
+    </div>
+
+    {% comment %}
+      <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
+        {{ billboard.title | escape }}
+      </h3>
+    {% endcomment %}
   </a>
 </div>

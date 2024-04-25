@@ -1,7 +1,7 @@
 {% comment %} cowboy-knit {% endcomment %}
 {% assign billboard = all_products['cowboy-knit'] %}
 
-<div class=' twcss-w-full '>
+<div class=' twcss-w-full twcss-relative '>
   <a href='{{ billboard.url }}' class=' twcss-relative' title='{{ billboard.title }}'>
     {{
       billboard.metafields.product.feature_image
@@ -9,8 +9,17 @@
       | image_tag: widths: '550, 720, 990, 1100, 1500, 2200, 3000'
     }}
 
-    <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
-      {{ billboard.title | escape }}
-    </h3>
+    <div class=' twcss-w-[45vw] twcss-absolute twcss-aspect-[2000/754.36] twcss-z-10 twcss-right-[5%] twcss-top-[10%] twcss-rotate-2 hover:twcss-rotate-0 '>
+      <img
+        src='https://cdn.shopify.com/s/files/1/0757/2095/0079/files/cowboy-sweater.svg?v=1714008041'
+        alt='{{ billboard.title | escape }}'
+      >
+    </div>
+
+    {% comment %}
+      <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
+        {{ billboard.title | escape }}
+      </h3>
+    {% endcomment %}
   </a>
 </div>

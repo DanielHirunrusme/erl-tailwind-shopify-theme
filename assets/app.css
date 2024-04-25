@@ -559,6 +559,54 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 8vw;
 }
 
+.twcss-bottom-\[20\%\] {
+  bottom: 20%;
+}
+
+.twcss-left-\[10\%\] {
+  left: 10%;
+}
+
+.twcss-bottom-\[10\%\] {
+  bottom: 10%;
+}
+
+.twcss-top-\[10\%\] {
+  top: 10%;
+}
+
+.twcss-top-\[20\%\] {
+  top: 20%;
+}
+
+.twcss-top-\[15\%\] {
+  top: 15%;
+}
+
+.twcss-right-\[10\%\] {
+  right: 10%;
+}
+
+.twcss-right-\[5\%\] {
+  right: 5%;
+}
+
+.twcss-bottom-\[5\%\] {
+  bottom: 5%;
+}
+
+.twcss-bottom-\[15\%\] {
+  bottom: 15%;
+}
+
+.twcss-left-\[5\%\] {
+  left: 5%;
+}
+
+.twcss-top-\[5\%\] {
+  top: 5%;
+}
+
 .twcss-z-10 {
   z-index: 10;
 }
@@ -710,6 +758,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 537 / 942;
 }
 
+.twcss-aspect-\[2000\/754\.36\] {
+  aspect-ratio: 2000 / 754.36;
+}
+
+.twcss-aspect-\[2000\/782\] {
+  aspect-ratio: 2000 / 782;
+}
+
+.twcss-aspect-\[2000\/533\] {
+  aspect-ratio: 2000 / 533;
+}
+
+.twcss-aspect-\[2000\/1248\] {
+  aspect-ratio: 2000 / 1248;
+}
+
 .twcss-h-full {
   height: 100%;
 }
@@ -772,6 +836,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-w-\[80vw\] {
   width: 80vw;
+}
+
+.twcss-w-\[40vw\] {
+  width: 40vw;
+}
+
+.twcss-w-\[55vw\] {
+  width: 55vw;
+}
+
+.twcss-w-\[45vw\] {
+  width: 45vw;
+}
+
+.twcss-w-\[60vw\] {
+  width: 60vw;
 }
 
 .twcss-max-w-\[14vw\] {
@@ -860,6 +940,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-rotate-2 {
   --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-twcss-rotate-3 {
+  --tw-rotate: -3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-3 {
+  --tw-rotate: 3deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1248,6 +1342,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-ease-linear {
   transition-timing-function: linear;
+}
+
+.hover\:twcss-rotate-0:hover {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:-twcss-rotate-2:hover {
+  --tw-rotate: -2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:twcss-rotate-3:hover {
+  --tw-rotate: 3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:twcss-rotate-2:hover {
+  --tw-rotate: 2deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .focus\:twcss-border-none:focus {
