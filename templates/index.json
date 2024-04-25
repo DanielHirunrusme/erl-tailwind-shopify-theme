@@ -345,14 +345,9 @@
             "product": "erl-logo-soft-sock-black"
           }
         },
-        "product_WcMUFr": {
-          "type": "product",
-          "settings": {
-            "product": "skate-chain"
-          }
-        },
         "product_K89w7R": {
           "type": "product",
+          "disabled": true,
           "settings": {
             "product": "suede-skate-sneaker"
           }
@@ -362,13 +357,26 @@
           "settings": {
             "product": "venice-sweatpant"
           }
+        },
+        "product_WcMUFr": {
+          "type": "product",
+          "settings": {
+            "product": "skate-chain"
+          }
+        },
+        "product_yMtxHd": {
+          "type": "product",
+          "settings": {
+            "product": "venice-pocket-tee"
+          }
         }
       },
       "block_order": [
         "product_KqzN7p",
-        "product_WcMUFr",
         "product_K89w7R",
-        "product_HzraMH"
+        "product_HzraMH",
+        "product_WcMUFr",
+        "product_yMtxHd"
       ],
       "settings": {
         "Title": ""
