@@ -1,26 +1,5 @@
 {{ 'section-main-page.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
-  .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
-  }
-
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
-    }
-  }
-{%- endstyle -%}
-{% unless section.settings.hide_text == true %}
-  <div style='display: none;' class=' rte-footer twcss-px-[1em] twcss-pb-[2em] twcss-pt-[6em]'>
-    <div>
-      {{ page.content }}
-    </div>
-  </div>
-{% endunless %}
-
 {% schema %}
 {
   "name": "t:sections.main-page.name",
@@ -52,10 +31,9 @@
       "default": 36
     },
     {
-      "type": "checkbox",
-      "id": "hide_text",
-      "label": "Hide page text?",
-      "default": false
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
     }
   ]
 }
