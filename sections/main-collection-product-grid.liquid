@@ -150,25 +150,27 @@
                 {%- for product in collection.products -%}
                   {% comment %} Billboards {% endcomment %}
 
-                  {% if forloop.index == 4 %}
-                    {% include 'billboard-chaps' %}
-                  {% endif %}
+                  {% comment %}
+                    {% if forloop.index == 4 %}
+                      {% include 'billboard-chaps' %}
+                    {% endif %}
 
-                  {% if forloop.index == 7 %}
-                    {% include 'billboard-hoodie' %}
-                  {% endif %}
+                    {% if forloop.index == 7 %}
+                      {% include 'billboard-hoodie' %}
+                    {% endif %}
 
-                  {% if forloop.index == 10 %}
-                    {% include 'billboard-knit' %}
-                  {% endif %}
+                    {% if forloop.index == 10 %}
+                      {% include 'billboard-knit' %}
+                    {% endif %}
 
-                  {% if forloop.index == 13 %}
-                    {% include 'billboard-vest' %}
-                  {% endif %}
+                    {% if forloop.index == 13 %}
+                      {% include 'billboard-vest' %}
+                    {% endif %}
 
-                  {% if forloop.index == 16 %}
-                    {% include 'billboard-boxer' %}
-                  {% endif %}
+                    {% if forloop.index == 16 %}
+                      {% include 'billboard-boxer' %}
+                    {% endif %}
+                  {% endcomment %}
 
                   {% assign lazy_load = false %}
                   {%- if forloop.index > 2 -%}
