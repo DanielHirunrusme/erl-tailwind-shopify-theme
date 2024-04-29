@@ -1,4 +1,5 @@
 {
+  "layout": "none",
   "sections": {
     "main": {
       "type": "main-page-newsletter",
