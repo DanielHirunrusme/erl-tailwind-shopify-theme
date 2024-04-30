@@ -217,7 +217,7 @@
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'component-list-social.css' | asset_url | stylesheet_tag }}
-    {{ 'section-password.css' | asset_url | stylesheet_tag }}
+    {{ 'section-none.css' | asset_url | stylesheet_tag }}
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -256,34 +256,31 @@
 
     <div class='klaviyo-form-Um7jzx'></div>
 
-    {% comment %}
-      <script
-        async
-        type='text/javascript'
-        src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RstUAb'
-      ></script>
-      <script type='text/javascript'>
-        window.onload = function() {
-          var height = 0;
-          console.log('loaded')
-          const sizeForm = () => {
-            console.log('sizing')
-            const form = document.querySelector('.klaviyo-form-Um7jzx');
-            if (form) {
-              const formHeight = form.childNodes[0]?.offsetHeight;
-              console.log('formHeight', formHeight)
-              form.childNodes[0].style.minHeight = formHeight + 'px';
-
-            }
-          };
-          klaviyo.identify({}).then(() => {
-            sizeForm();
-            setTimeout(() => {
-              sizeForm();
-            }, 2000);
-          });
+    <script
+      async
+      type='text/javascript'
+      src='https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=RstUAb'
+    ></script>
+    <script type='text/javascript'>
+      window.onload = function () {
+        var height = 0;
+        console.log('loaded');
+        const sizeForm = () => {
+          console.log('sizing');
+          const form = document.querySelector('.klaviyo-form-Um7jzx');
+          if (form) {
+            const formHeight = form.childNodes[0]?.offsetHeight;
+            console.log('formHeight', formHeight);
+            form.childNodes[0].style.minHeight = formHeight + 'px';
+          }
         };
-      </script>
-    {% endcomment %}
+        klaviyo.identify({}).then(() => {
+          sizeForm();
+          setTimeout(() => {
+            sizeForm();
+          }, 2000);
+        });
+      };
+    </script>
   </body>
 </html>
