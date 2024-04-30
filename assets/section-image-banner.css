@@ -515,7 +515,7 @@
   animation-delay: 0.5s;
 }
 
-.svg-text:hover svg g:nth-child(6) {
+.svg-text:hover svg g:nth-child(8) {
   transform: translateY(1%);
 }
 
