@@ -1460,6 +1460,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   .portrait\:twcss-block {
     display: block;
   }
+
+  .portrait\:twcss-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 750px) {
+  @media (orientation: portrait) {
+    .md\:portrait\:twcss-block {
+      display: block;
+    }
+  }
 }
 
 @media (orientation: landscape) {
@@ -1476,6 +1488,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   @media (orientation: landscape) {
     .md\:landscape\:twcss-block {
       display: block;
+    }
+
+    .md\:landscape\:twcss-hidden {
+      display: none;
     }
   }
 }

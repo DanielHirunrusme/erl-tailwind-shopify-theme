@@ -83,33 +83,37 @@
             fetchpriority: fetch_priority
         }}
       {% else %}
-        <div class=' landscape:twcss-block'>
-          {{
-            section.settings.image
-            | image_url: width: 3840
-            | image_tag:
-              width: section.settings.image.width,
-              height: image_height,
-              class: image_class,
-              sizes: sizes,
-              widths: widths,
-              fetchpriority: fetch_priority
-          }}
-        </div>
+        {% assign desktop_image_class = image_class
+          | append: 'zoom portrait:twcss-block landscape:twcss-hidden md:twcss-hidden md:landscape:twcss-hidden  twcss-h-full twcss-w-full twcss-absolute '
+        %}
 
-        <div class=' portrait:twcss-block landscape:twcss-hidden md:twcss-hidden md:landscape:twcss-block '>
-          {{
-            section.settings.image
-            | image_url: width: 3840
-            | image_tag:
-              width: section.settings.image.width,
-              height: image_height,
-              class: image_class,
-              sizes: sizes,
-              widths: widths,
-              fetchpriority: fetch_priority
-          }}
-        </div>
+        {% assign mobile_image_class = image_class
+          | append: 'zoom portrait:twcss-hidden  landscape:twcss-block md:portrait:twcss-block twcss-h-full twcss-w-full twcss-absolute '
+        %}
+
+        {{
+          section.settings.image_1_mobile
+          | image_url: width: 3840
+          | image_tag:
+            width: section.settings.image_1_mobile.width,
+            height: image_height,
+            class: desktop_image_class,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
+
+        {{
+          section.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            width: section.settings.image.width,
+            height: image_height,
+            class: mobile_image_class,
+            sizes: sizes,
+            widths: widths,
+            fetchpriority: fetch_priority
+        }}
       {% endif %}
     </div>
   {%- elsif section.settings.image_2 == blank -%}
