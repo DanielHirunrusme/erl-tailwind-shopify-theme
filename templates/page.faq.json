@@ -23,7 +23,7 @@
         "collapsible_row_zFbtnL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Where can I find items not on the shop?",
+            "heading": "I can't find a specific item on your webshop. Can I find it elsewhere?",
             "icon": "none",
             "row_content": "<p>Certain items might be available through our resellers, or at the DSM store <a href=\"https:\/\/shop-us.doverstreetmarket.com\/collections\/erl\" target=\"_blank\" title=\"https:\/\/shop-us.doverstreetmarket.com\/collections\/erl\">https:\/\/shop-us.doverstreetmarket.com\/collections\/erl<\/a>. While our webshop doesn't feature the full line, items sold here are exclusively available for order through us.<\/p>",
             "page": ""
