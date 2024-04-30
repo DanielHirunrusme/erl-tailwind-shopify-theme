@@ -142,39 +142,47 @@
         "show_text_below": false
       }
     },
-    "featured_products_Mje7tB": {
+    "featured_products_z7CUrr": {
       "type": "featured-products",
       "blocks": {
-        "product_4QfehM": {
+        "product_KqzN7p": {
           "type": "product",
           "settings": {
-            "product": "shearling-mini-bag"
+            "product": "erl-logo-soft-sock-black"
           }
         },
-        "product_jJynkB": {
+        "product_K89w7R": {
           "type": "product",
+          "disabled": true,
           "settings": {
-            "product": "california-shearling-coat"
+            "product": "suede-skate-sneaker"
           }
         },
-        "product_R44rar": {
+        "product_HzraMH": {
           "type": "product",
           "settings": {
-            "product": "shearling-messenger-bag"
+            "product": "venice-sweatpant"
           }
         },
-        "product_33DrGe": {
+        "product_WcMUFr": {
           "type": "product",
           "settings": {
-            "product": "shearling-chaps"
+            "product": "skate-chain"
+          }
+        },
+        "product_yMtxHd": {
+          "type": "product",
+          "settings": {
+            "product": "venice-pocket-tee"
           }
         }
       },
       "block_order": [
-        "product_4QfehM",
-        "product_jJynkB",
-        "product_R44rar",
-        "product_33DrGe"
+        "product_KqzN7p",
+        "product_K89w7R",
+        "product_HzraMH",
+        "product_WcMUFr",
+        "product_yMtxHd"
       ],
       "settings": {
         "Title": ""
@@ -212,78 +220,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
-      }
-    },
-    "image_banner_qPFjKK": {
-      "type": "image-banner",
-      "blocks": {
-        "html_jnprPU": {
-          "type": "html",
-          "settings": {
-            "html": "",
-            "svg": "shopify:\/\/shop_images\/patchwork-zpi.svg",
-            "placement_x": "left",
-            "placement_y": "top",
-            "svg_width": 57,
-            "svg_pos_x": 11,
-            "svg_pos_y": 11
-          }
-        }
-      },
-      "block_order": [
-        "html_jnprPU"
-      ],
-      "settings": {
-        "image_url": "shopify:\/\/products\/patchwork-heavyweight-zip-up",
-        "image": "shopify:\/\/shop_images\/RED_PLAID_HOODIE_12.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "featured_products_FEBTEj": {
-      "type": "featured-products",
-      "blocks": {
-        "product_3RxQtr": {
-          "type": "product",
-          "settings": {
-            "product": "patchwork-heavyweight-zip-up"
-          }
-        },
-        "product_8VWq8X": {
-          "type": "product",
-          "settings": {
-            "product": "plaid-boxer-short-set"
-          }
-        },
-        "product_CAkWfF": {
-          "type": "product",
-          "settings": {
-            "product": "california-pocket-tee"
-          }
-        },
-        "product_EJt7qc": {
-          "type": "product",
-          "settings": {
-            "product": "corduroy-boardwalk-short-brown"
-          }
-        }
-      },
-      "block_order": [
-        "product_3RxQtr",
-        "product_8VWq8X",
-        "product_CAkWfF",
-        "product_EJt7qc"
-      ],
-      "settings": {
-        "Title": ""
       }
     },
     "image_banner_6zYY3G": {
@@ -351,47 +287,111 @@
         "show_text_below": false
       }
     },
-    "featured_products_z7CUrr": {
+    "featured_products_FEBTEj": {
       "type": "featured-products",
       "blocks": {
-        "product_KqzN7p": {
+        "product_3RxQtr": {
           "type": "product",
           "settings": {
-            "product": "erl-logo-soft-sock-black"
+            "product": "patchwork-heavyweight-zip-up"
           }
         },
-        "product_K89w7R": {
+        "product_8VWq8X": {
           "type": "product",
-          "disabled": true,
           "settings": {
-            "product": "suede-skate-sneaker"
+            "product": "plaid-boxer-short-set"
           }
         },
-        "product_HzraMH": {
+        "product_CAkWfF": {
           "type": "product",
           "settings": {
-            "product": "venice-sweatpant"
+            "product": "california-pocket-tee"
           }
         },
-        "product_WcMUFr": {
+        "product_EJt7qc": {
           "type": "product",
           "settings": {
-            "product": "skate-chain"
-          }
-        },
-        "product_yMtxHd": {
-          "type": "product",
-          "settings": {
-            "product": "venice-pocket-tee"
+            "product": "corduroy-boardwalk-short-brown"
           }
         }
       },
       "block_order": [
-        "product_KqzN7p",
-        "product_K89w7R",
-        "product_HzraMH",
-        "product_WcMUFr",
-        "product_yMtxHd"
+        "product_3RxQtr",
+        "product_8VWq8X",
+        "product_CAkWfF",
+        "product_EJt7qc"
+      ],
+      "settings": {
+        "Title": ""
+      }
+    },
+    "image_banner_qPFjKK": {
+      "type": "image-banner",
+      "blocks": {
+        "html_jnprPU": {
+          "type": "html",
+          "settings": {
+            "html": "",
+            "svg": "shopify:\/\/shop_images\/patchwork-zpi.svg",
+            "placement_x": "left",
+            "placement_y": "top",
+            "svg_width": 57,
+            "svg_pos_x": 11,
+            "svg_pos_y": 11
+          }
+        }
+      },
+      "block_order": [
+        "html_jnprPU"
+      ],
+      "settings": {
+        "image_url": "shopify:\/\/products\/patchwork-heavyweight-zip-up",
+        "image": "shopify:\/\/shop_images\/RED_PLAID_HOODIE_12.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_products_Mje7tB": {
+      "type": "featured-products",
+      "blocks": {
+        "product_4QfehM": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-mini-bag"
+          }
+        },
+        "product_jJynkB": {
+          "type": "product",
+          "settings": {
+            "product": "california-shearling-coat"
+          }
+        },
+        "product_R44rar": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-messenger-bag"
+          }
+        },
+        "product_33DrGe": {
+          "type": "product",
+          "settings": {
+            "product": "shearling-chaps"
+          }
+        }
+      },
+      "block_order": [
+        "product_4QfehM",
+        "product_jJynkB",
+        "product_R44rar",
+        "product_33DrGe"
       ],
       "settings": {
         "Title": ""
@@ -581,7 +581,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/Screen_Shot_2024-04-24_at_11.48.42_AM.png",
+        "image": "shopify:\/\/shop_images\/ERL_MADE_IN_CALIFORNIA_FOOTEAR_2.jpg",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
@@ -592,12 +592,12 @@
     "slideshow_DA3ej8",
     "image_banner",
     "image_banner_6XjrDL",
-    "featured_products_Mje7tB",
-    "image_banner_W4FVMn",
-    "image_banner_qPFjKK",
-    "featured_products_FEBTEj",
-    "image_banner_6zYY3G",
     "featured_products_z7CUrr",
+    "image_banner_W4FVMn",
+    "image_banner_6zYY3G",
+    "featured_products_FEBTEj",
+    "image_banner_qPFjKK",
+    "featured_products_Mje7tB",
     "image_banner_43Dnnp",
     "image_banner_Mz37ty",
     "image_banner_fMxJwT",
