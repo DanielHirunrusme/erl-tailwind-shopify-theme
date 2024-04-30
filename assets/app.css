@@ -1319,6 +1319,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: grid;
   }
 
+  .md\:twcss-hidden {
+    display: none;
+  }
+
   .md\:twcss-w-\[30vw\] {
     width: 30vw;
   }
@@ -1449,5 +1453,29 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .twcss-group:hover .md\:group-hover\:twcss-block {
     display: block;
+  }
+}
+
+@media (orientation: portrait) {
+  .portrait\:twcss-block {
+    display: block;
+  }
+}
+
+@media (orientation: landscape) {
+  .landscape\:twcss-block {
+    display: block;
+  }
+
+  .landscape\:twcss-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 750px) {
+  @media (orientation: landscape) {
+    .md\:landscape\:twcss-block {
+      display: block;
+    }
   }
 }
