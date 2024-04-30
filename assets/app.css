@@ -841,6 +841,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 45vw;
 }
 
+.twcss-max-w-\[80vw\] {
+  max-width: 80vw;
+}
+
+.twcss-max-w-\[75vw\] {
+  max-width: 75vw;
+}
+
+.twcss-max-w-\[60vw\] {
+  max-width: 60vw;
+}
+
+.twcss-max-w-\[65vw\] {
+  max-width: 65vw;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -1353,6 +1369,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-max-w-\[12\.5vw\] {
     max-width: 12.5vw;
+  }
+
+  .md\:twcss-max-w-\[40vw\] {
+    max-width: 40vw;
+  }
+
+  .md\:twcss-max-w-\[20vw\] {
+    max-width: 20vw;
+  }
+
+  .md\:twcss-max-w-\[30vw\] {
+    max-width: 30vw;
   }
 
   .md\:twcss-grid-cols-4 {
