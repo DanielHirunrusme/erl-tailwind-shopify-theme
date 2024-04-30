@@ -101,18 +101,13 @@
               assign lazy_load = true
             endif
           -%}
-          <a
-            class='twcss-w-full twcss-h-full twcss-relative group'
-            href='{{ product.url }}'
-            title='{{ product.title }}'
-          >
+          <a class='twcss-w-full twcss-h-full twcss-relative group' href='{{ product.url }}'>
             {% if forloop.index == 1 and product.metafields.product.hover_image != blank %}
               <div class='hover-image twcss-absolute twcss-top-0 twcss-left-0 twcss-h-full twcss-w-full twcss-z-10 twcss-hidden twcss-pointer-events-none group-hover:twcss-block '>
                 {{
                   product.metafields.product.hover_image
                   | image_url: width: 1946
                   | image_tag:
-                    alt: product.metafields.product.title,
                     class: image_class,
                     loading: lazy,
                     sizes: sizes,
@@ -129,7 +124,6 @@
               loop: section.settings.enable_video_looping,
               modal_id: product.id,
               xr_button: true,
-              alt: product.metafields.product.title,
               media_width: media_width,
               media_fit: section.settings.media_fit,
               constrain_to_viewport: section.settings.constrain_to_viewport,
