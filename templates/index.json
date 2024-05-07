@@ -18,7 +18,6 @@
       "block_order": [
         "html_VKJLyp"
       ],
-      "disabled": true,
       "settings": {
         "image_url": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/KAI_AND_DIXIE.jpg",
@@ -52,6 +51,7 @@
       "block_order": [
         "html_hVPxWJ"
       ],
+      "disabled": true,
       "settings": {
         "image_url": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/SHEERLING_COAT_7.jpg",
