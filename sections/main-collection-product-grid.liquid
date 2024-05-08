@@ -149,12 +149,10 @@
               >
                 {%- for product in collection.products -%}
                   {% comment %} Billboards {% endcomment %}
-
+                  {% if forloop.index == 13 %}
+                    {% include 'billboard-chaps' %}
+                  {% endif %}
                   {% comment %}
-                    {% if forloop.index == 4 %}
-                      {% include 'billboard-chaps' %}
-                    {% endif %}
-
                     {% if forloop.index == 7 %}
                       {% include 'billboard-hoodie' %}
                     {% endif %}
