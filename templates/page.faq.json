@@ -527,7 +527,16 @@
           "settings": {
             "heading": "Do you cover the return shipping expenses?",
             "icon": "none",
-            "row_content": "<p>Unfortunately, we do not cover return shipping costs. Please review our policy https:\/\/erl.store\/pages\/privacy-policy.<\/p>",
+            "row_content": "<p>Unfortunately, we do not cover return shipping costs. Please review our policy <a href=\"https:\/\/erl.store\/pages\/refund-policy\"><span style=\"text-decoration:underline\">https:\/\/erl.store\/pages\/refund-policy<\/span><\/a><\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_37WExf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why can I not select certain products from my order in the return portal?",
+            "icon": "none",
+            "row_content": "<p>Some items are non-returnable. This includes all underwear, socks, and jewelry purchases, as well as any custom-made or one-of-one items. Please get in touch if you have questions or concerns about your specific item.<\/p>",
             "page": ""
           }
         },
@@ -556,6 +565,7 @@
         "collapsible_row_4WpaQh",
         "collapsible_row_yqE3RX",
         "collapsible_row_dF4XEX",
+        "collapsible_row_37WExf",
         "collapsible_row_UVKkbJ",
         "collapsible_row_c7yYtj"
       ],
