@@ -1441,6 +1441,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:twcss-text-\[2vw\] {
     font-size: 2vw;
   }
+
+  .twcss-group:hover .md\:group-hover\:twcss-block {
+    display: block;
+  }
 }
 
 @media (orientation: portrait) {
