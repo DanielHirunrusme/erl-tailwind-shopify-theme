@@ -717,6 +717,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
+.\!twcss-flex {
+  display: flex !important;
+}
+
 .twcss-grid {
   display: grid;
 }
@@ -821,6 +825,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
+.twcss-w-\[1em\] {
+  width: 1em;
+}
+
+.twcss-w-\[\.5em\] {
+  width: 0.5em;
+}
+
 .twcss-max-w-\[14vw\] {
   max-width: 14vw;
 }
@@ -917,6 +929,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-twcss-rotate-3 {
   --tw-rotate: -3deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.twcss-rotate-\[1deg\] {
+  --tw-rotate: 1deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
     rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
