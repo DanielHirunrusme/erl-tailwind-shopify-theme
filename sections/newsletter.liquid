@@ -57,11 +57,13 @@
           </div>
       {%- endcase -%}
     {%- endfor -%}
-    <p class='twcss-uppercase twcss-ml-auto md:twcss-max-w-[25vw] twcss-inline-block twcss-mr-[2em] md:twcss-mr-[8em]'>
-      <span class='  twcss-block twcss-text-right twcss-mb-[4em] '>
-        By sharing your email and subscribing you agree to receive email notifications from ERL clothing.
-      </span>
-    </p>
+    {% comment %}
+      <p class='twcss-uppercase twcss-ml-auto md:twcss-max-w-[25vw] twcss-inline-block twcss-mr-[2em] md:twcss-mr-[8em]'>
+        <span class='  twcss-block twcss-text-right twcss-mb-[4em] '>
+          By sharing your email and subscribing you agree to receive email notifications from ERL clothing.
+        </span>
+      </p>
+    {% endcomment %}
   </div>
 
   {%- if section.settings.image != blank -%}

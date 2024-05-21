@@ -625,8 +625,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 1rem;
 }
 
+.twcss-mx-\[2em\] {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 .twcss-mt-\[\.1em\] {
   margin-top: 0.1em;
+}
+
+.twcss-ml-auto {
+  margin-left: auto;
+}
+
+.twcss-mr-\[2em\] {
+  margin-right: 2em;
+}
+
+.twcss-mb-\[4em\] {
+  margin-bottom: 4em;
 }
 
 .-twcss-mt-\[\.075em\] {
@@ -677,20 +694,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: auto;
 }
 
-.twcss-ml-auto {
-  margin-left: auto;
-}
-
 .twcss-mb-\[2em\] {
   margin-bottom: 2em;
-}
-
-.twcss-mr-\[2em\] {
-  margin-right: 2em;
-}
-
-.twcss-mb-\[4em\] {
-  margin-bottom: 4em;
 }
 
 .twcss-mt-\[2em\] {
@@ -1104,6 +1109,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5em;
 }
 
+.twcss-px-\[2em\] {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
 .twcss-pb-\[2em\] {
   padding-bottom: 2em;
 }
@@ -1178,6 +1188,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .\!twcss-font-panton {
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
+}
+
+.twcss-font-sans {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .twcss-text-\[4vw\] {
@@ -1266,10 +1280,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.twcss-group:hover .group-hover\:twcss-block {
-  display: block;
-}
-
 .twcss-group:hover .group-hover\:-twcss-rotate-2 {
   --tw-rotate: -2deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y))
@@ -1294,16 +1304,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-column: span 1 / span 1;
   }
 
+  .md\:twcss-mr-\[8em\] {
+    margin-right: 8em;
+  }
+
   .md\:twcss-ml-auto {
     margin-left: auto;
   }
 
   .md\:twcss-ml-\[1em\] {
     margin-left: 1em;
-  }
-
-  .md\:twcss-mr-\[8em\] {
-    margin-right: 8em;
   }
 
   .md\:twcss-block {
@@ -1376,6 +1386,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-max-w-\[12\.5vw\] {
     max-width: 12.5vw;
+  }
+
+  .md\:twcss-max-w-\[40vw\] {
+    max-width: 40vw;
+  }
+
+  .md\:twcss-max-w-\[35vw\] {
+    max-width: 35vw;
   }
 
   .md\:twcss-grid-cols-4 {
