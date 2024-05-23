@@ -4157,6 +4157,13 @@ video {
   font-size: 1.2vw !important;
 }
 
+@media screen and (min-width: 768px) {
+  .klaviyo-form-REpsnw input[type='email']::placeholder,
+  .kl-private-reset-css-Xuajs1 {
+    font-size: 2.5vw !important;
+  }
+}
+
 #klaviyo_ariaid_2 {
   color: red !important;
 }
