@@ -4147,14 +4147,14 @@ video {
   outline: none !important;
   color: white !important;
   font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
-  font-size: 2.5vw !important;
+  font-size: 3.25vw !important;
 }
 
 .klaviyo-form-REpsnw input[type='email']::placeholder,
 .kl-private-reset-css-Xuajs1 {
   color: white !important;
   font-family: 'AN', Arial Narrow, Arial, sans-serif !important;
-  font-size: 2.5vw !important;
+  font-size: 3.25vw !important;
 }
 
 @media screen and (min-width: 768px) {
