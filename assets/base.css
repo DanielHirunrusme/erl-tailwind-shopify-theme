@@ -4160,3 +4160,7 @@ video {
 #klaviyo_ariaid_2 {
   color: red !important;
 }
+
+footer .needsclick.input {
+  font-size: 1em !important;
+}
