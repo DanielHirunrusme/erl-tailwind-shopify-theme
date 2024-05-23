@@ -4171,3 +4171,7 @@ video {
 footer .needsclick.input {
   font-size: 1em !important;
 }
+
+footer .needsclick.button {
+  padding: 0 !important;
+}
