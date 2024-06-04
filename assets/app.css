@@ -629,6 +629,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.1em;
 }
 
+.twcss-mb-\[4em\] {
+  margin-bottom: 4em;
+}
+
 .-twcss-mt-\[\.075em\] {
   margin-top: -0.075em;
 }
@@ -687,10 +691,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mr-\[2em\] {
   margin-right: 2em;
-}
-
-.twcss-mb-\[4em\] {
-  margin-bottom: 4em;
 }
 
 .twcss-mt-\[2em\] {
@@ -1358,12 +1358,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 3vw;
   }
 
-  .md\:twcss-max-w-\[25vw\] {
-    max-width: 25vw;
-  }
-
   .md\:twcss-max-w-\[30vw\] {
     max-width: 30vw;
+  }
+
+  .md\:twcss-max-w-\[25vw\] {
+    max-width: 25vw;
   }
 
   .md\:twcss-max-w-\[12vw\] {
