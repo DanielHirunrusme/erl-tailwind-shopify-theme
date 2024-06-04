@@ -33,6 +33,14 @@
             "swatch_shape": "circle"
           }
         },
+        "inventory_3FGQ8g": {
+          "type": "inventory",
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 1,
+            "show_inventory_quantity": false
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "disabled": true,
@@ -96,6 +104,7 @@
         "price",
         "description",
         "variant_picker",
+        "inventory_3FGQ8g",
         "quantity_selector",
         "buy_buttons",
         "collapsible-row-1",
