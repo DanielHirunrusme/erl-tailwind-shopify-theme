@@ -701,6 +701,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5em;
 }
 
+.twcss-mb-\[1em\] {
+  margin-bottom: 1em;
+}
+
 .twcss-block {
   display: block;
 }
