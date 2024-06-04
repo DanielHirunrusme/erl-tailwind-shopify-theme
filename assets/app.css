@@ -677,6 +677,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5em;
 }
 
+.twcss-mb-\[1em\] {
+  margin-bottom: 1em;
+}
+
 .twcss-mt-auto {
   margin-top: auto;
 }
@@ -699,10 +703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-mr-\[\.5em\] {
   margin-right: 0.5em;
-}
-
-.twcss-mb-\[1em\] {
-  margin-bottom: 1em;
 }
 
 .twcss-block {
@@ -1184,6 +1184,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
 }
 
+.twcss-font-sans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .twcss-text-\[4vw\] {
   font-size: 4vw;
 }
@@ -1206,6 +1210,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-font-bold {
   font-weight: 700;
+}
+
+.twcss-font-normal {
+  font-weight: 400;
+}
+
+.\!twcss-font-normal {
+  font-weight: 400 !important;
 }
 
 .twcss-uppercase {

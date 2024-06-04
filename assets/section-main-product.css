@@ -1345,6 +1345,7 @@ a.product__text {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  margin-bottom: 1em;
 }
 
 .product--no-media .product__inventory {
