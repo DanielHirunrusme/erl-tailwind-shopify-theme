@@ -21,7 +21,7 @@
       "settings": {
         "image_url": "shopify:\/\/collections\/all",
         "image": "shopify:\/\/shop_images\/made_in_california.jpg",
-        "image_1_mobile": "shopify:\/\/shop_images\/made_in_california.jpg",
+        "image_1_mobile": "shopify:\/\/shop_images\/made_in_california_m.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
