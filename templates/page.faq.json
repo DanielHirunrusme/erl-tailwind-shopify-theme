@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -518,7 +527,7 @@
           "settings": {
             "heading": "Can I return an international order?",
             "icon": "none",
-            "row_content": "<p>Yes, international orders are eligible for returns. Refer to our return instructions https:\/\/erl.store\/pages\/refund-policy.<\/p>",
+            "row_content": "<p>Yes, international orders are eligible for returns. Refer to our return instructions at <a href=\"https:\/\/erl.store\/pages\/refund-policy\"><span style=\"text-decoration:underline\">https:\/\/erl.store\/pages\/refund-policy<\/span><\/a>. Please note: once a shipment is processed through customs clearance, customs authorities do not issue refunds on the fees paid. Duties, taxes, or any additional charges incurred will not be refunded by ERL. For any return questions on international orders, you can always contact us at help@erl.studio.<\/p>",
             "page": ""
           }
         },
