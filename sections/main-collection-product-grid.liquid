@@ -147,8 +147,9 @@
                   grid--{{ section.settings.columns_desktop }}-col-desktop
                 '
               >
+                {% comment %} Billboards {% endcomment %}
                 {%- for product in collection.products -%}
-                  {% comment %} Billboards {% endcomment %}
+                  
                   {% if forloop.index == 19 %}
                     {% include 'billboard-chaps' %}
                   {% endif %}
