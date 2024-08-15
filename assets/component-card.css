@@ -3,7 +3,7 @@
   /* height: 100%; */
   position: relative;
   text-decoration: none;
-  aspect-ratio: 4000/2648;
+  aspect-ratio: 4/5;
   overflow: hidden;
 }
 
@@ -187,7 +187,8 @@
   height: 100%;
 }
 
-.card__heading {
+.card__heading,
+.price__container {
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'AN', Arial Narrow, Arial, sans-serif;
