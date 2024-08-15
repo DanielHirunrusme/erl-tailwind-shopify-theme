@@ -539,16 +539,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 0px;
 }
 
-.twcss-left-0 {
-  left: 0px;
+.twcss-right-0 {
+  right: 0px;
 }
 
 .twcss-top-0 {
   top: 0px;
-}
-
-.twcss-right-0 {
-  right: 0px;
 }
 
 .twcss-bottom-\[30vw\] {
@@ -557,6 +553,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-right-\[8vw\] {
   right: 8vw;
+}
+
+.twcss-left-0 {
+  left: 0px;
 }
 
 .twcss-right-\[5\%\] {
@@ -1184,10 +1184,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
 }
 
-.twcss-font-sans {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .twcss-text-\[4vw\] {
   font-size: 4vw;
 }
@@ -1210,10 +1206,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-font-bold {
   font-weight: 700;
-}
-
-.twcss-font-normal {
-  font-weight: 400;
 }
 
 .\!twcss-font-normal {
