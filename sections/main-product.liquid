@@ -67,14 +67,14 @@
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
-  <div class='product twcss-grid twcss-grid-cols-2'>
-    <div>
+  <div class='product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col'>
+    <div class='grid__item product__media-wrapper '>
       {% render 'product-media-gallery', variant_images: variant_images, is_duplicate: true %}
     </div>
     {% comment %} <div class='grid__item product__media-wrapper twcss-hidden md:twcss-block {% if section.settings.media_position == 'right' %} twcss-md:hidden{% endif %}'>
       {% render 'product-media-feature-image', variant_images: variant_images %}
     </div> {% endcomment %}
-    <div class='product__info-wrapper  twcss-min-h-[600px] md:twcss-min-h-auto {% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
+    <div class='product__info-wrapper  twcss-min-h-[600px] md:twcss-min-h-auto grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
       {% if product.metafields.custom.pdp_form_background_image != blank %}
       <img src="{{ product.metafields.custom.pdp_form_background_image | file_url }}" alt="{{ product.title }}" class=" twcss-absolute twcss-h-full twcss-w-full twcss-object-cover twcss-top-0 twcss-left-0 twcss-object-center " />
   {% endif %}  
@@ -588,7 +588,7 @@
                           <div class='slider-buttons no-js-hidden'>
                             <button
                               type='button'
-                              class='slider-button slider-button--prev'
+                              class='slider-button slider-button--prev md:twcss-hidden'
                               name='previous'
                               aria-label='{{ 'general.slider.previous_slide' | t }}'
                             >
@@ -620,7 +620,7 @@
                             </div>
                             <button
                               type='button'
-                              class='slider-button slider-button--next'
+                              class='slider-button slider-button--next md:twcss-hidden'
                               name='next'
                               aria-label='{{ 'general.slider.next_slide' | t }}'
                             >

@@ -68,7 +68,7 @@
     {%- endunless -%}
     <ul
       id='Slider-Gallery-{{ section.id }}{{ id_append }}'
-      class='product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile'
+      class='product__media-list contains-media grid md:twcss-flex md:twcss-flex-col grid--peek list-unstyled slider slider--mobile'
       role='list'
     >
       {%- if product.selected_or_first_available_variant.featured_media != null -%}
@@ -128,10 +128,10 @@
       {%- endfor -%}
     </ul>
 
-    <div class='slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}'>
+    <div class='slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %} md:twcss-hidden'>
       <button
         type='button'
-        class='slider-button slider-button--prev'
+        class='slider-button slider-button--prev !md:twcss-hidden'
         name='previous'
         aria-label='{{ 'general.slider.previous_slide' | t }}'
       >
@@ -169,7 +169,7 @@
 
       <button
         type='button'
-        class='slider-button slider-button--next'
+        class='slider-button slider-button--next !md:twcss-hidden'
         name='next'
         aria-label='{{ 'general.slider.next_slide' | t }}'
       >

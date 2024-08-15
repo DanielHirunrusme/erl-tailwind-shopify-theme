@@ -717,7 +717,15 @@ class SliderComponent extends HTMLElement {
     this.nextButton = this.querySelector('button[name="next"]');
     this.sliderDots = this.querySelector('.slider-dots');
 
-    if (!this.slider || !this.nextButton) return;
+    // DH: Break slider for desktop
+    // Add resize listener to check window width and call initPages
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 768) {
+        if (!this.slider || !this.nextButton) return;
+        this.initPages();
+      }
+    });
+    if (!this.slider || !this.nextButton || window.innerWidth > 768) return;
 
     this.initPages();
     const resizeObserver = new ResizeObserver((entries) => this.initPages());
