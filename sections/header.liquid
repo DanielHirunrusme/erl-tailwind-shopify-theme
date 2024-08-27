@@ -168,6 +168,9 @@
   </a>
   {% if section.settings.menu != blank %}
   <div  class='twcss-flex twcss-z-50 twcss-flex-col twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-left-0 twcss-top-0'>
+  
+  
+  
   {%- for link in section.settings.menu.links -%}
     
     {% assign url = link.url | escape %}
@@ -186,6 +189,7 @@
     
     {% when '/collections/all' %}
     <a
+    data-shop-link
     href='{{ link.url }}'
     title='{{ link.title }}'
       class='link !twcss-flex twcss-gap-[.25em] link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw] twcss-uppercase  twcss-transform twcss-rotate-[1deg] -twcss-mt-[.075em]'
@@ -206,6 +210,17 @@
 
     {%endcase%}
   {% endfor %}
+
+
+  {% if template.name == 'product' or template.name == 'cart' %} 
+  <a
+  href='/collections/all'
+  class=' twcss-max-w-[25vw] md:twcss-max-w-[10vw]   h3 twcss-flex twcss-items-center twcss-gap-2 !twcss-font-cookie'
+>
+ {% include 'icon--back-to-shop' %}
+</a>
+{% endif %}
+
   </div>
     {% endif  %}
   {% comment %} <div class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>

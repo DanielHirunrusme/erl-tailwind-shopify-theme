@@ -547,16 +547,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 0px;
 }
 
+.twcss-left-0 {
+  left: 0px;
+}
+
 .twcss-bottom-\[30vw\] {
   bottom: 30vw;
 }
 
 .twcss-right-\[8vw\] {
   right: 8vw;
-}
-
-.twcss-left-0 {
-  left: 0px;
 }
 
 .twcss-right-\[5\%\] {
@@ -777,10 +777,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 50vh;
 }
 
-.twcss-min-h-\[600px\] {
-  min-height: 600px;
-}
-
 .twcss-w-\[80vw\] {
   width: 80vw;
 }
@@ -841,16 +837,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 14vw;
 }
 
+.twcss-max-w-\[25vw\] {
+  max-width: 25vw;
+}
+
 .twcss-max-w-3xl {
   max-width: 48rem;
 }
 
-.twcss-max-w-\[65vw\] {
-  max-width: 65vw;
-}
-
-.twcss-max-w-\[40vw\] {
-  max-width: 40vw;
+.twcss-max-w-\[400px\] {
+  max-width: 400px;
 }
 
 .twcss-max-w-\[45vw\] {
@@ -1018,12 +1014,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.25rem;
 }
 
-.twcss-gap-\[2em\] {
-  gap: 2em;
-}
-
 .twcss-gap-2 {
   gap: 0.5rem;
+}
+
+.twcss-gap-\[2em\] {
+  gap: 2em;
 }
 
 .twcss-gap-\[\.125em\] {
@@ -1176,12 +1172,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Smart Cookie', sans-serif;
 }
 
-.\!twcss-font-knocky {
-  font-family: 'Knocky', sans-serif !important;
-}
-
 .\!twcss-font-cookie {
   font-family: 'Smart Cookie', sans-serif !important;
+}
+
+.\!twcss-font-knocky {
+  font-family: 'Knocky', sans-serif !important;
 }
 
 .\!twcss-font-panton {
@@ -1374,12 +1370,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 30vw;
   }
 
-  .md\:twcss-max-w-\[25vw\] {
-    max-width: 25vw;
+  .md\:twcss-max-w-\[10vw\] {
+    max-width: 10vw;
   }
 
-  .md\:twcss-max-w-\[12vw\] {
-    max-width: 12vw;
+  .md\:twcss-max-w-\[25vw\] {
+    max-width: 25vw;
   }
 
   .md\:twcss-max-w-\[12\.5vw\] {
@@ -1416,10 +1412,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-p-\[3em\] {
     padding: 3em;
-  }
-
-  .md\:twcss-p-\[\.75em\] {
-    padding: 0.75em;
   }
 
   .md\:twcss-p-\[2em\] {

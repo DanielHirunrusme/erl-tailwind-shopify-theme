@@ -290,8 +290,8 @@ slider-component.slider-component-full-width {
 .slider-dot {
   position: relative !important;
   background-color: rgba(var(--color-foreground), 0.4);
-  width: 0.75em;
-  height: 0.75em;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 2em;
 }
 
@@ -409,7 +409,7 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 4vw;
+  margin: 0 1vw;
 }
 
 .product-card-wrapper .slider-button {
@@ -440,7 +440,7 @@ slider-component.slider-component-full-width {
 }
 
 .slider-button .icon {
-  height: 4rem;
+  height: 2rem;
 }
 
 .slider-button[disabled] .icon {

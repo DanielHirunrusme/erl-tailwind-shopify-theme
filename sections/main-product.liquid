@@ -74,7 +74,7 @@
     {% comment %} <div class='grid__item product__media-wrapper twcss-hidden md:twcss-block {% if section.settings.media_position == 'right' %} twcss-md:hidden{% endif %}'>
       {% render 'product-media-feature-image', variant_images: variant_images %}
     </div> {% endcomment %}
-    <div class='product__info-wrapper  twcss-min-h-[600px] md:twcss-min-h-auto grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
+    <div class='product__info-wrapper   md:twcss-min-h-auto grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
       {% if product.metafields.custom.pdp_form_background_image != blank %}
       <img src="{{ product.metafields.custom.pdp_form_background_image | file_url }}" alt="{{ product.title }}" class=" twcss-absolute twcss-h-full twcss-w-full twcss-object-cover twcss-top-0 twcss-left-0 twcss-object-center " />
   {% endif %}  
@@ -152,7 +152,7 @@
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div
-                  class='product__description rte  quick-add-hidden twcss-max-w-[65vw] md:twcss-max-w-[30vw] h4 !twcss-font-sans twcss-transform -twcss-rotate-1 twcss-mb-[.5em]'
+                  class='product__description rte  quick-add-hidden twcss-max-w-[400px] md:twcss-max-w-[30vw] h4 !twcss-font-sans twcss-transform -twcss-rotate-1 twcss-mb-[.5em]'
                   {{ block.shopify_attributes }}
                 >
                   {{ product.description }}
@@ -652,12 +652,7 @@
         </a>
       </product-info>
       {% comment %} Back to shop {% endcomment %}
-      <a
-        href='/collections/all'
-        class='twcss-absolute twcss-max-w-[40vw] md:twcss-max-w-[12vw] twcss-p-[2em] twcss-bottom-0 twcss-right-0 md:twcss-p-[.75em] h3 twcss-flex twcss-items-center twcss-gap-2 !twcss-font-cookie'
-      >
-       {% include 'icon--back-to-shop' %}
-      </a>
+     
     </div>
 
     

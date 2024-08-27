@@ -279,6 +279,12 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
+[data-template='collection'] [data-shop-link],
+[data-template='cart'] [data-shop-link],
+[data-template='product'] [data-shop-link] {
+  display: none !important;
+}
+
 /*
 * The animation when filtering users
 */
@@ -591,7 +597,7 @@ body .cc-window,
 .shopify-cleanslate span,
 klarna-placement::part(osm-container) {
   font-style: var(--font-heading-style);
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -841,11 +847,11 @@ details > * {
 }
 
 :root {
-  --duration-short: 100ms;
-  --duration-default: 200ms;
+  --duration-short: 0ms;
+  --duration-default: 0ms;
   --duration-announcement-bar: 250ms;
-  --duration-medium: 300ms;
-  --duration-long: 500ms;
+  --duration-medium: 0ms;
+  --duration-long: 0ms;
   --duration-extra-long: 600ms;
   --duration-extended: 3s;
   --ease-out-slow: cubic-bezier(0, 0, 0.3, 1);
@@ -1357,7 +1363,7 @@ summary::-webkit-details-marker {
 .media > img {
   object-fit: cover;
   object-position: center right;
-  transition: opacity 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .media--square {
