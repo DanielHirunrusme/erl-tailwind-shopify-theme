@@ -1455,6 +1455,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+@media (min-width: 1920px) {
+  .x2lg\:twcss-max-w-6xl {
+    max-width: 72rem;
+  }
+}
+
 @media (orientation: portrait) {
   .portrait\:twcss-block {
     display: block;
