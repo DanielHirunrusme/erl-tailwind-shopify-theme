@@ -519,12 +519,12 @@
 
     <script>
       if (window.location.pathname === '/') {
-        if (localStorage.getItem('my_app_name_here-quote-scroll') != null) {
-          const savedScrollPosition = localStorage.getItem('my_app_name_here-quote-scroll');
+        if (localStorage.getItem('erl-scroll') != null) {
+          const savedScrollPosition = localStorage.getItem('erl-scroll');
           window.scrollTo(0, savedScrollPosition);
         }
         window.onscroll = function () {
-          localStorage.setItem('my_app_name_here-quote-scroll', window.scrollY);
+          localStorage.setItem('erl-scroll', window.scrollY);
         };
       }
     </script>
