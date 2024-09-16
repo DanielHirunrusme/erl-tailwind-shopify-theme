@@ -179,7 +179,7 @@
                     aria-label='{{ 'products.product.choose_product_options' | t: product_name: card_product.title | escape }}'
                     aria-modal='true'
                     class='quick-add-modal__content global-settings-popup'
-                    tabindex='-1'
+
                   >
                     <button
                       id='ModalClose-{{ card_product.id }}'
@@ -528,7 +528,7 @@
                 {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
                   <div
                     class='global-settings-popup quantity-popover__info'
-                    tabindex='-1'
+
                     hidden
                     id='quantity-popover-info-{{ card_product.selected_or_first_available_variant.id }}'
                   >
@@ -620,7 +620,6 @@
                     aria-label='{{ 'products.product.choose_product_options' | t: product_name: card_product.title | escape }}'
                     aria-modal='true'
                     class='quick-add-modal__content global-settings-popup'
-                    tabindex='-1'
                   >
                     <button
                       id='ModalClose-{{ card_product.id }}'
@@ -745,7 +744,6 @@
                     aria-label='{{ 'products.product.choose_product_options' | t: product_name: card_product.title | escape }}'
                     aria-modal='true'
                     class='quick-add-modal__content quick-add-modal__content--bulk global-settings-popup'
-                    tabindex='-1'
                   >
                     <button
                       id='ModalClose-{{ card_product.id }}'

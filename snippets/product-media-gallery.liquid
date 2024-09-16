@@ -148,7 +148,7 @@
             aria-controls='Slide-{{ section.id }}-{{ media.id }}{{ id_append }}'
             aria-selected='{% if forloop.index == 1 %}true{% else %}false{% endif %}'
             role='tab'
-            tabindex='{% if forloop.index == 1 %}0{% else %}-1{% endif %}'
+            {% comment %} tabindex='{% if forloop.index == 1 %}0{% else %}-1{% endif %}' {% endcomment %}
             aria-label='{{  forloop.index }}'
             class='slider-dot twcss-relative caption h4 !twcss-font-sans'
             data-index='{{ forloop.index }}'

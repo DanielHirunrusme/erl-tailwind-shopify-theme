@@ -25,7 +25,6 @@
       role='dialog'
       aria-modal='true'
       aria-label='{{ 'sections.cart.title' | t }}'
-      tabindex='-1'
     >
       {%- if cart == empty -%}
         <div class='drawer__inner-empty'>
@@ -118,7 +117,7 @@
                         <td class='cart-item__media' role='cell' headers='CartDrawer-ColumnProductImage'>
                           {% if item.image %}
                             {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
-                            <a href='{{ item.url }}' class='cart-item__link' tabindex='-1' aria-hidden='true'> </a>
+                            <a href='{{ item.url }}' class='cart-item__link' aria-hidden='true'> </a>
                             <img
                               class='cart-item__image'
                               src='{{ item.image | image_url: width: 300 }}'
@@ -351,7 +350,7 @@
                             {%- if has_vol_pricing or has_qty_rules -%}
                               <div
                                 class='cart-items__info global-settings-popup quantity-popover__info'
-                                tabindex='-1'
+
                                 hidden
                               >
                                 {%- if has_qty_rules == false -%}
