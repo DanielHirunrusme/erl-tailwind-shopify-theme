@@ -502,6 +502,16 @@ a.product__text {
   pointer-events: auto;
   position: absolute;
   bottom: -2.5em;
+  font-style: var(--font-heading-style);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 750px) {
+  .hengam-preorder-description {
+    font-size: 0.875vw;
+  }
 }
 
 .hengam-product-price-wrapper .hengam-preorder-badge {
