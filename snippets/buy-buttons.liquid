@@ -94,8 +94,10 @@
             {%- render 'loading-spinner' -%}
           </button>
 
-          {%- if product.selected_or_first_available_variant.available -%}
-            <div class='dynamic-buy-buttons '>
+          {%- assign variant = product.selected_or_first_available_variant -%}
+
+          {%- if variant.available and not (variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0) -%}
+            <div class='dynamic-buy-buttons'>
               <button type='button' class='btn product-form__cart-submit btn--secondary-accent h3' data-buy-now>
                 <span> Buy now </span>
               </button>
