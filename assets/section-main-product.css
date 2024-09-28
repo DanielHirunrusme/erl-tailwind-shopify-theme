@@ -504,6 +504,13 @@ a.product__text {
   bottom: -2.5em;
 }
 
+.hengam-product-price-wrapper .hengam-preorder-badge {
+  background-color: transparent !important;
+  color: white !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+}
+
 @media screen and (min-width: 749px) {
   .product-form__buttons {
     max-width: 30vw;
