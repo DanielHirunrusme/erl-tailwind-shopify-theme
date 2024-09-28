@@ -97,6 +97,7 @@
           {%- assign variant = product.selected_or_first_available_variant -%}
 
           {%- if variant.available -%}
+            <!-- If the variant is available, show the button -->
             <div class='dynamic-buy-buttons'>
               <button type='button' class='btn product-form__cart-submit btn--secondary-accent h3' data-buy-now>
                 <span> Buy now </span>
@@ -119,29 +120,14 @@
                 });
               </script>
             </div>
-          {%- elsif variant.inventory_policy == 'deny' or variant.inventory_quantity > 0 -%}
-            <div class='dynamic-buy-buttons'>
-              <button type='button' class='btn product-form__cart-submit btn--secondary-accent h3' data-buy-now>
-                <span> Buy now </span>
-              </button>
-              <script>
-                document.querySelector('[data-buy-now]').addEventListener('click', () => {
-                  let addToCartForm = document.querySelector('form[action$="/cart/add"]');
-                  let formData = new FormData(addToCartForm);
-                  fetch(window.Shopify.routes.root + 'cart/add.js', {
-                    method: 'POST',
-                    body: formData,
-                  })
-                    .then((response) => {
-                      window.location.href = '/checkout';
-                      return response.json();
-                    })
-                    .catch((error) => {
-                      console.error('Error:', error);
-                    });
-                });
-              </script>
-            </div>
+
+          {%- elsif variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0 -%}
+            <!-- Hide the button when product is out of stock and set to continue selling -->
+            <style>
+              .dynamic-buy-buttons {
+                display: none;
+              }
+            </style>
           {%- endif -%}
 
           {% comment %}
