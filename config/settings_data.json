@@ -123,7 +123,7 @@
     "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "all",
+    "cart_drawer_collection": "",
     "checkout_logo_image": "shopify://shop_images/erl-email-logo-header-footer-01.png",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#f3f3f3",
