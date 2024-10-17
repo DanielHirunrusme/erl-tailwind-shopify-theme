@@ -603,6 +603,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 0;
 }
 
+.twcss-z-20 {
+  z-index: 20;
+}
+
 .twcss-order-first {
   order: -9999;
 }
@@ -831,6 +835,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-w-\[7vw\] {
   width: 7vw;
+}
+
+.twcss-w-10 {
+  width: 2.5rem;
 }
 
 .twcss-max-w-\[14vw\] {
