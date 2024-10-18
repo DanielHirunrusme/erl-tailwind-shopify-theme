@@ -869,6 +869,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 280px;
 }
 
+.twcss-max-w-\[300px\] {
+  max-width: 300px;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
