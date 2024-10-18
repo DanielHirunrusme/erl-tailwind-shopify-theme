@@ -1212,6 +1212,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
 }
 
+.twcss-font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
 .twcss-text-\[4vw\] {
   font-size: 4vw;
 }
@@ -1230,6 +1235,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-text-\[6vw\] {
   font-size: 6vw;
+}
+
+.twcss-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .twcss-font-bold {
