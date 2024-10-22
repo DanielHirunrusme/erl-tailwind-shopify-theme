@@ -279,9 +279,7 @@ html.is-animating .transition-fade {
   opacity: 0;
 }
 
-[data-template='collection'] [data-shop-link],
-[data-template='cart'] [data-shop-link],
-[data-template='product'] [data-shop-link] {
+[data-template='cart'] [data-shop-link] {
   display: none !important;
 }
 
@@ -768,6 +766,19 @@ h6:empty {
   /* color: white; */
   color: rgba(var(--color-foreground), 0.95);
   font-size: 1.4rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-family: 'Panton Rust Heavy Base', sans-serif;
+}
+
+.sub-links {
+  margin-left: 1em;
+}
+
+.link--logo {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 .link-with-icon {

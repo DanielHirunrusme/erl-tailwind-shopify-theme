@@ -22,7 +22,7 @@
 {% endunless %}
 
 <section>
-  <div class=" twcss-grid twcss-grid-cols-2 md:twcss-grid-cols-4 ">
+  <div class=" twcss-grid twcss-grid-cols-2 md:twcss-grid-cols-2 ">
   {% for block in section.blocks %}
     {% assign product = block.settings.product %}
     {% render 'card-product', card_product: product, show_quick_add: false, section_id: section.id %}

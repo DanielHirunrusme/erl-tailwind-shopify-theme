@@ -1,24 +1,7 @@
-.footer {
-  padding: 2rem;
+footer {
+  padding: 0.5rem 2rem;
   text-align: right;
   text-transform: uppercase;
-}
-
-footer ul li:nth-child(1) {
-  transform: rotate(-2deg);
-  padding-left: 1em;
-}
-
-footer ul li:nth-child(4) {
-  transform: rotate(-3deg);
-}
-
-footer ul li:nth-child(6) {
-  transform: rotate(2deg);
-}
-
-footer ul li:last-child {
-  padding-right: 1.4em;
 }
 
 .footer:not(.color-scheme-1) {
