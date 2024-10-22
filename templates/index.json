@@ -161,6 +161,30 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "featured_products_kJwmGH": {
+      "type": "featured-products",
+      "blocks": {
+        "product_tUnYj8": {
+          "type": "product",
+          "settings": {
+            "product": "heavyweight-swirl-hoodie"
+          }
+        },
+        "product_ctXBH4": {
+          "type": "product",
+          "settings": {
+            "product": "artisanal-leather-jacket-1"
+          }
+        }
+      },
+      "block_order": [
+        "product_tUnYj8",
+        "product_ctXBH4"
+      ],
+      "settings": {
+        "Title": ""
+      }
     }
   },
   "order": [
@@ -168,6 +192,7 @@
     "image_banner",
     "image_banner_J4Jkac",
     "featured_collection_pw4LAm",
-    "newsletter_TweCB4"
+    "newsletter_TweCB4",
+    "featured_products_kJwmGH"
   ]
 }
