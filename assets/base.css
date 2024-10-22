@@ -767,10 +767,7 @@ h6:empty {
 .link--text {
   /* color: white; */
   color: rgba(var(--color-foreground), 0.95);
-}
-
-.link--text:hover {
-  transform: scale(1.0125) rotate(-0.5deg);
+  font-size: 1.4rem;
 }
 
 .link-with-icon {

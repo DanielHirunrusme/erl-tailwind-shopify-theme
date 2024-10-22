@@ -591,6 +591,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 15%;
 }
 
+.twcss-z-20 {
+  z-index: 20;
+}
+
 .twcss-z-10 {
   z-index: 10;
 }
@@ -601,10 +605,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-z-0 {
   z-index: 0;
-}
-
-.twcss-z-20 {
-  z-index: 20;
 }
 
 .twcss-order-first {
@@ -789,6 +789,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
+.twcss-w-\[90\%\] {
+  width: 90%;
+}
+
 .twcss-w-\[4\.75vw\] {
   width: 4.75vw;
 }
@@ -837,18 +841,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
-.twcss-w-10 {
-  width: 2.5rem;
-}
-
-.twcss-w-\[85\%\] {
-  width: 85%;
-}
-
-.twcss-w-\[90\%\] {
-  width: 90%;
-}
-
 .twcss-max-w-\[14vw\] {
   max-width: 14vw;
 }
@@ -869,16 +861,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 45vw;
 }
 
-.twcss-max-w-\[320px\] {
-  max-width: 320px;
-}
-
-.twcss-max-w-\[280px\] {
-  max-width: 280px;
-}
-
-.twcss-max-w-\[300px\] {
-  max-width: 300px;
+.twcss-max-w-\[10vw\] {
+  max-width: 10vw;
 }
 
 .twcss-flex-1 {
@@ -1172,6 +1156,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
+.twcss-font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
 .\!twcss-font-sans {
   font-family: Arial, Helvetica, sans-serif !important;
 }
@@ -1212,9 +1201,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Panton Rust Heavy Base', sans-serif !important;
 }
 
-.twcss-font-mono {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+.twcss-text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .twcss-text-\[4vw\] {
@@ -1235,16 +1224,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-text-\[6vw\] {
   font-size: 6vw;
-}
-
-.twcss-text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.twcss-text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .twcss-font-bold {
@@ -1373,6 +1352,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 30vw;
   }
 
+  .md\:twcss-w-full {
+    width: 100%;
+  }
+
   .md\:twcss-w-\[1\.675vw\] {
     width: 1.675vw;
   }
@@ -1393,10 +1376,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 9vw;
   }
 
-  .md\:twcss-w-full {
-    width: 100%;
-  }
-
   .md\:twcss-w-\[3\.5vw\] {
     width: 3.5vw;
   }
@@ -1407,6 +1386,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-w-\[3vw\] {
     width: 3vw;
+  }
+
+  .md\:twcss-max-w-\[400px\] {
+    max-width: 400px;
   }
 
   .md\:twcss-max-w-\[30vw\] {
@@ -1423,10 +1406,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-max-w-\[12\.5vw\] {
     max-width: 12.5vw;
-  }
-
-  .md\:twcss-max-w-\[400px\] {
-    max-width: 400px;
   }
 
   .md\:twcss-grid-cols-4 {

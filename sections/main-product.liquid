@@ -102,7 +102,7 @@
               </p>
             {%- when 'title' -%}
               <div class='product__title' {{ block.shopify_attributes }}>
-                <h1 class="-twcss-rotate-1 twcss-transform twcss-pb-[.2em]">{{ product.title | escape }}</h1>
+                <h1 class="h3 twcss-pb-[.2em]">{{ product.title | escape }}</h1>
                 <a href='{{ product.url }}' class='product__title'>
                   <h2 class='h1'>
                     {{ product.title | escape }}
@@ -141,18 +141,18 @@
               </div>
               {% endcomment %}
               <!-- Placement v2 -->
-              <div class="klarna-banner">
+              {% comment %} <div class="klarna-banner">
               <klarna-placement
               data-key="credit-promotion-auto-size"
               data-locale="en-US"
               data-purchase-amount="{{ product.price   }}"
               ></klarna-placement>
-              </div>
+              </div> {% endcomment %}
               <!-- end Placement -->
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div
-                  class='product__description rte  quick-add-hidden twcss-max-w-[400px] md:twcss-max-w-[30vw] h4 !twcss-font-sans twcss-transform -twcss-rotate-1 twcss-mb-[.5em]'
+                  class='product__description rte  quick-add-hidden twcss-max-w-[400px] md:twcss-max-w-[30vw] h4 !twcss-font-sans  twcss-mb-[.5em]'
                   {{ block.shopify_attributes }}
                 >
                   {{ product.description }}

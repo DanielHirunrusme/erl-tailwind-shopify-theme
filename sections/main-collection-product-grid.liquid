@@ -150,9 +150,9 @@
                 {% comment %} Billboards {% endcomment %}
                 {%- for product in collection.products -%}
                   {% comment %}
-                  {% if forloop.index == 19 %}
-                    {% include 'billboard-chaps' %}
-                  {% endif %}
+                    {% if forloop.index == 19 %}
+                      {% include 'billboard-chaps' %}
+                    {% endif %}
                   {% endcomment %}
                   {% comment %}
                     {% if forloop.index == 7 %}
@@ -187,7 +187,7 @@
                           | image_tag: widths: '550, 720, 990, 1100, 1500, 2200, 3000'
                         }}
 
-                        <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem] twcss-transform -twcss-rotate-1 twcss-absolute twcss-bottom-0  h4'>
+                        <h3 class='card__heading twcss-w-full twcss-text-center twcss-pb-[1.5rem]  twcss-absolute twcss-bottom-0  h4'>
                           {{ product.title | escape }}
                         </h3>
                       </a>
