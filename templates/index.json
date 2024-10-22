@@ -185,6 +185,13 @@
       "settings": {
         "Title": ""
       }
+    },
+    "spread_64YA46": {
+      "type": "spread",
+      "settings": {
+        "image": "shopify://shop_images/suit.jpg",
+        "video": ""
+      }
     }
   },
   "order": [
@@ -193,6 +200,7 @@
     "image_banner_J4Jkac",
     "featured_collection_pw4LAm",
     "newsletter_TweCB4",
-    "featured_products_kJwmGH"
+    "featured_products_kJwmGH",
+    "spread_64YA46"
   ]
 }
