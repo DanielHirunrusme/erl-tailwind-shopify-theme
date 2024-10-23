@@ -805,6 +805,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
+.twcss-max-h-\[75vh\] {
+  max-height: 75vh;
+}
+
 .twcss-min-h-screen {
   min-height: 100vh;
 }
@@ -823,6 +827,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-min-h-\[100px\] {
   min-height: 100px;
+}
+
+.twcss-min-h-\[400px\] {
+  min-height: 400px;
 }
 
 .twcss-w-\[80vw\] {
@@ -1407,6 +1415,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: auto;
   }
 
+  .md\:twcss-min-h-\[400px\] {
+    min-height: 400px;
+  }
+
   .md\:twcss-w-\[30vw\] {
     width: 30vw;
   }
@@ -1513,6 +1525,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-text-\[1\.2vw\] {
     font-size: 1.2vw;
+  }
+
+  .md\:twcss-text-\[10vw\] {
+    font-size: 10vw;
+  }
+
+  .md\:twcss-text-\[20vw\] {
+    font-size: 20vw;
   }
 
   .twcss-group:hover .md\:group-hover\:twcss-block {

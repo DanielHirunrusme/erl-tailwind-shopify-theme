@@ -195,11 +195,10 @@
 
           {%- when 'heading' -%}
             <h2
-              class='h1  twcss-ml-[1em] twcss-mb-[.75em] twcss-flex twcss-items-center'
+              class='md:twcss-text-[10vw]  twcss-text-center twcss-mx-auto twcss-flex twcss-items-center'
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading -}}
-              <span class='twcss-inline-block banner__arrow twcss-ml-[.4em]'>{% render 'icon-arrow' %}</span>
             </h2>
 
           {%- when 'text' -%}
