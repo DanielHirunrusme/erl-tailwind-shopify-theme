@@ -219,6 +219,30 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "featured_products_i4h6nJ": {
+      "type": "featured-products",
+      "blocks": {
+        "product_8iHNyi": {
+          "type": "product",
+          "settings": {
+            "product": "black-shearling-messenger-bag"
+          }
+        },
+        "product_KA7L9d": {
+          "type": "product",
+          "settings": {
+            "product": "printed-button-up-shirt"
+          }
+        }
+      },
+      "block_order": [
+        "product_8iHNyi",
+        "product_KA7L9d"
+      ],
+      "settings": {
+        "Title": ""
+      }
     }
   },
   "order": [
@@ -229,6 +253,7 @@
     "newsletter_TweCB4",
     "featured_products_kJwmGH",
     "image_banner_YVXqEV",
+    "featured_products_i4h6nJ",
     "image_banner_iwYLdX"
   ]
 }
