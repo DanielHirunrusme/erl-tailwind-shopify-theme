@@ -721,6 +721,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
+.twcss-mb-8 {
+  margin-bottom: 2rem;
+}
+
+.twcss-mb-4 {
+  margin-bottom: 1rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -1127,6 +1135,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.twcss-gap-8 {
+  gap: 2rem;
+}
+
 .twcss-self-start {
   align-self: flex-start;
 }
@@ -1218,6 +1230,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2rem;
 }
 
+.twcss-py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.twcss-px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .twcss-pb-\[2em\] {
   padding-bottom: 2em;
 }
@@ -1248,6 +1270,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-pb-\[\.25em\] {
   padding-bottom: 0.25em;
+}
+
+.twcss-pb-4 {
+  padding-bottom: 1rem;
+}
+
+.twcss-pb-8 {
+  padding-bottom: 2rem;
+}
+
+.twcss-pb-12 {
+  padding-bottom: 3rem;
 }
 
 .twcss-text-left {
