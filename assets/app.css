@@ -737,6 +737,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5em;
 }
 
+.twcss-mt-20 {
+  margin-top: 5rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -807,6 +811,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-min-h-\[50vh\] {
   min-height: 50vh;
+}
+
+.twcss-min-h-\[200px\] {
+  min-height: 200px;
+}
+
+.twcss-min-h-\[120px\] {
+  min-height: 120px;
+}
+
+.twcss-min-h-\[100px\] {
+  min-height: 100px;
 }
 
 .twcss-w-\[80vw\] {

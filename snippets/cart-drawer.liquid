@@ -29,7 +29,7 @@
       {%- if cart == empty -%}
         <div class='drawer__inner-empty'>
           <div class='cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}'>
-            <div class='cart-drawer__empty-content'>
+            <div class=' twcss-min-h-[100px] '>
               {% comment %} <h2 class='h4'>{{ 'sections.cart.empty' | t }}</h2> {% endcomment %}
               <button
                 class='drawer__close'
@@ -39,9 +39,12 @@
               >
                 {% render 'icon-close' %}
               </button>
-              <a href='{{ routes.all_products_collection_url }}' class='button'>
-                {{ 'general.continue_shopping' | t }}
-              </a>
+              <div class='h3 twcss-mt-20'>
+                Your bag is empty.
+                <a href='{{ routes.all_products_collection_url }}' class='h3'>
+                  {{ 'general.continue_shopping' | t }}
+                </a>
+              </div>
 
               {%- if shop.customer_accounts_enabled and customer == null -%}
                 <p class='cart__login-title h3'>{{ 'sections.cart.login.title' | t }}</p>
@@ -261,6 +264,20 @@
                               </li>
                             {%- endfor -%}
                           </ul>
+
+                          <cart-remove-button
+                            id='CartDrawer-Remove-{{ item.index | plus: 1 }}'
+                            data-index='{{ item.index | plus: 1 }}'
+                          >
+                            <button
+                              type='button'
+                              class='small twcss-mt-4 cart-remove-button'
+                              aria-label='{{ 'sections.cart.remove_title' | t: title: item.title }}'
+                              data-variant-id='{{ item.variant.id }}'
+                            >
+                              Remove
+                            </button>
+                          </cart-remove-button>
                         </td>
 
                         {% comment %}
