@@ -929,6 +929,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 45vw;
 }
 
+.twcss-max-w-2xl {
+  max-width: 36em;
+}
+
 .twcss-flex-1 {
   flex: 1 1 0%;
 }
@@ -1158,6 +1162,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-p-4 {
   padding: 1rem;
+}
+
+.twcss-p-20 {
+  padding: 5rem;
 }
 
 .twcss-px-8 {

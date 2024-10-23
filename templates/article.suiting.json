@@ -10,8 +10,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-article",
-      "disabled": true,
+      "type": "main-article-suiting",
+      "disabled": false,
       "settings": {
       }
     }
