@@ -38,11 +38,11 @@
 {%- endstyle -%}
 
 <footer data-swup-scroll-container class=' twcss-overflow-hidden'>
-  <div class='twcss-uppercase md:twcss-max-w-[80rem] twcss-inline-block'>
+  <div class='twcss-uppercase md:twcss-max-w-[40rem] twcss-inline-block'>
     <div class=' twcss-w-full '>
       <div class='klaviyo-form-REpsnw'></div>
     </div>
-    <span class='twcss-block twcss-text-left twcss-mb-[4rem] h3 !twcss-font-sans '>
+    <span class='twcss-block twcss-text-left twcss-mb-[4rem] small'>
       By sharing your email and subscribing you agree to receive email notifications from ERL clothing.
     </span>
   </div>
@@ -213,7 +213,8 @@
                               <a
                                 href='{{ link.url }}'
                                 title='{{ link.title }}'
-                                class='swup link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}'
+                                style='line-height: 1 !important;'
+                                class='swup link h3 list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}'
                               >
                                 {{ link.title }}
                               </a>

@@ -857,6 +857,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3.5rem;
 }
 
+.twcss-w-\[2rem\] {
+  width: 2rem;
+}
+
+.twcss-w-\[4rem\] {
+  width: 4rem;
+}
+
+.twcss-w-\[2\.75rem\] {
+  width: 2.75rem;
+}
+
 .twcss-max-w-\[14vw\] {
   max-width: 14vw;
 }
@@ -1131,6 +1143,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.twcss-p-\[2rem\] {
+  padding: 2rem;
+}
+
 .twcss-px-\[1em\] {
   padding-left: 1em;
   padding-right: 1em;
@@ -1149,6 +1165,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-px-\[1\.5em\] {
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+.twcss-px-\[2rem\] {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .twcss-pb-\[2em\] {
@@ -1462,6 +1483,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-max-w-\[80rem\] {
     max-width: 80rem;
+  }
+
+  .md\:twcss-max-w-\[40rem\] {
+    max-width: 40rem;
   }
 
   .md\:twcss-grid-cols-4 {
