@@ -1,0 +1,46 @@
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+
+<article class=' twcss-grid twcss-grid-cols-2 ' itemscope itemtype='http://schema.org/BlogPosting'>
+  {% comment %} Left Column {% endcomment %}
+  <div>
+    {% comment %} Gallery {% endcomment %}
+  </div>
+
+  {% comment %} Right Column {% endcomment %}
+  <div>
+    {% comment %} Form {% endcomment %}
+
+    <h1 itemprop='headline'>{{ article.title }}</h1>
+  </div>
+</article>
+
+<script type='application/ld+json'>
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "articleBody": {{ article.content | strip_html | json }},
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": {{ request.origin | append: page.url | json }}
+    },
+    "headline": {{ article.title | json }},
+    {% if article.excerpt != blank %}
+      "description": {{ article.excerpt | strip_html | json }},
+    {% endif %}
+    {% if article.image %}
+      "image": [
+        {{ article | image_url: width: 1920 | prepend: "https:" | json }}
+      ],
+    {% endif %}
+    "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
+    "author": {
+      "@type": "Person",
+      "name": {{ article.author | json }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }}
+    }
+  }
+</script>
