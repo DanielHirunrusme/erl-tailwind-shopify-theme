@@ -3944,7 +3944,7 @@ body .cc-window {
 }
 
 .restock-alerts-notify-button {
-  width: auto !important;
+  width: 100% !important;
   margin: 0 !important;
   /* padding: 0 !important; */
   margin-top: 0rem !important;

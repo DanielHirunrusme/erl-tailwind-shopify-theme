@@ -68,9 +68,8 @@
                       <a
                         href='{{ metaproduct.url }}'
                         title='{{ metaproduct.title }}'
-                        class='metafield-product-color-link small {% if current_color == option.selected_value %}metafield-product-color-selected{%- endif-%}'
+                        class='metafield-product-color-link h3 {% if current_color == option.selected_value %}metafield-product-color-selected{%- endif-%}'
                       >
-                        Select
                         {{- option.selected_value -}}
                       </a>
                     {% endif %}

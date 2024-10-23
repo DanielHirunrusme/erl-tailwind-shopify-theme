@@ -43,7 +43,10 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'subtotal' -%}
-              <div class='js-contents twcss-flex twcss-flex-col twcss-gap-[1em]' {{ block.shopify_attributes }}>
+              <div
+                class='js-contents twcss-flex twcss-flex-col twcss-gap-[1em] twcss-mb-4'
+                {{ block.shopify_attributes }}
+              >
                 <div>
                   {%- if cart.cart_level_discount_applications.size > 0 -%}
                     <ul class='discounts list-unstyled' role='list' aria-label='{{ 'customer.order.discount' | t }}'>
@@ -58,18 +61,18 @@
                   {%- endif -%}
                 </div>
 
-                <div class='totals twcss-flex'>
-                  <div class=' twcss-w-[30vw] md:twcss-w-[12vw]'>
-                    <h2 class='totals__total h3 twcss-transform -twcss-rotate-2'>
+                <div class='totals twcss-flex twcss-gap-20'>
+                  <div class=' twcss-w-48'>
+                    <h2 class='totals__total h3'>
                       {{ 'sections.cart.estimated_total' | t }}
                     </h2>
                   </div>
-                  <p class='h3 !twcss-font-sans twcss-ml-[1.5em] md:twcss-ml-[1em]'>
+                  <p class='h3'>
                     {{ cart.total_price | money_with_currency }}
                   </p>
                 </div>
 
-                <small class='tax-note h4 !twcss-font-sans'>
+                <small class='tax-note small'>
                   {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
                     {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- elsif cart.taxes_included -%}

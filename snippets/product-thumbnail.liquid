@@ -15,6 +15,7 @@
   - media_fit: {String} Method ("contain" or "cover") to fit image into container
   - media_width: {Float} The width percentage that the media column occupies on desktop.
   - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+  - id: {String} Unique identifier for the media (optional)
 
   Usage:
   {% render 'product-thumbnail',
@@ -118,7 +119,7 @@
         <circle class="path" fill="none" stroke-width="4" cx="33" cy="33" r="30"></circle>
       </svg>
     </div>
-    <div class='product__media media media--transparent'>
+    <div id='{{id}}' class='product__media media media--transparent'>
       {{
         media.preview_image
         | image_url: width: 1946

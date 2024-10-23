@@ -29,7 +29,7 @@
       data-hide-errors='{{ gift_card_recipient_feature_active }}'
       data-section-id='{{ section.id }}'
     >
-      <div class='product-form__error-message-wrapper' role='alert' hidden>
+      <div class='product-form__error-message-wrapper small' role='alert' hidden>
         <svg
           aria-hidden='true'
           focusable='false'
@@ -98,28 +98,30 @@
 
           {%- if variant.available -%}
             <!-- If the variant is available, show the button -->
-            <div class='dynamic-buy-buttons'>
-              <button type='button' class='btn product-form__cart-submit button btn--secondary-accent' data-buy-now>
-                <span> Buy now </span>
-              </button>
-              <script>
-                document.querySelector('[data-buy-now]').addEventListener('click', () => {
-                  let addToCartForm = document.querySelector('form[action$="/cart/add"]');
-                  let formData = new FormData(addToCartForm);
-                  fetch(window.Shopify.routes.root + 'cart/add.js', {
-                    method: 'POST',
-                    body: formData,
-                  })
-                    .then((response) => {
-                      window.location.href = '/checkout';
-                      return response.json();
+            {% comment %}
+              <div class='dynamic-buy-buttons'>
+                <button type='button' class='btn product-form__cart-submit button btn--secondary-accent' data-buy-now>
+                  <span> Buy now </span>
+                </button>
+                <script>
+                  document.querySelector('[data-buy-now]').addEventListener('click', () => {
+                    let addToCartForm = document.querySelector('form[action$="/cart/add"]');
+                    let formData = new FormData(addToCartForm);
+                    fetch(window.Shopify.routes.root + 'cart/add.js', {
+                      method: 'POST',
+                      body: formData,
                     })
-                    .catch((error) => {
-                      console.error('Error:', error);
-                    });
-                });
-              </script>
-            </div>
+                      .then((response) => {
+                        window.location.href = '/checkout';
+                        return response.json();
+                      })
+                      .catch((error) => {
+                        console.error('Error:', error);
+                      });
+                  });
+                </script>
+              </div>
+            {% endcomment %}
 
           {%- elsif variant.inventory_policy == 'continue' and variant.inventory_quantity <= 0 -%}
             <!-- Hide the button when product is out of stock and set to continue selling -->

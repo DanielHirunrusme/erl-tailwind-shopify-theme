@@ -80,10 +80,10 @@
   {% endif %}  
   
   {% comment %} Thumbnails {% endcomment %}
-  <ul class=' twcss-hidden md:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-10 md:twcss-absolute  twcss-z-10 twcss-top-0 twcss-left-0 twcss-m-4'>
+  <ul class=' twcss-hidden lg:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-16 md:twcss-absolute  twcss-z-10 twcss-top-1/2 twcss-transform -twcss-translate-y-1/2 twcss-left-0 twcss-m-4'>
   {%- for media in product.media -%}
     <li class="twcss-w-full">
-      <a href='#Image-{{ forloop.index }}'>
+      <a href='javascript:void(0);' onclick="scrollToAnchor('Image-{{ forloop.index }}')">
         {%- render 'product-thumbnail',
           media: media,
           media_count: media_count,
@@ -130,6 +130,11 @@
                 {{- block.settings.text -}}
               </p>
             {%- when 'title' -%}
+              {% if collection %}
+              <a href="{{ collection.url }}" class="small twcss-mb-4">
+                  {{ collection.title }} 
+              </a>
+              {% endif %}
               <div class='product__title' {{ block.shopify_attributes }}>
                 <h1 class=" twcss-pb-[.25em] ">{{ product.title | escape }}</h1>
                 <a href='{{ product.url }}' class='product__title'>
@@ -777,6 +782,18 @@
   {%- endif -%}
 
   <script>
+
+
+function scrollToAnchor(anchorId) {
+    const element = document.getElementById(anchorId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',  // This enables smooth scrolling
+        block: 'start'       // Scrolls to the top of the element
+      });
+    }
+  }
+
     document.addEventListener('DOMContentLoaded', function () {
       function isIE() {
         const ua = window.navigator.userAgent;

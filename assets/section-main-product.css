@@ -140,10 +140,8 @@
 .product-form__error-message-wrapper:not([hidden]) {
   display: flex;
   align-items: flex-start;
-  font-size: 1.3rem;
-  line-height: 1.4;
-  letter-spacing: 0.04rem;
-  margin-bottom: 1.5rem;
+
+  margin-bottom: 2rem;
 }
 
 .product-form__error-message-wrapper svg {
@@ -231,7 +229,8 @@ variant-selects {
 .product-form__input input[type='radio']:checked + label,
 .metafield-product-color-selected {
   background-color: rgba(var(--color-foreground), 0.9);
-  color: rgb(var(--color-background)) !important;
+  color: rgb(100 102 105 / 90%) !important;
+  -webkit-font-smoothing: antialiased;
 }
 
 .product-form__input input[type='radio']:checked + label:hover,
@@ -290,10 +289,13 @@ variant-selects {
   /* margin-bottom: 0.4em; */
   background-color: rgba(var(--color-foreground), 1);
   border-radius: 0.075em;
-  color: rgba(var(--color-background), 0.9);
+  line-height: 1;
+  font-weight: bold;
+  color: rgb(100 102 105 / 90%);
   /* border: 0.2em solid rgba(255, 255, 255, 0.9); */
-  padding: 0.25em 0.5em;
+  padding: 0.75em 0.5em 0.5em 0.5em;
   min-height: 44px;
+  font-size: 2rem;
 }
 
 .product-form__cart-submit {
@@ -497,6 +499,10 @@ a.product__text {
   gap: 1em;
   position: relative;
   justify-content: space-between;
+}
+
+.product-form__buttons > div {
+  flex: 1;
 }
 
 .hengam-preorder-description {

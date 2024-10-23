@@ -290,8 +290,8 @@ slider-component.slider-component-full-width {
 .slider-dot {
   position: relative !important;
   background-color: rgba(var(--color-foreground), 0.4);
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: 2em;
 }
 

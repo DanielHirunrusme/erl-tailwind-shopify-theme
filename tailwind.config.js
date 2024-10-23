@@ -17,6 +17,9 @@ module.exports = {
       pageMaxWidth: '1440px',
     },
     extend: {
+      colors: {
+        siteBackground: '#aaadb1',
+      },
       fontFamily: {
         heading: 'var(--font-heading-family)',
         panton: '"Panton Rust Heavy Base", sans-serif',

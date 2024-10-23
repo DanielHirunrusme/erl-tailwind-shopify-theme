@@ -106,24 +106,6 @@
   <script src='{{ 'cart-drawer.js' | asset_url }}' defer='defer'></script>
 {%- endif -%}
 
-{% comment %}
-  <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-    <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
-    </symbol>
-
-    <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
-      <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
-      <path d="M6.82972 6.82915L1.17193 1.17097" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
-      <path d="M1.22896 6.88502L6.77288 1.11523" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
-    </symbol>
-
-    <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
-      <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
-    </symbol>
-  </svg>
-{% endcomment %}
-
 {%- liquid
   for block in section.blocks
     if block.type == '@app'
@@ -146,204 +128,86 @@
   endif
 -%}
 {% comment %} <header class='twcss-flex  twcss-justify-between twcss-p-[2em] md:twcss-p-[1vw]'> {% endcomment %}
- 
-  <a
-    href='{{ routes.cart_url }}'
-    title='Cart' 
-    class='twcss-gap-[.25em] twcss-z-50 twcss-group twcss-right-0 twcss-top-0 twcss-self-start twcss-items-center  twcss-flex focus-inset twcss-font-haymer twcss-text-[2vw] twcss-p-[2em] md:twcss-p-[.35em] twcss-fixed'
-    id='cart-icon-bubble'
-  >
-    {% comment %} From cart-icon-bubble {% endcomment %}
-    <span class='twcss-w-[2.75rem] twcss-relative twcss-flex twcss-items-center twcss-justify-center '>
-      {%- if cart.item_count > 0 -%}
-        <span class=' twcss-absolute h3   twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/3 !twcss-flex-nowrap twcss-w-full twcss-text-center '>
+
+<a
+  href='{{ routes.cart_url }}'
+  title='Cart'
+  class='twcss-gap-4 twcss-z-50 twcss-group twcss-right-0 twcss-top-0 twcss-self-start twcss-items-center  twcss-flex focus-inset    twcss-px-6 twcss-py-4 twcss-fixed'
+  id='cart-icon-bubble'
+>
+  {% comment %} From cart-icon-bubble {% endcomment %}
+  <span class='twcss-w-[3.5rem] twcss-relative twcss-flex twcss-items-center twcss-justify-center '>
+    {%- if cart.item_count > 0 -%}
+      <span class=' twcss-absolute h3   twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/3 !twcss-flex-nowrap twcss-w-full twcss-text-center '>
         {{- cart.item_count -}}
       </span>
-      {%- endif -%}
-      {%- render 'icon-cart' -%}</span
-    ><span class='twcss-hidden md:twcss-flex twcss-mt-[.1em] twcss-w-[3.5rem]'>
-      {% render 'icon-cart-text' %}
-    </span>
-{% comment %} end cart-icon-bubble {% endcomment %}
-  </a>
-  {% if section.settings.menu != blank %}
-  <div  class='twcss-flex twcss-z-50 twcss-flex-col twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-left-0 twcss-top-0'>
-  
-  
-  
-  {%- for link in section.settings.menu.links -%}
-    {% assign url = link.url | escape %}
-  
-    {% case url %}
-      {% when '/' %}
-        <a href="{{ link.url }}" title="{{ link.title }}" class="link h3 link--logo">
-          {% include 'logotype' %}
-        </a>
-      {% when '/blogs/collections' %}
-        <a href="{{ link.url }}" title="{{ link.title }}" class="link h3">
-          {{ link.title | escape }}
-        </a>
-      {% when '/collections/all' %}
-        <a data-shop-link href="{{ link.url }}" title="{{ link.title }}" class="link h3">
-          {{ link.title | escape }}
-        </a>
-    {% endcase %}
-  
-    {%- if link.links.size > 0 -%} <!-- Check if there are sublinks -->
-      <ul class="sub-links">
-        {%- for sublink in link.links -%} <!-- Loop through sublinks -->
-          <li>
-            <a href="{{ sublink.url }}" title="{{ sublink.title }}" class="link small twcss-leading-8 ">
-              {{ sublink.title | escape }}
-            </a>
-          </li>
-        {%- endfor -%}
-      </ul>
     {%- endif -%}
-  {%- endfor -%}
-
-
-  {% comment %} {% if template.name == 'product' or template.name == 'cart' %} 
-  <a
-  href='/collections/all'
-  class=' twcss-max-w-[25vw] md:twcss-max-w-[10vw]   h3 twcss-flex twcss-items-center twcss-gap-2 !twcss-font-cookie'
->
- {% include 'icon--back-to-shop' %}
+    {%- render 'icon-cart' -%}</span
+  ><span class='twcss-hidden md:twcss-flex twcss-mt-2 twcss-w-[3.5rem]'>
+    {% render 'icon-cart-text' %}
+  </span>
 </a>
-{% endif %} {% endcomment %}
 
-  </div>
-    {% endif  %}
-  {% comment %} <div class='twcss-flex twcss-flex-col twcss-items-end twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-right-0 twcss-top-0'>
-    <a href='/' class='link link--text focus-inset twcss-font-panton twcss-text-[4vw] md:twcss-text-[1.375vw]'>
-      ERL VENICE BEACH CALIFORNIA
-    </a>
+<div class='twcss-flex md:twcss-hidden twcss-z-50 twcss-flex-col twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-left-0 twcss-top-0'>
+  <a href='/' title='{{ link.title }}' class='link h3 link--logo'>
+    {% include 'logotype' %}
+  </a>
+</div>
 
-    <a href='/blogs/collections' class='link link--text twcss-font-knocky twcss-text-[5vw] md:twcss-text-[1.75vw]'>
-      COLLECTIONS
-    </a>
-    <a
-      href='/collections/all'
-      title='Shop'
-      class='link link--text twcss-font-cookie twcss-text-[6vw] md:twcss-text-[2vw]  twcss-transform twcss-rotate-[3deg] -twcss-mt-[.075em]'
+<button id='menu-button' class=' md:twcss-hidden twcss-fixed twcss-top-8 twcss-right-28 twcss-z-20'>
+  {% include 'icon-hamburger' %}
+</button>
+
+{% if section.settings.menu != blank %}
+  <div
+    id='menu'
+    class='twcss-hidden twcss-bg-siteBackground md:twcss-bg-transparent twcss-w-full md:twcss-w-auto  md:twcss-flex twcss-z-50 twcss-flex-col twcss-leading-none twcss-gap-1  twcss-p-[2em] md:twcss-p-[1vw] twcss-fixed twcss-left-0 twcss-top-0'
+  >
+    <button
+      id='menu-close-button'
+      class=' md:twcss-hidden twcss-absolute twcss-right-0 twcss-top-0 twcss-p-6 twcss-z-10 twcss-w-20 '
     >
-      SHOP
-    </a>
-    
-  </div> {% endcomment %}
-  {% comment %} <a  title="Cart" href="{{ routes.cart_url }}"><span class="twcss-uppercase" >{{ 'templates.cart.cart' | t }}&nbsp;&nbsp;{{ cart.item_count }}</span></a> {% endcomment %}
+      {% include 'icon-close' %}
+    </button>
 
-  {% comment %}
-    {%- liquid
-      if section.settings.menu != blank
-        render 'header-drawer'
-      endif
+    {%- for link in section.settings.menu.links -%}
+      {% assign url = link.url | escape %}
 
-      if section.settings.logo_position == 'top-center' or section.settings.menu == blank
-        render 'header-search', input_id: 'Search-In-Modal-1'
-      endif
-    -%}
-  {% endcomment %}
-  {% comment %}
-    {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
-        endif
-      endif
-    %}
-  {% endcomment %}
+      {% case url %}
+        {% when '/' %}
+          <a href='{{ link.url }}' title='{{ link.title }}' class='link h3 link--logo'>
+            {% include 'logotype' %}
+          </a>
+        {% when '/blogs/collections' %}
+          <a href='{{ link.url }}' title='{{ link.title }}' class='link h3'>
+            {{ link.title | escape }}
+          </a>
+        {% when '/collections/all' %}
+          <a data-shop-link href='{{ link.url }}' title='{{ link.title }}' class='link h3'>
+            {{ link.title | escape }}
+          </a>
+      {% endcase %}
 
-  {% comment %}
-    <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
-      <div class="desktop-localization-wrapper">
-        {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
-          <noscript class="small-hide medium-hide">
-            {%- form 'localization', id: 'HeaderCountryMobileFormNoScript', class: 'localization-form' -%}
-              <div class="localization-form__select">
-                <h2 class="visually-hidden" id="HeaderCountryMobileLabelNoScript">{{ 'localization.country_label' | t }}</h2>
-                <select class="localization-selector link" name="country_code" aria-labelledby="HeaderCountryMobileLabelNoScript">
-                  {%- for country in localization.available_countries -%}
-                    <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>
-                      {{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})
-                    </option>
-                  {%- endfor -%}
-                </select>
-                {% render 'icon-caret' %}
-              </div>
-              <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
-            {%- endform -%}
-          </noscript>
-
-          <localization-form class="small-hide medium-hide no-js-hidden">
-            {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
-              <div>
-                <h2 class="visually-hidden" id="HeaderCountryLabel">{{ 'localization.country_label' | t }}</h2>
-                {%- render 'country-localization', localPosition: 'HeaderCountry' -%}
-              </div>
-            {%- endform -%}
-          </localization-form>
-        {% endif %}
-
-        {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
-          <noscript class="small-hide medium-hide">
-            {%- form 'localization', id: 'HeaderLanguageMobileFormNoScript', class: 'localization-form' -%}
-              <div class="localization-form__select">
-                <h2 class="visually-hidden" id="HeaderLanguageMobileLabelNoScript">{{ 'localization.language_label' | t }}</h2>
-                <select class="localization-selector link" name="locale_code" aria-labelledby="HeaderLanguageMobileLabelNoScript">
-                  {%- for language in localization.available_languages -%}
-                    <option value="{{ language.iso_code }}" lang="{{ language.iso_code }}" {%- if language.iso_code == localization.language.iso_code %} selected{% endif %}>
-                      {{ language.endonym_name | capitalize }}
-                    </option>
-                  {%- endfor -%}
-                </select>
-                {% render 'icon-caret' %}
-              </div>
-              <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
-            {%- endform -%}
-          </noscript>
-
-          <localization-form class="small-hide medium-hide no-js-hidden">
-            {%- form 'localization', id: 'HeaderLanguageForm', class: 'localization-form' -%}
-              <div>
-                <h2 class="visually-hidden" id="HeaderLanguageLabel">{{ 'localization.language_label' | t }}</h2>
-                {%- render 'language-localization', localPosition: 'HeaderLanguage' -%}
-              </div>
-            {%- endform -%}
-          </localization-form>
-        {%- endif -%}
-      </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
-
-      {%- if shop.customer_accounts_enabled -%}
-        <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-          {% render 'icon-account' %}
-          <span class="visually-hidden">
-            {%- liquid
-              if customer
-                echo 'customer.account_fallback' | t
-              else
-                echo 'customer.log_in' | t
-              endif
-            -%}
-          </span>
-        </a>
+      {%- if link.links.size > 0 -%}
+        <!-- Check if there are sublinks -->
+        <ul class='sub-links'>
+          {%- for sublink in link.links -%}
+            <!-- Loop through sublinks -->
+            <li>
+              <a
+                href='{{ sublink.url }}'
+                title='{{ sublink.title }}'
+                class='link small twcss-leading-8 {% if sublink.active %} twcss-underline {% endif %} '
+              >
+                {{ sublink.title | escape }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
       {%- endif -%}
-
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when '@app' -%}
-            {% render block %}
-        {%- endcase -%}
-      {%- endfor -%}
-
-
-    </div>
-  {% endcomment %}
-</header>
-{% comment %} </{% if section.settings.sticky_header_type != 'none' %}sticky-header{% else %}div{% endif %}> {% endcomment %}
+    {%- endfor -%}
+  </div>
+{% endif %}
 
 {%- if settings.cart_type == 'notification' -%}
   {%- render 'cart-notification',
@@ -353,6 +217,18 @@
 {%- endif -%}
 
 {% javascript %}
+  document.getElementById('menu-button').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('twcss-flex');
+    menu.classList.toggle('twcss-hidden');
+  });
+
+  document.getElementById('menu-close-button').addEventListener('click', function () {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('twcss-flex');
+    menu.classList.toggle('twcss-hidden');
+  });
+
   class StickyHeader extends HTMLElement {
     constructor() {
       super();

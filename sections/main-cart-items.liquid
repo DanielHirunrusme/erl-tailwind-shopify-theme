@@ -25,7 +25,7 @@
 
 <script src='{{ 'quantity-popover.js' | asset_url }}' defer='defer'></script>
 
-<cart-items class='twcss-max-w-3xl x2lg:twcss-max-w-4xl twcss-mr-auto twcss-pt-[40vw] md:twcss-pt-[8vw] twcss-mx-auto'>
+<cart-items class='twcss-max-w-3xl x2lg:twcss-max-w-4xl twcss-mr-auto twcss-pt-40 twcss-mx-auto'>
   {% comment %}
     <div data-title class='title-wrapper-with-link'>
       <h1 class='title title--primary'>{{ 'sections.cart.title' | t }}</h1>
@@ -162,7 +162,7 @@
                     </td>
                   {% endcomment %}
 
-                  <td class='cart-item__media twcss-w-[30vw] md:twcss-w-[9vw]'>
+                  <td class='cart-item__media twcss-w-60'>
                     {% if item.image %}
                       {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                       <a href='{{ item.url }}' class='cart-item__link' aria-hidden='true'> </a>
@@ -184,7 +184,7 @@
                       <p class='caption-with-letter-spacing'>{{ item.product.vendor }}</p>
                     {%- endif -%}
 
-                    <a href='{{ item.url }}' class='cart-item__name break h4 '>
+                    <a href='{{ item.url }}' class='cart-item__name break h3'>
                       {{- item.product.title | escape -}}
                     </a>
 
@@ -212,19 +212,19 @@
                               {{ 'products.product.price.regular_price' | t }}
                             </dt>
                             <dd>
-                              <s class='cart-item__old-price price price--end h4 !twcss-font-sans'>
+                              <s class='cart-item__old-price price price--end h3'>
                                 {{ item.original_line_price | money }}
                               </s>
                             </dd>
                             <dt class='visually-hidden'>
                               {{ 'products.product.price.sale_price' | t }}
                             </dt>
-                            <dd class='price price--end h4 !twcss-font-sans'>
+                            <dd class='price price--end h3'>
                               {{ item.final_line_price | money }}
                             </dd>
                           </dl>
                         {%- else -%}
-                          <span class='price price--end h4 !twcss-font-sans'>
+                          <span class='price price--end h3'>
                             {{ item.original_line_price | money }}
                           </span>
                         {%- endif -%}
@@ -276,7 +276,7 @@
                       <dl>
                         {%- if item.product.has_only_default_variant == false -%}
                           {%- for option in item.options_with_values -%}
-                            <div class='product-option h4 !twcss-font-sans'>
+                            <div class='product-option h3'>
                               <dt>{{ option.name }}:</dt>
                               <dd>{{ option.value }}</dd>
                             </div>
@@ -369,10 +369,11 @@
                         >
                           <a
                             href='{{ item.url_to_remove }}'
-                            class='button button--tertiary'
+                            class=' twcss-mt-4  small'
                             aria-label='{{ 'sections.cart.remove_title' | t: title: item.title }}'
                           >
-                            {% render 'icon-remove' %}
+                            Remove
+                            {% comment %} {% render 'icon-remove' %} {% endcomment %}
                           </a>
                         </cart-remove-button>
                       </div>
