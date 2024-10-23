@@ -167,7 +167,7 @@ variant-selects {
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-top: 1.25em;
+  padding-top: 2em;
 }
 
 .product-form__input--dropdown {
