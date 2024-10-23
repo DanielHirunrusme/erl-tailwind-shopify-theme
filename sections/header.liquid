@@ -175,15 +175,15 @@
 
       {% case url %}
         {% when '/' %}
-          <a href='{{ link.url }}' title='{{ link.title }}' class='link h3 link--logo'>
+          <a href='{{ link.url }}' title='{{ link.title }}' class='link h3 link--logo twcss-pb-2'>
             {% include 'logotype' %}
           </a>
         {% when '/blogs/collections' %}
-          <a href='{{ link.url }}' title='{{ link.title }}' class='link h3'>
+          <a href='{{ link.url }}' title='{{ link.title }}' class='link h4'>
             {{ link.title | escape }}
           </a>
         {% when '/collections/all' %}
-          <a data-shop-link href='{{ link.url }}' title='{{ link.title }}' class='link h3'>
+          <a data-shop-link href='{{ link.url }}' title='{{ link.title }}' class='link h4'>
             {{ link.title | escape }}
           </a>
       {% endcase %}
@@ -197,7 +197,7 @@
               <a
                 href='{{ sublink.url }}'
                 title='{{ sublink.title }}'
-                class='link small twcss-leading-8 {% if sublink.active %} twcss-underline {% endif %} '
+                class='link h4 twcss-leading-8 {% if sublink.active %} twcss-underline {% endif %} '
               >
                 {{ sublink.title | escape }}
               </a>
