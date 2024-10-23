@@ -45,8 +45,8 @@
           %}
         </fieldset>
       {%- elsif picker_type == 'button' -%}
-        <div class='twcss-flex twcss-gap-[.125em] twcss-items-center twcss-mb-[2em]'>
-          <legend class='form__label h4 twcss-mr-[.5em]'>{{ option.name }}</legend>
+        <div class='twcss-flex twcss-flex-col twcss-gap-4 twcss-mb-8'>
+          <legend class='form__label small twcss-mr-[.5em]'>Select {{ option.name }}</legend>
           <fieldset class='js  twcss-flex twcss-gap-[1em] product-form__input product-form__input--pill'>
             {%- if option.name == 'Color' and product.metafields.product.product_colors != blank -%}
               {%- assign current_color = product.selected_or_first_available_variant.title | split: ' / ' | last -%}
@@ -68,8 +68,9 @@
                       <a
                         href='{{ metaproduct.url }}'
                         title='{{ metaproduct.title }}'
-                        class='metafield-product-color-link h3 !twcss-font-panton {% if current_color == option.selected_value %}metafield-product-color-selected{%- endif-%}'
+                        class='metafield-product-color-link small {% if current_color == option.selected_value %}metafield-product-color-selected{%- endif-%}'
                       >
+                        Select
                         {{- option.selected_value -}}
                       </a>
                     {% endif %}

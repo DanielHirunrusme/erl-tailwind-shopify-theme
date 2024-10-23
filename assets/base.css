@@ -502,7 +502,7 @@ h5,
 .h4,
 .h5,
 body .cc-window {
-  font-family: 'UB', var(--font-heading-family);
+  font-family: 'Panton Rust Heavy Base', var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: 900;
   text-transform: uppercase;
@@ -663,9 +663,8 @@ blockquote {
 .field__input,
 .form__label,
 .select__select {
-  font-family: 'UB';
-  text-transform: uppercase;
-  font-weight: 900;
+  font-size: 2rem;
+  font-family: Arial Narrow, 'AN', Arial, sans-serif;
   line-height: 1;
 }
 
@@ -1434,7 +1433,7 @@ button.shopify-payment-button__button--unbranded,
   position: relative;
   padding: 0;
   width: auto;
-  font-family: 'UB';
+  font-family: 'AN', Arial Narrow, Arial, sans-serif;
   opacity: 0.9;
 }
 

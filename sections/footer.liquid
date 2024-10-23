@@ -42,7 +42,7 @@
     <div class=' twcss-w-full '>
       <div class='klaviyo-form-REpsnw'></div>
     </div>
-    <span class='twcss-block twcss-text-left twcss-mb-[4rem] small'>
+    <span class='twcss-block twcss-text-left twcss-mb-[2rem] small'>
       By sharing your email and subscribing you agree to receive email notifications from ERL clothing.
     </span>
   </div>
@@ -182,7 +182,7 @@
               data-cascade
             {% endif %}
           >
-            <div class='md:twcss-col-span-2 twcss-flex twcss-gap-[1em]  twcss-pb-[1.4em] md:twcss-pb-0 twcss-overflow-x-scroll'>
+            <div class='md:twcss-col-span-2 twcss-flex twcss-gap-8  twcss-overflow-x-scroll'>
               {%- for block in section.blocks -%}
                 <div
                   class='twcss-whitespace-nowrap'
@@ -214,7 +214,7 @@
                                 href='{{ link.url }}'
                                 title='{{ link.title }}'
                                 style='line-height: 1 !important;'
-                                class='swup link h3 list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}'
+                                class='swup link rte list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}'
                               >
                                 {{ link.title }}
                               </a>
@@ -278,7 +278,7 @@
                 </div>
               {%- endfor -%}
             </div>
-            <div class='md:twcss-col-span-1 twcss-px-[1em] twcss-py-[1em] twcss-order-first md:twcss-order-last'>
+            <div class='md:twcss-col-span-1  twcss-pb-12 md:twcss-pb-0 twcss-order-first md:twcss-order-last'>
               <a href='{{ shop.url }}' title='Home' class='md:twcss-w-8/12 md:twcss-ml-auto twcss-block'>
                 {%- render 'logo-text' -%}
               </a>
