@@ -46,11 +46,11 @@
           {% if card_product.featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
           {% if horizontal_class %} card--horizontal{% endif %}
         '
-        style='aspect-ratio: 4/5'
+        style='aspect-ratio: 4/6'
       >
         <div
           class='card__inner twcss-w-full twcss-relative {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}'
-          style='aspect-ratio: 4/5'
+          style='aspect-ratio: 4/6'
         >
           {%- render 'card-product-slideshow', product: card_product, is_duplicate: true -%}
           <div class='card__content'>
@@ -352,7 +352,7 @@
     <div class='card-wrapper product-card-wrapper underline-links-hover'>
       <div
         class='
-                twcss-aspect-[4/5]
+                twcss-aspect-[4/6]
           card card--{{ settings.card_style }}
           {% if card_product.featured_media %} card--media{% else %} card--text{% endif %}
           {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
@@ -364,7 +364,7 @@
       >
         <div
           class='
-            twcss-aspect-[4/5]
+            twcss-aspect-[4/6]
             card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if card_product.featured_media or settings.card_style == 'standard' %} ratio{% endif %}
           '
         >

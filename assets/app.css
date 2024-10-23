@@ -797,6 +797,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 4 / 5;
 }
 
+.twcss-aspect-\[4\/6\] {
+  aspect-ratio: 4 / 6;
+}
+
 .twcss-h-full {
   height: 100%;
 }
@@ -811,6 +815,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-max-h-\[75vh\] {
   max-height: 75vh;
+}
+
+.twcss-max-h-screen {
+  max-height: 100vh;
 }
 
 .twcss-min-h-screen {
@@ -913,6 +921,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 7vw;
 }
 
+.twcss-w-screen {
+  width: 100vw;
+}
+
 .twcss-max-w-lg {
   max-width: 32rem;
 }
@@ -935,6 +947,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-flex-1 {
   flex: 1 1 0%;
+}
+
+.twcss-flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.twcss-flex-grow-0 {
+  flex-grow: 0;
 }
 
 .-twcss-translate-x-1\/2 {
@@ -1196,6 +1216,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .twcss-px-\[1\.5em\] {
   padding-left: 1.5em;
   padding-right: 1.5em;
+}
+
+.twcss-py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .twcss-pt-4 {
@@ -1532,6 +1557,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 4vw;
   }
 
+  .md\:twcss-overflow-visible {
+    overflow: visible;
+  }
+
   .md\:twcss-bg-transparent {
     background-color: transparent;
   }
@@ -1550,6 +1579,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-p-\[\.35em\] {
     padding: 0.35em;
+  }
+
+  .md\:twcss-px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:twcss-py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:twcss-pb-0 {

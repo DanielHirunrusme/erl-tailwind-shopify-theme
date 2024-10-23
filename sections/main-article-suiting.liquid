@@ -1,8 +1,16 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
-<article class=' twcss-grid twcss-grid-cols-2 twcss-min-h-[400px] ' itemscope itemtype='http://schema.org/BlogPosting'>
+<article
+  class=' md:twcss-grid twcss-grid-cols-2 twcss-min-h-[400px] '
+  itemscope
+  itemtype='http://schema.org/BlogPosting'
+>
   {% comment %} Left Column {% endcomment %}
-  <div>
+  <div class=' twcss-flex twcss-overflow-x-scroll md:twcss-block md:twcss-overflow-visible'>
     {% comment %} Gallery {% endcomment %}
 
     <img
@@ -23,17 +31,84 @@
       height='{{ article.image.height }}'
       alt='{{ article.image.alt | escape }}'
     >
+
+    {%- if article.metafields.custom.additional_media.value != blank -%}
+      {%- for media in article.metafields.custom.additional_media.value -%}
+        <div class='  twcss-flex-grow-0 twcss-flex-shrink-0 twcss-w-screen md:twcss-w-auto'>
+          <img
+            srcset='
+                  {{  media | image_url: width: 165 }} 165w,
+                  {{ media | image_url: width: 360 }} 360w,
+              {{ media | image_url: width: 533 }} 533w,
+                  {{ media | image_url: width: 720 }} 720w,
+                  {{ media | image_url: width: 1000 }} 1000w,
+                 {{ media | image_url: width: 1500 }} 1500w,
+                  {{ media | image_url }} {{ image.width }}w
+            '
+            src='{{ media | image_url: width: 533 }}'
+            sizes='(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)'
+            alt='{{ image.alt | escape }}'
+            class='motion-reduce'
+            {% unless lazy_load == false %}
+              loading='lazy'
+            {% endunless %}
+            width='{{ media.width }}'
+            height='{{ media.height }}'
+          >
+        </div>
+      {%- endfor -%}
+    {%- endif -%}
   </div>
 
   {% comment %} Right Column {% endcomment %}
-  <div>
+  <div class=' twcss-flex twcss-max-h-screen twcss-items-center twcss-justify-center twcss-sticky twcss-top-0 '>
     {% comment %} Form {% endcomment %}
 
-    <div class=' twcss-max-w-2xl twcss-p-20'>
-      <h1 itemprop='headline'>{{ article.title }}</h1>
+    <div class=' product__info-container   twcss-px-[1.5em] twcss-py-8 md:twcss-py-0 md:twcss-px-20 twcss-max-w-3xl '>
+      <a href='/blogs/suiting' class='small twcss-mb-4 twcss-block' style='pointer-events: auto;'> Suiting </a>
+      <h1 class='twcss-pb-[.25em] ' itemprop='headline'>{{ article.title }}</h1>
+      <div class='product__description small quick-add-hidden twcss-pb-4 '>
+        {{ article.content }}
+      </div>
+      <a href='mailto:inquire@erl.store' title='Inquire' class='product-form__submit button  button--secondary'
+        >Inquiring for Pricing</a
+      >
     </div>
   </div>
 </article>
+
+<div>
+  {% assign current_article = article %}
+  {% assign blog_articles = blog.articles %}
+  {% assign max_articles_to_show = 5 %}
+
+  <div class='twcss-grid twcss-grid-cols-2 '>
+    {% for related_article in blog_articles %}
+      {% if related_article != current_article %}
+        <div
+          class='blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+          {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style='--animation-order: {{ forloop.index }};'
+          {% endif %}
+        >
+          {%- render 'article-suiting-card',
+            article: related_article,
+            media_height: section.settings.image_height,
+            media_aspect_ratio: '4/6',
+            show_image: true,
+            show_date: false,
+            show_author: false,
+            show_excerpt: false
+          -%}
+        </div>
+      {% endif %}
+      {% if forloop.index >= max_articles_to_show %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
 
 <script type='application/ld+json'>
   {
