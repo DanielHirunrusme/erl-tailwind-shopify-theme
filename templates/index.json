@@ -192,7 +192,7 @@
         "image_url": "shopify://collections/suiting",
         "image": "shopify://shop_images/erl_made_in_california_chapter_29153_1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
