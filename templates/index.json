@@ -188,6 +188,18 @@
     },
     "image_banner_YVXqEV": {
       "type": "image-banner",
+      "blocks": {
+        "heading_d9GEqb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Suiting",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_d9GEqb"
+      ],
       "settings": {
         "image_url": "shopify://collections/suiting",
         "image": "shopify://shop_images/erl_made_in_california_chapter_29153_1.jpg",
