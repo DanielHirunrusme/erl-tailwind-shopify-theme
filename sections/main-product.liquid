@@ -102,7 +102,7 @@
               </p>
             {%- when 'title' -%}
               <div class='product__title' {{ block.shopify_attributes }}>
-                <h1 class="h3 twcss-pb-[.2em]">{{ product.title | escape }}</h1>
+                <h1 class=" twcss-pb-[.25em] ">{{ product.title | escape }}</h1>
                 <a href='{{ product.url }}' class='product__title'>
                   <h2 class='h1'>
                     {{ product.title | escape }}
@@ -112,7 +112,7 @@
               
             {%- when 'price' -%}
               <div
-                class='no-js-hidden twcss-mt-[.75em]'
+                class='no-js-hidden'
                 id='price-{{ section.id }}'
                 role='status'
                 {{ block.shopify_attributes }}
@@ -152,7 +152,7 @@
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div
-                  class='product__description rte  quick-add-hidden twcss-max-w-[400px] md:twcss-max-w-[30vw] h4 !twcss-font-sans  twcss-mb-[.5em]'
+                  class='product__description rte  quick-add-hidden twcss-max-w-[400px]'
                   {{ block.shopify_attributes }}
                 >
                   {{ product.description }}

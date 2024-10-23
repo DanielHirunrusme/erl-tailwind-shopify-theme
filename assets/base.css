@@ -534,17 +534,9 @@ body .cc-window {
 
 h1,
 .h1 {
-  font-size: calc(var(--font-heading-scale) * 8vw);
-  letter-spacing: -0.035em;
+  font-size: 1.6rem;
+  /* letter-spacing: -0.035em; */
   line-height: 0.975;
-}
-
-@media only screen and (min-width: 750px) {
-  h1,
-  .h1 {
-    font-size: calc(var(--font-heading-scale) * 3.5vw);
-    line-height: 0.95;
-  }
 }
 
 h2,
@@ -565,19 +557,22 @@ h2,
 
 h3,
 .h3,
-.button,
 .button-label,
 .shopify-challenge__button,
 .customer button,
 .shopify-payment-button__button,
 .shopify-payment-button__more-options {
-  font-size: calc(var(--font-heading-scale) * 3.5vw);
+  font-size: 1.6rem;
+  font-family: 'AN', Arial Narrow, Arial, sans-serif;
 }
 
-@media only screen and (min-width: 750px) {
+.button {
+  font-size: 1.4rem;
+}
+
+/* @media only screen and (min-width: 750px) {
   h3,
   .h3,
-  .button,
   .button-label,
   .shopify-challenge__button,
   .customer button,
@@ -585,7 +580,7 @@ h3,
   .shopify-payment-button__more-options {
     font-size: calc(var(--font-heading-scale) * 1.5vw);
   }
-}
+} */
 
 h4,
 .h4,
@@ -598,21 +593,6 @@ klarna-placement::part(osm-container) {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: normal;
-}
-
-@media only screen and (min-width: 750px) {
-  h4,
-  .h4,
-  .shopify-cleanslate span,
-  .field__label,
-  .field__input,
-  body .cc-window,
-  klarna-placement::part(osm-container) {
-    font-style: var(--font-heading-style);
-    font-size: 0.875vw;
-    text-transform: uppercase;
-    font-weight: normal;
-  }
 }
 
 h5,
@@ -3406,11 +3386,6 @@ details-disclosure > details {
   }
 }
 
-.rte {
-  font-family: 'Alte Haas Grotesk', sans-serif;
-  font-weight: bold;
-}
-
 .rte:after {
   clear: both;
   content: '';
@@ -3897,20 +3872,20 @@ body .cc-window {
 }
 
 /* Footer RTE */
-.rte-footer {
+.rte-footer,
+.rte {
   font-family: 'AN', Arial Narrow, Arial, Helvetica, sans-serif;
   font-weight: bold !important;
-
-  font-size: 4vw;
+  font-size: 1.4rem;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .rte-footer {
     font-weight: bold !important;
     font-size: 1.2vw;
     max-width: 50%;
   }
-}
+} */
 
 .rte-footer h1,
 .rte-footer h3,

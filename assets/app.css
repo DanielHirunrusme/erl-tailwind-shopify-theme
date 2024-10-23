@@ -1144,6 +1144,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.2em;
 }
 
+.twcss-pb-\[\.5em\] {
+  padding-bottom: 0.5em;
+}
+
+.twcss-pb-\[\.25em\] {
+  padding-bottom: 0.25em;
+}
+
 .twcss-text-left {
   text-align: left;
 }
@@ -1224,6 +1232,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-text-\[6vw\] {
   font-size: 6vw;
+}
+
+.twcss-text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .twcss-font-bold {
@@ -1406,6 +1419,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:twcss-max-w-\[12\.5vw\] {
     max-width: 12.5vw;
+  }
+
+  .md\:twcss-max-w-\[300rem\] {
+    max-width: 300rem;
   }
 
   .md\:twcss-grid-cols-4 {

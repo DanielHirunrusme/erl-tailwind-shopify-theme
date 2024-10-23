@@ -46,7 +46,7 @@
         </fieldset>
       {%- elsif picker_type == 'button' -%}
         <div class='twcss-flex twcss-gap-[.125em] twcss-items-center twcss-mb-[2em]'>
-          <legend class='form__label h3 !twcss-font-panton twcss-mr-[.5em]'>{{ option.name }}</legend>
+          <legend class='form__label h4 twcss-mr-[.5em]'>{{ option.name }}</legend>
           <fieldset class='js  twcss-flex twcss-gap-[1em] product-form__input product-form__input--pill'>
             {%- if option.name == 'Color' and product.metafields.product.product_colors != blank -%}
               {%- assign current_color = product.selected_or_first_available_variant.title | split: ' / ' | last -%}

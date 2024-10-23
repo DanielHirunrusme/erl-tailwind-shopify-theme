@@ -57,7 +57,7 @@
     max-width: 50%;
     display: flex;
     flex: 1;
-    align-items: center;
+
     position: sticky;
     width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
     top: 0;
