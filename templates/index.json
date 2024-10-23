@@ -241,6 +241,18 @@
     },
     "image_banner_iwYLdX": {
       "type": "image-banner",
+      "blocks": {
+        "heading_QJRKmX": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop Artisanal",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QJRKmX"
+      ],
       "settings": {
         "image_url": "shopify://collections/artisanal",
         "image": "shopify://shop_images/erl_made_in_california_chapter_210385_1.jpg",
