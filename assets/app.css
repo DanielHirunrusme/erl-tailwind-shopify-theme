@@ -741,6 +741,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 5rem;
 }
 
+.twcss-mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .twcss-block {
   display: block;
 }
@@ -1275,6 +1279,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: 'Haymer Small Capitals Condensed', sans-serif;
 }
 
+.twcss-font-panton {
+  font-family: 'Panton Rust Heavy Base', sans-serif;
+}
+
 .twcss-text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1282,6 +1290,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-text-\[4vw\] {
   font-size: 4vw;
+}
+
+.twcss-text-\[10vw\] {
+  font-size: 10vw;
+}
+
+.twcss-text-\[5vw\] {
+  font-size: 5vw;
+}
+
+.twcss-text-\[8vw\] {
+  font-size: 8vw;
 }
 
 .twcss-font-bold {
@@ -1306,6 +1326,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-leading-8 {
   line-height: 2rem;
+}
+
+.twcss-text-white\/90 {
+  color: rgb(255 255 255 / 0.9);
 }
 
 .twcss-underline {

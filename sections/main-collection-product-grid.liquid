@@ -229,6 +229,14 @@
   {%- endif -%}
 </div>
 
+{% if collection.handle == 'artisanal' %}
+  {% include 'billboard-suiting' %}
+{% endif %}
+
+{% if collection.handle == 'vamps' %}
+  {% include 'billboard-accessories' %}
+{% endif %}
+
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
