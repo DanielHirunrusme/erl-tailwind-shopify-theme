@@ -1559,6 +1559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 20vw;
   }
 
+  .md\:twcss-text-\[8vw\] {
+    font-size: 8vw;
+  }
+
   .twcss-group:hover .md\:group-hover\:twcss-block {
     display: block;
   }

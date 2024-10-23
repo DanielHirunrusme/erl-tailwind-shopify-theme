@@ -229,12 +229,20 @@
   {%- endif -%}
 </div>
 
-{% if collection.handle == 'artisanal' %}
+{% if collection.handle == 'vamps' %}
+  {% include 'billboard-accessories' %}
+{% endif %}
+
+{% if collection.handle == 'shirts' or collection.handle == 'all' or collection.handle == 'artisanal' %}
   {% include 'billboard-suiting' %}
 {% endif %}
 
-{% if collection.handle == 'vamps' %}
-  {% include 'billboard-accessories' %}
+{% if collection.handle == 'hoodies-and-tees' %}
+  {% include 'billboard-bottoms' %}
+{% endif %}
+
+{% if collection.handle == 'bottoms' or collection.handle == 'accessories' %}
+  {% include 'billboard-hoodies' %}
 {% endif %}
 
 {% schema %}
