@@ -176,15 +176,15 @@
   
     {% case url %}
       {% when '/' %}
-        <a href="{{ link.url }}" title="{{ link.title }}" class="link link--text link--logo">
-          {{ link.title | escape }}
+        <a href="{{ link.url }}" title="{{ link.title }}" class="link h3 link--logo">
+          {% include 'logotype' %}
         </a>
       {% when '/blogs/collections' %}
-        <a href="{{ link.url }}" title="{{ link.title }}" class="link link--text">
+        <a href="{{ link.url }}" title="{{ link.title }}" class="link h3">
           {{ link.title | escape }}
         </a>
       {% when '/collections/all' %}
-        <a data-shop-link href="{{ link.url }}" title="{{ link.title }}" class="link link--text">
+        <a data-shop-link href="{{ link.url }}" title="{{ link.title }}" class="link h3">
           {{ link.title | escape }}
         </a>
     {% endcase %}
@@ -193,7 +193,7 @@
       <ul class="sub-links">
         {%- for sublink in link.links -%} <!-- Loop through sublinks -->
           <li>
-            <a href="{{ sublink.url }}" title="{{ sublink.title }}" class="link link--text">
+            <a href="{{ sublink.url }}" title="{{ sublink.title }}" class="link small twcss-leading-8 ">
               {{ sublink.title | escape }}
             </a>
           </li>

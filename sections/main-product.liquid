@@ -74,19 +74,48 @@
     {% comment %} <div class='grid__item product__media-wrapper twcss-hidden md:twcss-block {% if section.settings.media_position == 'right' %} twcss-md:hidden{% endif %}'>
       {% render 'product-media-feature-image', variant_images: variant_images %}
     </div> {% endcomment %}
-    <div class='product__info-wrapper   md:twcss-min-h-auto grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
+    <div class='product__info-wrapper    md:twcss-min-h-auto grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'>
       {% if product.metafields.custom.pdp_form_background_image != blank %}
       <img src="{{ product.metafields.custom.pdp_form_background_image | file_url }}" alt="{{ product.title }}" class=" twcss-absolute twcss-h-full twcss-w-full twcss-object-cover twcss-top-0 twcss-left-0 twcss-object-center " />
   {% endif %}  
   
-  
+  {% comment %} Thumbnails {% endcomment %}
+  <ul class=' twcss-hidden md:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-10 md:twcss-absolute  twcss-z-10 twcss-top-0 twcss-left-0 twcss-m-4'>
+  {%- for media in product.media -%}
+    <li class="twcss-w-full">
+      <a href='#Image-{{ forloop.index }}'>
+        {%- render 'product-thumbnail',
+          media: media,
+          media_count: media_count,
+          position: media_position,
+          desktop_layout: section.settings.gallery_layout,
+          mobile_layout: section.settings.mobile_thumbnails,
+          loop: section.settings.enable_video_looping,
+          modal_id: section.id,
+          xr_button: true,
+          media_width: media_width,
+          media_fit: section.settings.media_fit,
+          constrain_to_viewport: section.settings.constrain_to_viewport,
+          lazy_load: lazy_load
+        -%}
+      </a>
+    </li>
+  {%- endfor -%}
+</ul>
+
 
   <product-info
         id='ProductInfo-{{ section.id }}'
         data-section='{{ section.id }}'
         data-url='{{ product.url }}'
-        class='product__info-container  twcss-py-[2em] twcss-px-[1.5em] md:twcss-p-[3em] {% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}'
+        class='product__info-container  twcss-py-[2em] twcss-px-[1.5em] md:twcss-p-20 twcss-max-w-3xl {% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}'
       >
+
+
+
+
+        
+
         {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
         {%- for block in section.blocks -%}
@@ -152,7 +181,7 @@
             {%- when 'description' -%}
               {%- if product.description != blank -%}
                 <div
-                  class='product__description small quick-add-hidden twcss-max-w-[400px]'
+                  class='product__description small quick-add-hidden '
                   {{ block.shopify_attributes }}
                 >
                   {{ product.description }}
@@ -161,7 +190,7 @@
  
             {%- when 'inventory' -%}
               <p
-                class='product__inventory !twcss-font-narrow twcss-uppercase h4 !twcss-font-normal twcss-mb-[1em] no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}'
+                class='product__inventory small twcss-mb-[2rem] no-js-hidden{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}{% if product.selected_or_first_available_variant.inventory_management != 'shopify' %} visibility-hidden{% endif %}'
                 {{ block.shopify_attributes }}
                 id='Inventory-{{ section.id }}'
                 role='status'

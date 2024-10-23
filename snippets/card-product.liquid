@@ -450,7 +450,7 @@
         <div class='card__content'>
           <div class='card__information'>
             <h3
-              class='card__heading   h4'
+              class='card__heading small'
               {% if card_product.featured_media or settings.card_style == 'card' %}
                 id='title-{{ section_id }}-{{ card_product.id }}'
               {% endif %}
@@ -502,7 +502,9 @@
               {%- endif -%}
 
               {% if settings.card_show_price %}
-                {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
+                <span class='small'>
+                  {%- render 'price', product: card_product, price_class: '', show_compare_at_price: true -%}
+                </span>
               {% endif %}
               {%- if card_product.quantity_price_breaks_configured? -%}
                 {% if card_product.variants.size == 1 and quick_add == 'bulk' %}
@@ -804,7 +806,7 @@
                           {% endcomment %}
                         </div>
                         <div class='quick-add-modal__content-info--bulk-details large-up-hide'>
-                          <h3>{{ card_product.title | escape }}</h3>
+                          <h3 class='small'>{{ card_product.title | escape }}</h3>
 
                           {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
                           {%- if card_product.quantity_price_breaks_configured? -%}
