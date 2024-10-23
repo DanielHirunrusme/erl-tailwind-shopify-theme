@@ -567,7 +567,7 @@ h3,
 }
 
 .button {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* @media only screen and (min-width: 750px) {
@@ -590,7 +590,7 @@ body .cc-window,
 .shopify-cleanslate span,
 klarna-placement::part(osm-container) {
   font-style: var(--font-heading-style);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -3876,7 +3876,7 @@ body .cc-window {
 .rte {
   font-family: 'AN', Arial Narrow, Arial, Helvetica, sans-serif;
   font-weight: bold !important;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* @media screen and (min-width: 768px) {

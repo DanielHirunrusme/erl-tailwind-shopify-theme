@@ -1,5 +1,6 @@
 footer {
   text-transform: uppercase;
+  padding: 2rem;
 }
 
 .footer:not(.color-scheme-1) {

@@ -156,12 +156,12 @@
     {% comment %} From cart-icon-bubble {% endcomment %}
     <span class='twcss-w-[4.75vw] md:twcss-w-[1.675vw] twcss-relative twcss-flex twcss-items-center twcss-justify-center '>
       {%- if cart.item_count > 0 -%}
-        <span class=' twcss-absolute h4 !twcss-font-sans twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/4 !twcss-flex-nowrap twcss-w-full twcss-text-center '>
-          {{- cart.item_count -}}
-        </span>
+        <span class=' twcss-absolute h3   twcss-transform twcss-left-1/2 twcss-top-1/2 !twcss-leading-none -twcss-translate-x-1/2 -twcss-translate-y-1/4 !twcss-flex-nowrap twcss-w-full twcss-text-center '>
+        {{- cart.item_count -}}
+      </span>
       {%- endif -%}
       {%- render 'icon-cart' -%}</span
-    ><span class='twcss-hidden md:twcss-flex twcss-mt-[.1em] twcss-w-[2.5vw] twcss-transform group-hover:-twcss-rotate-2'>
+    ><span class='twcss-hidden md:twcss-flex twcss-mt-[.1em] twcss-w-[3.5rem]'>
       {% render 'icon-cart-text' %}
     </span>
 {% comment %} end cart-icon-bubble {% endcomment %}
