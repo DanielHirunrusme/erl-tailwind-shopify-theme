@@ -1044,6 +1044,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   animation: twcss-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+@keyframes twcss-pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.twcss-animate-pulse {
+  animation: twcss-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .twcss-select-none {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1129,6 +1139,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-gap-\[\.5rem\] {
   gap: 0.5rem;
+}
+
+.twcss-gap-4 {
+  gap: 1rem;
 }
 
 .twcss-gap-4 {
