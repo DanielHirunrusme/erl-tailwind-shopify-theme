@@ -162,6 +162,30 @@
         "padding_bottom": 52
       }
     },
+    "featured_products_i4h6nJ": {
+      "type": "featured-products",
+      "blocks": {
+        "product_8iHNyi": {
+          "type": "product",
+          "settings": {
+            "product": "venice-ringer-tee"
+          }
+        },
+        "product_KA7L9d": {
+          "type": "product",
+          "settings": {
+            "product": "hollywood-cut-off-tee"
+          }
+        }
+      },
+      "block_order": [
+        "product_8iHNyi",
+        "product_KA7L9d"
+      ],
+      "settings": {
+        "Title": ""
+      }
+    },
     "featured_products_kJwmGH": {
       "type": "featured-products",
       "blocks": {
@@ -215,30 +239,6 @@
         "show_text_below": false
       }
     },
-    "featured_products_i4h6nJ": {
-      "type": "featured-products",
-      "blocks": {
-        "product_8iHNyi": {
-          "type": "product",
-          "settings": {
-            "product": "venice-ringer-tee"
-          }
-        },
-        "product_KA7L9d": {
-          "type": "product",
-          "settings": {
-            "product": "hollywood-cut-off-tee"
-          }
-        }
-      },
-      "block_order": [
-        "product_8iHNyi",
-        "product_KA7L9d"
-      ],
-      "settings": {
-        "Title": ""
-      }
-    },
     "image_banner_iwYLdX": {
       "type": "image-banner",
       "blocks": {
@@ -275,9 +275,9 @@
     "image_banner_J4Jkac",
     "featured_collection_pw4LAm",
     "newsletter_TweCB4",
-    "featured_products_kJwmGH",
-    "image_banner_YVXqEV",
     "featured_products_i4h6nJ",
+    "image_banner_YVXqEV",
+    "featured_products_kJwmGH",
     "image_banner_iwYLdX"
   ]
 }
