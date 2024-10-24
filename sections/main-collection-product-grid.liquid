@@ -143,8 +143,16 @@
                 id='product-grid'
                 data-id='{{ section.id }}'
                 class='
-                  grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-                  grid--{{ section.settings.columns_desktop }}-col-desktop
+                  grid product-grid
+
+                  {% if collection.handle == 'vamps' or collection.handle == 'suiting' or collection.handle == 'artisanal' %}
+                  grid--3-col-desktop
+                  grid--{{ section.settings.columns_mobile }}-col-tablet-down
+                  {% comment %} grid--{{ section.settings.columns_desktop }}-col-desktop {% endcomment %}
+                  {% else %}
+                   grid--2-col-desktop
+                   grid--2-col-tablet-down
+                  {% endif  %}
                 '
               >
                 {% comment %} Billboards {% endcomment %}
