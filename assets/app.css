@@ -837,6 +837,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-height: 100vh;
 }
 
+.twcss-max-h-\[80vh\] {
+  max-height: 80vh;
+}
+
+.twcss-max-h-\[84vh\] {
+  max-height: 84vh;
+}
+
+.twcss-max-h-\[83vh\] {
+  max-height: 83vh;
+}
+
 .twcss-min-h-screen {
   min-height: 100vh;
 }
