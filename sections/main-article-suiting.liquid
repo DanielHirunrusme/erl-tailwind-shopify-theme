@@ -4,7 +4,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
-{% include 'article-suit-slideshow' %}
+<div class=' twcss-block md:twcss-hidden'>{% include 'article-suit-slideshow' %}</div>
 
 <article
   class=' md:twcss-grid twcss-grid-cols-2 twcss-min-h-[400px] '

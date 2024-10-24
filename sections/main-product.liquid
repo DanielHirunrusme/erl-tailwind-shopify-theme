@@ -80,7 +80,7 @@
   {% endif %}  
   
   {% comment %} Thumbnails {% endcomment %}
-  <ul id="thumbnails" class='thumbnail-list twcss-hidden lg:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-16 md:twcss-absolute  twcss-z-10 twcss-top-1/2 twcss-transform -twcss-translate-y-1/2 twcss-left-0 twcss-m-4'>
+  <ul id="thumbnails" class='twcss-hidden lg:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-16 md:twcss-absolute  twcss-z-10 twcss-top-1/2 twcss-transform -twcss-translate-y-1/2 twcss-left-0 twcss-m-4'>
   {%- for media in product.media -%}
     <li class="twcss-w-full">
       <a href='javascript:void(0);' onclick="scrollToAnchor('Image-{{ forloop.index }}')">
@@ -784,31 +784,31 @@
   <script>
 
     // Select all thumbnails and sections
-const thumbnails = document.querySelectorAll('#thumbnails li a');
-const sections = document.querySelectorAll('.target-section');
+// const thumbnails = document.querySelectorAll('#thumbnails li a');
+// const sections = document.querySelectorAll('.target-section');
 
-// Create an IntersectionObserver to observe when sections are in view
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    const id = entry.target.getAttribute('id');
-    const thumbnail = document.querySelector(`#thumbnails a[href="#${id}"]`);
+// // Create an IntersectionObserver to observe when sections are in view
+// const observer = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     const id = entry.target.getAttribute('id');
+//     const thumbnail = document.querySelector(`#thumbnails a[href="#${id}"]`);
 
-    if (entry.isIntersecting) {
-      // Remove 'active' class from all thumbnails
-      thumbnails.forEach((thumb) => thumb.classList.remove('active'));
+//     if (entry.isIntersecting) {
+//       // Remove 'active' class from all thumbnails
+//       thumbnails.forEach((thumb) => thumb.classList.remove('active'));
       
-      // Add 'active' class to the current thumbnail
-      thumbnail.classList.add('active');
-    }
-  });
-}, {
-  threshold: 0.5, // Adjust this to control when the section is considered "in view"
-});
+//       // Add 'active' class to the current thumbnail
+//       thumbnail.classList.add('active');
+//     }
+//   });
+// }, {
+//   threshold: 0.5, // Adjust this to control when the section is considered "in view"
+// });
 
-// Observe each section
-sections.forEach((section) => {
-  observer.observe(section);
-});
+// // Observe each section
+// sections.forEach((section) => {
+//   observer.observe(section);
+// });
 
 
 function scrollToAnchor(anchorId) {
