@@ -4,13 +4,18 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
+{% include 'article-suit-slideshow' %}
+
 <article
   class=' md:twcss-grid twcss-grid-cols-2 twcss-min-h-[400px] '
   itemscope
   itemtype='http://schema.org/BlogPosting'
 >
   {% comment %} Left Column {% endcomment %}
-  <div class=' twcss-flex twcss-overflow-x-scroll md:twcss-block md:twcss-overflow-visible'>
+  <div
+    id='Image-1'
+    class=' twcss-hidden md:twcss-block twcss-overflow-x-scroll   md:twcss-overflow-visible'
+  >
     {% comment %} Gallery {% endcomment %}
 
     <img
@@ -34,7 +39,10 @@
 
     {%- if article.metafields.custom.additional_media.value != blank -%}
       {%- for media in article.metafields.custom.additional_media.value -%}
-        <div class='  twcss-flex-grow-0 twcss-flex-shrink-0 twcss-w-screen md:twcss-w-auto'>
+        <div
+          id='Image-{{ forloop.index | plus: 1 }}'
+          class='  twcss-flex-grow-0 twcss-flex-shrink-0 twcss-w-screen md:twcss-w-auto'
+        >
           <img
             srcset='
                   {{  media | image_url: width: 165 }} 165w,
@@ -62,6 +70,67 @@
 
   {% comment %} Right Column {% endcomment %}
   <div class=' twcss-flex twcss-max-h-screen twcss-items-center twcss-justify-center twcss-sticky twcss-top-0 '>
+    {% comment %} Thumbnails {% endcomment %}
+    <ul
+      class=' twcss-hidden lg:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-16 md:twcss-absolute  twcss-z-10 twcss-top-1/2 twcss-transform -twcss-translate-y-1/2 twcss-left-0 twcss-m-4'
+      style='pointer-events: auto;'
+    >
+      <li>
+        <a href='javascript:void(0);' onclick="scrollToAnchor('Image-1')" style='pointer-events: auto;'>
+          <img
+            srcset='
+              {% if article.image.width >= 350 %}{{ article.image | image_url: width: 350 }} 350w,{% endif %}
+              {% if article.image.width >= 750 %}{{ article.image | image_url: width: 750 }} 750w,{% endif %}
+              {% if article.image.width >= 1100 %}{{ article.image | image_url: width: 1100 }} 1100w,{% endif %}
+              {% if article.image.width >= 1500 %}{{ article.image | image_url: width: 1500 }} 1500w,{% endif %}
+              {% if article.image.width >= 2200 %}{{ article.image | image_url: width: 2200 }} 2200w,{% endif %}
+              {% if article.image.width >= 3000 %}{{ article.image | image_url: width: 3000 }} 3000w,{% endif %}
+              {{ article.image | image_url }} {{ article.image.width }}w
+            '
+            sizes='(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw'
+            src='{{ article.image | image_url: width: 1100 }}'
+            loading='eager'
+            fetchpriority='high'
+            width='{{ article.image.width }}'
+            height='{{ article.image.height }}'
+            alt='{{ article.image.alt | escape }}'
+          >
+        </a>
+      </li>
+      {%- if article.metafields.custom.additional_media.value != blank -%}
+        {%- for media in article.metafields.custom.additional_media.value -%}
+          <li class='twcss-w-full'>
+            <a
+              href='javascript:void(0);'
+              onclick="scrollToAnchor('Image-{{ forloop.index | plus: 1 }}')"
+              style='pointer-events: auto;'
+            >
+              <img
+                srcset='
+                      {{  media | image_url: width: 165 }} 165w,
+                      {{ media | image_url: width: 360 }} 360w,
+                  {{ media | image_url: width: 533 }} 533w,
+                      {{ media | image_url: width: 720 }} 720w,
+                      {{ media | image_url: width: 1000 }} 1000w,
+                     {{ media | image_url: width: 1500 }} 1500w,
+                      {{ media | image_url }} {{ image.width }}w
+                '
+                src='{{ media | image_url: width: 533 }}'
+                sizes='(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)'
+                alt='{{ image.alt | escape }}'
+                class='motion-reduce'
+                {% unless lazy_load == false %}
+                  loading='lazy'
+                {% endunless %}
+                width='{{ media.width }}'
+                height='{{ media.height }}'
+              >
+            </a>
+          </li>
+        {%- endfor -%}
+      {%- endif -%}
+    </ul>
+
     {% comment %} Form {% endcomment %}
 
     <div class=' product__info-container   twcss-px-[1.5em] twcss-py-8 md:twcss-py-0 md:twcss-px-20 twcss-max-w-3xl '>
@@ -109,6 +178,19 @@
     {% endfor %}
   </div>
 </div>
+
+{% comment %}  {% endcomment %}
+<script type='text/javascript'>
+  function scrollToAnchor(anchorId) {
+    const element = document.getElementById(anchorId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth', // This enables smooth scrolling
+        block: 'start', // Scrolls to the top of the element
+      });
+    }
+  }
+</script>
 
 <script type='application/ld+json'>
   {
