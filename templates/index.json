@@ -31,7 +31,7 @@
       "settings": {
         "image_url": "shopify://collections/all",
         "image": "shopify://shop_images/erl_director.jpg",
-        "image_1_mobile": "shopify://shop_images/erl_made_in_california_chapter_28320.jpg",
+        "image_1_mobile": "shopify://shop_images/erl_director.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-left",
