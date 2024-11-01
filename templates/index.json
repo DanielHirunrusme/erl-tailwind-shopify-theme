@@ -28,9 +28,10 @@
       "block_order": [
         "html_VKJLyp"
       ],
+      "disabled": true,
       "settings": {
         "image_url": "shopify://collections/all",
-        "image": "shopify://shop_images/erl_director.jpg",
+        "image": "shopify://shop_images/ERL_SKULL_SWEATER_b80d0f00-05a5-4e7d-89d5-001d12a819ee.jpg",
         "image_1_mobile": "shopify://shop_images/erl_director.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
@@ -82,7 +83,6 @@
     },
     "featured_collection_pw4LAm": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -166,6 +166,7 @@
         "product_8iHNyi",
         "product_KA7L9d"
       ],
+      "disabled": true,
       "settings": {
         "Title": ""
       }
@@ -219,6 +220,7 @@
         "product_tUnYj8",
         "product_ctXBH4"
       ],
+      "disabled": true,
       "settings": {
         "Title": ""
       }
