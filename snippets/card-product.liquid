@@ -501,7 +501,7 @@
                 </p>
               {%- endif -%}
 
-              {% if settings.card_show_price and template != 'home' %}
+              {% if settings.card_show_price and template.name != 'index' %}
                 <span class='small'>
                   {%- render 'price', product: card_product, price_class: '', show_compare_at_price: true -%}
                 </span>
