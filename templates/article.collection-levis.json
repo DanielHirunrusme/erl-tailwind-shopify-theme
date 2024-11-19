@@ -1,13 +1,182 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-article",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
+    },
+    "chapter_aEmUJV": {
+      "type": "chapter",
+      "blocks": {
+        "spread_cAweCR": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-1.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_yQUAAG": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-2.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_HQexHW": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-3.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_8DHEJD": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-4.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_WYMNWt": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-5.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_jBncb6": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-6.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_qcKBT3": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-7.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_CW6XCE": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-8.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_RG88px": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-9.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_W7dLaQ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-10.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_QBmTxr": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-11.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_RUT993": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-12.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_FX4iUW": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-13.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_dE6U8N": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-15.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_6zePn8": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-16.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_HL9UfC": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-17.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_bDP9mC": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-18.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_jGxDLf": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-19.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_6YKJng": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/ERL-08-COLLECTION-LEVIS-20.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "spread_cAweCR",
+        "spread_yQUAAG",
+        "spread_HQexHW",
+        "spread_8DHEJD",
+        "spread_WYMNWt",
+        "spread_jBncb6",
+        "spread_qcKBT3",
+        "spread_CW6XCE",
+        "spread_RG88px",
+        "spread_W7dLaQ",
+        "spread_QBmTxr",
+        "spread_RUT993",
+        "spread_FX4iUW",
+        "spread_dE6U8N",
+        "spread_6zePn8",
+        "spread_HL9UfC",
+        "spread_bDP9mC",
+        "spread_jGxDLf",
+        "spread_6YKJng"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "chapter_aEmUJV"
   ]
 }
