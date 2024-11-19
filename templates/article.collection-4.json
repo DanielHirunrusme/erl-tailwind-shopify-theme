@@ -1,13 +1,583 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-article",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
+    },
+    "chapter_KXXF7Q": {
+      "type": "chapter",
+      "blocks": {
+        "spread_Vm7PnG": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/1_d078256e-43c5-46a0-9d8a-0e19d17ea8b0.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_brHdYn": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/2_442ec3fe-184d-438f-9608-3d3e9dd0da2c.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_6pYTNC": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/3_38351f26-b591-4dbe-9884-3cd8028b8551.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_yeqa4h": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/4_ab58523c-da36-43b4-9324-349c1970d5fb.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_cJAHEn": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/5_ba251d7a-d1a6-4520-833b-ec5c01089b80.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_KMfyVy": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/6-7.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_pNGUiV": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/6_325e24cf-adb3-45b5-8fa0-5a2695046771.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_F8GDKi": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/7_bb5f655f-a9e3-4b28-8cdb-b99adb680e61.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_MhEFGL": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/8_8b83317f-0e73-485f-8649-3326db6dd708.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_3KyprY": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/9_338e52e1-3b7e-4206-a4c8-991110219de5.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Gyx6pq": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/10_b7b26a03-3736-4285-b8c0-4767c509d83f.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_PzteFw": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/11_061fc124-5667-433a-bbbd-ac72cefe7f40.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_pgRXMT": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/12_bd85b8fe-8518-468b-9987-a1b24ca568c2.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_jHpPzJ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/13_ca9b5333-d971-441a-97ab-57a1f62c7144.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_qkqmQa": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/14_bf0587fc-4679-43a3-9e4e-e21d607f80e9.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_4LtBDV": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/15_4058bc82-5d7c-42ed-a747-302843f9d285.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_iFtfAC": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/16_cab1b9ff-3e83-46d9-9016-948eb655d4a0.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_PBNPcf": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/17_36e5580c-1bde-4d2f-b294-0b454620ffd4.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_UePtVK": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/18_4264fb58-de39-4ac3-8a57-d4b9227d44a9.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_mNbLNP": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/19_2cb6a875-cd17-45c0-8b29-df832de9ecdf.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_PNiNYw": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/20_4a0fcbb8-1173-4686-aa0a-320111bd3044.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_KJYwnQ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/21_fa934807-8f5d-47e5-8fd5-d76ba0ed589e.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_XkT48f": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/22_86fda997-e48f-45bd-ad45-eaaaaa64a491.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_mFgKRU": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/23_676a01f3-2efd-4656-8514-935dbc20d920.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_QdDtJk": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/24_69242bd1-5708-481f-9ea7-532e25998a70.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_3WVA9h": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/25_f42cf9ed-bac9-4aeb-9ec3-dc0d8c2ec250.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_byq6QX": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/26_bbb80f40-776f-42bb-b3f4-3f759eb61007.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_zjcgLf": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/27_65d8df43-cd50-4b1a-9746-dfc39b0b2d4c.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_xm8zWp": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/28_d5548bdd-1b5c-4755-9ce8-4aaec39ab8fe.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_gYUG4P": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/29_3afbead3-f852-41a3-961a-9dd0627d1339.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_gDQUKk": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/30_3c987607-3664-4f8b-9be1-d1b597a7cfdf.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Vd3ydH": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/31_cc60234e-6665-48c3-b79c-409a7d645a5a.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_PJgYNK": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/32_71927999-ec37-459c-bf6e-20dfcc1121c8.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_mRR7pz": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/33_53b61b08-bd01-4e6d-8aef-c0f4cf95e662.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_rhLeHw": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/34_9d858480-49f0-4a6e-98a2-d0d79c4f07ab.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Qdb4tM": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/35_0e8ef4af-dfeb-4d25-894f-453de52c2ec8.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_rzTGCG": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/36_db0eb898-9c44-473e-96d0-12ea7e686441.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_h3h6N9": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/37_c7e58a77-3ddc-4582-b269-9136873b8034.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_3qNFTx": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/38_bf1baccf-1c0f-4d9a-a113-7a6bfbc73717.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_U3CYPj": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/39_823b9927-9c0e-49e7-9e3d-4121b2f0149a.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_UkWTmF": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/40_4abbbb76-f8d9-4497-b915-4f8432fbb6b3.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_8C9HbJ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/41_5af49fd7-9518-490b-b382-703e0915d3f7.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_HEjYF3": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/42_20c61d97-08c5-4470-bbb9-983c8dfb5952.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_nkdTQC": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/43_5c5d09f6-012a-4043-b8f1-e805c6e51a01.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_MCLdJB": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/44_329517d7-9033-45c6-8566-cdb19ea8b959.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_bMwzhU": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/45_4b02412a-b4ec-4105-a1e8-051c468269f5.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_E8JH9p": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/46_2d375b73-7895-4978-9cc7-0c284e8d8b0c.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_Dx4yHY": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/47_dfa68fc6-69c1-4b60-95f0-5832867f0ef3.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_VeLfQ4": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/48_d716e447-1934-4256-8a27-1f1430483209.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_pgTEWP": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/49_7baf7956-3ab7-494b-b663-ea58aa5fe44d.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "spread_Vm7PnG",
+        "spread_brHdYn",
+        "spread_6pYTNC",
+        "spread_yeqa4h",
+        "spread_cJAHEn",
+        "spread_KMfyVy",
+        "spread_pNGUiV",
+        "spread_F8GDKi",
+        "spread_MhEFGL",
+        "spread_3KyprY",
+        "spread_Gyx6pq",
+        "spread_PzteFw",
+        "spread_pgRXMT",
+        "spread_jHpPzJ",
+        "spread_qkqmQa",
+        "spread_4LtBDV",
+        "spread_iFtfAC",
+        "spread_PBNPcf",
+        "spread_UePtVK",
+        "spread_mNbLNP",
+        "spread_PNiNYw",
+        "spread_KJYwnQ",
+        "spread_XkT48f",
+        "spread_mFgKRU",
+        "spread_QdDtJk",
+        "spread_3WVA9h",
+        "spread_byq6QX",
+        "spread_zjcgLf",
+        "spread_xm8zWp",
+        "spread_gYUG4P",
+        "spread_gDQUKk",
+        "spread_Vd3ydH",
+        "spread_PJgYNK",
+        "spread_mRR7pz",
+        "spread_rhLeHw",
+        "spread_Qdb4tM",
+        "spread_rzTGCG",
+        "spread_h3h6N9",
+        "spread_3qNFTx",
+        "spread_U3CYPj",
+        "spread_UkWTmF",
+        "spread_8C9HbJ",
+        "spread_HEjYF3",
+        "spread_nkdTQC",
+        "spread_MCLdJB",
+        "spread_bMwzhU",
+        "spread_E8JH9p",
+        "spread_Dx4yHY",
+        "spread_VeLfQ4",
+        "spread_pgTEWP"
+      ],
+      "settings": {}
+    },
+    "chapter_Urxh7w": {
+      "type": "chapter",
+      "blocks": {
+        "spread_9nTdbJ": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/50_8e7c6f18-dd27-4565-97c8-a3d897f7be54.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_bUncBV": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/51_d365ad3c-e89b-4cb2-8f6b-2a183ad6f665.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_An7WEY": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/52_e4c05296-fc7f-4f3a-a9f0-3690bb2a7f36.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_EjznWY": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/53_56dc2706-0b3c-436c-83f5-fee6c19f6c65.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_pAcDaE": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/54.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_G8FpPn": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/55.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_7thAfN": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/56.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_GGnLph": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/57.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_keiQh4": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/58.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_ddcrfk": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/59.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_XtVckj": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/60.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_wEix6F": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/61.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_68nqpT": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/62.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_93NhcT": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/63.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_6XkzbM": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/64.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_EgryEm": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/65.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_V4eaFd": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/66.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "spread_fFDLtq": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/67.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        }
+      },
+      "block_order": [
+        "spread_9nTdbJ",
+        "spread_bUncBV",
+        "spread_An7WEY",
+        "spread_EjznWY",
+        "spread_pAcDaE",
+        "spread_G8FpPn",
+        "spread_7thAfN",
+        "spread_GGnLph",
+        "spread_keiQh4",
+        "spread_ddcrfk",
+        "spread_XtVckj",
+        "spread_wEix6F",
+        "spread_68nqpT",
+        "spread_93NhcT",
+        "spread_6XkzbM",
+        "spread_EgryEm",
+        "spread_V4eaFd",
+        "spread_fFDLtq"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "chapter_KXXF7Q",
+    "chapter_Urxh7w"
   ]
 }
