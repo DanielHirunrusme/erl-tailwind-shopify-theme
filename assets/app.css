@@ -765,8 +765,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 537 / 942;
 }
 
-.twcss-aspect-\[2000\/754\.36\] {
-  aspect-ratio: 2000 / 754.36;
+.twcss-aspect-\[2000\/754\] {
+  aspect-ratio: 2000 / 754;
 }
 
 .twcss-aspect-\[2000\/533\] {
