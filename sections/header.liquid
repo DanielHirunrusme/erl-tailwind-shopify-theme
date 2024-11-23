@@ -186,6 +186,10 @@
           <a data-shop-link href='{{ link.url }}' title='{{ link.title }}' class='link h4'>
             {{ link.title | escape }}
           </a>
+        {% else %}
+          <a href='{{ link.url }}' title='{{ link.title }}' class='link h4'>
+            {{ link.title | escape }}
+          </a>
       {% endcase %}
 
       {%- if link.links.size > 0 -%}
