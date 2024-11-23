@@ -189,15 +189,22 @@
       {% endcase %}
 
       {%- if link.links.size > 0 -%}
-        <!-- Check if there are sublinks -->
-        <ul class='sub-links'>
+        {% if url == '/collections/all' and template.name != 'blog' and template.name != 'article' -%}
+          {%- assign force_shop_open = true -%}
+        {%- else -%}
+          {%- assign force_shop_open = false -%}
+        {%- endif %}
+
+        <ul
+          data-open='{{ force_shop_open }}'
+          class='sub-links {% if request.path contains url or force_shop_open == true %} {% else  %} twcss-hidden {% endif %}'
+        >
           {%- for sublink in link.links -%}
-            <!-- Loop through sublinks -->
             <li>
               <a
                 href='{{ sublink.url }}'
                 title='{{ sublink.title }}'
-                class='link h4 twcss-leading-8 {% if sublink.active %} twcss-underline {% endif %} '
+                class='link h4 twcss-leading-8 {% if request.path == sublink.url %}twcss-underline{% endif %}'
               >
                 {{ sublink.title | escape }}
               </a>
