@@ -214,6 +214,9 @@
                                 href='{{ link.url }}'
                                 title='{{ link.title }}'
                                 style='line-height: 1 !important;'
+                                {% if link.url contains 'instagram' %}
+                                  target='_blank'
+                                {% endif %}
                                 class='swup link rte list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}'
                               >
                                 {{ link.title }}
