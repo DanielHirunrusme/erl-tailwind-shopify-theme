@@ -16,6 +16,13 @@
     "chapter_FNidtM": {
       "type": "chapter",
       "blocks": {
+        "spread_pjfkrq": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/collection-10-cover.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
         "spread_p7rCVk": {
           "type": "spread",
           "settings": {
@@ -235,6 +242,7 @@
         }
       },
       "block_order": [
+        "spread_pjfkrq",
         "spread_p7rCVk",
         "spread_tBK8wb",
         "spread_yKrxJC",
