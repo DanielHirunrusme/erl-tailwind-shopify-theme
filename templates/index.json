@@ -31,7 +31,7 @@
         "image_url": "shopify://collections/all",
         "image": "shopify://shop_images/holiday.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
