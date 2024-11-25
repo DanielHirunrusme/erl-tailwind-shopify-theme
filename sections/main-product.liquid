@@ -80,7 +80,7 @@
   {% endif %}  
   
   {% comment %} Thumbnails {% endcomment %}
-  <ul id="thumbnails" class='twcss-hidden lg:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-16 md:twcss-absolute  twcss-z-10 twcss-top-1/2 twcss-transform -twcss-translate-y-1/2 twcss-left-0 twcss-m-4'>
+  <ul id="thumbnails" style="max-height: 100svh; overflow: scroll;" class='twcss-hidden twcss-overflow-y-scroll lg:twcss-flex md:twcss-flex-col twcss-h-10 md:twcss-h-auto twcss-gap-4 md:twcss-w-16 md:twcss-absolute  twcss-z-10 twcss-top-1/2 twcss-transform -twcss-translate-y-1/2 twcss-left-0 twcss-m-4'>
   {%- for media in product.media -%}
     <li class="twcss-w-full">
       <a href='javascript:void(0);' onclick="scrollToAnchor('Image-{{ forloop.index }}')">
