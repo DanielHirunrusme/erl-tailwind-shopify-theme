@@ -757,8 +757,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-.twcss-aspect-\[1\.5\] {
-  aspect-ratio: 1.5;
+.twcss-aspect-\[500\/329\] {
+  aspect-ratio: 500 / 329;
 }
 
 .twcss-aspect-\[537\/942\] {
@@ -767,6 +767,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-aspect-\[2000\/754\] {
   aspect-ratio: 2000 / 754;
+}
+
+.twcss-aspect-\[1\.5\] {
+  aspect-ratio: 1.5;
 }
 
 .twcss-aspect-\[2000\/533\] {
@@ -785,10 +789,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   aspect-ratio: 4 / 5.9;
 }
 
-.twcss-aspect-\[500\/329\] {
-  aspect-ratio: 500 / 329;
-}
-
 .twcss-h-full {
   height: 100%;
 }
@@ -799,10 +799,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .twcss-h-screen {
   height: 100vh;
-}
-
-.twcss-h-\[svh\] {
-  height: svh;
 }
 
 .twcss-h-\[100svh\] {
