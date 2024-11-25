@@ -17,6 +17,13 @@
     "chapter_M38qCE": {
       "type": "chapter",
       "blocks": {
+        "spread_BRBwyd": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/collection-5-cover.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
+        },
         "spread_BBTMtj": {
           "type": "spread",
           "settings": {
@@ -341,6 +348,7 @@
         }
       },
       "block_order": [
+        "spread_BRBwyd",
         "spread_BBTMtj",
         "spread_zqaQ34",
         "spread_GBMLBk",
