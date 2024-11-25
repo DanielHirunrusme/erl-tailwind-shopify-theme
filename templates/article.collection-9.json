@@ -701,10 +701,18 @@
         "spread_KqqVyD"
       ],
       "settings": {}
+    },
+    "spread_Kgajfy": {
+      "type": "spread",
+      "settings": {
+        "image": "shopify://shop_images/collection-9-cover.jpg",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
     "main",
+    "spread_Kgajfy",
     "chapter_TQAPGn",
     "chapter_GViPcK"
   ]
