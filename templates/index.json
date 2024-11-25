@@ -28,7 +28,7 @@
         "html_VKJLyp"
       ],
       "settings": {
-        "image_url": "shopify://collections/chapter-2-holiday",
+        "image_url": "shopify://collections/chapter-2",
         "image": "shopify://shop_images/holiday.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
@@ -50,7 +50,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "chapter-2-holiday",
+        "collection": "chapter-2",
         "products_to_show": 15,
         "columns_desktop": 3,
         "full_width": true,
