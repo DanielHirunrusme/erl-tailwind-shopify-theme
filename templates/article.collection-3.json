@@ -330,6 +330,13 @@
             "image": "shopify://shop_images/90-91.jpg",
             "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
           }
+        },
+        "spread_78xbrx": {
+          "type": "spread",
+          "settings": {
+            "image": "shopify://shop_images/collection-3-cover.jpg",
+            "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+          }
         }
       },
       "block_order": [
@@ -377,10 +384,18 @@
         "spread_EgKQ7F",
         "spread_BDdkfi",
         "spread_Kbci9E",
-        "spread_EjK6rh"
+        "spread_EjK6rh",
+        "spread_78xbrx"
       ],
       "disabled": true,
       "settings": {}
+    },
+    "spread_ahUELn": {
+      "type": "spread",
+      "settings": {
+        "image": "shopify://shop_images/collection-3-cover.jpg",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      }
     },
     "chapter_DAnfNn": {
       "type": "chapter",
@@ -826,6 +841,7 @@
   "order": [
     "main",
     "chapter_c7nVJ9",
+    "spread_ahUELn",
     "chapter_DAnfNn",
     "chapter_ncEUFq"
   ]
