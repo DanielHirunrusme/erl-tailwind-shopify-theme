@@ -573,10 +573,18 @@
         "spread_fFDLtq"
       ],
       "settings": {}
+    },
+    "spread_gw7xDN": {
+      "type": "spread",
+      "settings": {
+        "image": "shopify://shop_images/collection-4-cover.jpg",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
     "main",
+    "spread_gw7xDN",
     "chapter_KXXF7Q",
     "chapter_Urxh7w"
   ]
