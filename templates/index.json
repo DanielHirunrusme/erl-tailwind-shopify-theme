@@ -93,7 +93,7 @@
         "image_url": "shopify://collections/all",
         "image": "shopify://shop_images/ERL-S092_5e93d065-a3b6-4cee-9037-623b44398991.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
