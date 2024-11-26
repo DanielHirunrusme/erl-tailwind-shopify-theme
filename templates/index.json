@@ -88,6 +88,7 @@
       "block_order": [
         "html_hVPxWJ"
       ],
+      "disabled": true,
       "settings": {
         "image_url": "shopify://collections/all",
         "image": "shopify://shop_images/ERL-S092_5e93d065-a3b6-4cee-9037-623b44398991.jpg",
@@ -105,6 +106,7 @@
     },
     "featured_collection_pw4LAm": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -206,6 +208,7 @@
       "block_order": [
         "heading_QJRKmX"
       ],
+      "disabled": true,
       "settings": {
         "image_url": "shopify://collections/artisanal",
         "image": "shopify://shop_images/erl_made_in_california_chapter_210385_1.jpg",
@@ -260,6 +263,7 @@
       "block_order": [
         "heading_d9GEqb"
       ],
+      "disabled": true,
       "settings": {
         "image_url": "shopify://blogs/suiting",
         "image": "shopify://shop_images/erl_made_in_california_chapter_29153_1.jpg",
