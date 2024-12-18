@@ -50,7 +50,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "chapter-2",
+        "collection": "vamps",
         "products_to_show": 50,
         "columns_desktop": 3,
         "full_width": true,
