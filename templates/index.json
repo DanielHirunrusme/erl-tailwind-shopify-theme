@@ -52,7 +52,7 @@
         "description_style": "body",
         "collection": "vamps",
         "products_to_show": 50,
-        "columns_desktop": 3,
+        "columns_desktop": 1,
         "full_width": true,
         "show_view_all": false,
         "view_all_style": "solid",
@@ -64,7 +64,7 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
-        "columns_mobile": "2",
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,
         "padding_bottom": 0
