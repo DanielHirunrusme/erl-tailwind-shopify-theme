@@ -29,7 +29,7 @@
       ],
       "settings": {
         "image_url": "shopify://products/erl-sunscreen",
-        "image": "shopify://shop_images/SUNSCREEN_FRAGRANCE_BEACH.jpg",
+        "image": "shopify://shop_images/VAMP_SHOOT_26.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
@@ -183,11 +183,18 @@
           "settings": {
             "product": "hollywood-cut-off-tee"
           }
+        },
+        "product_qeKbrE": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
         }
       },
       "block_order": [
         "product_8iHNyi",
-        "product_KA7L9d"
+        "product_KA7L9d",
+        "product_qeKbrE"
       ],
       "disabled": true,
       "settings": {
