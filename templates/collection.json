@@ -21,6 +21,12 @@
     "featured_products_J3p67V": {
       "type": "featured-products",
       "blocks": {
+        "product_W6xYGP": {
+          "type": "product",
+          "settings": {
+            "product": ""
+          }
+        },
         "product_eCx3Kw": {
           "type": "product",
           "settings": {
@@ -41,6 +47,7 @@
         }
       },
       "block_order": [
+        "product_W6xYGP",
         "product_eCx3Kw",
         "product_fXxYxb",
         "product_tqidfF"
