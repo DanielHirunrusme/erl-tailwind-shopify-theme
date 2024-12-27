@@ -40,6 +40,7 @@
         },
         "variant_picker": {
           "type": "variant_picker",
+          "disabled": true,
           "settings": {
             "picker_type": "button",
             "swatch_picker_type": "swatch",
@@ -48,6 +49,7 @@
         },
         "inventory_3FGQ8g": {
           "type": "inventory",
+          "disabled": true,
           "settings": {
             "text_style": "body",
             "inventory_threshold": 1,
