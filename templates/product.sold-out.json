@@ -23,6 +23,13 @@
             "text_style": "subtitle"
           }
         },
+        "text_cx3iUt": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>SOLD OUT</strong>",
+            "text_style": "subtitle"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -54,6 +61,7 @@
         },
         "buy_buttons": {
           "type": "buy_buttons",
+          "disabled": true,
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
@@ -106,6 +114,7 @@
       "block_order": [
         "title",
         "caption",
+        "text_cx3iUt",
         "price",
         "description",
         "variant_picker",
