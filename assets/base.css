@@ -4025,7 +4025,7 @@ select {
   position: relative;
   background-color: rgba(var(--color-foreground), 1);
   border-radius: 0 !important;
-  color: rgba(var(--color-background), 0.9);
+  color: #646669e5 !important;
   padding: 0.25em 0.5em;
   margin-bottom: 0 !important;
   min-height: 44px;
