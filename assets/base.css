@@ -4024,7 +4024,7 @@ select {
 .restock-alerts-modal-box .button--primary {
   position: relative;
   background-color: rgba(var(--color-foreground), 1);
-  border-radius: 0.075em;
+  border-radius: 0 !important;
   color: rgba(var(--color-background), 0.9);
   padding: 0.25em 0.5em;
   margin-bottom: 0 !important;
