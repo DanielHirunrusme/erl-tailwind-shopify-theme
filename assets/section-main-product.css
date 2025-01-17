@@ -514,6 +514,10 @@ a.product__text {
   flex: 1;
 }
 
+.modalBoxLowerSectionStyle {
+  background-color: transparent !important;
+}
+
 .hengam-preorder-description {
   pointer-events: auto;
   position: absolute;
