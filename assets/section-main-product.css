@@ -501,7 +501,16 @@ a.product__text {
   justify-content: space-between;
 }
 
-.product-form__buttons > div {
+.nm-portal {
+  position: absolute;
+  width: 100%;
+}
+
+.hengam-preorder-button {
+  margin-top: 1em;
+}
+
+.product-form__buttons > div:not(.nm-portal) {
   flex: 1;
 }
 
@@ -513,6 +522,15 @@ a.product__text {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.nm-portal .hengam-preorder-description {
+  top: 0;
+  bottom: auto;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  font-family: Arial Narrow, 'AN', Arial, sans-serif !important;
 }
 
 @media only screen and (min-width: 750px) {
