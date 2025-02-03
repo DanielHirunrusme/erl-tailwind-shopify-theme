@@ -28,9 +28,9 @@
         "html_VKJLyp"
       ],
       "settings": {
-        "image_url": "shopify://collections/hoodies-and-tees",
-        "image": "shopify://shop_images/ERL_SWIRL_HOODIE.jpg",
-        "image_1_mobile": "shopify://shop_images/ERL_SWIRL_HOODIE.jpg",
+        "image_url": "shopify://products/shearling-messenger-bag-1",
+        "image": "shopify://shop_images/ERL_BROWN_SHEARLING_BAG.jpg",
+        "image_1_mobile": "shopify://shop_images/ERL_BROWN_SHEARLING_BAG.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-left",
