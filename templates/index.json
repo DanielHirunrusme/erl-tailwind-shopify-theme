@@ -30,8 +30,9 @@
       "settings": {
         "image_url": "shopify://products/shearling-messenger-bag-1",
         "image": "shopify://shop_images/THE_BEACH_SAILING.png",
+        "image_1_mobile": "shopify://shop_images/THE_BEACH_HOME.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
