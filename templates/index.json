@@ -75,8 +75,9 @@
       "blocks": {
         "html_hVPxWJ": {
           "type": "html",
+          "disabled": true,
           "settings": {
-            "html": "<img src=\"https://cdn.shopify.com/s/files/1/0757/2095/0079/files/hollywood-forever-tatoo.png?v=1729207388\" width=\"400\">",
+            "html": "",
             "placement_x": "center",
             "placement_y": "top",
             "svg_width": 40,
